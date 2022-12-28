@@ -1,0 +1,29 @@
+[
+	{
+    "id": "wind_blessing_eoc",
+	"type": "effect_on_condition",
+	"recurrence": "30 m",
+    "condition": { "u_has_trait": "wind_priestess_charm_mut" },
+    "deactivate_condition": { "not": { "u_has_trait": "wind_priestess_charm_mut" } },
+    "effect": [ 
+		{ "queue_eocs": [
+			{
+            "id": "wind_blessing_randomization_eoc",
+            "condition": { "u_has_trait": "wind_priestess_charm_mut" },
+            "effect": [
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_dex" }, "=", { "rand": 3 } ] },
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_int" }, "=", { "rand": 3 } ] },
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_per" }, "=", { "rand": 3 } ] },
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_str" }, "=", { "rand": 3 } ] }
+            ],
+			"false_effect": [
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_dex" }, "=", { "const": 0 } ] },
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_int" }, "=", { "const": 0 } ] },
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_per" }, "=", { "const": 0 } ] },
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_wind_blessing_str" }, "=", { "const": 0 } ] }
+            ]
+			}
+        ], "time_in_future": "30 m" }
+	]
+	}
+]

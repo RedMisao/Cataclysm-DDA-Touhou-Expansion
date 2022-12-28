@@ -1,0 +1,33 @@
+[
+	{
+    "id": "lucky_charm",
+    "type": "TOOL",
+	"name": { "str": "lucky charm", "str_pl": "lucky charms" },
+    "description": "A small charm, looking and painted like a carrot.  You feel luckier by just having it.",
+	"volume": "5 ml",
+	"weight": "10 g",
+	"longest_side": "3 cm",
+	"price_postapoc": 25000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "bad", 
+		"length": "short", 
+		"surface": "any"
+	},
+    "bashing": 1,
+	"material": [ "steel" ],
+	"symbol": "🥕",
+	"looks_like": "carrot",
+    "color": "light_red",
+	"relic_data": { 
+		"passive_effects": [ 
+			{
+			"has": "HELD",
+			"condition": "ALWAYS",
+			"mutations": [ "lucky_charm_mut" ]
+			}
+		] 
+	},
+	"flags": [ "DURABLE_MELEE" ]
+	}
+]

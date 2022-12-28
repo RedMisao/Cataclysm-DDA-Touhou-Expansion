@@ -1,0 +1,22 @@
+[
+	{
+    "id": "paralyze2",
+	"type": "effect_type",
+    "name": [ "paralyze (message)" ],
+    "desc": [ "Message for paralyze spell" ],
+    "apply_message": "You're sudden ",
+    "remove_message": " ly frozen!",
+    "rating": "bad"
+	},
+	{
+    "id": "shrieking_slow_effect",
+	"type": "effect_type",
+    "name": [ "Shrieked at" ],
+    "desc": [ "It is as if hearing the shriek lacerated your soul." ],
+    "remove_message": "You move normally again.",
+	"rating": "bad",
+	"max_intensity": 9,
+    "base_mods": { "speed_mod": [ -9 ] },
+    "scaling_mods": { "speed_mod": [ -9 ] }
+	}
+]

@@ -1,0 +1,183 @@
+[
+	{
+    "id": "mon_banshee",
+    "type": "MONSTER",
+    "name": { "str": "banshee" },
+    "description": "A woman, wearing an long, unkept dress, screaming and keening.  She looks deranged and sounds angry.",
+    "volume": "68750 ml",
+    "weight": "73350 g",
+	"default_faction": "touhou_youkai_female",
+    "bodytype": "human",
+    "species": [ "GHOST_TOUHOU", "YOUKAI_FEMALE_TOUHOU" ],
+    "harvest": "exempt",
+    "hp": 85,
+    "speed": 165,
+    "material": [ "flesh" ],
+    "symbol": "@",
+	"looks_like": "human",
+    "color": "black",
+    "aggression": 99,
+    "morale": 99,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "dodge": 4,
+    "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
+	"luminance": 2,
+	"vision_day": 20,
+    "vision_night": 30,
+	"path_settings": { "max_dist": 24 },
+    "special_attacks": [ 
+		[ "PARROT", 13 ],
+		{ 
+		"spell_data": { "id": "shrieking_20d2" }, 
+		"type": "spell", 
+		"cooldown": 5 
+		},
+		{ 
+		"spell_data": { "id": "wailing_6d4" }, 
+		"type": "spell", 
+		"cooldown": 7 
+		}
+	],
+	"death_function": { 
+		"corpse_type": "NO_CORPSE", 
+		"message": "The %s dissappears." 
+	},
+    "flags": [ "BASHES", "GRABS", "HEARS", "NO_BREATHE", "SEES", "SWIMS", "WATER_CAMOUFLAGE" ]
+	},
+	{
+    "id": "mon_lallorona",
+    "type": "MONSTER",
+    "name": { "str": "La llorona" },
+    "description": "A woman, wearing a dress, continuously crying and weeping.  She looks drenched and… ethereal?",
+    "volume": "68750 ml",
+    "weight": "73350 g",
+	"default_faction": "touhou_youkai_female",
+    "bodytype": "human",
+    "species": [ "GHOST_TOUHOU", "YOUKAI_FEMALE_TOUHOU" ],
+    "harvest": "exempt",
+    "hp": 85,
+    "speed": 135,
+    "material": [ "flesh" ],
+    "symbol": "@",
+	"looks_like": "human",
+    "color": "white",
+    "aggression": 99,
+    "morale": 99,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "bash", "amount": 4 } ],
+    "dodge": 3,
+    "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
+	"vision_day": 20,
+    "vision_night": 30,
+	"path_settings": { "max_dist": 24 },
+    "special_attacks": [ 
+		[ "PARROT", 7 ],
+		{ 
+		"spell_data": { "id": "reposition_12d2" }, 
+		"type": "spell", 
+		"cooldown": 29 
+		},
+		{ 
+		"spell_data": { "id": "wailing_6d4" }, 
+		"type": "spell", 
+		"cooldown": 5 
+		}
+	],
+	"death_function": { 
+		"corpse_type": "NO_CORPSE", 
+		"message": "%s dissappears." 
+	},
+    "flags": [ "BASHES", "GRABS", "HEARS", "NO_BREATHE", "SEES", "SWIMS" ]
+	},
+	{
+    "id": "mon_white_lady",
+    "type": "MONSTER",
+    "name": { "str": "white lady" },
+    "description": "A woman, wearing a long, elegant white dress.  She looks somewhat sad and… ethereal?",
+    "volume": "68750 ml",
+    "weight": "73350 g",
+	"default_faction": "touhou_youkai_neutral",
+    "bodytype": "human",
+    "species": [ "GHOST_TOUHOU", "YOUKAI_NEUTRAL_TOUHOU" ],
+    "harvest": "exempt",
+    "hp": 85,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "@",
+	"looks_like": "human",
+    "color": "white",
+    "aggression": 0,
+    "morale": 25,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "dodge": 0,
+    "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
+	"vision_day": 12,
+    "vision_night": 16,
+	"path_settings": { "max_dist": 10 },
+    "special_attacks": [ 
+		{ 
+		"spell_data": { "id": "white_lady_demoralize" }, 
+		"type": "spell", 
+		"cooldown": 5,
+		"allow_no_target": true
+		},
+		{ 
+		"spell_data": { "id": "white_lady_transform" }, 
+		"type": "spell", 
+		"cooldown": 1 
+		}
+	],
+	"death_function": { 
+		"corpse_type": "NO_CORPSE"
+	},
+    "flags": [ "HEARS", "NO_BREATHE", "PACIFIST", "SEES", "STUN_IMMUNE" ]
+	},
+	{
+    "id": "mon_white_lady_angry",
+    "type": "MONSTER",
+    "name": { "str": "white lady" },
+    "description": "A woman, wearing a long, elegant white dress.  Her face is now distorted, with dark holes instead of eyes, and a wide, black gape where the mouth should be.",
+    "volume": "68750 ml",
+    "weight": "73350 g",
+	"default_faction": "touhou_youkai_female",
+    "bodytype": "human",
+    "species": [ "GHOST_TOUHOU", "YOUKAI_FEMALE_TOUHOU" ],
+    "harvest": "exempt",
+    "hp": 85,
+    "speed": 200,
+    "material": [ "flesh" ],
+    "symbol": "@",
+	"looks_like": "human",
+    "color": "white",
+    "aggression": 99,
+    "morale": 99,
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 2,
+    "dodge": 0,
+    "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
+	"vision_day": 24,
+    "vision_night": 32,
+	"path_settings": { "max_dist": 20 },
+    "special_attacks": [ 
+		[ "PARROT_AT_DANGER", 7 ],
+		{ 
+		"spell_data": { "id": "reposition_12d2" }, 
+		"type": "spell", 
+		"cooldown": 19 
+		}
+	],
+	"death_function": { 
+		"corpse_type": "NO_CORPSE", 
+		"message": "%s suddenly dissappears." 
+	},
+    "flags": [ "FLIES", "HEARS", "NO_BREATHE", "SEES", "STUN_IMMUNE" ]
+	}
+]

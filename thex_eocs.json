@@ -1,0 +1,88 @@
+[
+	{
+    "id": "thex_everything_eoc",
+	"type": "effect_on_condition",
+	"eoc_type": "SCENARIO_SPECIFIC",
+    "effect": [
+		{ "u_add_var": "var_wind_blessing_dex", "type": "number", "context": "wind_priestess_charm", "value": "0" },
+		{ "u_add_var": "var_wind_blessing_int", "type": "number", "context": "wind_priestess_charm", "value": "0" },
+		{ "u_add_var": "var_wind_blessing_per", "type": "number", "context": "wind_priestess_charm", "value": "0" },
+		{ "u_add_var": "var_wind_blessing_str", "type": "number", "context": "wind_priestess_charm", "value": "0" },
+		{ "run_eocs": [ "daily_randomization_eoc" ] }, 
+		{ "run_eocs": [
+			{
+            "id": "vampire_bloodthirst_start_ex",
+            "condition": { "u_has_trait": "VAMPIRE_SPECIES" },
+            "effect": [
+				{ "arithmetic": [ { "u_val": "vitamin", "name": "hblood_vitamin" }, "=", 
+					{ "arithmetic": [ { "const": 648 }, "+", { "rand": 144 } ] }
+				] }
+			]
+			}
+		] }
+    ]
+	},
+	{
+    "id": "daily_randomization_eoc",
+	"type": "effect_on_condition",
+	"recurrence": "24 hours",
+    "effect": [
+		{ "arithmetic": [ { "u_val": "var", "var_name": "night_parade_proc" }, "=", { "rand": 99 } ] },
+		{ "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_proc" }, "=", { "rand": 99 } ] },
+		{ "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_hour" }, "=", { "rand": 23 } ] },
+		{ "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_minute" }, "=", { "rand": 59 } ] },
+		{ "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_second" }, "=", { "rand": 59 } ] }
+    ],
+	"//": "Should: reroll these daily, for use in special events and whatnot"
+	},
+	{
+    "id": "impurity_eoc",
+    "type": "effect_on_condition",
+	"recurrence": "20 m",
+    "effect": [
+		{ "run_eocs": [
+			{
+            "id": "impurity_none",
+            "condition": { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<", { "const": 0 } ] },
+            "effect": [
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 0 } ] }
+            ]
+			},
+			{
+            "id": "impurity_verylow",
+            "condition": { 
+				"and": [ 
+					{ "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 1 } ] },
+					{ "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 72 } ] }
+				]
+			},
+            "effect": [
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 1 } ] }
+            ]
+			},
+			{
+            "id": "impurity_low",
+            "condition": { 
+				"and": [ 
+					{ "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 73 } ] },
+					{ "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 504 } ] }
+				]
+			},
+            "effect": [
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 2 } ] }
+            ]
+			},
+			{
+            "id": "impurity_high",
+            "condition": { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 505 } ] },
+            "effect": [
+				{ "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 3 } ] }
+            ]
+			}
+        ] }
+	],
+	"//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff",
+	"//2": "Boundaries for each impure tier: 0 - 24 h (verylow), 1 - 7 days (low), >7 days (high)",
+	"//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
+	}
+]

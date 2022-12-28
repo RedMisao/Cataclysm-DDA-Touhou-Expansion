@@ -1,0 +1,217 @@
+[
+	{
+    "id": "guns_mib",
+	"type": "item_group",
+    "subtype": "distribution",
+    "items":[
+	    [ "mib_pistol_sidearm", 50 ],
+	    [ "mib_smg_7", 35 ],
+	    [ "mib_rifle_4", 15 ]
+    ]
+	},
+	{
+    "id": "guns_pistol_common_display",
+	"type": "item_group",
+    "subtype": "distribution",
+    "//": "Empty and reasonably common pistols found exclusively in gun stores.",
+    "copy-from": "guns_pistol_common_display",
+    "extend": { 
+		"items": [ 
+			{ "item": "thompson_contender", "prob": 20, "charges-min": 0, "charges-max": 0 }
+		]
+	}
+	},
+	{
+    "id": "guns_pistol_rare",
+	"type": "item_group",
+    "//": "Less common or prolific pistols that are still normally acquirable by civilians or that may need an NFA permit, i.e. integrally supressed or stocked handguns. This includes those weapons used by police and paramilitary forces, and older handguns which are no longer in production but that are still reasonably common to find.",
+    "//2": "Making the assumption any loaded gun will have additional ammo and mags with it.",
+    "copy-from": "guns_pistol_rare",
+    "extend": { 
+		"items": [ 
+			{ "group": "nested_thompson_contender", "prob": 20, "charges-min": 0, "charges-max": 0 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_common",
+	"type": "item_group",
+    "//": "Rifles commonly owned by citizens and found in many locations.",
+    "//2": "Making the assumption any loaded gun will have additional ammo and mags with it.",
+    "copy-from": "guns_rifle_common",
+    "extend": { 
+		"items": [ 
+			{ "group": "nested_kar98", "prob": 1 },
+			{ "group": "nested_sig550", "prob": 1 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_common_display",
+	"type": "item_group",
+    "subtype": "distribution",
+    "//": "Empty rifles commonly found in gun stores.",
+    "copy-from": "guns_rifle_common_display",
+    "extend": { 
+		"items": [ 
+			{ "item": "kar98", "prob": 20, "charges-min": 0, "charges-max": 0 },
+			{ "item": "sig550", "prob": 20, "charges-min": 0, "charges-max": 0 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_common_worn",
+	"type": "item_group",
+    "//": "Rifles commonly owned by citizens and found in many locations.",
+    "//2": "This is for worn items so ammo should be handled elsewhere so that mods can be added directly.",
+    "copy-from": "guns_rifle_common_worn",
+    "extend": { 
+		"items": [ 
+			{ "item": "kar98", "prob": 1, "charges-min": 0, "charges-max": 5 },
+			{ "item": "sig550", "prob": 1, "charges-min": 0, "charges-max": 20 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_milspec",
+	"type": "item_group",
+    "//": "Military specification rifles only ever found at military sites.",
+    "copy-from": "guns_rifle_milspec",
+    "extend": { 
+		"items": [ 
+			{ "group": "nested_m76", "prob": 20 },
+			{ "group": "nested_pgm_hecate", "prob": 20 },
+			{ "group": "nested_ots48k", "prob": 16 },
+			{ "group": "nested_sig550", "prob": 20 },
+			{ "group": "nested_sig550_sniper", "prob": 20 },
+			{ "group": "nested_sr3mp", "prob": 12 },
+			{ "group": "nested_svd", "prob": 20 },
+			{ "group": "nested_vss", "prob": 20 },
+			{ "group": "nested_wa2000", "prob": 20 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_obscure",
+	"type": "item_group",
+    "subtype": "distribution",
+    "//": "Imported or otherwise very obscure rifles.",
+    "//2": "Making the assumption any loaded gun will have additional ammo and mags with it.",
+    "extend": { 
+		"items": [
+			{ "group": "nested_ceamm1", "prob": 35 },
+			{ "group": "nested_pieper_m1893", "prob": 25 },
+			{ "group": "nested_spanish_m1893", "prob": 25 },
+			{ "group": "nested_stg44", "prob": 65 },
+			{ "group": "nested_tkb002_nested", "prob": 35 },
+			{ "group": "nested_wa2000", "prob": 1 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_obscure_display",
+	"type": "item_group",
+    "//": "Imported or otherwise very obscure rifles, unloaded for storage in gunstore and unavailable for sale",
+    "subtype": "distribution",
+    "copy-from": "guns_rifle_obscure_display",
+    "extend": { 
+		"items": [ 
+			{ "item": "ceamm1", "prob": 15, "charges-min": 0, "charges-max": 0 },
+			{ "item": "m76", "prob": 20, "charges-min": 0, "charges-max": 0 },
+			{ "item": "pieper_m1893", "prob": 5, "charges-min": 0, "charges-max": 0 },
+			{ "item": "spanish_m1893", "prob": 15, "charges-min": 0, "charges-max": 0 },
+			{ "item": "sr3mp", "prob": 25, "charges-min": 0, "charges-max": 0 },
+			{ "item": "stg44", "prob": 35, "charges-min": 0, "charges-max": 0 },
+			{ "item": "svd", "prob": 15, "charges-min": 0, "charges-max": 0 },
+			{ "group": "nested_tkb002_items", "prob": 10, "charges-min": 0, "charges-max": 0 },
+			{ "item": "vss", "prob": 25, "charges-min": 0, "charges-max": 0 },
+			{ "group": "nested_wa2000_variants", "prob": 5, "charges-min": 0, "charges-max": 0 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_rare",
+	"type": "item_group",
+    "//": "Less common rifles including those only used by police/paramilitary forces.",
+    "//2": "Making the assumption any loaded gun will have additional ammo and mags with it.",
+    "copy-from": "guns_rifle_rare",
+    "extend": { 
+		"items": [ 
+			{ "group": "nested_ceamm1", "prob": 20 },
+			{ "group": "nested_kar98", "prob": 20 },
+			{ "group": "nested_m76", "prob": 16 },
+			{ "group": "nested_ots48", "prob": 16 },
+			{ "group": "nested_pieper_m1893", "prob": 12 },
+			{ "group": "nested_spanish_m1893", "prob": 16 },
+			{ "group": "nested_stg44", "prob": 25 },
+			{ "group": "nested_svd", "prob": 20 },
+			{ "group": "nested_tkb002_nested", "prob": 20 },
+			{ "group": "nested_vss", "prob": 20 }
+		]
+	}
+	},
+	{
+    "id": "guns_rifle_rare_display",
+	"type": "item_group",
+    "subtype": "distribution",
+    "//": "Less common rifles found exclusively in gun stores.",
+    "copy-from": "guns_rifle_rare_display",
+    "extend": { 
+		"items": [ 
+			{ "item": "ceamm1", "prob": 5, "charges-min": 0, "charges-max": 0 },
+			{ "item": "kar98", "prob": 10, "charges-min": 0, "charges-max": 0 },
+			{ "item": "m76", "prob": 10, "charges-min": 0, "charges-max": 0 },
+			{ "item": "ots48", "prob": 5, "charges-min": 0, "charges-max": 0 },
+			{ "item": "pieper_m1893", "prob": 1, "charges-min": 0, "charges-max": 0 },
+			{ "item": "spanish_m1893", "prob": 8, "charges-min": 0, "charges-max": 0 },
+			{ "item": "stg44", "prob": 25, "charges-min": 0, "charges-max": 0 },
+			{ "item": "svd", "prob": 15, "charges-min": 0, "charges-max": 0 },
+			{ "item": "vss", "prob": 20, "charges-min": 0, "charges-max": 0 },
+			{ "group": "nested_tkb002_items", "prob": 1, "charges-min": 0, "charges-max": 0 },
+			{ "group": "nested_wa2000_variants", "prob": 1, "charges-min": 0, "charges-max": 0 }
+		]
+	}
+	},
+	{
+    "id": "guns_smg_obscure",
+	"type": "item_group",
+    "subtype": "distribution",
+    "//": "Imported or otherwise very obscure SMGs.",
+    "copy-from": "guns_smg_obscure",
+    "extend": { 
+		"items": [ 
+			{ "item": "aresfmg_folded", "prob": 100, "charges-min": 0, "charges-max": 0 },
+			{ "item": "idw", "prob": 100, "charges-min": 0, "charges-max": 0 }
+		]
+	}
+	},
+	{
+    "id": "guns_smg_rare",
+	"type": "item_group",
+    "//": "Less common SMGs including those only used by police/paramilitary forces.",
+    "//2": "Making the assumption any loaded gun will have additional ammo and mags with it.",
+    "copy-from": "guns_smg_rare",
+    "extend": { 
+		"items": [ 
+			{ "group": "nested_aresfmg_folded", "prob": 33, "charges-min": 0, "charges-max": 0 },
+			{ "group": "nested_idw", "prob": 66, "charges-min": 0, "charges-max": 0 }
+		]
+	}
+	},
+	{
+    "id": "guns_survival",
+	"type": "item_group",
+    "//": "Guns typically carried by survivors, either improvised or thematically appropriate.",
+    "copy-from": "guns_survival",
+    "extend": { 
+		"items": [ 
+			{ "item": "kar98", "prob": 5, "charges-min": 5, "charges-max": 20 },
+			{ "item": "sig550", "prob": 10, "charges-min": 20, "charges-max": 40 },
+			{ "item": "sig550_sniper", "prob": 5, "charges-min": 20, "charges-max": 40 },
+			{ "item": "svd", "prob": 5, "charges-min": 10, "charges-max": 20 },
+			{ "item": "thompson_contender", "prob": 5, "charges-min": 10, "charges-max": 20 },
+			{ "item": "vss", "prob": 5, "charges-min": 10, "charges-max": 20 }
+		]
+	}
+	}
+]

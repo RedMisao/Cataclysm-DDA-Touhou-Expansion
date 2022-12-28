@@ -1,0 +1,10 @@
+[
+	{
+    "result": "pie_meat",
+	"type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "delete": { "components": [ [ "can_chicken", 1 ] ] }
+	}
+]

@@ -1,0 +1,30 @@
+[
+	{
+    "id": [
+		"shrine_medium_1",
+		"shrine_medium_1_roof"
+    ],
+	"type": "overmap_terrain",
+    "name": "shrine",
+    "sym": "⛩",
+    "color": "red",
+    "see_cost": 2
+	},
+	{
+    "id": [
+      "ufo_medium00",
+      "ufo_medium10",
+      "ufo_medium01",
+      "ufo_medium11",
+      "ufo_medium00_roof",
+      "ufo_medium10_roof",
+      "ufo_medium01_roof",
+      "ufo_medium11_roof"
+    ],
+	"type": "overmap_terrain",
+    "name": "ufo crash",
+    "sym": "👽",
+    "color": "light_gray",
+    "see_cost": 2
+	}
+]

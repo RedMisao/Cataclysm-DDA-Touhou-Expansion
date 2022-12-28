@@ -1,0 +1,1160 @@
+[
+	{
+    "id": "aresfmg_unfolded",
+    "type": "GUN",
+    "name": { "str": "ARES FMG", "str_pl": "ARES FMG" },
+    "description": "A very compact, unfolded SMG.  Made from steel, it's ready to shoot.",
+    "volume": "1200 ml",
+	"weight": "2090 g",
+    "longest_side": "503 mm",
+	"//": "Estimated dimensions unfolded: 40*500*40 mm body + 40*200*40 mm handle",
+    "price": 40000,
+    "price_postapoc": 1500,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "bashing": 10,
+    "material": [ "steel" ],
+    "symbol": "[",
+    "looks_like": "uzi",
+    "color": "dark_gray",
+    "ammo": [ "9mm" ],
+    "skill": "smg",
+    "dispersion": 360,
+    "durability": 6,
+    "reload_noise_volume": 10,
+    "blackpowder_tolerance": 24,
+    "min_cycle_recoil": 450,
+    "modes": [ [ "DEFAULT", "burst", 4 ] ],
+    "valid_mod_locations": [
+		[ "accessories", 1 ],
+		[ "sling", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights mount", 1 ]
+    ],
+	"//2": "stock: folding stock, adjustable stock; stock mount: stock mount; stock accessory: cheeck pad, butt hook",
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
+    "pocket_data": [ 
+		{ 
+		"pocket_type": "MAGAZINE_WELL", 
+		"item_restriction": [ 
+			"uzimag_20rd", 
+			"uzimag_25rd", 
+			"uzimag", 
+			"mp40mag_32rd"
+		]
+		} 
+	],
+	"use_action": {
+		"target": "aresfmg_folded",
+		"type": "transform",
+		"msg": "You fold the weapon.",
+		"menu_text": "Fold weapon",
+		"moves": 100
+    }
+	},
+	{
+    "id": "aresfmg_folded",
+    "type": "GUN",
+    "name": { "str": "ARES FMG (folded)", "str_pl": "ARES FMG (folded)" },
+    "description": "A very compact, folded SMG.  Made from steel, it's shaped like a box, compact enough to fit your pocket.",
+    "volume": "1000 ml",
+	"weight": "2090 g",
+    "longest_side": "250 mm",
+	"//": "Estimated dimensions folded: 100*250*40 mm",
+    "price": 40000,
+    "price_postapoc": 1500,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "hand", 
+		"surface": "point"
+	},
+    "bashing": 10,
+    "material": [ "steel" ],
+    "symbol": "[",
+    "looks_like": "radio",
+    "color": "dark_gray",
+    "ammo": [ "9mm" ],
+    "skill": "smg",
+    "dispersion": 360,
+    "durability": 6,
+    "reload_noise_volume": 10,
+    "blackpowder_tolerance": 24,
+    "min_cycle_recoil": 450,
+	"modes": [ [ "DEFAULT", "folded", 0, [ "MELEE" ] ] ],
+    "valid_mod_locations": [
+		[ "accessories", 1 ],
+		[ "sling", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights mount", 1 ]
+    ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
+    "pocket_data": [ 
+		{ 
+		"pocket_type": "MAGAZINE_WELL", 
+		"item_restriction": [ 
+			"uzimag_20rd", 
+			"uzimag_25rd", 
+			"uzimag", 
+			"mp40mag_32rd"
+		]
+		} 
+	],
+	"use_action": {
+		"target": "aresfmg_unfolded",
+		"type": "transform",
+		"msg": "You unfold the weapon.",
+		"menu_text": "Unfold weapon",
+		"moves": 100
+    }
+	},
+	{
+    "id": "ceamm1",
+    "type": "GUN",
+    "name": { "str": "CEAM Mòdele 1" },
+    "copy-from": "rifle_auto",
+	"description": "A delayed blowback operated, prototype assault rifle.  The CEAM Modèle 1 was developed from the StG 45(M), also using the 7.92x33mm Kurz round.  Later chambered for .30 Carbine ammo, the weapon was never deployed, with the development cancelled due economic reasons.",
+    "volume": "2200 ml",
+	"weight": "4330 g",
+    "longest_side": "905 cm",
+    "price_postapoc": 3900,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "bashing": 11,
+    "material": [ "steel", "wood" ],
+    "color": "light_gray",
+	"looks_like": "hk_g3",
+	"ammo": [ "792x33" ],
+    "built_in_mods": [ "bipod_ceamm1", "stock_ceamm1_unfolded" ],
+    "dispersion": 150,
+	"durability": 8,
+    "min_cycle_recoil": 2400,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 5 ] ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 0 },
+	"variant_type": "gun",
+	"variants": [
+		{
+        "id": "ceamm_49",
+        "name": { "str": "CEAM Mòdele 1949" },
+        "description": "A delayed blowback operated, prototype assault rifle.  The CEAM Modèle 1949 was the second CEAM prototype, developed from the StG 45(M).  The weapon was never deployed, with the development cancelled due economic reasons.",
+        "weight": 1
+		},
+		{
+        "id": "ceamm_ii",
+        "name": { "str": "CEAM Mòdele II" },
+        "description": "A delayed blowback operated, prototype assault rifle.  The CEAM Modèle II was the third CEAM prototype, developed from the StG 45(M).  The weapon was never deployed, with the development cancelled due economic reasons.",
+        "weight": 1
+		},
+		{
+        "id": "ceamm_50",
+        "name": { "str": "CEAM Mòdele 1950" },
+        "description": "A delayed blowback operated, prototype assault rifle.  The CEAM Modèle 1950 was the last CEAM prototype, developed from the StG 45(M).  The weapon was never deployed, with the development cancelled due economic reasons.",
+        "weight": 1
+		}
+	],
+	"valid_mod_locations": [
+		[ "barrel", 1 ],
+		[ "brass catcher", 1 ],
+		[ "bore", 1 ],
+		[ "grip", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock accessory", 1 ],
+		[ "stock mount", 1 ]
+    ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"stg44mag25",
+			"stg44mag30"
+        ]
+		} 
+	]
+	},
+	{
+    "id": "idw",
+    "type": "GUN",
+    "name": { "str": "IDW", "str_pl": "IDWs" },
+    "copy-from": "smg_base",
+	"description": "A prototype that never saw light of day, the '90s IDW is (would've been) the smallest SMG in the world.  Made from machined steel, the weapon is heavier than it looks.  Using 9mm Parabellum bullets, it was supposed to be highly customizable, allowing attachments for the stock, sights, barrels, and even a bipod.  It also featured an electronic control mechanism to regulate the rate of fire to automatically limit the recoil.",
+    "volume": "650 ml",
+	"weight": "2150 g",
+    "longest_side": "276 mm",
+	"price": 125000,
+    "price_postapoc": 2750,
+	"to_hit": {
+		"balance": "good", 
+		"grip": "weapon", 
+		"length": "hand", 
+		"surface": "any"
+	},
+    "bashing": 10,
+    "material": [ "plastic", "steel" ],
+    "symbol": "(",
+    "looks_like": "tec9",
+	"color": "dark_gray",
+    "ammo": [ "9mm" ],
+    "dispersion": 360,
+    "durability": 7,
+    "min_cycle_recoil": 600,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
+    "skill": "smg",
+	"reload_noise_volume": 8,
+	"valid_mod_locations": [
+		[ "accessories", 2 ],
+		[ "barrel", 1 ],
+		[ "brass catcher", 1 ],
+		[ "grip", 1 ],
+		[ "mechanism", 4 ],
+		[ "muzzle", 1 ],
+		[ "rail", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock accessory", 1 ],
+		[ "stock mount", 1 ],
+		[ "underbarrel", 1 ]
+    ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [ 
+			"idwmag20", 
+			"idwmag28", 
+			"idwmag32"
+		] 
+		} 
+	],
+    "weapon_category": [ "AUTOMATIC_PISTOLS" ],
+	"//": "This is a hybrid between the finished PDW prototype and the manufactured IDW",
+	"//2": "Data obtained from http //firearmsworld.net/britain/phidw/idw.htm . Some values are approximates, such as the volume."
+	},
+	{
+    "id": "kar98",
+    "type": "GUN",
+    "name": { "str": "Karabiner 98 kurz", "str_pl": "Karabiner 98 kurz" },
+    "copy-from": "rifle_manual",
+    "description": "A famous bolt-action, internal magazine rifle.  Derived from the Standardmodell and Gewehr 98, the Kar98 inherited the well stablished, yet even more optimized Mauser action on a carbine design, fully Versailles '19 compliant.",
+    "volume": "2800 ml",
+	"weight": "3700 g",
+    "longest_side": "1110 mm",
+    "price": 14330,
+    "price_postapoc": 3500,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "looks_like": "mosin91_30",
+    "color": "brown",
+    "ammo": [ "792x57" ],
+    "barrel_volume": "100 ml",
+    "blackpowder_tolerance": 45,
+    "dispersion": 90,
+	"//": "This supposedly has between 2 and 4 moa, but that's way too much compared to the mosin91_30 value",
+    "durability": 9,
+    "clip_size": 5,
+    "range": 2,
+	"variant_type": "gun",
+	"variants": [
+		{
+        "id": "kar98_krieg",
+        "name": { "str": "Karabiner 98k Kriegsmodell" },
+        "description": "A famous bolt-action, internal magazine rifle.  The Kriegsmodell received some updates over the original version, such as removing the bayonet attachment, a simplified Mauser action, among other minor changes.",
+        "weight": 1
+		}
+	],
+    "valid_mod_locations": [
+		[ "accessories", 3 ],
+		[ "barrel", 1 ],
+		[ "brass catcher", 1 ],
+		[ "bore", 1 ],
+		[ "grip mount", 1 ],
+		[ "mechanism", 2 ],
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock mount", 1 ],
+		[ "stock accessory", 2 ],
+		[ "underbarrel mount", 1 ]
+    ],
+    "pocket_data": [
+		{ 
+		"pocket_type": "MAGAZINE", 
+		"rigid": true, 
+		"ammo_restriction": { "792x57": 5 }, 
+		"allowed_speedloaders": [ "792x57_clip" ] 
+		}
+    ],
+	"flags": [ "RELOAD_ONE" ]
+	},
+	{
+    "id": "m76",
+    "type": "GUN",
+    "name": { "str": "M76 Zastava", "str_pl": "M76 Zastavas" },
+    "copy-from": "svd",
+	"description": "A gas-operated, semi-auto Serbian DMR, based on the Soviet SVD-63.  Created to fulfill the (then novel) role as its spiritual predecesor, it was first deployed during the Yugoslav Wars.  Unlike the SVD however, the M76 is actually based on the AK design, overhauled to fit the bigger 7.92x57mm Mauser.",
+    "volume": "3000 ml",
+	"weight": "4600 g",
+    "longest_side": "1135 mm",
+    "price": 19000,
+    "price_postapoc": 3000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 11,
+    "material": [ "plastic", "steel", "wood" ],
+    "looks_like": "svd",
+	"color": "brown",
+    "ammo": [ "792x57" ],
+    "barrel_volume": "325 ml",
+    "built_in_mods": [ "onm76_scope" ],
+	"dispersion": 100,
+    "//": "Accuracy is typically around 1.5 MOA, which is good for a Kalashnikov design and entirely acceptable for the designated marksman role. ",
+	"//2": "The dispersion at 900 m (984 yd) is described as 50 × 50 cm (19.7 × 19.7 in), which is ≈ 2.2 MOA.",
+	"durability": 9,
+	"min_cycle_recoil": 1350,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
+	"reload": 500,
+	"reload_noise_volume": 8,
+	"variant_type": "gun",
+	"variants": [
+		{
+        "id": "m76_lkp76",
+        "name": { "str": "LKP 76" },
+        "description": "A gas-operated, semi-auto Serbian DMR, based on the Soviet SVD-63.  Created to fulfill the (then novel) role as its spiritual predecesor, it was first deployed during the Yugoslav Wars.  Unlike the SVD however, the M76 is actually based on the AK design, overhauled to fit the bigger 7.92x57mm Mauser.  This is the sporting rifle variant.",
+        "weight": 1
+		},
+		{
+        "id": "m76_yugo",
+        "name": { "str": "Yugo M76" },
+        "description": "A gas-operated, semi-auto DMR, based on the Serbian M76 Zastava.  This is a variant, assembled locally and with new, modern parts.",
+        "weight": 1
+		}
+	],
+	"valid_mod_locations": [
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock accessory", 2 ],
+		[ "underbarrel mount", 1 ]
+    ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"m76mag10"
+        ]
+		} 
+	]
+	},
+	{
+    "id": "ots48",
+    "type": "GUN",
+    "name": { "str": "OTs-48", "str_pl": "OTs-48" },
+    "copy-from": "rifle_manual",
+    "description": "A good old reliable, modernized to '00s standards by making use of the 1891/30 surplus.  The weapon received several upgrades and changes over the original: a modern stock, integrated bipod, action replacement, side rail for sights, wooden cheek pad, and an integrated flash hider.  The OTs-48 is sold as a hunting weapon.",
+    "volume": "3500 ml",
+	"weight": "5139 g",
+    "longest_side": "1241 mm",
+    "price": 34000,
+    "price_postapoc": 3500,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 11,
+    "material": [ "plastic", "steel", "wood" ],
+    "looks_like": "mosin91_30",
+    "color": "brown",
+    "ammo": [ "762R" ],
+    "barrel_volume": "200 ml",
+    "blackpowder_tolerance": 45,
+    "built_in_mods": [ "bipod", "stock_mount" ],
+    "dispersion": 60,
+    "durability": 10,
+    "clip_size": 5,
+    "range": 3,
+    "valid_mod_locations": [
+		[ "accessories", 4 ],
+		[ "barrel", 1 ],
+		[ "brass catcher", 1 ],
+		[ "grip mount", 1 ],
+		[ "mechanism", 4 ],
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock mount", 1 ],
+		[ "stock accessory", 2 ],
+		[ "underbarrel mount", 1 ]
+    ],
+    "pocket_data": [
+		{ 
+		"pocket_type": "MAGAZINE", 
+		"rigid": true, 
+		"ammo_restriction": { "762R": 5 }, 
+		"allowed_speedloaders": [ "762R_clip" ] 
+		}
+    ],
+    "flags": [ "RELOAD_ONE" ]
+	},
+	{
+    "id": "ots48k",
+    "type": "GUN",
+    "name": { "str": "OTs-48K", "str_pl": "OTs-48K" },
+    "copy-from": "rifle_manual",
+    "description": "A good old reliable, modernized to '00s standards by making use of the 1891/30 surplus.  The weapon received several upgrades and changes over the original: a modern stock, bullpup configuration for the action mechanism, custom pistol grip, side rail for sights, wooden cheek pad, and an underbarrel mount for bipods.  The OTs-48K is sold on order only, for the military.",
+    "volume": "3200 ml",
+	"weight": "4639 g",
+    "longest_side": "850 mm",
+	"//2": "relatively small dimensions of 1,000x250x70 mm",
+    "price_postapoc": 3500,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "bashing": 11,
+    "material": [ "plastic", "steel", "wood" ],
+    "looks_like": "mosin91_30",
+    "color": "brown",
+    "ammo": [ "762R" ],
+    "barrel_volume": "200 ml",
+    "blackpowder_tolerance": 45,
+    "built_in_mods": [ "stock_mount" ],
+    "clip_size": 5,
+    "dispersion": 70,
+    "durability": 10,
+    "range": 2,
+    "valid_mod_locations": [
+		[ "accessories", 4 ],
+		[ "barrel", 1 ],
+		[ "brass catcher", 1 ],
+		[ "grip mount", 1 ],
+		[ "mechanism", 4 ],
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock mount", 1 ],
+		[ "stock accessory", 2 ],
+		[ "underbarrel mount", 1 ]
+    ],
+    "pocket_data": [
+		{ 
+		"pocket_type": "MAGAZINE", 
+		"rigid": true, 
+		"ammo_restriction": { "762R": 5 }, 
+		"allowed_speedloaders": [ "762R_clip" ] 
+		}
+    ],
+    "flags": [ "RELOAD_ONE" ],
+	"//3": "There's basically no reliable data about these, so most is copied over from the mosin91_30 "
+	},
+	{
+    "id": "pgm_hecate",
+    "type": "GUN",
+    "name": { "str": "PGM Hécate II", "str_pl": "PGM Hécate II" },
+    "copy-from": "rifle_manual",
+	"description": "A gas-operated, bolt action sniper and anti-materiel rifle.  Tested in 1994 for use in the Yugoslav wars, the revised version was modified to fit .50 BMG ammo, thus the II designation.  It features an integrated muzzle brake, which greatly reduces the recoil of the powerful ammo, a special alloy for the barrel which dramatically increases its durability to thousands of shots, and a wooden finishing for the stock and handling.",
+    "volume": "7200 ml",
+	"weight": "13800 g",
+    "longest_side": "1380 mm",
+    "price": 1483300,
+    "price_postapoc": 12000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "looks_like": "m107a1",
+	"color": "dark_gray",
+    "ammo": [ "50" ],
+    "built_in_mods": [ "muzzle_pgm", "scrome_scope" ],
+    "dispersion": 5,
+    "//2": "Supposedly it has sub-moa groups at 1700 meters with very good ammo",
+    "durability": 10,
+    "min_cycle_recoil": 3500,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
+    "ranged_damage": { "damage_type": "bullet", "amount": -5 },
+	"reload": 450,
+	"reload_noise_volume": 8,
+	"valid_mod_locations": [
+		[ "barrel", 1 ],
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock accessory", 2 ],
+		[ "underbarrel", 1 ]
+    ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"pgmmag7"
+        ]
+		} 
+	],
+    "flags": [ "NEVER_JAMS" ]
+	},
+	{
+	"id": "pieper_m1893",
+    "type": "GUN",
+    "name": { "str": "Pieper M1893", "str_pl": "Piepers M1893" },
+	"copy-from": "rifle_revolver",
+	"description": "A double action revolver carbine.  The action system can be manually cooked, and the cylinder holds nine rounds.  The weight of the wooden stock and the wooden handguard greatly increases recoil control.  There's engraving on the top strap, reading \"EJERCITO MEXICANO\", the end of the receiver is signed \"H. PIEPER Bte LIEGE\".",
+	"volume": "3100 ml",
+	"weight": "2950 g",
+    "longest_side": "927 mm",
+    "price": 47900,
+    "price_postapoc": 2500,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "looks_like": "mosin91_30",
+    "color": "brown",
+	"ammo": [ "765x53" ],
+	"dispersion": 105,
+    "durability": 9,
+    "blackpowder_tolerance": 52,
+    "clip_size": 9,
+	"range": 2,
+    "ranged_damage": { "damage_type": "bullet", "amount": 0 },
+    "reload_noise_volume": 10,
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
+    "valid_mod_locations": [
+		[ "accessories", 2 ],
+		[ "barrel", 1 ],
+		[ "grip", 1 ],
+		[ "mechanism", 1 ],
+		[ "magazine", 1 ],
+		[ "muzzle", 1 ],
+		[ "rail", 2 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock accessory", 2 ],
+		[ "stock mount", 1 ],
+		[ "underbarrel", 1 ]
+    ],
+	"pocket_data": [ 
+		{ 
+		"pocket_type": "MAGAZINE", 
+		"rigid": true, 
+		"ammo_restriction": { "765x53": 9 } 
+		} 
+	],
+    "flags": [ "NEVER_JAMS", "RELOAD_EJECT", "RELOAD_ONE" ]
+	},
+	{
+    "id": "sig550",
+    "type": "GUN",
+    "name": { "str": "SIG 550", "str_pl": "SIGs 550" },
+    "copy-from": "rifle_auto",
+	"description": "Also known as SG 550, this weapon is a selective fire automatic rifle designed for the Swiss military.  This is an old iteration of the 550 series, heavier and bulkier.",
+    "volume": "3200 ml",
+	"weight": "4100 g",
+    "longest_side": "998 mm",
+    "price": 320000,
+    "price_postapoc": 6000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 11,
+    "material": [ "plastic", "steel" ],
+    "looks_like": "ar15",
+	"ammo": [ "223" ],
+    "built_in_mods": [ "folding_stock" ],
+	"dispersion": 155,
+    "//2": "I don't understand where these dispersion values come from. For reference, M16 has 10 shot group dispersion of 32 cm @ 300 m (calculated ~3.84 moa), AK-47 has 10 shot dispersion of 44 cm @ 300 m (calculated ~5.28 moa)), AK-74 has a R50 of 24 cm @ 300 m ( 24*2*0.937 ≈ 45 cm = 5.4 moa). But, both M16 and AK-74 have 150 dispersion in C:DDA. To make things worse (for me), SIG 550 has a R50 of 14 cm @ 300 m ( 14*2*0.937 ≈ 26.2 cm = 3.14 moa), which is LOWER than M16 but dispersion for the SIG 553 is 180 in C:DDA. M4A1 has a 24 in grouping at 300 yards = 8 moa, but 180 dispersion in C:DDA too",
+	"//3": "1 moa = 3 in @ 300 yd = 7.62 cm in @ 274.3 m = 8.33 cm @ 300 m ",
+	"//4": "I'm assuming *total* 3.5 moa = 210, 3 moa = 180, 2.5 moa = 150, 2 moa = 120, 1.5 moa = 90, 1 moa = 60. For most cases, anyways.",
+	"durability": 9,
+	"min_cycle_recoil": 1350,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 5 ] ],
+	"reload": 420,
+	"reload_noise_volume": 10,
+	"valid_mod_locations": [
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock mount", 1 ],
+		[ "underbarrel mount", 1 ]
+    ],
+	"pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"sig550mag5",
+			"sig550mag10",
+			"sig550mag20",
+			"sig550mag30",
+			"stanag5",
+			"stanag10",
+			"stanag20",
+			"stanag30",
+			"stanag40",
+			"stanag50",
+			"stanag60",
+			"survivor223mag"
+        ]
+		} 
+	],
+    "weapon_category": [ "AUTOMATIC_RIFLES" ]
+	},
+	{
+    "id": "sig550_sniper",
+    "type": "GUN",
+    "name": { "str": "SIG 550-1", "str_pl": "SIGs 550-1" },
+    "copy-from": "sig550",
+	"description": "Also known as SG 550-1, this weapon is a selective fire automatic rifle designed for the Swiss military.  This version has an integrated cheek pad, ergonomic pistol grip, and comes with a SUSAT scope.",
+	"built_in_mods": [ "cheek_pad", "folding_stock", "pistol_grip", "susat_scope2" ],
+	"dispersion": 145,
+	"valid_mod_locations": [
+		[ "grip", 1 ],
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock mount", 1 ],
+		[ "underbarrel mount", 1 ]
+	]
+	},
+	{
+    "id": "spanish_m1893",
+    "type": "GUN",
+    "name": { "str_sp": "Spanish Model 1983" },
+    "copy-from": "rifle_manual",
+    "description": "A bolt-action, internal magazine rifle.  Developed at the end of the 19th century for the Spanish Army, it quickly became stablished and used in several fronts.  Its quality and early success led to the development of the Gewehr 98 and the M1903 Springfield, by proxy.",
+	"volume": "3120 ml",
+	"weight": "3991 g",
+    "longest_side": "1220 mm",
+    "price": 110000,
+    "price_postapoc": 3000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "looks_like": "mosin91_30",
+    "color": "brown",
+    "ammo": [ "765x53" ],
+    "barrel_volume": "75 ml",
+    "blackpowder_tolerance": 45,
+    "dispersion": 90,
+	"//": "3.25 in (8.255 cm) grouping at 100 yd (91.44 m) ~ 3.25 moa",
+	"//2": "That's too much so I'm setting it at the same value of the mosin91_30 ",
+    "durability": 9,
+    "clip_size": 5,
+    "range": 3,
+    "valid_mod_locations": [
+		[ "accessories", 3 ],
+		[ "barrel", 1 ],
+		[ "brass catcher", 1 ],
+		[ "bore", 1 ],
+		[ "grip mount", 1 ],
+		[ "mechanism", 2 ],
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock mount", 1 ],
+		[ "stock accessory", 2 ],
+		[ "underbarrel mount", 1 ]
+    ],
+    "pocket_data": [
+		{ 
+		"pocket_type": "MAGAZINE", 
+		"rigid": true, 
+		"ammo_restriction": { "765x53": 5 }
+		}
+    ],
+	"flags": [ "RELOAD_ONE" ]
+	},
+	{
+    "id": "sr3mp",
+    "type": "GUN",
+    "name": { "str": "SR-3MP", "str_pl": "SR-3MP" },
+    "copy-from": "rifle_auto",
+	"description": "The SR-3MP is a gas-operated, compact, subsonic assault rifle.  Belongs to the \"spetsialnaya\" group, which includes weapons such as the VSK-94 and the VSS.  The SR-3MP was intended to serve as a compact replacement for the AS Val: shorter, without the integrated supressor and featuring a folding stock, the weapon is prepared for concealed carry and urban combat.  Uses 9x39mm ammo.",
+    "volume": "1600 ml",
+	"weight": "2100 g",
+    "longest_side": "675 mm",
+    "price": 38000,
+    "price_postapoc": 6000,
+	"to_hit": {
+		"balance": "good", 
+		"grip": "solid", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "bashing": 9,
+    "material": [ "plastic", "steel" ],
+    "looks_like": "vss",
+	"color": "black",
+    "ammo": [ "9x39" ],
+    "built_in_mods": [ "stock_asval_unfolded", "vertical_foregrip" ],
+    "dispersion": 90,
+	"durability": 9,
+	"loudness": 22,
+	"min_cycle_recoil": 1350,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 2 },
+	"//": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
+	"reload": 330,
+	"reload_noise_volume": 4,
+	"variant_type": "gun",
+	"variants": [
+		{
+        "id": "sr3m",
+        "name": { "str": "SR-3M" },
+        "description": "The SR-3M is a gas-operated, compact, subsonic assault rifle.  Belongs to the \"spetsialnaya\" group, which includes weapons such as the VSK-94 and the VSS.  The SR-3M is an older variant of the SR-3MP, lacking the extra rails.  Uses 9x39mm ammo.",
+        "weight": 1
+		}
+	],
+	"valid_mod_locations": [
+		[ "muzzle", 1 ],
+		[ "rail", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ]
+    ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"9x39mag10",
+			"9x39mag20",
+			"9x39mag30"
+        ]
+		} 
+	],
+    "weapon_category": [ "AUTOMATIC_RIFLES" ]
+	},
+	{
+    "id": "stg44",
+    "type": "GUN",
+    "name": { "str": "StG 44", "str_pl": "StGs 44" },
+    "copy-from": "ak47",
+    "//": "Ironic",
+	"description": "The Sturmgewehr 44 or Maschinenpistole 43 (depending on who you ask) was among the first \"assault rifles\" ever created, and the first successful one.  Gas-operated and featuring selective fire, it used the intermediate 7.92x33mm Kurz cartridge, having the goal to give soldiers enough firepower for mid-range engagements.  A timeless classic, you'd be the envy of the breathing post-Cataclysm weapon collectors.",
+    "volume": "2200 ml",
+	"weight": "4600 g",
+    "longest_side": "94 cm",
+    "price": 290000,
+    "price_postapoc": 4000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 11,
+    "material": [ "steel", "wood" ],
+    "color": "dark_gray",
+	"looks_like": "ak47",
+	"ammo": [ "792x33" ],
+    "dispersion": 160,
+    "//2": "though the report accepted that its accuracy was 'excellent for a weapon of its type' ",
+	"//3": "Assuming this means more than less 3 moa due being an early 'assault rifle', and modern 'assault rifles' having ~3 moa",
+	"durability": 8,
+    "min_cycle_recoil": 2100,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 5 ] ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
+	"valid_mod_locations": [
+		[ "barrel", 1 ],
+		[ "brass catcher", 1 ],
+		[ "grip", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "stock accessory", 2 ],
+		[ "stock mount", 1 ]
+    ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"stg44mag25",
+			"stg44mag30"
+        ]
+		} 
+	]
+	},
+	{
+    "id": "svd",
+    "type": "GUN",
+    "name": { "str": "SVD-63", "str_pl": "SVDs-63" },
+    "copy-from": "rifle_semi",
+	"description": "A famous semi-auto, gas-operated, Soviet era DMR, using the old, trusty 7.62x54mmR, easily recognizable by the shape of the stock.  Widely known around the world with more than half a century of service, it has enough field testing to prove its reliability and effectiveness.",
+    "volume": "3200 ml",
+	"weight": "4300 g",
+    "longest_side": "1225 mm",
+    "price": 220000,
+    "price_postapoc": 3000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 11,
+    "material": [ "plastic", "steel", "wood" ],
+    "looks_like": "mosin91_30",
+	"color": "brown",
+    "ammo": [ "762R" ],
+    "built_in_mods": [ "pso1_scope" ],
+	"dispersion": 120,
+    "//": "When using standard grade 57-N-323S cartridges, the accuracy of the SVD is reduced to 2.21 MOA extreme vertical spread. The extreme vertical spreads for the SVD are established by shooting 5-shot groups at 300 m range.",
+	"durability": 9,
+	"min_cycle_recoil": 1200,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
+	"reload": 450,
+	"reload_noise_volume": 8,
+	"variant_type": "gun",
+	"variants": [
+		{
+        "id": "svd_tiger",
+        "name": { "str": "SVD Tiger" },
+        "description": "A famous semi-auto, gas-operated, Soviet era DMR, using the old, trusty 7.62x54mmR, easily recognizable by the shape of the stock.  This is the civilian, full barrel length variant, compliant with the National Firearms Act.",
+		"color": "dark_gray",
+        "weight": 1
+		}
+	],
+	"valid_mod_locations": [
+		[ "barrel", 1 ],
+		[ "bore", 1 ],
+		[ "muzzle", 1 ],
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock accessory", 2 ],
+		[ "underbarrel mount", 1 ]
+    ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"svdmag10",
+			"svdmag20"
+        ]
+		} 
+	]
+	},
+	{
+    "id": "thompson_contender",
+    "type": "GUN",
+    "name": { "str": "Thompson Contender" },
+    "copy-from": "pistol_base",
+    "description": "A break action, single shot pistol.  Highly customizable, the weapon design is fundamentally modular: the barrel can be removed and replaced for another with a different caliber, the hammer can be switched between rimfire or centerfire modes, and the adjustable trigger allows using a heavy pull or a hair trigger pull.",
+    "weight": "2060 g",
+    "volume": "1066 ml",
+    "longest_side": "444 mm",
+    "price": 120000,
+    "price_postapoc": 1000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "weapon", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "bashing": 8,
+	"material": [ "steel", "wood" ],
+	"looks_like": "glock_17",
+	"color": "brown",
+    "ammo": [ "3006" ],
+    "built_in_mods": [ "retool_thompson_contender_3006" ],
+    "range": 1,
+    "dispersion": 290,
+	"//": "The CCI Velocitor is a hunting load that often demonstrates good accuracy. A three shot 25-yard group yielded a 1.5-inch group. Moving to the unplated CCI SGB (Small Game Bullet) the Contender exhibited a 1.25-inch group. The CCI Mini Mag, a great hunting load with good all around performance, was good for 1.1 inches.",
+	"//2": "18 - 13.2 in grouping at 300 yards ~ 6 - 4.4 moa",
+    "durability": 7,
+    "barrel_volume": "75 ml",
+    "blackpowder_tolerance": 72,
+    "clip_size": 1,
+    "valid_mod_locations": [
+		[ "accessories", 2 ],
+		[ "barrel", 1 ],
+		[ "grip", 1 ],
+		[ "mechanism", 2 ],
+		[ "sights mount", 1 ],
+		[ "underbarrel mount", 1 ]
+    ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
+    "pocket_data": [ 
+		{ 
+		"pocket_type": "MAGAZINE", 
+		"rigid": true, 
+		"ammo_restriction": { "3006": 1 } 
+		} 
+	],
+    "flags": [ "NEVER_JAMS", "RELOAD_EJECT", "RELOAD_ONE" ]
+	},
+	{
+    "id": "tkb002_p",
+    "type": "GUN",
+    "name": { "str": "TKB-022P No 2", "str_pl": "TKB-022Ps No 2" },
+	"copy-from": "tkb002_pm",
+    "description": "A retrofuturistic-looking, gas-operated, bullpup assault rifle, featuring a bakelite case.  Created in the early '60s and featuring a bakelite case, the weapon was intended to serve as a smaller, portable replacement to the AKM.  Some issues, like the shifted center of gravity, the bakelite's durability, and the radical appearance, were enough for its rejection.",
+    "volume": "1800 ml",
+	"weight": "2500 g",
+    "longest_side": "635 mm",
+    "price_postapoc": 4000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "looks_like": "ak47",
+    "ammo": [ "762" ],
+    "valid_mod_locations": [
+		[ "accessories", 1 ],
+		[ "brass catcher", 1 ],
+		[ "mechanism", 2 ],
+		[ "muzzle", 1 ],
+		[ "rail", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock accessory", 2 ]
+    ],
+    "pocket_data": [ 
+		{ 
+		"pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+		"item_restriction": [ 
+			"akmag10", 
+			"akmag20", 
+			"akmag30", 
+			"akmag40"
+		]
+		} 
+	]
+	},
+	{
+    "id": "tkb002_pm",
+    "type": "GUN",
+    "name": { "str": "TKB-022PM No 2", "str_pl": "TKB-022PMs No 2" },
+	"copy-from": "ak47",
+    "description": "A retrofuturistic-looking, gas-operated, bullpup assault rifle.  Created in the early '60s and featuring a bakelite case, the weapon was intended to serve as a smaller, portable replacement to the AKM.  Some issues, like the center of gravity (shifted by the extreme magazine position), the bakelite's durability, and the radical appearance, were enough for its rejection",
+    "volume": "1650 ml",
+	"weight": "2340 g",
+    "longest_side": "525 mm",
+    "price_postapoc": 4000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "bashing": 10,
+    "material": [ "plastic", "steel" ],
+    "symbol": "(",
+    "looks_like": "fn_p90",
+    "color": "red",
+    "ammo": [ "762" ],
+    "dispersion": 180,
+    "durability": 8,
+    "min_cycle_recoil": 1832,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
+    "reload_noise_volume": 10,
+    "valid_mod_locations": [
+		[ "accessories", 1 ],
+		[ "brass catcher", 1 ],
+		[ "mechanism", 2 ],
+		[ "muzzle", 1 ],
+		[ "rail", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock accessory", 2 ]
+    ],
+    "pocket_data": [ 
+		{ 
+		"pocket_type": "MAGAZINE_WELL", 
+		"rigid": true, 
+		"item_restriction": [ 
+			"akmag10", 
+			"akmag20", 
+			"akmag30", 
+			"akmag40"
+		]
+		} 
+	],
+	"//": "Hybrid between fn_p90 and ak47. Values I couldn't find, like dispersion, ammo, etc were copied from the ak47"
+	},
+	{
+    "id": "vss",
+    "type": "GUN",
+    "name": { "str": "VSS Vintorez", "str_pl": "VSS Vintorez" },
+    "copy-from": "rifle_auto",
+	"description": "The VSS is a compact, subsonic Soviet DMR featuring an integrated supressor and PSO-1 scope.  Designed alongside other \"spetsialnaya\" group Soviet era weapons such as the AS Val and the OTs-14 \"Groza\", in order to replace general use weapons, such as the AK-74.  Ironically enough, the Vintorez also lacks a niche: it can be used in stealth operations, as marksman rifle, as a pseudo-SMG, and as general use \"assault weapon\".  The only downsides are the relative low effective range and the pronunciated bullet drop, both due the properties of the 9x39mm.",
+    "volume": "2000 ml",
+	"weight": "2040 g",
+    "longest_side": "694 mm",
+    "price": 19000,
+    "price_postapoc": 3000,
+	"to_hit": {
+		"balance": "good", 
+		"grip": "solid", 
+		"length": "long", 
+		"surface": "point"
+	},
+    "bashing": 9,
+    "material": [ "plastic", "steel", "wood" ],
+    "looks_like": "ak47",
+	"color": "brown",
+    "ammo": [ "9x39" ],
+    "built_in_mods": [ "pso1_scope2", "suppressor_vss2" ],
+    "dispersion": 60,
+    "//": "We did not have the facilities at this time to measure group size, although we understand that the accuracy is excellent out to 150 meters and our observation indicated 1-2 MOA.",
+	"//2": "Assuming *total* 1.5 moa with 9x39mm SP-5",
+	"durability": 8,
+	"loudness": 22,
+	"min_cycle_recoil": 1350,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 2 },
+	"//3": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
+	"//4": "Ideally, the VSS should instead have increased crit chance and higher crit dmg modifier, to emulate the late-game scaling with proficiency",
+	"reload": 330,
+	"reload_noise_volume": 4,
+	"valid_mod_locations": [
+		[ "rail mount", 1 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock accessory", 1 ]
+    ],
+    "pocket_data": [ 
+		{
+        "pocket_type": "MAGAZINE_WELL",
+		"rigid": true, 
+        "item_restriction": [
+			"9x39mag10",
+			"9x39mag20",
+			"9x39mag30"
+        ]
+		} 
+	],
+    "weapon_category": [ "AUTOMATIC_RIFLES" ]
+	},
+	{
+    "id": "wa2000",
+    "type": "GUN",
+    "name": { "str_sp": "Walther WA 2000" },
+    "copy-from": "rifle_semi",
+    "description": "A gas-operated, semi-automatic bullpup sniper rifle.  The weapon was designed around reliability and precision, having a floating barrel, bullpup design to reduce total size, no iron sights, an integrated half flash-hider half compensator attachment, and an adjustable recoil dampening system.  One of the rarest weapons ever made.",
+    "volume": "4600 ml",
+	"weight": "6950 g",
+    "longest_side": "905 mm",
+    "price": 7500000,
+    "price_postapoc": 6500,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "solid", 
+		"length": "short", 
+		"surface": "point"
+	},
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "looks_like": "m1a",
+    "symbol": "(",
+    "color": "brown",
+    "ammo": [ "300" ],
+    "dispersion": 15,
+	"//": "Supposedly, this had 0.5 moa!",
+    "durability": 6,
+    "min_cycle_recoil": 2100,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2 ] ],
+    "barrel_volume": "275 ml",
+	"variant_type": "gun",
+    "valid_mod_locations": [
+		[ "accessories", 2 ],
+		[ "barrel", 1 ],
+		[ "bore", 1 ],
+		[ "brass catcher", 1 ],
+		[ "mechanism", 4 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "grip mount", 1 ],
+		[ "rail mount", 1 ],
+		[ "stock mount", 1 ],
+		[ "stock accessory", 2 ]
+    ],
+    "pocket_data": [ 
+		{ 
+		"pocket_type": "MAGAZINE_WELL", 
+		"item_restriction": [ 
+			"wa2000mag6", 
+			"wa2000mag10"
+		] 
+		} 
+	]
+	},
+	{
+    "id": "wa2000_2",
+    "type": "GUN",
+    "name": { "str_sp": "Walther WA 2000" },
+    "copy-from": "wa2000",
+    "material": [ "plastic", "steel" ],
+    "looks_like": "wa2000",
+    "color": "black",
+	"//": "Polymer version, the variants field doesn't support material replacement"
+	}
+]

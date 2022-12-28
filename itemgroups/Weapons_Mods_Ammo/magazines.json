@@ -1,0 +1,117 @@
+[
+	{
+    "id": "mags_milspec",
+	"type": "item_group",
+    "copy-from": "mags_milspec",
+    "extend": { 
+		"items": [ 
+			[ "762R_clip", 10 ], 
+			[ "9x39mag20", 4 ], 
+			[ "9x39mag30", 4 ], 
+			[ "m76mag10", 6 ], 
+			[ "pgmmag7", 6 ], 
+			[ "sig550mag30", 16 ], 
+			[ "svdmag20", 6 ], 
+			[ "wa2000mag6", 6 ], 
+			[ "wa2000mag10", 6 ]
+		]
+	}
+	},
+	{
+    "id": "mags_obscure",
+	"type": "item_group",
+    "//": "Magazines for imported firearms.",
+    "copy-from": "mags_obscure",
+    "extend": { 
+		"items": [ 
+			[ "792x57_clip", 10 ], 
+			[ "9x39mag10", 4 ], 
+			[ "m76mag10", 6 ], 
+			[ "stg44mag25", 8 ], 
+			[ "stg44mag30", 8 ], 
+			[ "svdmag10", 8 ], 
+			[ "svdmag20", 6 ]
+		]
+	}
+	},
+	{
+    "id": "mags_obscure_gunstore",
+	"type": "item_group",
+    "//": "Magazines for imported firearms.",
+    "items": [
+			[ "792x57_clip", 10 ], 
+			[ "9x39mag10", 4 ], 
+			[ "m76mag10", 6 ], 
+			[ "stg44mag25", 8 ], 
+			[ "stg44mag30", 8 ], 
+			[ "svdmag10", 8 ], 
+			[ "svdmag20", 6 ]
+    ]
+	},
+	{
+    "id": "mags_rifle_common",
+	"type": "item_group",
+    "//": "Factory specification rifle magazines commonly owned by citizens.",
+    "copy-from": "mags_rifle_common",
+    "extend": { 
+		"items": [ 
+			{ "item": "792x57_clip", "prob": 16, "charges": [ 0, 5 ] }
+		]
+	}
+	},
+	{
+    "id": "mags_rifle_common_gunstore",
+	"type": "item_group",
+    "//": "Factory specification rifle magazines commonly owned by citizens.",
+    "copy-from": "mags_rifle_common_gunstore",
+    "extend": { 
+		"items": [ 
+			{ "item": "792x57_clip", "prob": 16, "charges": [ 0, 5 ] }, 
+			{ "group": "nested_sig550mag", "prob": 16 }
+		]
+	}
+	},
+	{
+    "id": "nested_sig550mag",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+		{ "item": "sig550mag5", "prob": 66, "charges": [ 0, 5 ] }, 
+		{ "item": "sig550mag10", "prob": 66, "charges": [ 0, 5 ] }, 
+		{ "item": "sig550mag20", "prob": 100, "charges": [ 0, 5 ] }, 
+		{ "item": "sig550mag30", "prob": 33, "charges": [ 0, 5 ] }
+    ]
+	},
+	{
+    "id": "mags_rifle_rare",
+	"type": "item_group",
+    "//": "Aftermarket or otherwise uncommon rifle magazines excluding milspec.",
+    "copy-from": "mags_rifle_rare",
+    "extend": { 
+		"items": [ 
+			[ "762R_clip", 35 ], 
+			[ "792x57_clip", 25 ], 
+			[ "9x39mag10", 16 ], 
+			[ "m76mag10", 20 ], 
+			[ "stg44mag25", 25 ], 
+			[ "stg44mag30", 25 ], 
+			[ "svdmag10", 20 ], 
+			[ "svdmag20", 16 ]
+		]
+	}
+	},
+	{
+    "id": "mags_smg_rare",
+	"type": "item_group",
+    "//": "Aftermarket or otherwise uncommon SMG magazines excluding milspec.",
+    "copy-from": "mags_smg_rare",
+    "extend": { 
+		"items": [ 
+			[ "idwmag20", 6 ], 
+			[ "idwmag28", 6 ], 
+			[ "idwmag32", 6 ], 
+			[ "mp40mag_32rd", 6 ]
+		]
+	}
+	}
+]

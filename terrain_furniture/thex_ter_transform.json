@@ -1,0 +1,13 @@
+[
+	{
+    "id": "gap_fur",
+	"type": "ter_furn_transform",
+    "furniture": [
+		{
+        "result": "f_gap",
+        "message": "A gap opens up!",
+		"valid_flags": [ "EASY_DECONSTRUCT", "FLAMMABLE", "FLAMMABLE_ASH", "FLAMMABLE_HARD", "MINEABLE", "TRANSPARENT" ]
+		}
+    ]
+	}
+]

@@ -1,0 +1,40 @@
+[
+	{
+    "id": "oni_gourd",
+    "type": "TOOL",
+	"name": { "str": "oni gourd", "str_pl": "oni gourds" },
+    "description": "A small, purple colored gourd, reeking of alcohol.  It keeps sloshing, no matter how hard you try to empty it.",
+    "volume": "500 ml",
+	"weight": "200 g",
+	"longest_side": "16 cm",
+	"price_postapoc": 25000,
+	"to_hit": {
+		"balance": "neutral", 
+		"grip": "none", 
+		"length": "hand", 
+		"surface": "any"
+	},
+    "bashing": 1,
+	"material": [ "wood" ],
+	"symbol": ")",
+	"looks_like": "bottle_plastic",
+    "color": "magenta",
+	"charges_per_use": 1,
+	"pocket_data": [
+		{
+        "pocket_type": "CONTAINER",
+		"item_restriction": [ "sake_filtered" ],
+        "airtight": true,
+        "watertight": true,
+        "rigid": true,
+        "max_contains_volume": "500 ml",
+        "max_item_volume": "17 ml",
+        "max_contains_weight": "1000 g",
+        "sealed_data": { "spoil_multiplier": 0.0 },
+        "moves": 400
+		}
+    ],
+    "relic_data": { "charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "1 h" } },
+	"flags": [ "DURABLE_MELEE", "NO_RELOAD", "TARDIS" ]
+	}
+]

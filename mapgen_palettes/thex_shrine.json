@@ -1,0 +1,22 @@
+[
+	{
+    "id": "power_spot_palette_test",
+	"type": "palette",
+    "terrain": {
+		"_": "t_sidewalk"
+    },
+    "furniture": {
+		"D": "f_dumpster",
+		"x": "f_cardboard_box",
+		"r": "f_recycle_bin"
+    },
+    "toilets": { "t": {  } },
+    "liquids": { "g": { "liquid": "water", "amount": [ 0, 100 ] } },
+    "items": {
+		"v": [
+			{ "item": "art", "chance": 5 }
+		],
+		"O": { "item": "SUS_oven", "chance": 2 }
+    }
+	}
+]
