@@ -97,10 +97,10 @@
         { "item": "bar_bathroom", "x": [ 2, 4 ], "y": [ 21, 22 ], "chance": 30, "repeat": [ 1, 2 ] },
         { "item": "cash_register_random", "x": 22, "y": 9, "chance": 100 }
       ],
-		"place_monsters": [ 
-			{ "monster": "GROUP_BAR", "x": [ 14, 22 ], "y": [ 8, 20 ], "chance": 2 },
-			{ "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 8, 17 ], "y": [ 22, 23 ], "chance": 3 }
-		]
+      "place_monsters": [
+        { "monster": "GROUP_BAR", "x": [ 14, 22 ], "y": [ 8, 20 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 8, 17 ], "y": [ 22, 23 ], "chance": 3 }
+      ]
     }
   },
   {
@@ -256,10 +256,10 @@
         "x": { "item": "pool_table", "chance": 33 }
       },
       "place_loot": [ { "group": "cash_register_random", "x": 21, "y": 13 } ],
-		"place_monsters": [ 
-			{ "monster": "GROUP_BAR", "x": [ 14, 21 ], "y": [ 6, 18 ] },
-			{ "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 10, 14 ], "y": [ 17, 22 ] }
-		]
+      "place_monsters": [
+        { "monster": "GROUP_BAR", "x": [ 14, 21 ], "y": [ 6, 18 ] },
+        { "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 10, 14 ], "y": [ 17, 22 ] }
+      ]
     }
   },
   {

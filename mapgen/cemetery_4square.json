@@ -141,12 +141,12 @@
       },
       "vehicles": { "Á": { "vehicle": "FUNERAL", "chance": 20, "rotation": 90 } },
       "place_monster": [
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 },
-		{ "monster": "mon_white_lady", "x": [ 24, 47 ], "y": [ 0, 23 ], "chance": 4 },
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 24, 47 ], "chance": 4 },
-		{ "monster": "mon_white_lady", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 4 }
+        { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 },
+        { "monster": "mon_white_lady", "x": [ 24, 47 ], "y": [ 0, 23 ], "chance": 4 },
+        { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 24, 47 ], "chance": 4 },
+        { "monster": "mon_white_lady", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 4 }
       ],
-	  "//": "Only one of them should spawn at any moment (with higher overall chance), blocking further spawning"
+      "//": "Only one of them should spawn at any moment (with higher overall chance), blocking further spawning"
     }
   },
   {

@@ -1,85 +1,75 @@
 [
-	{
+  {
     "id": "touhou_rspirited",
-	"type": "item_group",
+    "type": "item_group",
     "subtype": "distribution",
     "entries": [
-		{ "group": "exotic_books", "prob": 100 },
-		{ "group": "forgotten_ammo", "prob": 100 },
-		{ "group": "forgotten_weapons", "prob": 100 },
-		{ "item": "ibm5100", "prob": 100 },
-		{ "group": "magazines", "prob": 100 },
-		{ "group": "newspaper", "prob": 100 },
-		{ "group": "rare_martial_arts_books", "prob": 100 },
-		{ "item": "umbrella", "prob": 100 },
-		{ "group": "writing_utensils", "prob": 100 }
+      { "group": "exotic_books", "prob": 100 },
+      { "group": "forgotten_ammo", "prob": 100 },
+      { "group": "forgotten_weapons", "prob": 100 },
+      { "item": "ibm5100", "prob": 100 },
+      { "group": "magazines", "prob": 100 },
+      { "group": "newspaper", "prob": 100 },
+      { "group": "rare_martial_arts_books", "prob": 100 },
+      { "item": "umbrella", "prob": 100 },
+      { "group": "writing_utensils", "prob": 100 }
     ],
     "//": "All items considered for reverse-spiriting away on generic mystery spots"
-	},
-	{
+  },
+  {
     "id": "touhou_magical_item",
-	"type": "item_group",
+    "type": "item_group",
     "subtype": "distribution",
     "container-item": "occult_sphere",
-	"on_overflow": "spill",
+    "on_overflow": "spill",
     "entries": [
-		{ "item": "autumn_melancholy", "prob": 100 },
-		{ "item": "cricket_pin", "prob": 100 },
-		{ "item": "death_coin", "prob": 100 },
-		{ "item": "esper_cloak", "prob": 100 },
-		{ "item": "fan_death", "prob": 100 },
-		{ "item": "lampad_torch", "prob": 100 },
-		{ "item": "lucky_charm", "prob": 100 },
-		{ "item": "mini_hakkero_replica", "prob": 100 },
-		{ "item": "oni_gourd", "prob": 100 },
-		{ "item": "posessed_trumpet", "prob": 100 },
-		{ "item": "prankster_shovel", "prob": 100 },
-		{ "item": "sphere_of_darkness", "prob": 100 },
-		{ "item": "spider_charm", "prob": 100 },
-		{ "item": "strong_ice", "prob": 100 },
-		{ "item": "sunflower_pin", "prob": 100 },
-		{ "item": "wind_priestess_charm", "prob": 100 }
+      { "item": "autumn_melancholy", "prob": 100 },
+      { "item": "cricket_pin", "prob": 100 },
+      { "item": "death_coin", "prob": 100 },
+      { "item": "esper_cloak", "prob": 100 },
+      { "item": "fan_death", "prob": 100 },
+      { "item": "lampad_torch", "prob": 100 },
+      { "item": "lucky_charm", "prob": 100 },
+      { "item": "mini_hakkero_replica", "prob": 100 },
+      { "item": "oni_gourd", "prob": 100 },
+      { "item": "posessed_trumpet", "prob": 100 },
+      { "item": "prankster_shovel", "prob": 100 },
+      { "item": "sphere_of_darkness", "prob": 100 },
+      { "item": "spider_charm", "prob": 100 },
+      { "item": "strong_ice", "prob": 100 },
+      { "item": "sunflower_pin", "prob": 100 },
+      { "item": "wind_priestess_charm", "prob": 100 }
     ]
-	},
-	{
+  },
+  {
     "id": "forgotten_ammo",
-	"type": "item_group",
+    "type": "item_group",
     "subtype": "distribution",
-	"entries": [
-		{ 
-		"distribution": [ 
-			{
-            "collection": [
-				{ "item": "792x33_me", "count": [ 1, 1 ] },
-				{ "item": "box_kurz" }
-            ],
+    "entries": [
+      {
+        "distribution": [
+          { "collection": [ { "item": "792x33_me", "count": [ 1, 1 ] }, { "item": "box_kurz" } ], "prob": 50 },
+          {
+            "collection": [ { "item": "792x57_sme", "count": 3 }, { "item": "792x57_clip", "count": 3 }, { "item": "box_mauser" } ],
             "prob": 50
-			},
-			{
-            "collection": [
-				{ "item": "792x57_sme", "count": 3 },
-				{ "item": "792x57_clip", "count": 3 },
-				{ "item": "box_mauser" }
-            ],
-            "prob": 50
-			}
-		]
-		}
+          }
+        ]
+      }
     ],
-	"//": "WWII era boxes containing ammo"
-	},
-	{
+    "//": "WWII era boxes containing ammo"
+  },
+  {
     "id": "forgotten_weapons",
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
-		{ "item": "aresfmg_folded", "prob": 100 },
-		{ "item": "ceamm1", "prob": 100 },
-		{ "item": "idw", "prob": 100 },
-		{ "item": "pieper_m1893", "prob": 100 },
-		{ "item": "stg44", "prob": 100 },
-		{ "group": "nested_tkb002_items", "prob": 100 },
-		{ "item": "wa2000", "prob": 100 }
+      { "item": "aresfmg_folded", "prob": 100 },
+      { "item": "ceamm1", "prob": 100 },
+      { "item": "idw", "prob": 100 },
+      { "item": "pieper_m1893", "prob": 100 },
+      { "item": "stg44", "prob": 100 },
+      { "group": "nested_tkb002_items", "prob": 100 },
+      { "item": "wa2000", "prob": 100 }
     ]
-	}
+  }
 ]

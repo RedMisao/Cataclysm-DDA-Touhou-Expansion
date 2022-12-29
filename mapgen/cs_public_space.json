@@ -42,9 +42,7 @@
       },
       "furniture": { "S": "f_statue", "b": "f_bench", "f": "f_region_flower_decorative" },
       "items": { "b": { "item": "oa_discarded_news", "chance": 5 } },
-		"place_monsters": [ 
-			{ "monster": "GROUP_YOUKAI_CITY", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 4 }
-		]
+      "place_monsters": [ { "monster": "GROUP_YOUKAI_CITY", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 4 } ]
     }
   }
 ]

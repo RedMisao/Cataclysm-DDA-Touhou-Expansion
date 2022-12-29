@@ -1,7 +1,7 @@
 [
-	{
+  {
     "id": "t_wooden_pillar",
-	"type": "terrain",
+    "type": "terrain",
     "name": "wooden support",
     "description": "A stout wooden pillar.",
     "symbol": "I",
@@ -10,15 +10,13 @@
     "coverage": 80,
     "move_cost": 0,
     "bash": {
-		"str_min": 20,
-		"str_max": 100,
-		"sound": "thunk!",
-		"sound_fail": "thud!",
-		"items": [
-			{ "item": "splinter", "count": [ 50, 200 ] }
-		],
-		"ter_set": "t_floor"
+      "str_min": 20,
+      "str_max": 100,
+      "sound": "thunk!",
+      "sound_fail": "thud!",
+      "items": [ { "item": "splinter", "count": [ 50, 200 ] } ],
+      "ter_set": "t_floor"
     },
     "flags": [ "FLAMMABLE_HARD", "NOITEM", "REDUCE_SCENT", "SUPPORTS_ROOF", "WALL" ]
-	}
+  }
 ]

@@ -130,9 +130,7 @@
       "palettes": [ "swampshack_palette" ],
       "place_loot": [ { "item": "net", "x": 11, "y": 14, "chance": 100 }, { "item": "stepladder", "x": 11, "y": 16, "chance": 50 } ],
       "terrain": { "V": "t_region_soil", "x": "t_region_soil", "X": "t_region_soil" },
-      "place_monsters": [
-        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2, "repeat": [ 1, 2 ] }
-      ]
+      "place_monsters": [ { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2, "repeat": [ 1, 2 ] } ]
     }
   },
   {
@@ -208,9 +206,7 @@
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "palettes": [ "swampshack_palette" ],
       "place_loot": [ { "item": "net", "x": 4, "y": 18, "chance": 100 }, { "item": "stepladder", "x": 13, "y": 4, "chance": 50 } ],
-      "place_monsters": [
-        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2, "repeat": [ 1, 2 ] }
-      ]
+      "place_monsters": [ { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2, "repeat": [ 1, 2 ] } ]
     }
   },
   {

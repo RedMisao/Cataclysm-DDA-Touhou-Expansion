@@ -1,34 +1,21 @@
 [
-	{
+  {
     "id": "strong_ice",
     "type": "TOOL",
-	"name": { "str": "strong ice", "str_pl": "strong ices" },
+    "name": { "str": "strong ice", "str_pl": "strong ices" },
     "description": "A chunk of ice that doesn't seem to melt.  You feel different by just having it around.",
-	"volume": "500 ml",
-	"weight": "500 g",
-	"longest_side": "10 cm",
-	"price_postapoc": 25000,
-	"to_hit": {
-		"balance": "neutral", 
-		"grip": "solid", 
-		"length": "hand", 
-		"surface": "any"
-	},
+    "volume": "500 ml",
+    "weight": "500 g",
+    "longest_side": "10 cm",
+    "price_postapoc": 25000,
+    "to_hit": { "balance": "neutral", "grip": "solid", "length": "hand", "surface": "any" },
     "bashing": 9,
-	"material": [ "magic_ice" ],
-	"symbol": "⑨",
-	"looks_like": "rock",
+    "material": [ "magic_ice" ],
+    "symbol": "⑨",
+    "looks_like": "rock",
     "color": "white",
     "techniques": [ "BRUTAL" ],
-	"relic_data": { 
-		"passive_effects": [ 
-			{
-			"has": "WIELD",
-			"condition": "ALWAYS",
-			"mutations": [ "strong_ice_mut" ]
-			}
-		] 
-	},
-	"flags": [ "DURABLE_MELEE" ]
-	}
+    "relic_data": { "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "mutations": [ "strong_ice_mut" ] } ] },
+    "flags": [ "DURABLE_MELEE" ]
+  }
 ]

@@ -95,11 +95,11 @@
         { "vehicle": "shopping_cart", "x": 17, "y": 18, "chance": 10 },
         { "vehicle": "shopping_cart", "x": 17, "y": 21, "chance": 10 }
       ],
-		"place_monsters": [ 
-			{ "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 21, 23 ], "y": [ 8, 14 ], "chance": 2 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 21, 23 ], "y": [ 5, 21 ], "chance": 2 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 21, 23 ], "y": [ 5, 21 ], "chance": 2 }
-		]
+      "place_monsters": [
+        { "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 21, 23 ], "y": [ 8, 14 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 21, 23 ], "y": [ 5, 21 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 21, 23 ], "y": [ 5, 21 ], "chance": 2 }
+      ]
     }
   },
   {
@@ -230,9 +230,7 @@
       ],
       "place_loot": [ { "group": "cash_register_random", "x": [ 16, 21 ], "y": 16 } ],
       "vehicles": { "Á": { "vehicle": "parking_garage", "chance": 20, "rotation": 90 } },
-		"place_monsters": [ 
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 22 ], "y": [ 10, 17 ], "chance": 2 }
-		]
+      "place_monsters": [ { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 22 ], "y": [ 10, 17 ], "chance": 2 } ]
     }
   },
   {

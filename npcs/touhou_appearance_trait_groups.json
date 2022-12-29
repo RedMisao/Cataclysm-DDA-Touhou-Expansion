@@ -1,272 +1,260 @@
 [
-	{
+  {
     "id": "Gyokuto_appearance",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
-    "traits": [
-		{ "group": "Appearance_Gyokuto", "prob": 5 }
-    ]
-	},
-	{
+    "traits": [ { "group": "Appearance_Gyokuto", "prob": 5 } ]
+  },
+  {
     "id": "Tengu_appearance",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
-    "traits": [
-		{ "group": "Appearance_Tengu", "prob": 5 }
-    ]
-	},
-	{
+    "traits": [ { "group": "Appearance_Tengu", "prob": 5 } ]
+  },
+  {
     "id": "Appearance_Gyokuto",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "collection",
-    "traits": [ 
-		{ "group": "Hair_Gyokuto", "prob": 100 },
-		{ "trait": "Skin_Fair", "prob": 100 },
-		{ "group": "Ear_Gyokuto", "prob": 100 },
-		{ "group": "Eye_Gyokuto", "prob": 100 }
-	]
-	},
-	{
+    "traits": [
+      { "group": "Hair_Gyokuto", "prob": 100 },
+      { "trait": "Skin_Fair", "prob": 100 },
+      { "group": "Ear_Gyokuto", "prob": 100 },
+      { "group": "Eye_Gyokuto", "prob": 100 }
+    ]
+  },
+  {
     "id": "Appearance_Tengu",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "collection",
-    "traits": [ 
-		{ "group": "Hair_Tengu", "prob": 100 }, 
-		{ "trait": "Skin_Fair", "prob": 100 }, 
-		{ "group": "Eye_Tengu", "prob": 100 } 
-	]
-	},
-	{
+    "traits": [ { "group": "Hair_Tengu", "prob": 100 }, { "trait": "Skin_Fair", "prob": 100 }, { "group": "Eye_Tengu", "prob": 100 } ]
+  },
+  {
     "id": "Ear_Gyokuto",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
-    "traits": [ 
-		{ "trait": "ear_firm", "prob": 85 },
-		{ "trait": "ear_floppy", "prob": 10 }, 
-		{ "trait": "ear_rumpled", "prob": 5 }
-	]
-	},
-	{
+    "traits": [ { "trait": "ear_firm", "prob": 85 }, { "trait": "ear_floppy", "prob": 10 }, { "trait": "ear_rumpled", "prob": 5 } ]
+  },
+  {
     "id": "Eye_Gyokuto",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
-    "traits": [ 
-		{ "trait": "eye_dark_purple", "prob": 5 },
-		{ "trait": "eye_magenta", "prob": 5 }, 
-		{ "trait": "eye_red", "prob": 85 }, 
-		{ "trait": "eye_pink", "prob": 5 }
-	]
-	},
-	{
+    "traits": [
+      { "trait": "eye_dark_purple", "prob": 5 },
+      { "trait": "eye_magenta", "prob": 5 },
+      { "trait": "eye_red", "prob": 85 },
+      { "trait": "eye_pink", "prob": 5 }
+    ]
+  },
+  {
     "id": "Eye_Tengu",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
-    "traits": [ 
-		{ "trait": "eye_black", "prob": 15 },
-		{ "trait": "eye_brown", "prob": 15 }, 
-		{ "trait": "eye_red", "prob": 55 }, 
-		{ "trait": "eye_redbrown", "prob": 15 }
-	]
-	},
-	{
+    "traits": [
+      { "trait": "eye_black", "prob": 15 },
+      { "trait": "eye_brown", "prob": 15 },
+      { "trait": "eye_red", "prob": 55 },
+      { "trait": "eye_redbrown", "prob": 15 }
+    ]
+  },
+  {
     "id": "Hair_Gyokuto",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "group": "Hair_Asagi", "prob": 50 },
-		{ "group": "Hair_Black", "prob": 15 },
-		{ "group": "Hair_Blond", "prob": 50 },
-		{ "group": "Hair_Blue", "prob": 50 },
-		{ "group": "Hair_Cinnabar", "prob": 35 },
-		{ "group": "Hair_Light_green", "prob": 35 },
-		{ "group": "Hair_Jacaranda", "prob": 5 },
-		{ "group": "Hair_Lapis", "prob": 5 },
-		{ "group": "Hair_Light_blue", "prob": 50 },
-		{ "group": "Hair_Light_gray", "prob": 15 },
-		{ "group": "Hair_Magenta", "prob": 15 },
-		{ "group": "Hair_Midnight", "prob": 15 },
-		{ "group": "Hair_Pink", "prob": 35 },
-		{ "group": "Hair_Purple", "prob": 35 },
-		{ "group": "Hair_White", "prob": 35 },
-		{ "group": "Hair_Yellow", "prob": 50 }
+      { "group": "Hair_Asagi", "prob": 50 },
+      { "group": "Hair_Black", "prob": 15 },
+      { "group": "Hair_Blond", "prob": 50 },
+      { "group": "Hair_Blue", "prob": 50 },
+      { "group": "Hair_Cinnabar", "prob": 35 },
+      { "group": "Hair_Light_green", "prob": 35 },
+      { "group": "Hair_Jacaranda", "prob": 5 },
+      { "group": "Hair_Lapis", "prob": 5 },
+      { "group": "Hair_Light_blue", "prob": 50 },
+      { "group": "Hair_Light_gray", "prob": 15 },
+      { "group": "Hair_Magenta", "prob": 15 },
+      { "group": "Hair_Midnight", "prob": 15 },
+      { "group": "Hair_Pink", "prob": 35 },
+      { "group": "Hair_Purple", "prob": 35 },
+      { "group": "Hair_White", "prob": 35 },
+      { "group": "Hair_Yellow", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Tengu",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "group": "Hair_Black", "prob": 50 },
-		{ "group": "Hair_Brown", "prob": 35 },
-		{ "group": "Hair_Light_gray", "prob": 35 },
-		{ "group": "Hair_Midnight", "prob": 15 },
-		{ "group": "Hair_White", "prob": 35 }
+      { "group": "Hair_Black", "prob": 50 },
+      { "group": "Hair_Brown", "prob": 35 },
+      { "group": "Hair_Light_gray", "prob": 35 },
+      { "group": "Hair_Midnight", "prob": 15 },
+      { "group": "Hair_White", "prob": 35 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Asagi",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_asagi_long", "prob": 35 },
-		{ "trait": "hair_asagi_medium", "prob": 35 },
-		{ "trait": "hair_asagi_short", "prob": 50 }
+      { "trait": "hair_asagi_long", "prob": 35 },
+      { "trait": "hair_asagi_medium", "prob": 35 },
+      { "trait": "hair_asagi_short", "prob": 50 }
     ],
-	"//": "Think of an opaque teal"
-	},
-	{
+    "//": "Think of an opaque teal"
+  },
+  {
     "id": "Hair_Black",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_black_long", "prob": 15 },
-		{ "trait": "hair_black_medium", "prob": 50 },
-		{ "trait": "hair_black_short", "prob": 35 }
+      { "trait": "hair_black_long", "prob": 15 },
+      { "trait": "hair_black_medium", "prob": 50 },
+      { "trait": "hair_black_short", "prob": 35 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Blond",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_blond_long", "prob": 35 },
-		{ "trait": "hair_blond_medium", "prob": 35 },
-		{ "trait": "hair_blond_short", "prob": 50 }
+      { "trait": "hair_blond_long", "prob": 35 },
+      { "trait": "hair_blond_medium", "prob": 35 },
+      { "trait": "hair_blond_short", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Blue",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_blue_long", "prob": 35 },
-		{ "trait": "hair_blue_medium", "prob": 50 },
-		{ "trait": "hair_blue_short", "prob": 35 }
+      { "trait": "hair_blue_long", "prob": 35 },
+      { "trait": "hair_blue_medium", "prob": 50 },
+      { "trait": "hair_blue_short", "prob": 35 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Cinnabar",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_cinnabar_long", "prob": 50 },
-		{ "trait": "hair_cinnabar_medium", "prob": 25 },
-		{ "trait": "hair_cinnabar_short", "prob": 15 }
+      { "trait": "hair_cinnabar_long", "prob": 50 },
+      { "trait": "hair_cinnabar_medium", "prob": 25 },
+      { "trait": "hair_cinnabar_short", "prob": 15 }
     ],
-	"//": "Replaces red for Gyokuto"
-	},
-	{
+    "//": "Replaces red for Gyokuto"
+  },
+  {
     "id": "Hair_Light_green",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_lgreen_long", "prob": 35 },
-		{ "trait": "hair_lgreen_medium", "prob": 35 },
-		{ "trait": "hair_lgreen_short", "prob": 50 }
+      { "trait": "hair_lgreen_long", "prob": 35 },
+      { "trait": "hair_lgreen_medium", "prob": 35 },
+      { "trait": "hair_lgreen_short", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Jacaranda",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_jacaranda_long", "prob": 50 },
-		{ "trait": "hair_jacaranda_medium", "prob": 35 },
-		{ "trait": "hair_jacaranda_short", "prob": 15 }
+      { "trait": "hair_jacaranda_long", "prob": 50 },
+      { "trait": "hair_jacaranda_medium", "prob": 35 },
+      { "trait": "hair_jacaranda_short", "prob": 15 }
     ],
-	"//": "Udongein's more-blue-than-red purple hair color"
-	},
-	{
+    "//": "Udongein's more-blue-than-red purple hair color"
+  },
+  {
     "id": "Hair_Lapis",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_lapis_long", "prob": 50 },
-		{ "trait": "hair_lapis_medium", "prob": 25 },
-		{ "trait": "hair_lapis_short", "prob": 25 }
+      { "trait": "hair_lapis_long", "prob": 50 },
+      { "trait": "hair_lapis_medium", "prob": 25 },
+      { "trait": "hair_lapis_short", "prob": 25 }
     ],
-	"//": "Distinct from blue, yet could replace it?"
-	},
-	{
+    "//": "Distinct from blue, yet could replace it?"
+  },
+  {
     "id": "Hair_Light_blue",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_lblue_long", "prob": 35 },
-		{ "trait": "hair_lblue_medium", "prob": 35 },
-		{ "trait": "hair_lblue_short", "prob": 50 }
+      { "trait": "hair_lblue_long", "prob": 35 },
+      { "trait": "hair_lblue_medium", "prob": 35 },
+      { "trait": "hair_lblue_short", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Light_gray",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_lgray_long", "prob": 35 },
-		{ "trait": "hair_lgray_medium", "prob": 35 },
-		{ "trait": "hair_lgray_short", "prob": 50 }
+      { "trait": "hair_lgray_long", "prob": 35 },
+      { "trait": "hair_lgray_medium", "prob": 35 },
+      { "trait": "hair_lgray_short", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Magenta",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_magenta_long", "prob": 35 },
-		{ "trait": "hair_magenta_medium", "prob": 35 },
-		{ "trait": "hair_magenta_short", "prob": 50 }
+      { "trait": "hair_magenta_long", "prob": 35 },
+      { "trait": "hair_magenta_medium", "prob": 35 },
+      { "trait": "hair_magenta_short", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Midnight",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_midnight_long", "prob": 25 },
-		{ "trait": "hair_midnight_medium", "prob": 20 },
-		{ "trait": "hair_midnight_short", "prob": 15 }
+      { "trait": "hair_midnight_long", "prob": 25 },
+      { "trait": "hair_midnight_medium", "prob": 20 },
+      { "trait": "hair_midnight_short", "prob": 15 }
     ],
-	"//": "Think of a blueish black"
-	},
-	{
+    "//": "Think of a blueish black"
+  },
+  {
     "id": "Hair_Pink",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_pink_long", "prob": 35 },
-		{ "trait": "hair_pink_medium", "prob": 35 },
-		{ "trait": "hair_pink_short", "prob": 50 }
+      { "trait": "hair_pink_long", "prob": 35 },
+      { "trait": "hair_pink_medium", "prob": 35 },
+      { "trait": "hair_pink_short", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Purple",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_purple_long", "prob": 35 },
-		{ "trait": "hair_purple_medium", "prob": 35 },
-		{ "trait": "hair_purple_short", "prob": 50 }
+      { "trait": "hair_purple_long", "prob": 35 },
+      { "trait": "hair_purple_medium", "prob": 35 },
+      { "trait": "hair_purple_short", "prob": 50 }
     ],
-	"//": "Electric purple, less reddish than magenta but not 'violet' (violet would be a blue-dominant purple)"
-	},
-	{
+    "//": "Electric purple, less reddish than magenta but not 'violet' (violet would be a blue-dominant purple)"
+  },
+  {
     "id": "Hair_White",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_white_long", "prob": 15 },
-		{ "trait": "hair_white_medium", "prob": 25 },
-		{ "trait": "hair_white_short", "prob": 50 }
+      { "trait": "hair_white_long", "prob": 15 },
+      { "trait": "hair_white_medium", "prob": 25 },
+      { "trait": "hair_white_short", "prob": 50 }
     ]
-	},
-	{
+  },
+  {
     "id": "Hair_Yellow",
-	"type": "trait_group",
+    "type": "trait_group",
     "subtype": "distribution",
     "traits": [
-		{ "trait": "hair_yellow_long", "prob": 35 },
-		{ "trait": "hair_yellow_medium", "prob": 35 },
-		{ "trait": "hair_yellow_short", "prob": 50 }
+      { "trait": "hair_yellow_long", "prob": 35 },
+      { "trait": "hair_yellow_medium", "prob": 35 },
+      { "trait": "hair_yellow_short", "prob": 50 }
     ]
-	}
+  }
 ]

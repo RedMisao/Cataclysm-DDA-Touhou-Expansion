@@ -78,11 +78,11 @@
         { "item": "vending_food_items", "chance": 60, "repeat": [ 3, 12 ], "x": 13, "y": 18 },
         { "item": "vending_drink_items", "chance": 60, "repeat": [ 3, 12 ], "x": 14, "y": 18 }
       ],
-		"place_monsters": [ 
-			{ "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 5, 22 ], "y": 22, "chance": 2 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 6, 20 ], "y": [ 7, 20 ], "chance": 2 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 6, 20 ], "y": [ 7, 20 ], "chance": 2 }
-		],
+      "place_monsters": [
+        { "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 5, 22 ], "y": 22, "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 6, 20 ], "y": [ 7, 20 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 6, 20 ], "y": [ 7, 20 ], "chance": 2 }
+      ],
       "add": [ { "item": "microwave", "x": 16, "y": 18, "chance": 2 }, { "item": "coffeemaker", "x": 16, "y": 19, "chance": 2 } ],
       "toilets": { "T": {  } },
       "place_signs": [ { "signage": "Discount Tires", "x": 22, "y": 1 } ]

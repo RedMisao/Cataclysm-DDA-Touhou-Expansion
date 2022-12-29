@@ -80,9 +80,7 @@
         { "chance": 55, "item": "trash", "x": 9, "y": 12 },
         { "chance": 55, "item": "trash", "x": 10, "y": 10 }
       ],
-      "place_monsters": [
-        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 13, 19 ], "y": [ 5, 8 ], "chance": 2 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 13, 19 ], "y": [ 5, 8 ], "chance": 2 } ]
     }
   },
   {

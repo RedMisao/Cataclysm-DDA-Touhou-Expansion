@@ -35,9 +35,7 @@
       "palettes": [ "construction_site_palette" ],
       "place_loot": [ { "item": "con_mix", "x": [ 0, 8 ], "y": [ 5, 7 ] } ],
       "place_vehicles": [ { "vehicle": "small_utility_vehicles", "x": 12, "y": 4, "chance": 70, "rotation": 180 } ],
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 } ]
     }
   },
   {
@@ -76,9 +74,7 @@
       "palettes": [ "construction_site_palette" ],
       "place_loot": [ { "item": "con_mix", "x": [ 5, 9 ], "y": [ 4, 7 ] } ],
       "place_vehicles": [ { "vehicle": "small_utility_vehicles", "x": 12, "y": 4, "chance": 70, "rotation": 0 } ],
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 } ]
     }
   },
   {
@@ -120,9 +116,7 @@
         { "vehicle": "small_utility_vehicles", "x": 22, "y": 4, "chance": 66, "rotation": 270 },
         { "vehicle": "small_utility_vehicles", "x": 12, "y": 21, "chance": 66, "rotation": 180 }
       ],
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 } ]
     }
   },
   {
@@ -161,9 +155,7 @@
       "palettes": [ "construction_site_palette" ],
       "place_loot": [ { "item": "con_mix", "x": [ 0, 17 ], "y": 1 } ],
       "place_vehicles": [ { "vehicle": "small_utility_vehicles", "x": 20, "y": [ 6, 11 ], "chance": 70, "rotation": 270 } ],
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 } ]
     }
   },
   {
@@ -202,9 +194,7 @@
       "palettes": [ "construction_site_palette" ],
       "place_loot": [ { "item": "con_mix", "x": [ 5, 11 ], "y": [ 20, 23 ] } ],
       "place_vehicles": [ { "vehicle": "small_utility_vehicles", "x": 15, "y": 21, "chance": 70, "rotation": 180 } ],
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 2 } ]
     }
   }
 ]

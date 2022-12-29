@@ -104,20 +104,18 @@
         { "group": "GROUP_SCHOOL", "x": [ 49, 70 ], "y": [ 49, 70 ], "repeat": [ 5, 10 ] }
       ],
       "place_vehicles": [ { "vehicle": "school_vehicles", "x": 11, "y": 7, "chance": 25, "rotation": 0 } ],
-      "monsters": { 
-		".": { "monster": "GROUP_SCHOOL_2", "chance": 64 }
-	}
+      "monsters": { ".": { "monster": "GROUP_SCHOOL_2", "chance": 64 } }
     }
   },
-	{
+  {
     "name": "GROUP_SCHOOL_2",
     "type": "monstergroup",
-    "monsters": [ 
-		{ "group": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_ARMCHAIRS", "weight": 100, "starts": "2 days" },
-		{ "group": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "weight": 400, "starts": "2 days" },
-		{ "group": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "weight": 400, "starts": "2 days" }
-	]
-	},
+    "monsters": [
+      { "group": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_ARMCHAIRS", "weight": 100, "starts": "2 days" },
+      { "group": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "weight": 400, "starts": "2 days" },
+      { "group": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "weight": 400, "starts": "2 days" }
+    ]
+  },
   {
     "type": "mapgen",
     "method": "json",
@@ -213,9 +211,7 @@
         { "group": "GROUP_SCHOOL", "x": [ 49, 70 ], "y": [ 25, 46 ], "repeat": [ 2, 6 ] },
         { "group": "GROUP_SCHOOL", "x": [ 1, 22 ], "y": [ 49, 70 ], "repeat": [ 2, 6 ] }
       ],
-      "monsters": { 
-		".": { "monster": "GROUP_SCHOOL_2", "chance": 64 }
-	}
+      "monsters": { ".": { "monster": "GROUP_SCHOOL_2", "chance": 64 } }
     }
   },
   {
@@ -313,9 +309,7 @@
         { "group": "GROUP_SCHOOL", "x": [ 49, 70 ], "y": [ 25, 46 ], "repeat": [ 2, 6 ] },
         { "group": "GROUP_SCHOOL", "x": [ 1, 22 ], "y": [ 49, 70 ], "repeat": [ 2, 6 ] }
       ],
-      "monsters": { 
-		".": { "monster": "GROUP_SCHOOL_2", "chance": 64 }
-	}
+      "monsters": { ".": { "monster": "GROUP_SCHOOL_2", "chance": 64 } }
     }
   },
   {

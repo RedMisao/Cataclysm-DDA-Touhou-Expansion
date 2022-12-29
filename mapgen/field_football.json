@@ -85,28 +85,28 @@
       ],
       "palettes": [ "field_football" ],
       "place_item": [ { "item": "football", "x": 59, "y": 36 } ],
-		"place_monster": [
-			{ "group": "GROUP_FOOTBALL", "x": [ 48, 71 ], "y": [ 5, 21 ], "repeat": [ 8, 12 ] },
-			{ "group": "GROUP_FOOTBALL", "x": [ 55, 63 ], "y": [ 28, 44 ], "repeat": [ 8, 12 ] },
-			{ "group": "GROUP_FOOTBALL", "x": [ 48, 71 ], "y": [ 53, 69 ], "repeat": [ 8, 12 ] }
-		],
-		"place_monsters": [ 
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 95 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 96, 119 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 95 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 96, 119 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 95 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 96, 110 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 }
-		],
+      "place_monster": [
+        { "group": "GROUP_FOOTBALL", "x": [ 48, 71 ], "y": [ 5, 21 ], "repeat": [ 8, 12 ] },
+        { "group": "GROUP_FOOTBALL", "x": [ 55, 63 ], "y": [ 28, 44 ], "repeat": [ 8, 12 ] },
+        { "group": "GROUP_FOOTBALL", "x": [ 48, 71 ], "y": [ 53, 69 ], "repeat": [ 8, 12 ] }
+      ],
+      "place_monsters": [
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 95 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 96, 119 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 95 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 96, 119 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 95 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 96, 110 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 }
+      ],
       "place_vehicles": [
         { "vehicle": "football_vehicles", "x": 59, "y": 13, "chance": 12 },
         { "vehicle": "football_vehicles", "x": 59, "y": 59, "chance": 12 }

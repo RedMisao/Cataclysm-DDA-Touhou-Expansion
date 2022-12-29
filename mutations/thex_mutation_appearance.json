@@ -1,5 +1,5 @@
 [
-	{
+  {
     "id": "ear_firm",
     "type": "mutation",
     "name": { "str": "Gyokuto ears: firm" },
@@ -11,8 +11,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "ear_shape" ]
-	},
-	{
+  },
+  {
     "id": "ear_floppy",
     "type": "mutation",
     "name": { "str": "Gyokuto ears: floppy" },
@@ -24,8 +24,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "ear_shape" ]
-	},
-	{
+  },
+  {
     "id": "ear_rumpled",
     "type": "mutation",
     "name": { "str": "Gyokuto ears: rumpled" },
@@ -37,8 +37,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "ear_shape" ]
-	},
-	{
+  },
+  {
     "id": "eye_black",
     "type": "mutation",
     "name": { "str": "Eye color: black" },
@@ -50,8 +50,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "eye_color" ]
-	},
-	{
+  },
+  {
     "id": "eye_dark_purple",
     "type": "mutation",
     "name": { "str": "Eye color: dark purple" },
@@ -63,8 +63,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "eye_color" ]
-	},
-	{
+  },
+  {
     "id": "eye_magenta",
     "type": "mutation",
     "name": { "str": "Eye color: magenta" },
@@ -76,8 +76,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "eye_color" ]
-	},
-	{
+  },
+  {
     "id": "eye_pink",
     "type": "mutation",
     "name": { "str": "Eye color: pink" },
@@ -89,8 +89,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "eye_color" ]
-	},
-	{
+  },
+  {
     "id": "eye_red",
     "type": "mutation",
     "name": { "str": "Eye color: red" },
@@ -102,8 +102,8 @@
     "player_display": false,
     "vanity": false,
     "types": [ "eye_color" ]
-	},
-	{
+  },
+  {
     "id": "eye_redbrown",
     "type": "mutation",
     "name": { "str": "Eye color: red-brown" },
@@ -115,9 +115,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "eye_color" ],
-	"//": "I don't know the name for the color between red and brown, looking it up gave red-brown as it was named for X11 systems. Change for a Japanese term, if there's any"
-	},
-	{
+    "//": "I don't know the name for the color between red and brown, looking it up gave red-brown as it was named for X11 systems. Change for a Japanese term, if there's any"
+  },
+  {
     "id": "hair_asagi_long",
     "type": "mutation",
     "name": { "str": "Hair: asagi, long" },
@@ -128,9 +128,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_asagi", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_asagi", "hair_long" ]
+  },
+  {
     "id": "hair_asagi_medium",
     "type": "mutation",
     "name": { "str": "Hair: asagi, medium" },
@@ -142,8 +142,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_asagi", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_asagi_short",
     "type": "mutation",
     "name": { "str": "Hair: asagi, short" },
@@ -154,9 +154,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_asagi", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_asagi", "hair_short" ]
+  },
+  {
     "id": "hair_blue_long",
     "type": "mutation",
     "name": { "str": "Hair: blue, long" },
@@ -167,9 +167,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_blue", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_blue", "hair_long" ]
+  },
+  {
     "id": "hair_blue_medium",
     "type": "mutation",
     "name": { "str": "Hair: blue, medium" },
@@ -181,8 +181,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_blue", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_blue_short",
     "type": "mutation",
     "name": { "str": "Hair: blue, short" },
@@ -193,9 +193,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_blue", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_blue", "hair_short" ]
+  },
+  {
     "id": "hair_cinnabar_long",
     "type": "mutation",
     "name": { "str": "Hair: cinnabar, long" },
@@ -206,9 +206,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_cinnabar", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_cinnabar", "hair_long" ]
+  },
+  {
     "id": "hair_cinnabar_medium",
     "type": "mutation",
     "name": { "str": "Hair: cinnabar, medium" },
@@ -220,8 +220,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_cinnabar", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_cinnabar_short",
     "type": "mutation",
     "name": { "str": "Hair: cinnabar, short" },
@@ -232,9 +232,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_cinnabar", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_cinnabar", "hair_short" ]
+  },
+  {
     "id": "hair_lgreen_long",
     "type": "mutation",
     "name": { "str": "Hair: light green, long" },
@@ -245,9 +245,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lgreen", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_lgreen", "hair_long" ]
+  },
+  {
     "id": "hair_lgreen_medium",
     "type": "mutation",
     "name": { "str": "Hair: light green, medium" },
@@ -259,8 +259,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_lgreen", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_lgreen_short",
     "type": "mutation",
     "name": { "str": "Hair: light green, short" },
@@ -271,9 +271,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lgreen", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_lgreen", "hair_short" ]
+  },
+  {
     "id": "hair_jacaranda_long",
     "type": "mutation",
     "name": { "str": "Hair: jacaranda, long" },
@@ -284,9 +284,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_jacaranda", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_jacaranda", "hair_long" ]
+  },
+  {
     "id": "hair_jacaranda_medium",
     "type": "mutation",
     "name": { "str": "Hair: jacaranda, medium" },
@@ -298,8 +298,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_jacaranda", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_jacaranda_short",
     "type": "mutation",
     "name": { "str": "Hair: jacaranda, short" },
@@ -310,9 +310,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_jacaranda", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_jacaranda", "hair_short" ]
+  },
+  {
     "id": "hair_lapis_long",
     "type": "mutation",
     "name": { "str": "Hair: lapis, long" },
@@ -323,9 +323,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lapis", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_lapis", "hair_long" ]
+  },
+  {
     "id": "hair_lapis_medium",
     "type": "mutation",
     "name": { "str": "Hair: lapis, medium" },
@@ -337,8 +337,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_lapis", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_lapis_short",
     "type": "mutation",
     "name": { "str": "Hair: lapis, short" },
@@ -349,9 +349,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lapis", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_lapis", "hair_short" ]
+  },
+  {
     "id": "hair_lblue_long",
     "type": "mutation",
     "name": { "str": "Hair: light blue, long" },
@@ -362,9 +362,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lblue", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_lblue", "hair_long" ]
+  },
+  {
     "id": "hair_lblue_medium",
     "type": "mutation",
     "name": { "str": "Hair: light blue, medium" },
@@ -376,8 +376,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_lblue", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_lblue_short",
     "type": "mutation",
     "name": { "str": "Hair: light blue, short" },
@@ -388,9 +388,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lblue", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_lblue", "hair_short" ]
+  },
+  {
     "id": "hair_lgray_long",
     "type": "mutation",
     "name": { "str": "Hair: light gray, long" },
@@ -401,9 +401,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lgray", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_lgray", "hair_long" ]
+  },
+  {
     "id": "hair_lgray_medium",
     "type": "mutation",
     "name": { "str": "Hair: light gray, medium" },
@@ -415,8 +415,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_lgray", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_lgray_short",
     "type": "mutation",
     "name": { "str": "Hair: light gray, short" },
@@ -427,9 +427,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_lgray", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_lgray", "hair_short" ]
+  },
+  {
     "id": "hair_magenta_long",
     "type": "mutation",
     "name": { "str": "Hair: magenta, long" },
@@ -440,9 +440,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_magenta", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_magenta", "hair_long" ]
+  },
+  {
     "id": "hair_magenta_medium",
     "type": "mutation",
     "name": { "str": "Hair: magenta, medium" },
@@ -454,8 +454,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_magenta", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_magenta_short",
     "type": "mutation",
     "name": { "str": "Hair: magenta, short" },
@@ -466,9 +466,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_magenta", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_magenta", "hair_short" ]
+  },
+  {
     "id": "hair_midnight_long",
     "type": "mutation",
     "name": { "str": "Hair: midnight, long" },
@@ -479,9 +479,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_midnight", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_midnight", "hair_long" ]
+  },
+  {
     "id": "hair_midnight_medium",
     "type": "mutation",
     "name": { "str": "Hair: midnight, medium" },
@@ -493,8 +493,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_midnight", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_midnight_short",
     "type": "mutation",
     "name": { "str": "Hair: midnight, short" },
@@ -505,9 +505,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_midnight", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_midnight", "hair_short" ]
+  },
+  {
     "id": "hair_pink_long",
     "type": "mutation",
     "name": { "str": "Hair: pink, long" },
@@ -518,9 +518,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_pink", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_pink", "hair_long" ]
+  },
+  {
     "id": "hair_pink_medium",
     "type": "mutation",
     "name": { "str": "Hair: pink, medium" },
@@ -532,8 +532,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_pink", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_pink_short",
     "type": "mutation",
     "name": { "str": "Hair: pink, short" },
@@ -544,9 +544,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_pink", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_pink", "hair_short" ]
+  },
+  {
     "id": "hair_purple_long",
     "type": "mutation",
     "name": { "str": "Hair: purple, long" },
@@ -557,9 +557,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_purple", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_purple", "hair_long" ]
+  },
+  {
     "id": "hair_purple_medium",
     "type": "mutation",
     "name": { "str": "Hair: purple, medium" },
@@ -571,8 +571,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_purple", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_purple_short",
     "type": "mutation",
     "name": { "str": "Hair: purple, short" },
@@ -583,9 +583,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_purple", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_purple", "hair_short" ]
+  },
+  {
     "id": "hair_white_long",
     "type": "mutation",
     "name": { "str": "Hair: white, long" },
@@ -596,9 +596,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_white", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_white", "hair_long" ]
+  },
+  {
     "id": "hair_white_medium",
     "type": "mutation",
     "name": { "str": "Hair: white, medium" },
@@ -610,8 +610,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_white", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_white_short",
     "type": "mutation",
     "name": { "str": "Hair: white, short" },
@@ -622,9 +622,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_white", "hair_short" ]
-	},
-	{
+    "flags": [ "hair_white", "hair_short" ]
+  },
+  {
     "id": "hair_yellow_long",
     "type": "mutation",
     "name": { "str": "Hair: yellow, long" },
@@ -635,9 +635,9 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_yellow", "hair_long" ]
-	},
-	{
+    "flags": [ "hair_yellow", "hair_long" ]
+  },
+  {
     "id": "hair_yellow_medium",
     "type": "mutation",
     "name": { "str": "Hair: yellow, medium" },
@@ -649,8 +649,8 @@
     "vanity": false,
     "types": [ "hair_style" ],
     "flags": [ "hair_yellow", "hair_medium" ]
-	},
-	{
+  },
+  {
     "id": "hair_yellow_short",
     "type": "mutation",
     "name": { "str": "Hair: yellow, short" },
@@ -661,6 +661,6 @@
     "player_display": false,
     "vanity": false,
     "types": [ "hair_style" ],
-	"flags": [ "hair_yellow", "hair_short" ]
-	}
+    "flags": [ "hair_yellow", "hair_short" ]
+  }
 ]

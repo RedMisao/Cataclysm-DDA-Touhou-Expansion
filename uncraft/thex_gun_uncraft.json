@@ -1,5 +1,5 @@
 [
-	{
+  {
     "result": "lunar_chagyo",
     "type": "uncraft",
     "activity_level": "LIGHT_EXERCISE",
@@ -8,14 +8,10 @@
     "skills_required": [ "rifle", 2 ],
     "time": "45 s",
     "autolearn": true,
-    "proficiencies": [ 
-		{ "proficiency": "prof_gunsmithing_basic", "time_multiplier": 2.0 }
-	],
-    "components": [
-		[ [ "chagyo_barrel", 1 ], [ "chagyo_action", 1 ], [ "chagyo_stock", 1 ] ]
-    ]
-	},
-	{
+    "proficiencies": [ { "proficiency": "prof_gunsmithing_basic", "time_multiplier": 2.0 } ],
+    "components": [ [ [ "chagyo_barrel", 1 ], [ "chagyo_action", 1 ], [ "chagyo_stock", 1 ] ] ]
+  },
+  {
     "result": "tera_2",
     "type": "uncraft",
     "activity_level": "LIGHT_EXERCISE",
@@ -24,11 +20,7 @@
     "skills_required": [ "rifle", 2 ],
     "time": "30 s",
     "autolearn": true,
-    "proficiencies": [ 
-		{ "proficiency": "prof_gunsmithing_basic", "time_multiplier": 2.0 }
-	],
-    "components": [
-		[ [ "tera_2_barrel", 1 ], [ "tera_2_stock", 1 ] ]
-    ]
-	}
+    "proficiencies": [ { "proficiency": "prof_gunsmithing_basic", "time_multiplier": 2.0 } ],
+    "components": [ [ [ "tera_2_barrel", 1 ], [ "tera_2_stock", 1 ] ] ]
+  }
 ]

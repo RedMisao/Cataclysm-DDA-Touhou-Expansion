@@ -154,8 +154,8 @@
       "palettes": [ "derelict_palette" ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 6, 22 ], "y": [ 1, 17 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 9, 19 ], "y": [ 5, 7 ], "chance": 2 }
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 6, 22 ], "y": [ 1, 17 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 9, 19 ], "y": [ 5, 7 ], "chance": 2 }
       ]
     }
   },
@@ -194,9 +194,7 @@
       ],
       "palettes": [ "derelict_palette" ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 23 ], "y": [ 3, 21 ], "chance": 3 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 23 ], "y": [ 3, 21 ], "chance": 3 } ]
     }
   },
   {
@@ -235,8 +233,8 @@
       "palettes": [ "derelict_palette" ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 19 ], "y": [ 1, 22 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 8 ], "y": [ 4, 11 ], "chance": 2 }
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 19 ], "y": [ 1, 22 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 8 ], "y": [ 4, 11 ], "chance": 2 }
       ]
     }
   },
@@ -277,8 +275,8 @@
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "place_vehicles": [ { "vehicle": "car_chassis", "x": [ 5, 10 ], "y": [ 10, 14 ], "chance": 50, "status": 1, "rotation": 0 } ],
       "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 2, 22 ], "y": [ 2, 22 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 14, 19 ], "y": [ 6, 7 ], "chance": 2 }
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 2, 22 ], "y": [ 2, 22 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 14, 19 ], "y": [ 6, 7 ], "chance": 2 }
       ]
     }
   },
@@ -318,9 +316,9 @@
       "palettes": [ "derelict_palette" ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 22 ], "y": [ 4, 19 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 22 ], "y": [ 7, 17 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 3, 22 ], "y": [ 7, 17 ], "chance": 2 }
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 22 ], "y": [ 4, 19 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 22 ], "y": [ 7, 17 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 3, 22 ], "y": [ 7, 17 ], "chance": 2 }
       ]
     }
   },
@@ -360,9 +358,9 @@
       "palettes": [ "derelict_palette" ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 18 ], "y": [ 2, 20 ], "chance": 3, "starts": "2 days" },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 8, 15 ], "y": [ 5, 17 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 8, 15 ], "y": [ 5, 17 ], "chance": 2 }
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 18 ], "y": [ 2, 20 ], "chance": 3, "starts": "2 days" },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 8, 15 ], "y": [ 5, 17 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 8, 15 ], "y": [ 5, 17 ], "chance": 2 }
       ]
     }
   },
@@ -404,9 +402,9 @@
       "terrain": { "v": "t_thconc_floor" },
       "place_vehicles": [ { "vehicle": "car_chassis", "x": [ 17, 20 ], "y": [ 7, 8 ], "chance": 50, "status": 1, "rotation": 0 } ],
       "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 1, 23 ], "y": [ 1, 19 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 5, 9 ], "y": [ 10, 14 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 5, 9 ], "y": [ 10, 14 ], "chance": 2 }
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 1, 23 ], "y": [ 1, 19 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 5, 9 ], "y": [ 10, 14 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 5, 9 ], "y": [ 10, 14 ], "chance": 2 }
       ]
     }
   }

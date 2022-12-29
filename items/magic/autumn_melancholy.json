@@ -1,33 +1,20 @@
 [
-	{
+  {
     "id": "autumn_melancholy",
     "type": "TOOL",
-	"name": { "str": "autumn melancholy", "str_pl": "autumn melancholies" },
+    "name": { "str": "autumn melancholy", "str_pl": "autumn melancholies" },
     "description": "An oddly firm, fallen leaf.  Having it nearby makes you somewhat melancholic.",
-	"volume": "10 ml",
-	"weight": "10 g",
-	"longest_side": "10 cm",
-	"price_postapoc": 25000,
-	"to_hit": {
-		"balance": "neutral", 
-		"grip": "none", 
-		"length": "hand", 
-		"surface": "any"
-	},
+    "volume": "10 ml",
+    "weight": "10 g",
+    "longest_side": "10 cm",
+    "price_postapoc": 25000,
+    "to_hit": { "balance": "neutral", "grip": "none", "length": "hand", "surface": "any" },
     "bashing": 1,
-	"material": [ "wood" ],
-	"symbol": "🍁",
-	"looks_like": "coin_dollar",
+    "material": [ "wood" ],
+    "symbol": "🍁",
+    "looks_like": "coin_dollar",
     "color": "red",
-    "relic_data": { 
-		"passive_effects": [ 
-			{
-			"has": "HELD",
-			"condition": "ALWAYS",
-			"mutations": [ "autumn_melancholy_mut" ]
-			}
-		] 
-	},
-	"flags": [ "DURABLE_MELEE" ]
-	}
+    "relic_data": { "passive_effects": [ { "has": "HELD", "condition": "ALWAYS", "mutations": [ "autumn_melancholy_mut" ] } ] },
+    "flags": [ "DURABLE_MELEE" ]
+  }
 ]

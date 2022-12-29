@@ -1,5 +1,5 @@
 [
-	{
+  {
     "id": "lunar_module_1",
     "type": "GUNMOD",
     "name": { "str": "lunar module (shot conversion)" },
@@ -7,24 +7,19 @@
     "weight": "600 g",
     "volume": "300 ml",
     "price_postapoc": 1000,
-	"to_hit": {
-		"balance": "neutral", 
-		"grip": "none", 
-		"length": "hand", 
-		"surface": "line"
-	},
+    "to_hit": { "balance": "neutral", "grip": "none", "length": "hand", "surface": "line" },
     "bashing": 4,
     "material": [ "plastic", "steel" ],
     "symbol": ":",
-	"ammo_effects": [ "SHOT" ],
+    "ammo_effects": [ "SHOT" ],
     "color": "light_gray",
-	"damage_modifier": { "damage_type": "bullet", "amount": -4, "armor_penetration": -2 },
-	"install_time": "15 s",
-	"location": "lunar module",
+    "damage_modifier": { "damage_type": "bullet", "amount": -4, "armor_penetration": -2 },
+    "install_time": "15 s",
+    "location": "lunar module",
     "min_skills": [ [ "weapon", 2 ] ],
-	"mod_targets": [ "rifle", "smg" ]
-	},
-	{
+    "mod_targets": [ "rifle", "smg" ]
+  },
+  {
     "id": "lunar_module_2",
     "type": "GUNMOD",
     "name": { "str": "lunar module (plasma)" },
@@ -32,23 +27,18 @@
     "weight": "600 g",
     "volume": "300 ml",
     "price_postapoc": 1000,
-	"to_hit": {
-		"balance": "neutral", 
-		"grip": "none", 
-		"length": "hand", 
-		"surface": "line"
-	},
+    "to_hit": { "balance": "neutral", "grip": "none", "length": "hand", "surface": "line" },
     "bashing": 4,
     "material": [ "plastic", "steel" ],
     "symbol": ":",
-	"ammo_effects": [ "PLASMA" ],
+    "ammo_effects": [ "PLASMA" ],
     "color": "light_gray",
-	"damage_modifier": { "damage_type": "heat", "amount": 12, "armor_penetration": 12 },
-	"dispersion_modifier": 20,
-	"install_time": "15 s",
-	"location": "lunar module",
+    "damage_modifier": { "damage_type": "heat", "amount": 12, "armor_penetration": 12 },
+    "dispersion_modifier": 20,
+    "install_time": "15 s",
+    "location": "lunar module",
     "min_skills": [ [ "weapon", 2 ] ],
-	"mod_targets": [ "rifle", "smg" ],
-	"range_multiplier": 0.8
-	}
+    "mod_targets": [ "rifle", "smg" ],
+    "range_multiplier": 0.8
+  }
 ]

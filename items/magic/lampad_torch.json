@@ -1,94 +1,70 @@
 [
-	{
+  {
     "id": "lampad_torch",
     "type": "TOOL",
-	"name": { "str": "lampad torch", "str_pl": "lampad torches" },
+    "name": { "str": "lampad torch", "str_pl": "lampad torches" },
     "description": "A stick made from some kind of eerie wood, you feel uneasy by just holding it.  One extreme seems burnt, indicating it was lit in the past.",
-	"volume": "500 ml",
-	"weight": "500 g",
-	"longest_side": "25 cm",
-	"price_postapoc": 25000,
-	"to_hit": {
-		"balance": "neutral", 
-		"grip": "solid", 
-		"length": "short", 
-		"surface": "any"
-	},
+    "volume": "500 ml",
+    "weight": "500 g",
+    "longest_side": "25 cm",
+    "price_postapoc": 25000,
+    "to_hit": { "balance": "neutral", "grip": "solid", "length": "short", "surface": "any" },
     "bashing": 7,
-	"material": [ "wood" ],
-	"symbol": "/",
-	"looks_like": "torch",
+    "material": [ "wood" ],
+    "symbol": "/",
+    "looks_like": "torch",
     "color": "brown",
-	"charges_per_use": 1,
+    "charges_per_use": 1,
     "techniques": [ "WBLOCK_1" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "battery": 20 } } ],
-	"relic_data": { 
-		"passive_effects": [ 
-			{
-			"has": "WIELD",
-			"condition": "ALWAYS",
-			"mutations": [ "lampad_torch_off_mut" ]
-			} 
-		],
-		"charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "3 m" }
-	},
-    "use_action": [ 
-		{
-		"target": "lampad_torch_lit",
-		"type": "transform",
-		"msg": "You light the torch. ",
-		"menu_text": "Light torch",
-		"active": true,
-		"need_fire": 1
-		}
-	],
-	"flags": [ "BURNOUT", "NO_RELOAD", "NO_UNLOAD" ]
-	},
-	{
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "mutations": [ "lampad_torch_off_mut" ] } ],
+      "charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "3 m" }
+    },
+    "use_action": [
+      {
+        "target": "lampad_torch_lit",
+        "type": "transform",
+        "msg": "You light the torch. ",
+        "menu_text": "Light torch",
+        "active": true,
+        "need_fire": 1
+      }
+    ],
+    "flags": [ "BURNOUT", "NO_RELOAD", "NO_UNLOAD" ]
+  },
+  {
     "id": "lampad_torch_lit",
     "type": "TOOL",
-	"name": { "str": "lampad torch (lit)", "str_pl": "lampad torches (lit)" },
+    "name": { "str": "lampad torch (lit)", "str_pl": "lampad torches (lit)" },
     "description": "A stick made from some kind of eiree wood , you feel angry just by holding it.  It is currently lit, the dancing flames! Something in your headd, concen;trate least darkness   BACK˙ ",
-	"volume": "500 ml",
-	"weight": "500 g",
-	"longest_side": "25 cm",
-	"price_postapoc": 25000,
-	"to_hit": {
-		"balance": "neutral", 
-		"grip": "solid", 
-		"length": "short", 
-		"surface": "any"
-	},
+    "volume": "500 ml",
+    "weight": "500 g",
+    "longest_side": "25 cm",
+    "price_postapoc": 25000,
+    "to_hit": { "balance": "neutral", "grip": "solid", "length": "short", "surface": "any" },
     "bashing": 7,
-	"material": [ "wood" ],
-	"symbol": "/",
-	"looks_like": "torch",
+    "material": [ "wood" ],
+    "symbol": "/",
+    "looks_like": "torch",
     "color": "brown",
     "max_charges": 20,
     "turns_per_charge": 300,
     "revert_to": "lampad_torch",
     "techniques": [ "WBLOCK_1" ],
-	"charges_per_use": 1,
+    "charges_per_use": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "battery": 20 } } ],
-	"relic_data": { 
-		"passive_effects": [ 
-			{
-			"has": "WIELD",
-			"condition": "ALWAYS",
-			"mutations": [ "lampad_torch_lit_mut" ]
-			}
-		] 
-	},
+    "relic_data": { "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "mutations": [ "lampad_torch_lit_mut" ] } ] },
     "use_action": [
-		{ "type": "firestarter", "moves": 100 },
-		{
-		"target": "lampad_torch",
-		"type": "transform",
-		"msg": "THE torch is extinguished…",
-		"menu_text": "Extinguish",
-		"active": false
-		}
+      { "type": "firestarter", "moves": 100 },
+      {
+        "target": "lampad_torch",
+        "type": "transform",
+        "msg": "THE torch is extinguished…",
+        "menu_text": "Extinguish",
+        "active": false
+      }
     ],
-	"flags": [ "BURNOUT", "FIRE", "FLAMING", "LIGHT_40", "NO_RELOAD", "NO_UNLOAD", "TRADER_AVOID" ]
-	}
+    "flags": [ "BURNOUT", "FIRE", "FLAMING", "LIGHT_40", "NO_RELOAD", "NO_UNLOAD", "TRADER_AVOID" ]
+  }
 ]

@@ -1,90 +1,80 @@
 [
-	{
+  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "shrine_medium_1" ],
     "weight": 10000000,
     "object": {
-		"fill_ter": "t_floor",
-		"rows": [
-			"...tttttttttttttttttt...",
-			"...t                t...",
-			"...t X#X#X####X#X#X t...",
-			"...t # - -    - - # t...",
-			"...t X X X    X X X t...",
-			"...t #            # t...",
-			"...t X-X X    X X-X t...",
-			"...t #            # t...",
-			"...t X#X#X    X#X#X t...",
-			"...t     #    #     t...",
-			"...ttXtXtXEEEEXtXtXtt...",
-			"........E      E........",
-			".........X    X.........",
-			".........#    #.........",
-			".ttttttttX    Xtttttttt.",
-			".t        EEEE        t.",
-			".t X#X#X#X    X#X#X#X t.",
-			".t #                # t.",
-			".t X---X        X---X t.",
-			".t #                # t.",
-			".t X#X#X X    X X#X#X t.",
-			".t                    t.",
-			".tttttttt      tttttttt.",
-			".........EEEEEE........."
-		],
-		"terrain": {
-			"t": "t_railing",
-			"X": "t_wooden_pillar",
-			"E": "t_floor_noroof",
-			"#": "t_wall_wood",
-			".": "t_region_groundcover"
-		},
-		"furniture": {
-			"-": "f_wooden_screen"
-		},
-		"place_loot": [ { "group": "touhou_magical_item", "x": [ 12, 13 ], "y": [ 6, 6 ], "chance": 100 } ],
-		"place_monsters": [ 
-			{ "monster": "GROUP_YOUKAI_ONI_ALL", "x": [ 5, 20 ], "y": [ 2, 10 ], "chance": 3 }, 
-			{ "monster": "GROUP_YOUKAI_ONI_ALL", "x": [ 3, 22 ], "y": [ 16, 22 ], "chance": 3 }
-		]
-	}
-	},
-	{
+      "fill_ter": "t_floor",
+      "rows": [
+        "...tttttttttttttttttt...",
+        "...t                t...",
+        "...t X#X#X####X#X#X t...",
+        "...t # - -    - - # t...",
+        "...t X X X    X X X t...",
+        "...t #            # t...",
+        "...t X-X X    X X-X t...",
+        "...t #            # t...",
+        "...t X#X#X    X#X#X t...",
+        "...t     #    #     t...",
+        "...ttXtXtXEEEEXtXtXtt...",
+        "........E      E........",
+        ".........X    X.........",
+        ".........#    #.........",
+        ".ttttttttX    Xtttttttt.",
+        ".t        EEEE        t.",
+        ".t X#X#X#X    X#X#X#X t.",
+        ".t #                # t.",
+        ".t X---X        X---X t.",
+        ".t #                # t.",
+        ".t X#X#X X    X X#X#X t.",
+        ".t                    t.",
+        ".tttttttt      tttttttt.",
+        ".........EEEEEE........."
+      ],
+      "terrain": { "t": "t_railing", "X": "t_wooden_pillar", "E": "t_floor_noroof", "#": "t_wall_wood", ".": "t_region_groundcover" },
+      "furniture": { "-": "f_wooden_screen" },
+      "place_loot": [ { "group": "touhou_magical_item", "x": [ 12, 13 ], "y": [ 6, 6 ], "chance": 100 } ],
+      "place_monsters": [
+        { "monster": "GROUP_YOUKAI_ONI_ALL", "x": [ 5, 20 ], "y": [ 2, 10 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_ONI_ALL", "x": [ 3, 22 ], "y": [ 16, 22 ], "chance": 3 }
+      ]
+    }
+  },
+  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": "shrine_medium_1_roof",
     "object": {
-		"fill_ter": "t_open_air",
-		"rows": [
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"   ..................   ",
-			"         ......         ",
-			"         ......         ",
-			"         ......         ",
-			" ...................... ",
-			" ...................... ",
-			" ...................... ",
-			" ...................... ",
-			" ...................... ",
-			" ...................... ",
-			" ...................... ",
-			" ...................... ",
-			" ...................... ",
-			"                        "
-		],
-		"terrain": { ".": "t_shingle_flat_roof" },
-		"place_monsters": [
-			{ "monster": "GROUP_ROOF_ANIMAL", "x": [ 4, 20 ], "y": [ 1, 22 ], "repeat": [ 1, 3 ], "chance": 65 }
-		]
+      "fill_ter": "t_open_air",
+      "rows": [
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "         ......         ",
+        "         ......         ",
+        "         ......         ",
+        " ...................... ",
+        " ...................... ",
+        " ...................... ",
+        " ...................... ",
+        " ...................... ",
+        " ...................... ",
+        " ...................... ",
+        " ...................... ",
+        " ...................... ",
+        "                        "
+      ],
+      "terrain": { ".": "t_shingle_flat_roof" },
+      "place_monsters": [ { "monster": "GROUP_ROOF_ANIMAL", "x": [ 4, 20 ], "y": [ 1, 22 ], "repeat": [ 1, 3 ], "chance": 65 } ]
     }
-	}
+  }
 ]

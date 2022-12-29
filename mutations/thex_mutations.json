@@ -1,89 +1,89 @@
 [
-	{
+  {
     "id": "IMPURE",
-	"type": "mutation",
+    "type": "mutation",
     "name": { "str": "Impure" },
     "description": "Well, that's it.  You've gained impurity.  The good news is that Earthly food doesn't feel as… empty anymore.",
     "points": 0,
-	"profession": false,
+    "profession": false,
     "purifiable": false,
-	"starting_trait": false,
-	"valid": true,
-	"triggers": [ [ 
-		{
-		"condition": {  
-			"and": [ 
-				{ "u_has_trait": "LUNARDIET" },
-				{ "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">", { "const": 504 } ] }
-			]
-		}
-		}
-	] ],
-	"//": "Should copy and paste everything except the triggers field every time there's an update, as the extend field doesn't work with mutations"
-	},
-	{
+    "starting_trait": false,
+    "valid": true,
+    "triggers": [
+      [
+        {
+          "condition": {
+            "and": [
+              { "u_has_trait": "LUNARDIET" },
+              { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">", { "const": 504 } ] }
+            ]
+          }
+        }
+      ]
+    ],
+    "//": "Should copy and paste everything except the triggers field every time there's an update, as the extend field doesn't work with mutations"
+  },
+  {
     "id": "LUNARDIET",
-	"type": "mutation",
+    "type": "mutation",
     "name": { "str": "Lunar diet" },
     "description": "Eating food wasn't a problem until this point.  It's possible for you to eat food coming from Earth and other impure places, but you will obtain less nutrition from it.",
     "points": 0,
-	"profession": true,
+    "profession": true,
     "purifiable": false,
-	"starting_trait": false,
-	"valid": false,
-	"triggers": [ [ 
-		{
-		"condition": {  
-			"and": [ 
-				{ "u_has_trait": "IMPURE" },
-				{ "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 503 } ] }
-			]
-		}
-		}
-	] ],
-    "vitamins_absorb_multi": [ 
-		[ "cured_meat", [ [ "calcium", 0.66 ], [ "iron", 0.66 ], [ "vitA", 0.66 ], [ "vitB", 0.66 ], [ "vitC", 0.66 ] ] ],
-		[ "flesh", [ [ "calcium", 0.66 ], [ "iron", 0.66 ], [ "vitA", 0.66 ], [ "vitB", 0.66 ], [ "vitC", 0.66 ] ] ],
-		[ "processed_food", [ [ "calcium", 0.90 ], [ "iron", 0.90 ], [ "vitA", 0.90 ], [ "vitB", 0.90 ], [ "vitC", 0.90 ] ] ],
-		[ "veggy", [ [ "calcium", 0.95 ], [ "iron", 0.95 ], [ "vitA", 0.95 ], [ "vitB", 0.95 ], [ "vitC", 0.95 ] ] ]
-	],
-	"//": "Should copy and paste everything except the triggers AND vitamins_absorb_multi fields every time there's an update, as the extend field doesn't work with mutations"
-	},
-	{
+    "starting_trait": false,
+    "valid": false,
+    "triggers": [
+      [
+        {
+          "condition": {
+            "and": [
+              { "u_has_trait": "IMPURE" },
+              { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 503 } ] }
+            ]
+          }
+        }
+      ]
+    ],
+    "vitamins_absorb_multi": [
+      [ "cured_meat", [ [ "calcium", 0.66 ], [ "iron", 0.66 ], [ "vitA", 0.66 ], [ "vitB", 0.66 ], [ "vitC", 0.66 ] ] ],
+      [ "flesh", [ [ "calcium", 0.66 ], [ "iron", 0.66 ], [ "vitA", 0.66 ], [ "vitB", 0.66 ], [ "vitC", 0.66 ] ] ],
+      [ "processed_food", [ [ "calcium", 0.9 ], [ "iron", 0.9 ], [ "vitA", 0.9 ], [ "vitB", 0.9 ], [ "vitC", 0.9 ] ] ],
+      [ "veggy", [ [ "calcium", 0.95 ], [ "iron", 0.95 ], [ "vitA", 0.95 ], [ "vitB", 0.95 ], [ "vitC", 0.95 ] ] ]
+    ],
+    "//": "Should copy and paste everything except the triggers AND vitamins_absorb_multi fields every time there's an update, as the extend field doesn't work with mutations"
+  },
+  {
     "id": "PROF_KAENBYOU",
-	"type": "mutation",
+    "type": "mutation",
     "name": "Corpse carrier cheering hellcat",
     "description": "You're one of the pets of the mistress of Chireiden, a Former Hell mansion.  Your job is to carry corpses to the Hell of Blazing fires (read: the Remains of Blazing Hell), to regulate its heat with your trusty corpse wheelbarrow.",
     "points": 0,
-	"profession": true,
-	"purifiable": false,
-	"starting_trait": false,
-	"valid": false,
-	"anger_relations": [ 
-		[ "GHOST_TOUHOU", -20 ], 
-		[ "PHANTOM_TOUHOU", -20 ], 
-		[ "JIANGSHI_TOUHOU", -20 ] 
-	],
-	"//": "Should copy and paste everything except the anger_relations field every time there's an update, as the extend field doesn't work with mutations"
-	},
-	{
+    "profession": true,
+    "purifiable": false,
+    "starting_trait": false,
+    "valid": false,
+    "anger_relations": [ [ "GHOST_TOUHOU", -20 ], [ "PHANTOM_TOUHOU", -20 ], [ "JIANGSHI_TOUHOU", -20 ] ],
+    "//": "Should copy and paste everything except the anger_relations field every time there's an update, as the extend field doesn't work with mutations"
+  },
+  {
     "id": "PROF_YAMAME",
-	"type": "mutation",
+    "type": "mutation",
     "name": "Bright web from the dark cave",
     "description": "You're the good-natured earth spider youkai living at the Underground entrance.",
     "points": 0,
-	"profession": true,
-	"purifiable": false,
-	"starting_trait": false,
-	"valid": false,
-	"anger_relations": [ 
-		[ "ONI_TOUHOU", -25 ], 
-		[ "YOUKAI_FEMALE_TOUHOU", -25 ], 
-		[ "YOUKAI_HOSTILE_TOUHOU", -25 ], 
-		[ "YOUKAI_NEUTRAL_TOUHOU", -25 ], 
-		[ "YOUKAI_PSEUDO", -25 ], 
-		[ "YOUKAI_SKINWALKER_TOUHOU", -25 ]
-	],
-	"//": "Should copy and paste everything except the anger_relations field every time there's an update, as the extend field doesn't work with mutations"
-	}
+    "profession": true,
+    "purifiable": false,
+    "starting_trait": false,
+    "valid": false,
+    "anger_relations": [
+      [ "ONI_TOUHOU", -25 ],
+      [ "YOUKAI_FEMALE_TOUHOU", -25 ],
+      [ "YOUKAI_HOSTILE_TOUHOU", -25 ],
+      [ "YOUKAI_NEUTRAL_TOUHOU", -25 ],
+      [ "YOUKAI_PSEUDO", -25 ],
+      [ "YOUKAI_SKINWALKER_TOUHOU", -25 ]
+    ],
+    "//": "Should copy and paste everything except the anger_relations field every time there's an update, as the extend field doesn't work with mutations"
+  }
 ]

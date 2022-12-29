@@ -1,5 +1,5 @@
 [
-	{
+  {
     "result": "seed_satsumaimo",
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -12,5 +12,5 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "satsumaimo", 1 ] ] ],
     "flags": [ "ALLOW_ROTTEN" ]
-	}
+  }
 ]

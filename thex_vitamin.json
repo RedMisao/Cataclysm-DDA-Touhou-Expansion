@@ -1,5 +1,5 @@
 [
-	{
+  {
     "id": "impurity",
     "type": "vitamin",
     "vit_type": "counter",
@@ -7,7 +7,7 @@
     "min": -18,
     "max": 1008,
     "rate": "-20 m",
-	"flags": [ "NO_DISPLAY" ],
-	"//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff"
-	}
+    "flags": [ "NO_DISPLAY" ],
+    "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff"
+  }
 ]

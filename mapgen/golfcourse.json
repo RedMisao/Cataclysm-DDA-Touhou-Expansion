@@ -85,21 +85,21 @@
         "││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││││"
       ],
       "vendingmachines": { "D": { "item_group": "vending_drink", "lootable": true }, "F": { "item_group": "vending_food", "lootable": true } },
-      "place_monsters": [ 
-		{ "monster": "GROUP_ZOMBIE", "x": [ 72, 95 ], "y": [ 24, 47 ], "repeat": [ 0, 2 ] },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 }
-	],
+      "place_monsters": [
+        { "monster": "GROUP_ZOMBIE", "x": [ 72, 95 ], "y": [ 24, 47 ], "repeat": [ 0, 2 ] },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 48, 70 ], "chance": 6, "density": 0.1 }
+      ],
       "terrain": {
         "4": [ [ "t_region_shrub_decorative", 12 ], "t_region_tree_shade", [ "t_region_groundcover_forest", 3 ] ],
         "+": "t_door_c",

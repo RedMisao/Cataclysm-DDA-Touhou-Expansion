@@ -1,12 +1,12 @@
 [
-	{
-	"id": "mon_mib",
+  {
+    "id": "mon_mib",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
     "description": "A taller than average person, wearing a black suit, with some individuals wearing hats, others black glasses.  Some seem to lack body hair such as eyelashes, what little skin can be seen is very pale skin tone, almost white.  Their very weird body movements creep you out, some seem to be overly stoic, others look as if they memorized how humans should move.  They seem to be on the look for something.",
     "volume": "95000 ml",
     "weight": "95000 g",
-	"default_faction": "touhou_mib",
+    "default_faction": "touhou_mib",
     "bodytype": "human",
     "categories": [ "NULL" ],
     "species": [ "YOUKAI_PSEUDO" ],
@@ -26,142 +26,139 @@
     "vision_night": 15,
     "path_settings": { "max_dist": 35 },
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT" ],
-	"fear_triggers": [ "FRIEND_DIED" ],
-	"armor_bash": 2,
-	"armor_cut": 2,
-	"armor_bullet": 5,
-	"armor_stab": 2,
-	"luminance": 1,
-	"starting_ammo": { "9mmfmj": 20 },
-	"special_attacks": [ 
-		{
-		"gun_type": "glock_17",
-		"type": "gun",
+    "fear_triggers": [ "FRIEND_DIED" ],
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_bullet": 5,
+    "armor_stab": 2,
+    "luminance": 1,
+    "starting_ammo": { "9mmfmj": 20 },
+    "special_attacks": [
+      {
+        "gun_type": "glock_17",
+        "type": "gun",
         "description": "The %s shoots!",
-		"ammo_type": "9mmfmj",
-		"cooldown": 3,
+        "ammo_type": "9mmfmj",
+        "cooldown": 3,
         "fake_dex": 10,
-		"fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
-		"max_ammo": 21,
-		"move_cost": 120,
-		"targeting_cost": 105,
-		"require_targeting_player": true,
+        "fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
+        "max_ammo": 21,
+        "move_cost": 120,
+        "targeting_cost": 105,
+        "require_targeting_player": true,
         "ranges": [ [ 2, 12, "BURST" ], [ 13, 18, "SEMI_AUTO" ] ]
-		},
-		[ "PARROT_AT_DANGER", 16 ]
-	],
+      },
+      [ "PARROT_AT_DANGER", 16 ]
+    ],
     "death_drops": "mib_drops",
-    "death_function": {
-		"effect": { "id": "death_mib_none", "hit_self": true },
-		"message": "The %s dies!"
-	},
-	"flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_2", "SEES", "WARM" ],
-	"//": "Base (human) MIB",
-	"//2": "Add 'weird' harvest",
-	"//3": "Each death spawning something should print a message, telling the player (defaults are kept below), but I'm not sure how to do that."
-	},
-	{
-	"id": "mon_mib2",
+    "death_function": { "effect": { "id": "death_mib_none", "hit_self": true }, "message": "The %s dies!" },
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_2", "SEES", "WARM" ],
+    "//": "Base (human) MIB",
+    "//2": "Add 'weird' harvest",
+    "//3": "Each death spawning something should print a message, telling the player (defaults are kept below), but I'm not sure how to do that."
+  },
+  {
+    "id": "mon_mib2",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
-	"copy-from": "mon_mib",
+    "copy-from": "mon_mib",
     "vision_night": 50,
-    "special_attacks": [ 
-		{
-		"gun_type": "glock_17",
-		"type": "gun",
+    "special_attacks": [
+      {
+        "gun_type": "glock_17",
+        "type": "gun",
         "description": "The %s shoots!",
-		"ammo_type": "9mmfmj",
-		"cooldown": 3,
+        "ammo_type": "9mmfmj",
+        "cooldown": 3,
         "fake_dex": 10,
-		"fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
-		"max_ammo": 21,
-		"move_cost": 120,
-		"targeting_cost": 105,
-		"require_targeting_player": true,
+        "fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
+        "max_ammo": 21,
+        "move_cost": 120,
+        "targeting_cost": 105,
+        "require_targeting_player": true,
         "ranges": [ [ 2, 12, "BURST" ], [ 13, 18, "SEMI_AUTO" ] ]
-		},
-		[ "PARROT_AT_DANGER", 18 ]
-	],
+      },
+      [ "PARROT_AT_DANGER", 18 ]
+    ],
     "death_function": {
-		"effect": { "id": "death_mib_shadowspawn", "hit_self": true },
-		"message": "The %s falls dead.  Immediately after, a jet black shadow emerges from the \"corpse\"!",
-		"corpse_type": "NORMAL"
+      "effect": { "id": "death_mib_shadowspawn", "hit_self": true },
+      "message": "The %s falls dead.  Immediately after, a jet black shadow emerges from the \"corpse\"!",
+      "corpse_type": "NORMAL"
     },
-	"flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
-	"//": " 'Demon' type MIB"
-	},
-	{
-	"id": "mon_mib3",
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
+    "//": " 'Demon' type MIB"
+  },
+  {
+    "id": "mon_mib3",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
-	"copy-from": "mon_mib",
+    "copy-from": "mon_mib",
     "vision_night": 35,
-    "special_attacks": [ 
-		{
-		"gun_type": "glock_17",
-		"type": "gun",
+    "special_attacks": [
+      {
+        "gun_type": "glock_17",
+        "type": "gun",
         "description": "The %s shoots!",
-		"ammo_type": "9mmfmj",
-		"cooldown": 3,
+        "ammo_type": "9mmfmj",
+        "cooldown": 3,
         "fake_dex": 10,
-		"fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
-		"max_ammo": 21,
-		"move_cost": 120,
-		"targeting_cost": 105,
-		"require_targeting_player": true,
+        "fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
+        "max_ammo": 21,
+        "move_cost": 120,
+        "targeting_cost": 105,
+        "require_targeting_player": true,
         "ranges": [ [ 2, 12, "BURST" ], [ 13, 18, "SEMI_AUTO" ] ]
-		},
-		[ "PARROT_AT_DANGER", 20 ]
-	],
+      },
+      [ "PARROT_AT_DANGER", 20 ]
+    ],
     "death_function": {
-		"effect": { "id": "death_mib_alienspawn", "hit_self": true },
-		"message": "The %s stops on its tracks, the flesh starts to melt and something comes out from the body!",
-		"corpse_type": "NO_CORPSE"
+      "effect": { "id": "death_mib_alienspawn", "hit_self": true },
+      "message": "The %s stops on its tracks, the flesh starts to melt and something comes out from the body!",
+      "corpse_type": "NO_CORPSE"
     },
-	"flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_1", "SEES" ],
-	"//": "Alien type MIB, add pile-of-flesh corpse"
-	},
-	{
-	"id": "mon_mib4",
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_1", "SEES" ],
+    "//": "Alien type MIB, add pile-of-flesh corpse"
+  },
+  {
+    "id": "mon_mib4",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
-	"copy-from": "mon_mib",
+    "copy-from": "mon_mib",
     "vision_night": 25,
     "path_settings": { "max_dist": 25 },
-    "special_attacks": [ 
-		{
-		"gun_type": "glock_17",
-		"type": "gun",
+    "special_attacks": [
+      {
+        "gun_type": "glock_17",
+        "type": "gun",
         "description": "The %s shoots!",
-		"ammo_type": "9mmfmj",
-		"cooldown": 3,
+        "ammo_type": "9mmfmj",
+        "cooldown": 3,
         "fake_dex": 10,
-		"fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
-		"max_ammo": 21,
-		"move_cost": 120,
-		"targeting_cost": 105,
-		"require_targeting_player": true,
+        "fake_skills": [ [ "gun", 3 ], [ "pistol", 4 ] ],
+        "max_ammo": 21,
+        "move_cost": 120,
+        "targeting_cost": 105,
+        "require_targeting_player": true,
         "ranges": [ [ 2, 12, "BURST" ], [ 13, 18, "SEMI_AUTO" ] ]
-		},
-		[ "PARROT_AT_DANGER", 22 ]
-	],
+      },
+      [ "PARROT_AT_DANGER", 22 ]
+    ],
     "death_function": {
-		"effect": { "id": "death_mib_alienspawn", "hit_self": true },
-		"message": "The %s falls dead.  Shortly after, the operative stands up again, with a red glow on their eyes!",
-		"corpse_type": "NO_CORPSE"
+      "effect": { "id": "death_mib_alienspawn", "hit_self": true },
+      "message": "The %s falls dead.  Shortly after, the operative stands up again, with a red glow on their eyes!",
+      "corpse_type": "NO_CORPSE"
     },
-	"flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "WARM" ],
-	"//": "Terminator-like MIB"
-	},
-	{
-	"id": "mon_mib_shadow",
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "WARM" ],
+    "//": "Terminator-like MIB"
+  },
+  {
+    "id": "mon_mib_shadow",
     "type": "MONSTER",
     "name": { "str": "shadow figure", "str_pl": "shadow figures" },
     "description": "A black patch of… darkness? It has a vaguely human shape, much taller than one and fuzzy on the edges.  There are no perceible details, it is as if the shadow swallowed light.",
     "volume": "120000 ml",
     "weight": "12000 g",
-	"default_faction": "touhou_mib",
+    "default_faction": "touhou_mib",
     "bodytype": "human",
     "categories": [ "NULL" ],
     "species": [ "YOUKAI_PSEUDO" ],
@@ -177,28 +174,28 @@
     "melee_dice_sides": 4,
     "dodge": 8,
     "vision_day": 25,
-	"vision_night": 35,
+    "vision_night": 35,
     "path_settings": { "max_dist": 25 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
-	"armor_bash": 3,
-	"armor_cut": 3,
-	"armor_bullet": 3,
-	"armor_stab": 3,
-	"armor_acid": 3,
-	"armor_cold": 3,
-	"armor_electric": 3,
-	"armor_fire": 3,
-	"flags": [ "CAN_OPEN_DOORS", "HARDTOSHOOT", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
-	"//": "Demon-ish component to the MIB urban legend"
-	},
-	{
-	"id": "mon_mib_alien",
+    "armor_bash": 3,
+    "armor_cut": 3,
+    "armor_bullet": 3,
+    "armor_stab": 3,
+    "armor_acid": 3,
+    "armor_cold": 3,
+    "armor_electric": 3,
+    "armor_fire": 3,
+    "flags": [ "CAN_OPEN_DOORS", "HARDTOSHOOT", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
+    "//": "Demon-ish component to the MIB urban legend"
+  },
+  {
+    "id": "mon_mib_alien",
     "type": "MONSTER",
     "name": { "str": "alien entity", "str_pl": "alien entities" },
     "description": "A small, mishappen humanoid, covered by some sort of organic or plastic shell that's slowly falling off as it moves.  The head is big and has a pair of two very big eyes, a small mouth, with the nose being difficult to differentiate, if it is even there.  The skin is translucent, you can see something beneath it.  The limbs are thin and look frail, the torso has surgery scars and weird prosthethics.  The more you look at it, the more it seem to warp, towards the un-earthly side.",
     "volume": "65000 ml",
     "weight": "60000 g",
-	"default_faction": "touhou_mib",
+    "default_faction": "touhou_mib",
     "bodytype": "human",
     "categories": [ "NULL" ],
     "species": [ "YOUKAI_PSEUDO" ],
@@ -214,38 +211,34 @@
     "melee_dice_sides": 3,
     "dodge": 2,
     "vision_day": 25,
-	"vision_night": 50,
+    "vision_night": 50,
     "path_settings": { "max_dist": 25 },
     "anger_triggers": [ "HURT" ],
-	"fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
-	"armor_bash": 0,
-	"armor_cut": 0,
-	"armor_bullet": 0,
-	"armor_stab": 0,
-	"armor_acid": 3,
-	"armor_cold": 3,
-	"armor_electric": 3,
-	"armor_fire": 3,
-    "special_attacks": [ 
-		[ "FEAR_PARALYZE", 24 ], 
-		[ "STARE", 20 ],
-		{ 
-		"spell_data": { "id": "paralyze_200" }, 
-		"type": "spell", 
-		"cooldown": 20 
-		}
-	],
-	"flags": [ "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
-	"//": "Alien component to the MIB urban legend"
-	},
-	{
-	"id": "mon_mib_terminator",
+    "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
+    "armor_bash": 0,
+    "armor_cut": 0,
+    "armor_bullet": 0,
+    "armor_stab": 0,
+    "armor_acid": 3,
+    "armor_cold": 3,
+    "armor_electric": 3,
+    "armor_fire": 3,
+    "special_attacks": [
+      [ "FEAR_PARALYZE", 24 ],
+      [ "STARE", 20 ],
+      { "spell_data": { "id": "paralyze_200" }, "type": "spell", "cooldown": 20 }
+    ],
+    "flags": [ "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
+    "//": "Alien component to the MIB urban legend"
+  },
+  {
+    "id": "mon_mib_terminator",
     "type": "MONSTER",
     "name": { "str": "terminator entity", "str_pl": "terminator entities" },
     "description": "The \"human\" you thought was down, is now on feet again, with a blank expression on its face (or what's left of it).  The eyes glow red and it seems to ignore the wounds made by whatever you just threw at him.",
     "volume": "85000 ml",
     "weight": "85000 g",
-	"default_faction": "touhou_mib",
+    "default_faction": "touhou_mib",
     "bodytype": "human",
     "categories": [ "NULL" ],
     "species": [ "YOUKAI_PSEUDO" ],
@@ -261,18 +254,18 @@
     "melee_dice_sides": 4,
     "dodge": 2,
     "vision_day": 35,
-	"vision_night": 35,
+    "vision_night": 35,
     "path_settings": { "max_dist": 35 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
-	"armor_bash": 4,
-	"armor_cut": 4,
-	"armor_bullet": 10,
-	"armor_stab": 4,
-	"armor_acid": 0,
-	"armor_cold": 0,
-	"armor_electric": 3,
-	"armor_fire": 6,
-	"flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PRIORITIZE_TARGETS", "SEES" ],
-	"//": "Unstoppable 'human' component to the MIB urban legend. This should have trash bionics (100% unusable) and other biomechanical stuff inside"
-	}
+    "armor_bash": 4,
+    "armor_cut": 4,
+    "armor_bullet": 10,
+    "armor_stab": 4,
+    "armor_acid": 0,
+    "armor_cold": 0,
+    "armor_electric": 3,
+    "armor_fire": 6,
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PRIORITIZE_TARGETS", "SEES" ],
+    "//": "Unstoppable 'human' component to the MIB urban legend. This should have trash bionics (100% unusable) and other biomechanical stuff inside"
+  }
 ]

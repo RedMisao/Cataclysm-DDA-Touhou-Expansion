@@ -47,11 +47,11 @@
         { "chunks": [ [ "null", 60 ], [ "ruins_4x4_junk", 30 ], [ "ruins_4x4_camp", 10 ] ], "x": 10, "y": 16 },
         { "chunks": [ [ "null", 70 ], [ "ruins_8x8_yard", 30 ] ], "x": 16, "y": 10 }
       ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 6, 13 ], "y": [ 11, 19 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 } 
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 6, 13 ], "y": [ 11, 19 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 }
+      ]
     }
   },
   {
@@ -92,11 +92,11 @@
       "place_rubble": [ { "x": 10, "y": 5 }, { "x": 11, "y": 5 }, { "x": 11, "y": 8 } ],
       "place_nested": [ { "chunks": [ [ "null", 80 ], [ "ruins_8x8_yard", 20 ] ], "x": [ 0, 15 ], "y": 16 } ]
     },
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 10, 17 ], "y": [ 4, 12 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 } 
-	]
+    "place_monsters": [
+      { "monster": "GROUP_GHOSTS_CITY", "x": [ 10, 17 ], "y": [ 4, 12 ], "chance": 2 },
+      { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
+      { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 }
+    ]
   },
   {
     "method": "json",
@@ -151,16 +151,14 @@
         "p": { "items": { "item": "farming_seeds", "chance": 100 }, "furniture": "f_plant_seedling" },
         "P": { "items": { "item": "farming_seeds", "chance": 100 }, "furniture": "f_plant_seedling" }
       },
-      "place_monster": [ 
-		{ "monster": "mon_cat", "chance": 30, "x": 19, "y": 10 }
-	],
+      "place_monster": [ { "monster": "mon_cat", "chance": 30, "x": 19, "y": 10 } ],
       "place_nested": [ { "chunks": [ [ "ruins_4x4_front", 80 ], [ "ruins_4x4_junk", 20 ] ], "x": 15, "y": 11 } ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 8 ], "y": [ 10, 14 ], "chance": 2 },
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 13, 20 ], "y": [ 9, 17 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 } 
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 8 ], "y": [ 10, 14 ], "chance": 2 },
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 13, 20 ], "y": [ 9, 17 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 }
+      ]
     }
   },
   {
@@ -206,12 +204,12 @@
       ],
       "place_rubble": [ { "x": [ 17, 18 ], "y": 2 }, { "x": 18, "y": 3 }, { "x": 6, "y": 3 } ],
       "place_nested": [ { "chunks": [ [ "null", 70 ], [ "ruins_8x8_yard", 30 ] ], "x": 8, "y": 10 } ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 6 ], "y": [ 4, 7 ], "chance": 2 },
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 11, 17 ], "y": [ 2, 5 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 } 
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 6 ], "y": [ 4, 7 ], "chance": 2 },
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 11, 17 ], "y": [ 2, 5 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 }
+      ]
     }
   },
   {
@@ -273,11 +271,11 @@
         { "chunks": [ [ "null", 80 ], [ "ruins_4x4_junk", 20 ] ], "x": 8, "y": 10 },
         { "chunks": [ [ "null", 60 ], [ "ruins_4x4_camp", 30 ], [ "ruins_4x4_NPCs", 10 ] ], "x": 13, "y": 10 }
       ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 8, 17 ], "y": [ 6, 17 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 } 
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 8, 17 ], "y": [ 6, 17 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 }
+      ]
     }
   },
   {
@@ -328,11 +326,11 @@
         { "chunks": [ [ "null", 60 ], [ "ruins_4x4_junk", 40 ] ], "x": 9, "y": 8 },
         { "chunks": [ [ "null", 80 ], [ "ruins_4x4_camp", 20 ] ], "x": 5, "y": 8 }
       ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 17 ], "y": [ 8, 15 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 } 
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 5, 17 ], "y": [ 8, 15 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 }
+      ]
     }
   },
   {
@@ -386,11 +384,11 @@
         { "chunks": [ [ "null", 85 ], [ "ruins_8x8_yard", 15 ] ], "x": 4, "y": 5 },
         { "chunks": [ [ "null", 85 ], [ "ruins_8x8_yard", 15 ] ], "x": 11, "y": 13 }
       ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 6, 8 ], "y": [ 16, 20 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 } 
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 6, 8 ], "y": [ 16, 20 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3 }
+      ]
     }
   },
   {
@@ -441,9 +439,7 @@
       ],
       "place_rubble": [ { "repeat": [ 0, 80 ], "x": [ 11, 20 ], "y": [ 8, 18 ] }, { "repeat": [ 0, 15 ], "x": [ 8, 10 ], "y": [ 10, 16 ] } ],
       "place_nested": [ { "chunks": [ [ "null", 40 ], [ "ruins_4x4_camp", 20 ], [ "ruins_4x4_NPCs", 40 ] ], "x": 12, "y": 11 } ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 6 } 
-	]
+      "place_monsters": [ { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 6 } ]
     }
   },
   {
@@ -501,11 +497,11 @@
         { "chance": 10, "item": "hardware_bulk", "x": 17, "y": 15 }
       ],
       "place_nested": [ { "chunks": [ [ "null", 40 ], [ "ruins_4x4_camp", 40 ], [ "ruins_4x4_NPCs", 20 ] ], "x": 8, "y": 8 } ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 7, 15 ], "chance": 3 },
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 7, 15 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 7, 15 ], "chance": 3 },
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 7, 15 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }
+      ]
     }
   },
   {
@@ -562,11 +558,11 @@
         { "repeat": [ 0, 2 ], "x": 18, "y": [ 14, 16 ] },
         { "repeat": [ 0, 3 ], "x": [ 10, 14 ], "y": 22 }
       ],
-      "place_monsters": [ 
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 6, 21 ], "chance": 3 },
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 6, 21 ], "chance": 3 },
-		{ "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }
-	]
+      "place_monsters": [
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 6, 21 ], "chance": 3 },
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 7, 17 ], "y": [ 6, 21 ], "chance": 3 },
+        { "monster": "GROUP_YOUKAI_FOREST", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }
+      ]
     }
   }
 ]

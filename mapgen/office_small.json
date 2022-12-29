@@ -92,11 +92,11 @@
       "place_monsters": [
         { "monster": "GROUP_PUBLICWORKERS", "x": 5, "y": 18, "chance": 2 },
         { "monster": "GROUP_PUBLICWORKERS", "x": 20, "y": 6, "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_ARMCHAIRS", "x": [ 2, 8 ], "y": [ 3, 9 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 2, 22 ], "y": [ 3, 9 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 2, 22 ], "y": [ 3, 9 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 1, 14 ], "y": [ 16, 20 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 17, 21 ], "y": [ 16, 20 ], "chance": 6 }
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_ARMCHAIRS", "x": [ 2, 8 ], "y": [ 3, 9 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 2, 22 ], "y": [ 3, 9 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 2, 22 ], "y": [ 3, 9 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 1, 14 ], "y": [ 16, 20 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 17, 21 ], "y": [ 16, 20 ], "chance": 6 }
       ]
     }
   },

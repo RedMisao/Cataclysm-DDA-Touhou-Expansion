@@ -100,10 +100,7 @@
         "888888888888888888888888888888888888888888888888888888888888888888888888"
       ],
       "palettes": [ "shoppingplaza" ],
-      "monsters": { 
-		" ": { "monster": "GROUP_GHOSTS_CITY", "chance": 512 },
-		".": { "monster": "GROUP_YOUKAI_CITY", "chance": 512 }
-	}
+      "monsters": { " ": { "monster": "GROUP_GHOSTS_CITY", "chance": 512 }, ".": { "monster": "GROUP_YOUKAI_CITY", "chance": 512 } }
     }
   },
   {
@@ -171,10 +168,7 @@
         { "item": "vfw_books", "x": 52, "y": [ 39, 43 ], "chance": 80, "repeat": [ 1, 5 ] },
         { "item": "vfw_alcohol", "x": 67, "y": [ 39, 43 ], "chance": 80, "repeat": [ 1, 5 ] }
       ],
-      "monsters": { 
-		" ": { "monster": "GROUP_GHOSTS_CITY", "chance": 512 },
-		".": { "monster": "GROUP_YOUKAI_CITY", "chance": 512 }
-	}
+      "monsters": { " ": { "monster": "GROUP_GHOSTS_CITY", "chance": 512 }, ".": { "monster": "GROUP_YOUKAI_CITY", "chance": 512 } }
     }
   },
   {

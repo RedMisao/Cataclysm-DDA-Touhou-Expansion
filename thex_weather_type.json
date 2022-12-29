@@ -1,5 +1,5 @@
 [
-	{
+  {
     "id": "night_parade",
     "type": "weather_type",
     "name": "Misty",
@@ -14,19 +14,16 @@
     "precip": "none",
     "rains": false,
     "acidic": false,
-	"duration_min": "8 h",
-	"duration_max": "10 h",
+    "duration_min": "8 h",
+    "duration_max": "10 h",
     "required_weathers": [ "sunny" ],
     "condition": {
-		"and": [
-			"is_night",
-			{ "compare_int": [ { "u_val": "var", "var_name": "night_parade_proc" }, "<", { "const": 4 } ] }
-		]
+      "and": [ "is_night", { "compare_int": [ { "u_val": "var", "var_name": "night_parade_proc" }, "<", { "const": 4 } ] } ]
     },
-	"//": "Should happen ONLY at night !!!",
-	"//2": "Super WIP: this should spawn lots of hostile youkai enemies, probably a mid-endgame weather or triggered event"
-	},
-	{
+    "//": "Should happen ONLY at night !!!",
+    "//2": "Super WIP: this should spawn lots of hostile youkai enemies, probably a mid-endgame weather or triggered event"
+  },
+  {
     "id": "scarlet_fog",
     "type": "weather_type",
     "name": "Foggy",
@@ -44,17 +41,17 @@
     "acidic": false,
     "sound_category": "cloudy",
     "required_weathers": [ "scarlet_mist" ],
-	"sun_intensity": "none",
+    "sun_intensity": "none",
     "condition": {
-		"or": [
-			{ "compare_int": [ { "weather": "humidity" }, ">=", { "const": 97 } ] },
-			{ "compare_int": [ { "weather": "pressure" }, ">", { "const": 1005 } ] },
-			{ "compare_int": [ { "weather": "windpower" }, "<", { "const": 5 } ] },
-			{ "compare_int": [ { "weather": "windpower" }, ">", { "const": 1 } ] }
-		]
+      "or": [
+        { "compare_int": [ { "weather": "humidity" }, ">=", { "const": 97 } ] },
+        { "compare_int": [ { "weather": "pressure" }, ">", { "const": 1005 } ] },
+        { "compare_int": [ { "weather": "windpower" }, "<", { "const": 5 } ] },
+        { "compare_int": [ { "weather": "windpower" }, ">", { "const": 1 } ] }
+      ]
     }
-	},
-	{
+  },
+  {
     "id": "scarlet_mist",
     "type": "weather_type",
     "name": "Misty",
@@ -72,17 +69,17 @@
     "acidic": false,
     "sound_category": "cloudy",
     "required_weathers": [ "cloudy" ],
-	"sun_intensity": "light",
+    "sun_intensity": "light",
     "condition": {
-		"and": [
-			{ "compare_int": [ { "weather": "humidity" }, ">=", { "const": 98 } ] },
-			{ "compare_int": [ { "weather": "pressure" }, ">", { "const": 1010 } ] },
-			{ "compare_int": [ { "weather": "windpower" }, "<", { "const": 5 } ] },
-			{ "compare_int": [ { "weather": "windpower" }, ">", { "const": 1 } ] }
-		]
+      "and": [
+        { "compare_int": [ { "weather": "humidity" }, ">=", { "const": 98 } ] },
+        { "compare_int": [ { "weather": "pressure" }, ">", { "const": 1010 } ] },
+        { "compare_int": [ { "weather": "windpower" }, "<", { "const": 5 } ] },
+        { "compare_int": [ { "weather": "windpower" }, ">", { "const": 1 } ] }
+      ]
     }
-	},
-	{
+  },
+  {
     "id": "silence_hour",
     "type": "weather_type",
     "name": "Silence hour",
@@ -97,14 +94,16 @@
     "precip": "none",
     "rains": false,
     "acidic": false,
-	"duration_min": "1 h",
-	"duration_max": "1 h",
+    "duration_min": "1 h",
+    "duration_max": "1 h",
     "condition": {
-		"and": [
-			{ "compare_int": [ { "u_val": "var", "var_name": "silence_hour_proc" }, "<", { "const": 4 } ] },
-			{ "compare_int": [ { "global_val": "var", "var_name": "hour" }, "=", { "u_val": "var", "var_name": "silence_hour_hour" } ] }
-		]
+      "and": [
+        { "compare_int": [ { "u_val": "var", "var_name": "silence_hour_proc" }, "<", { "const": 4 } ] },
+        {
+          "compare_int": [ { "global_val": "var", "var_name": "hour" }, "=", { "u_val": "var", "var_name": "silence_hour_hour" } ]
+        }
+      ]
     },
-	"//": "Super WIP: this should temporarily block enemy spawn and replace them for hostile special, fast ghost-like enemies, that don't attack but heavily debuff the PC"
-	}
+    "//": "Super WIP: this should temporarily block enemy spawn and replace them for hostile special, fast ghost-like enemies, that don't attack but heavily debuff the PC"
+  }
 ]

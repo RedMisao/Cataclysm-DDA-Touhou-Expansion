@@ -1,5 +1,5 @@
 [
-	{
+  {
     "result": "skewer_wood",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -12,14 +12,12 @@
     "batch_time_factors": [ 50, 5 ],
     "reversible": false,
     "autolearn": true,
-	"qualities": [ { "id": "CUT", "level": 2 } ],
-    "proficiencies": [ 
-		{ "proficiency": "prof_knife_skills", "time_multiplier": 6.0 },
-		{ "proficiency": "prof_carpentry_basic", "time_multiplier": 4.0 },
-		{ "proficiency": "prof_carving", "time_multiplier": 5.0 }
-	],
-    "components": [
-		[ [ "splinter", 1 ] ]
-    ]
-	}
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "proficiencies": [
+      { "proficiency": "prof_knife_skills", "time_multiplier": 6.0 },
+      { "proficiency": "prof_carpentry_basic", "time_multiplier": 4.0 },
+      { "proficiency": "prof_carving", "time_multiplier": 5.0 }
+    ],
+    "components": [ [ [ "splinter", 1 ] ] ]
+  }
 ]

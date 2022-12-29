@@ -74,14 +74,14 @@
       ]
     }
   },
-	{
+  {
     "name": "GROUP_CATHEDRAL",
     "type": "monstergroup",
-    "monsters": [ 
-		{ "group": "GROUP_CHURCH_ZOMBIE", "weight": 100, "density": 0.1 },
-		{ "group": "GROUP_GHOSTS_CITY", "weight": 100, "chance": 5, "starts": "2 days" }
-	]
-	},
+    "monsters": [
+      { "group": "GROUP_CHURCH_ZOMBIE", "weight": 100, "density": 0.1 },
+      { "group": "GROUP_GHOSTS_CITY", "weight": 100, "chance": 5, "starts": "2 days" }
+    ]
+  },
   {
     "type": "mapgen",
     "method": "json",
@@ -162,8 +162,20 @@
         { "monster": "GROUP_CATHEDRAL", "x": [ 24, 47 ], "y": [ 0, 23 ] },
         { "monster": "GROUP_CATHEDRAL", "x": [ 0, 23 ], "y": [ 24, 47 ] },
         { "monster": "GROUP_CATHEDRAL", "x": [ 24, 47 ], "y": [ 24, 47 ] },
-        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 5, 23 ], "y": [ 32, 40 ], "chance": 2, "repeat": [ 1, 4 ] },
-        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 24, 43 ], "y": [ 32, 40 ], "chance": 2, "repeat": [ 1, 4 ] }
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 5, 23 ],
+          "y": [ 32, 40 ],
+          "chance": 2,
+          "repeat": [ 1, 4 ]
+        },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 24, 43 ],
+          "y": [ 32, 40 ],
+          "chance": 2,
+          "repeat": [ 1, 4 ]
+        }
       ]
     }
   },

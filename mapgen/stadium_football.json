@@ -92,23 +92,23 @@
         { "monster": "GROUP_HOUSE", "x": [ 144, 167 ], "y": [ 0, 23 ], "density": 0.037 },
         { "monster": "GROUP_HOUSE", "x": [ 144, 167 ], "y": [ 24, 47 ], "density": 0.037 }
       ],
-      "monsters": { 
-		" ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		"s": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		",": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		".": { "monster": "GROUP_FOOTBALL_1", "chance": 256 }
-	}
+      "monsters": {
+        " ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
+        "s": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
+        ",": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
+        ".": { "monster": "GROUP_FOOTBALL_1", "chance": 256 }
+      }
     }
   },
-	{
+  {
     "name": "GROUP_FOOTBALL_1",
     "type": "monstergroup",
-    "monsters": [ 
-		{ "group": "GROUP_YOUKAI_OPENFIELD", "weight": 100, "starts": "2 days" },
-		{ "group": "GROUP_YOUKAI_CITY", "weight": 100, "starts": "2 days" },
-		{ "group": "GROUP_YOUKAI_TOWN", "weight": 100, "starts": "2 days" }
-	]
-	},
+    "monsters": [
+      { "group": "GROUP_YOUKAI_OPENFIELD", "weight": 100, "starts": "2 days" },
+      { "group": "GROUP_YOUKAI_CITY", "weight": 100, "starts": "2 days" },
+      { "group": "GROUP_YOUKAI_TOWN", "weight": 100, "starts": "2 days" }
+    ]
+  },
   {
     "type": "mapgen",
     "method": "json",
@@ -203,21 +203,21 @@
         { "monster": "GROUP_HOUSE", "x": [ 0, 23 ], "y": [ 48, 71 ], "density": 0.037 },
         { "monster": "GROUP_HOUSE", "x": [ 24, 47 ], "y": [ 48, 71 ], "density": 0.037 }
       ],
-      "monsters": { 
-		" ": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
-		"s": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 256 }
-	}
+      "monsters": {
+        " ": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
+        "s": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 256 }
+      }
     }
   },
-	{
+  {
     "name": "GROUP_FOOTBALL_2",
     "type": "monstergroup",
-    "monsters": [ 
-		{ "group": "GROUP_YOUKAI_OPENFIELD", "weight": 100, "starts": "2 days" },
-		{ "group": "GROUP_YOUKAI_CITY", "weight": 100, "starts": "2 days" }
-	]
-	},
+    "monsters": [
+      { "group": "GROUP_YOUKAI_OPENFIELD", "weight": 100, "starts": "2 days" },
+      { "group": "GROUP_YOUKAI_CITY", "weight": 100, "starts": "2 days" }
+    ]
+  },
   {
     "type": "mapgen",
     "method": "json",
@@ -339,11 +339,11 @@
         { "monster": "GROUP_HOUSE", "x": [ 0, 23 ], "y": [ 72, 95 ], "density": 0.037 },
         { "monster": "GROUP_HOUSE", "x": [ 24, 47 ], "y": [ 72, 95 ], "density": 0.037 }
       ],
-      "monsters": { 
-		" ": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
-		"s": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 256 }
-	}
+      "monsters": {
+        " ": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
+        "s": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 256 }
+      }
     }
   },
   {
@@ -636,13 +636,13 @@
         { "group": "GROUP_FOOTBALL", "x": [ 48, 71 ], "y": [ 48, 71 ], "repeat": [ 8, 20 ] },
         { "group": "GROUP_FOOTBALL", "x": [ 120, 143 ], "y": [ 48, 71 ], "repeat": [ 8, 20 ] }
       ],
-      "monsters": { 
-		" ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		"g": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
-		"'": { "monster": "GROUP_YOUKAI_CITY", "chance": 256 },
-		"`": { "monster": "GROUP_YOUKAI_CITY", "chance": 256 }
-	}
+      "monsters": {
+        " ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
+        "g": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 256 },
+        "'": { "monster": "GROUP_YOUKAI_CITY", "chance": 256 },
+        "`": { "monster": "GROUP_YOUKAI_CITY", "chance": 256 }
+      }
     }
   },
   {
@@ -739,11 +739,11 @@
         { "monster": "GROUP_HOUSE", "x": [ 120, 143 ], "y": [ 24, 44 ], "density": 0.2 },
         { "monster": "GROUP_HOUSE", "x": [ 144, 164 ], "y": [ 24, 44 ], "density": 0.2 }
       ],
-      "monsters": { 
-		"_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		"R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
-	}
+      "monsters": {
+        "_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        "R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
+      }
     }
   },
   {
@@ -841,11 +841,11 @@
         { "monster": "GROUP_HOUSE", "x": [ 24, 44 ], "y": [ 24, 47 ], "density": 0.2 },
         { "monster": "GROUP_HOUSE", "x": [ 24, 44 ], "y": [ 48, 71 ], "density": 0.2 }
       ],
-      "monsters": { 
-		"_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		"R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
-	}
+      "monsters": {
+        "_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        "R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
+      }
     }
   },
   {
@@ -978,11 +978,11 @@
         { "monster": "GROUP_HOUSE", "x": [ 120, 143 ], "y": [ 24, 44 ], "density": 0.2 },
         { "monster": "GROUP_HOUSE", "x": [ 144, 164 ], "y": [ 24, 44 ], "density": 0.2 }
       ],
-      "monsters": { 
-		"_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		"R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
-	}
+      "monsters": {
+        "_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        "R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
+      }
     }
   },
   {
@@ -1080,11 +1080,11 @@
         { "monster": "GROUP_HOUSE", "x": [ 24, 44 ], "y": [ 24, 47 ], "density": 0.2 },
         { "monster": "GROUP_HOUSE", "x": [ 24, 44 ], "y": [ 48, 71 ], "density": 0.2 }
       ],
-      "monsters": { 
-		"_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		"R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
-	}
+      "monsters": {
+        "_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        "R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
+      }
     }
   },
   {
@@ -1181,11 +1181,11 @@
         { "monster": "GROUP_HOUSE", "x": [ 120, 143 ], "y": [ 24, 44 ], "density": 0.2 },
         { "monster": "GROUP_HOUSE", "x": [ 144, 164 ], "y": [ 24, 44 ], "density": 0.2 }
       ],
-      "monsters": { 
-		"_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		"R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
-		".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
-	}
+      "monsters": {
+        "_": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        "R": { "monster": "GROUP_FOOTBALL_2", "chance": 512 },
+        ".": { "monster": "GROUP_FOOTBALL_2", "chance": 512 }
+      }
     }
   },
   {

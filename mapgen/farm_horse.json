@@ -154,7 +154,7 @@
         { "monster": "mon_horse", "x": [ 66, 68 ], "y": [ 31, 33 ], "chance": 30 },
         { "monster": "mon_horse", "x": [ 66, 68 ], "y": [ 35, 37 ], "chance": 30 },
         { "monster": "mon_horse", "x": [ 66, 68 ], "y": [ 39, 41 ], "chance": 30 }
-	],
+      ],
       "place_monsters": [
         { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
         { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
@@ -172,7 +172,13 @@
         { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 72, 95 ], "chance": 6, "density": 0.1 },
         { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 72, 95 ], "chance": 6, "density": 0.1 },
         { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 95 ], "y": [ 72, 95 ], "chance": 6, "density": 0.1 },
-        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 6, 20 ], "y": [ 74, 88 ], "chance": 3, "density": 0.1 },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 6, 20 ],
+          "y": [ 74, 88 ],
+          "chance": 3,
+          "density": 0.1
+        },
         { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 6, 20 ], "y": [ 74, 88 ], "chance": 3, "density": 0.1 }
       ],
       "place_vehicles": [ { "vehicle": "wagons_all", "x": 79, "y": 19, "rotation": 180, "chance": 30, "status": 0 } ]

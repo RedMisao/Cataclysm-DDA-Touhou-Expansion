@@ -61,12 +61,12 @@
         }
       },
       "place_monsters": [
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 8, 12 ], "y": [ 9, 10 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 9, 12 ], "y": [ 12, 14 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 5, 12 ], "y": [ 16, 18 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 7, 20 ], "y": [ 4, 9 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 16, 20 ], "y": [ 9, 12 ], "chance": 6 }
-		]
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 8, 12 ], "y": [ 9, 10 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 9, 12 ], "y": [ 12, 14 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 5, 12 ], "y": [ 16, 18 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 7, 20 ], "y": [ 4, 9 ], "chance": 6 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 16, 20 ], "y": [ 9, 12 ], "chance": 6 }
+      ]
     }
   },
   {
@@ -192,9 +192,15 @@
         { "item": "anesthetic_kit", "x": [ 4, 5 ], "y": 14, "chance": 75, "ammo": 100 }
       ],
       "place_monsters": [
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 11, 19 ], "y": [ 3, 6 ], "chance": 6 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 4, 19 ], "y": [ 3, 20 ], "chance": 6, "repeat": [ 2, 3 ] }
-		]
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 11, 19 ], "y": [ 3, 6 ], "chance": 6 },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 4, 19 ],
+          "y": [ 3, 20 ],
+          "chance": 6,
+          "repeat": [ 2, 3 ]
+        }
+      ]
     }
   },
   {
@@ -353,9 +359,15 @@
       ],
       "vehicles": { "W": { "vehicle": "swivel_chair", "chance": 100, "status": 1 } },
       "place_monsters": [
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 2, 21 ], "y": [ 3, 18 ], "chance": 6, "repeat": [ 2, 3 ] },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 4, 19 ], "y": [ 3, 20 ], "chance": 6, "repeat": [ 1, 2 ] }
-		]
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 2, 21 ], "y": [ 3, 18 ], "chance": 6, "repeat": [ 2, 3 ] },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 4, 19 ],
+          "y": [ 3, 20 ],
+          "chance": 6,
+          "repeat": [ 1, 2 ]
+        }
+      ]
     }
   },
   {

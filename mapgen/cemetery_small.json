@@ -50,9 +50,7 @@
         { "monster": "GROUP_ZOMBIE", "x": 11, "y": 16, "chance": 3 },
         { "monster": "GROUP_PARK_ANIMAL", "x": [ 4, 19 ], "y": [ 13, 18 ], "repeat": 3 }
       ],
-      "place_monster": [
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }
-      ]
+      "place_monster": [ { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } ]
     }
   },
   {
@@ -91,9 +89,7 @@
       "terrain": { " ": "t_region_groundcover_urban", "4": "t_region_tree_shade", "X": "t_grave" },
       "furniture": { "^": "f_grave_stone_old", "g": "f_grave_stone" },
       "place_signs": [ { "signage": "<city> Cemetery", "x": 9, "y": 1 }, { "signage": "<city> Cemetery", "x": 14, "y": 1 } ],
-      "place_monster": [
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }
-      ]
+      "place_monster": [ { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } ]
     }
   },
   {
@@ -137,12 +133,8 @@
         "X": "t_grave"
       },
       "furniture": { "^": [ "f_grave_stone_old", [ "f_grave_stone", 12 ] ] },
-      "place_monsters": [ 
-		{ "chance": 3, "density": 1, "monster": "GROUP_ZOMBIE", "x": 13, "y": 13 }
-      ],
-      "place_monster": [ 
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }		
-      ]
+      "place_monsters": [ { "chance": 3, "density": 1, "monster": "GROUP_ZOMBIE", "x": 13, "y": 13 } ],
+      "place_monster": [ { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } ]
     }
   },
   {
@@ -199,9 +191,7 @@
         { "signage": "May <given_name> and their family rest in peace", "x": 21, "y": 14 },
         { "signage": "Please respect the cemetery", "x": 21, "y": 9 }
       ],
-      "place_monster": [ 
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 }		
-      ]
+      "place_monster": [ { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } ]
     }
   },
   {
@@ -247,12 +237,8 @@
         "X": "t_grave"
       },
       "furniture": { "G": "f_grave_stone", "^": "f_grave_stone", "f": "f_region_flower_decorative", "g": "f_grave_stone_old" },
-      "place_monsters": [ 
-		{ "chance": 3, "density": 1.5, "monster": "GROUP_ZOMBIE", "x": 12, "y": 13 } 
-      ],
-	  "place_monster": [ 
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } 
-      ]
+      "place_monsters": [ { "chance": 3, "density": 1.5, "monster": "GROUP_ZOMBIE", "x": 12, "y": 13 } ],
+      "place_monster": [ { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } ]
     }
   },
   {
@@ -303,9 +289,7 @@
         { "signage": "<family_name> Family Cemetery", "x": 10, "y": 3 },
         { "signage": "Please respect the cemetery", "x": 13, "y": 3 }
       ],
-      "place_monster": [ 
-		{ "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } 
-      ]
+      "place_monster": [ { "monster": "mon_white_lady", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 4 } ]
     }
   }
 ]

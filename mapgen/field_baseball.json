@@ -69,7 +69,7 @@
         { "group": "GROUP_ZOMBIE", "x": [ 26, 45 ], "y": [ 26, 45 ], "repeat": [ 3, 7 ] },
         { "group": "GROUP_YOUKAI_OPENFIELD", "x": [ 20, 23 ], "y": [ 9, 13 ], "chance": 5 },
         { "group": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 9, 13 ], "chance": 5 },
-		{ "group": "GROUP_YOUKAI_OPENFIELD", "x": [ 2, 23 ], "y": [ 14, 23 ], "chance": 5 },
+        { "group": "GROUP_YOUKAI_OPENFIELD", "x": [ 2, 23 ], "y": [ 14, 23 ], "chance": 5 },
         { "group": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 5 }
       ]
     }

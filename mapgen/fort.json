@@ -97,33 +97,69 @@
         "O": { "item": "fort_powderbarrel", "chance": 100 }
       },
       "place_loot": [  ],
-		"place_monsters": [ 
-			{ "monster": "GROUP_FORT", "x": [ 40, 45 ], "y": [ 33, 36 ], "repeat": [ 8, 16 ], "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 5, 11 ], "y": [ 15, 19 ], "chance": 2, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 5, 11 ], "y": [ 15, 19 ], "chance": 2, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 39, 46 ], "y": [ 5, 9 ], "chance": 2, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 39, 46 ], "y": [ 5, 9 ], "chance": 2, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 73, 79 ], "y": [ 15, 19 ], "chance": 2, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 73, 79 ], "y": [ 15, 19 ], "chance": 2, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 62, 68 ], "y": [ 50, 55 ], "chance": 2, "density": 0.1 },
-			{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 62, 68 ], "y": [ 50, 55 ], "chance": 2, "density": 0.1 }
-		]
+      "place_monsters": [
+        { "monster": "GROUP_FORT", "x": [ 40, 45 ], "y": [ 33, 36 ], "repeat": [ 8, 16 ], "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 1, 23 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 24, 47 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 48, 71 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 1, 23 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 24, 47 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 48, 71 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
+        { "monster": "GROUP_YOUKAI_OPENFIELD", "x": [ 72, 94 ], "y": [ 72, 94 ], "chance": 6, "density": 0.1 },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 5, 11 ],
+          "y": [ 15, 19 ],
+          "chance": 2,
+          "density": 0.1
+        },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 5, 11 ], "y": [ 15, 19 ], "chance": 2, "density": 0.1 },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 39, 46 ],
+          "y": [ 5, 9 ],
+          "chance": 2,
+          "density": 0.1
+        },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 39, 46 ], "y": [ 5, 9 ], "chance": 2, "density": 0.1 },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 73, 79 ],
+          "y": [ 15, 19 ],
+          "chance": 2,
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES",
+          "x": [ 73, 79 ],
+          "y": [ 15, 19 ],
+          "chance": 2,
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS",
+          "x": [ 62, 68 ],
+          "y": [ 50, 55 ],
+          "chance": 2,
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES",
+          "x": [ 62, 68 ],
+          "y": [ 50, 55 ],
+          "chance": 2,
+          "density": 0.1
+        }
+      ]
     }
   },
   {

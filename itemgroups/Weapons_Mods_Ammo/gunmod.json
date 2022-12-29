@@ -1,96 +1,82 @@
 [
-	{
+  {
     "id": "gunmod_common",
-	"type": "item_group",
+    "type": "item_group",
     "//": "Common gunmods typically owned by citizens and found in many locations.",
     "subtype": "distribution",
     "copy-from": "gunmod_common",
-    "extend": { 
-		"entries": [ 
-			{ "item": "barrel_elongated_small", "prob": 35 }, 
-			{ "item": "barrel_elongated_small2", "prob": 20 }, 
-			{ "item": "grip_melee", "prob": 25 }, 
-			{ "item": "susat_scope", "prob": 50 },
-			{ "item": "vertical_foregrip", "prob": 35 }
-		] 
-	}
-	},
-	{
+    "extend": {
+      "entries": [
+        { "item": "barrel_elongated_small", "prob": 35 },
+        { "item": "barrel_elongated_small2", "prob": 20 },
+        { "item": "grip_melee", "prob": 25 },
+        { "item": "susat_scope", "prob": 50 },
+        { "item": "vertical_foregrip", "prob": 35 }
+      ]
+    }
+  },
+  {
     "id": "gunmod_rare",
-	"type": "item_group",
+    "type": "item_group",
     "//": "Less common gunmods including those only used by police/paramilitary forces.",
     "subtype": "distribution",
     "copy-from": "gunmod_rare",
-    "extend": { 
-		"entries": [ 
-			{ "item": "barrel_elongated_small2", "prob": 25 }, 
-			{ "item": "bipod_idw", "prob": 16 }, 
-			{ "item": "onm76_scope", "prob": 16 }, 
-			{ "item": "pso1_scope", "prob": 12 }, 
-			{ "item": "retool_ceamm1_30carbine", "prob": 35 }, 
-			{ "item": "retool_fn_fal_792x33", "prob": 35 }, 
-			{ "item": "retool_kar98_792x33", "prob": 35 }, 
-			{ "group": "nested_retool_m76", "prob": 35 }, 
-			{ "item": "retool_pieper_m1893_792x57", "prob": 35 }, 
-			{ "group": "nested_retool_spanish_m1893", "prob": 35 }, 
-			{ "group": "nested_retool_svd", "prob": 35 }, 
-			{ "group": "nested_retool_thompson_contender", "prob": 35 }, 
-			{ "item": "scrome_scope", "prob": 12 }, 
-			{ "item": "stock_idw_unfolded", "prob": 50 }, 
-			{ "item": "susat_scope", "prob": 25 }, 
-			{ "item": "vertical_foregrip", "prob": 65 } 
-		] 
-	}
-	},
-	{
+    "extend": {
+      "entries": [
+        { "item": "barrel_elongated_small2", "prob": 25 },
+        { "item": "bipod_idw", "prob": 16 },
+        { "item": "onm76_scope", "prob": 16 },
+        { "item": "pso1_scope", "prob": 12 },
+        { "item": "retool_ceamm1_30carbine", "prob": 35 },
+        { "item": "retool_fn_fal_792x33", "prob": 35 },
+        { "item": "retool_kar98_792x33", "prob": 35 },
+        { "group": "nested_retool_m76", "prob": 35 },
+        { "item": "retool_pieper_m1893_792x57", "prob": 35 },
+        { "group": "nested_retool_spanish_m1893", "prob": 35 },
+        { "group": "nested_retool_svd", "prob": 35 },
+        { "group": "nested_retool_thompson_contender", "prob": 35 },
+        { "item": "scrome_scope", "prob": 12 },
+        { "item": "stock_idw_unfolded", "prob": 50 },
+        { "item": "susat_scope", "prob": 25 },
+        { "item": "vertical_foregrip", "prob": 65 }
+      ]
+    }
+  },
+  {
     "id": "gunmod_milspec",
-	"type": "item_group",
+    "type": "item_group",
     "//": "Military specification gunmods found only at military sites.",
     "copy-from": "gunmod_milspec",
-    "extend": { 
-		"items": [ 
-			[ "onm76_scope", 85 ], 
-			[ "pso1_scope", 85 ], 
-			[ "scrome_scope", 85 ], 
-			[ "suppressor_vss", 85 ], 
-			[ "susat_scope", 85 ], 
-			[ "retool_m76_308", 85 ], 
-			[ "retool_m76_762", 85 ], 
-			[ "retool_svd_308", 85 ], 
-			[ "retool_svd_3006", 85 ], 
-			[ "retool_wa2000_308", 85 ], 
-			[ "vertical_foregrip", 50 ] 
-	]
-	}
-	},
-	{
+    "extend": {
+      "items": [
+        [ "onm76_scope", 85 ],
+        [ "pso1_scope", 85 ],
+        [ "scrome_scope", 85 ],
+        [ "suppressor_vss", 85 ],
+        [ "susat_scope", 85 ],
+        [ "retool_m76_308", 85 ],
+        [ "retool_m76_762", 85 ],
+        [ "retool_svd_308", 85 ],
+        [ "retool_svd_3006", 85 ],
+        [ "retool_wa2000_308", 85 ],
+        [ "vertical_foregrip", 50 ]
+      ]
+    }
+  },
+  {
     "id": "sights_all",
-	"type": "item_group",
+    "type": "item_group",
     "//": "All aftermarket sights.",
     "subtype": "distribution",
     "copy-from": "sights_all",
-    "extend": { 
-		"items": [ 
-			[ "onm76_scope", 12 ], 
-			[ "pso1_scope", 10 ], 
-			[ "scrome_scope", 5 ], 
-			[ "susat_scope", 25 ]
-	]
-	}
-	},
-	{
+    "extend": { "items": [ [ "onm76_scope", 12 ], [ "pso1_scope", 10 ], [ "scrome_scope", 5 ], [ "susat_scope", 25 ] ] }
+  },
+  {
     "id": "sights_rifle",
-	"type": "item_group",
+    "type": "item_group",
     "//": "Aftermarket sights that are for rifles.",
     "subtype": "distribution",
     "copy-from": "sights_rifle",
-    "extend": { 
-		"items": [ 
-			[ "onm76_scope", 12 ], 
-			[ "pso1_scope", 10 ], 
-			[ "scrome_scope", 5 ], 
-			[ "susat_scope", 25 ]
-	]
-	}
-	}
+    "extend": { "items": [ [ "onm76_scope", 12 ], [ "pso1_scope", 10 ], [ "scrome_scope", 5 ], [ "susat_scope", 25 ] ] }
+  }
 ]

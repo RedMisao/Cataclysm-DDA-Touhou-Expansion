@@ -77,10 +77,10 @@
       ],
       "items": { "K": { "item": "keg_beer", "chance": 70 }, "L": { "item": "jackets", "chance": 50 } },
       "toilets": { "U": {  } },
-      "place_monsters": [ 
-		{ "monster": "GROUP_ZOMBIE", "x": [ 0, 0 ], "y": [ 23, 23 ], "chance": 2, "repeat": [ 2, 3 ] }, 
-		{ "monster": "GROUP_BAR", "x": [ 4, 19 ], "y": [ 3, 11 ], "chance": 2 } 
-	],
+      "place_monsters": [
+        { "monster": "GROUP_ZOMBIE", "x": [ 0, 0 ], "y": [ 23, 23 ], "chance": 2, "repeat": [ 2, 3 ] },
+        { "monster": "GROUP_BAR", "x": [ 4, 19 ], "y": [ 3, 11 ], "chance": 2 }
+      ],
       "vehicles": { ".": { "vehicle": "shopping_cart", "chance": 1, "status": 1 } }
     }
   },
@@ -177,10 +177,10 @@
         ";": { "liquid": "bum_wine", "amount": [ 1, 10 ] }
       },
       "toilets": { "U": {  } },
-      "place_monsters": [ 
-		{ "monster": "GROUP_ZOMBIE", "x": [ 0, 0 ], "y": [ 23, 23 ], "chance": 2, "repeat": [ 2, 3 ] }, 
-		{ "monster": "GROUP_BAR", "x": [ 4, 19 ], "y": [ 3, 11 ], "chance": 2 } 
-	],
+      "place_monsters": [
+        { "monster": "GROUP_ZOMBIE", "x": [ 0, 0 ], "y": [ 23, 23 ], "chance": 2, "repeat": [ 2, 3 ] },
+        { "monster": "GROUP_BAR", "x": [ 4, 19 ], "y": [ 3, 11 ], "chance": 2 }
+      ],
       "vehicles": { ".": { "vehicle": "shopping_cart", "chance": 1, "status": 1 } },
       "nested": {
         "|": { "chunks": [ [ "bile_field", 10 ], [ "shelter_graffiti", 5 ], [ "general_graffiti", 20 ], [ "null", 75 ] ] },
@@ -269,10 +269,10 @@
       ],
       "items": { "K": { "item": "keg_beer", "chance": 70 }, "L": { "item": "jackets", "chance": 50 } },
       "toilets": { "U": {  } },
-      "place_monsters": [ 
-		{ "monster": "GROUP_ZOMBIE", "x": [ 0, 0 ], "y": [ 23, 23 ], "chance": 2, "repeat": [ 2, 3 ] }, 
-		{ "monster": "GROUP_BAR", "x": [ 4, 19 ], "y": [ 3, 11 ], "chance": 2 } 
-	],
+      "place_monsters": [
+        { "monster": "GROUP_ZOMBIE", "x": [ 0, 0 ], "y": [ 23, 23 ], "chance": 2, "repeat": [ 2, 3 ] },
+        { "monster": "GROUP_BAR", "x": [ 4, 19 ], "y": [ 3, 11 ], "chance": 2 }
+      ],
       "vehicles": { ".": { "vehicle": "shopping_cart", "chance": 1, "status": 1 } }
     }
   },

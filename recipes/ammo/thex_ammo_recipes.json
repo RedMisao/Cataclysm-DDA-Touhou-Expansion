@@ -1,5 +1,5 @@
 [
-	{
+  {
     "result": "reloaded_765x53_arg",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -15,20 +15,20 @@
     "reversible": true,
     "using": [ [ "bullet_forming", 10 ], [ "ammo_bullet", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
-	"components": [
-		[ [ "765x53_casing", 1 ] ],
-		[ [ "lgrifle_primer", 1 ] ],
-		[
-			[ "gunpowder", 29 ],
-			[ "gunpowder_magnum_pistol", 28 ],
-			[ "gunpowder_rifle", 28 ],
-			[ "gunpowder_large_rifle", 28 ]
-		],
-		[ [ "copper", 2 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
+    "components": [
+      [ [ "765x53_casing", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [
+        [ "gunpowder", 29 ],
+        [ "gunpowder_magnum_pistol", 28 ],
+        [ "gunpowder_rifle", 28 ],
+        [ "gunpowder_large_rifle", 28 ]
+      ],
+      [ [ "copper", 2 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "bp_765x53_arg",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -44,15 +44,15 @@
     "reversible": true,
     "using": [ [ "bullet_forming", 10 ], [ "ammo_bullet", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
-    "components": [ 
-		[ [ "765x53_casing", 1 ] ], 
-		[ [ "lgrifle_primer", 1 ] ], 
-		[ [ "chem_black_powder", 28 ] ], 
-		[ [ "copper", 2 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
-	]
-	},
-	{
+    "components": [
+      [ [ "765x53_casing", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 28 ] ],
+      [ [ "copper", 2 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
+    ]
+  },
+  {
     "result": "reloaded_77x58a",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -69,14 +69,14 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "77x58_casing", 1 ] ],
-		[ [ "smrifle_primer", 1 ] ],
-		[ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "77x58_casing", 1 ] ],
+      [ [ "smrifle_primer", 1 ] ],
+      [ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "bp_77x58a",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -93,14 +93,14 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "77x58_casing", 1 ] ],
-		[ [ "smrifle_primer", 1 ] ],
-		[ [ "chem_black_powder", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "77x58_casing", 1 ] ],
+      [ [ "smrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "reloaded_792x33_me",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -117,14 +117,14 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "792x33_casing_steel", 1 ] ],
-		[ [ "smrifle_primer", 1 ] ],
-		[ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "792x33_casing_steel", 1 ] ],
+      [ [ "smrifle_primer", 1 ] ],
+      [ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "reloaded_792x33_prvi",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -141,14 +141,14 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "792x33_casing_brass", 1 ] ],
-		[ [ "smrifle_primer", 1 ] ],
-		[ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "792x33_casing_brass", 1 ] ],
+      [ [ "smrifle_primer", 1 ] ],
+      [ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "bp_792x33_me",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -165,14 +165,14 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "792x33_casing_steel", 1 ] ],
-		[ [ "smrifle_primer", 1 ] ],
-		[ [ "chem_black_powder", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "792x33_casing_steel", 1 ] ],
+      [ [ "smrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "bp_792x33_prvi",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -189,14 +189,14 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "792x33_casing_brass", 1 ] ],
-		[ [ "smrifle_primer", 1 ] ],
-		[ [ "chem_black_powder", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "792x33_casing_brass", 1 ] ],
+      [ [ "smrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "reloaded_792x57_m75",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -213,20 +213,20 @@
     "using": [ [ "bullet_forming", 10 ], [ "ammo_bullet", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "//": "2851 mg gunpowder rounded to 29 100 mg 'pieces' ",
-	"components": [
-		[ [ "792x57_casing_brass", 1 ] ],
-		[ [ "lgrifle_primer", 1 ] ],
-		[
-			[ "gunpowder", 29 ],
-			[ "gunpowder_magnum_pistol", 29 ],
-			[ "gunpowder_rifle", 29 ],
-			[ "gunpowder_large_rifle", 29 ]
-		],
-		[ [ "copper", 2 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
+    "components": [
+      [ [ "792x57_casing_brass", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [
+        [ "gunpowder", 29 ],
+        [ "gunpowder_magnum_pistol", 29 ],
+        [ "gunpowder_rifle", 29 ],
+        [ "gunpowder_large_rifle", 29 ]
+      ],
+      [ [ "copper", 2 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "reloaded_792x57_sme",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -242,20 +242,20 @@
     "reversible": true,
     "using": [ [ "bullet_forming", 10 ], [ "ammo_bullet", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
-	"components": [
-		[ [ "792x57_casing_steel", 1 ] ],
-		[ [ "lgrifle_primer", 1 ] ],
-		[
-			[ "gunpowder", 29 ],
-			[ "gunpowder_magnum_pistol", 29 ],
-			[ "gunpowder_rifle", 29 ],
-			[ "gunpowder_large_rifle", 29 ]
-		],
-		[ [ "copper", 2 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
+    "components": [
+      [ [ "792x57_casing_steel", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [
+        [ "gunpowder", 29 ],
+        [ "gunpowder_magnum_pistol", 29 ],
+        [ "gunpowder_rifle", 29 ],
+        [ "gunpowder_large_rifle", 29 ]
+      ],
+      [ [ "copper", 2 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "bp_792x57_m75",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -271,15 +271,15 @@
     "reversible": true,
     "using": [ [ "bullet_forming", 10 ], [ "ammo_bullet", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
-    "components": [ 
-		[ [ "792x57_casing_brass", 1 ] ], 
-		[ [ "lgrifle_primer", 1 ] ], 
-		[ [ "chem_black_powder", 29 ] ], 
-		[ [ "copper", 2 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
-	]
-	},
-	{
+    "components": [
+      [ [ "792x57_casing_brass", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 29 ] ],
+      [ [ "copper", 2 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
+    ]
+  },
+  {
     "result": "bp_792x57_sme",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -295,15 +295,15 @@
     "reversible": true,
     "using": [ [ "bullet_forming", 10 ], [ "ammo_bullet", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
-    "components": [ 
-		[ [ "792x57_casing_steel", 1 ] ], 
-		[ [ "lgrifle_primer", 1 ] ], 
-		[ [ "chem_black_powder", 29 ] ], 
-		[ [ "copper", 2 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
-	]
-	},
-	{
+    "components": [
+      [ [ "792x57_casing_steel", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 29 ] ],
+      [ [ "copper", 2 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
+    ]
+  },
+  {
     "result": "reloaded_9x39_sp5",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -321,14 +321,14 @@
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "//": "1535 mg gunpowder rounded to 15 100 mg 'pieces'",
     "components": [
-		[ [ "9x39_casing", 1 ] ],
-		[ [ "lgrifle_primer", 1 ] ],
-		[ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "9x39_casing", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "reloaded_9x39_sp6",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -345,15 +345,15 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "9x39_casing", 1 ] ],
-		[ [ "lgrifle_primer", 1 ] ],
-		[ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
+      [ [ "9x39_casing", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [ [ "gunpowder", 15 ], [ "gunpowder_magnum_pistol", 15 ], [ "gunpowder_rifle", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
     ],
-	"//2": "Replace the 2 tiny steels for heat-hardened steel or some alloy"
-	},
-	{
+    "//2": "Replace the 2 tiny steels for heat-hardened steel or some alloy"
+  },
+  {
     "result": "bp_9x39_sp5",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -370,14 +370,14 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "9x39_casing", 1 ] ],
-		[ [ "lgrifle_primer", 1 ] ],
-		[ [ "chem_black_powder", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 1, "LIST" ] ]
+      [ [ "9x39_casing", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "bp_9x39_sp6",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -394,12 +394,12 @@
     "using": [ [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
     "components": [
-		[ [ "9x39_casing", 1 ] ],
-		[ [ "lgrifle_primer", 1 ] ],
-		[ [ "chem_black_powder", 15 ] ],
-		[ [ "copper", 1 ] ],
-		[ [ "steel_tiny", 2, "LIST" ] ]
+      [ [ "9x39_casing", 1 ] ],
+      [ [ "lgrifle_primer", 1 ] ],
+      [ [ "chem_black_powder", 15 ] ],
+      [ [ "copper", 1 ] ],
+      [ [ "steel_tiny", 2, "LIST" ] ]
     ],
-	"//2": "Replace the 2 tiny steels for heat-hardened steel or some alloy"
-	}
+    "//2": "Replace the 2 tiny steels for heat-hardened steel or some alloy"
+  }
 ]

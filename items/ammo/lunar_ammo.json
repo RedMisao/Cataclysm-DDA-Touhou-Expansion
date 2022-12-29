@@ -1,28 +1,28 @@
 [
-	{
+  {
     "id": "ammo_lunar_4d_thorn",
     "type": "AMMO",
     "name": { "str_sp": "thorn bullet" },
     "description": "Strange looking 4-dimensional ammo.  Looks like a some sort of metallic flower or claw, with seven to nine \"thorns\" attached around the proper bullet in the middle, with the exact number varying depending on how you spin it during inspection.  Perhaps due the folding, several of these stack together on a smaller than expected volume, forming an angular, amorphous metal mass.  Trippy to say the least.",
     "weight": "22 g",
     "volume": "4 ml",
-	"//": "The thorns have no actual volume or mass, until they do",
+    "//": "The thorns have no actual volume or mass, until they do",
     "price_postapoc": 900,
     "material": [ "steel" ],
     "symbol": "=",
     "color": "light_gray",
-	"//2": "bullet is made from steel, the flower look as if it was made from brass",
+    "//2": "bullet is made from steel, the flower look as if it was made from brass",
     "ammo_type": "ammo_lunar_4d_1",
     "count": 23,
     "stack_size": 37,
-	"damage": { "damage_type": "stab", "amount": 25, "armor_penetration": 15 },
-	"dispersion": 30,
-	"range": 50,
+    "damage": { "damage_type": "stab", "amount": 25, "armor_penetration": 15 },
+    "dispersion": 30,
+    "range": 50,
     "recoil": 200,
     "effects": [ "NEVER_MISFIRES" ],
     "flags": [ "IRREPLACEABLE_CONSUMABLE", "NON_FOULING" ]
-	},
-	{
+  },
+  {
     "id": "ammo_lunar_4d_claw",
     "type": "AMMO",
     "name": { "str_sp": "claw bullet" },
@@ -36,14 +36,14 @@
     "ammo_type": "ammo_lunar_4d_2",
     "count": 13,
     "stack_size": 19,
-	"damage": { "damage_type": "cut", "amount": 25, "armor_penetration": 15 },
-	"dispersion": 15,
-	"range": 50,
+    "damage": { "damage_type": "cut", "amount": 25, "armor_penetration": 15 },
+    "dispersion": 15,
+    "range": 50,
     "recoil": 200,
     "effects": [ "NEVER_MISFIRES" ],
     "flags": [ "IRREPLACEABLE_CONSUMABLE", "NON_FOULING" ]
-	},
-	{
+  },
+  {
     "id": "ammo_lunar_5d_ofuda",
     "type": "AMMO",
     "name": { "str_sp": "ofuda bullet" },
@@ -58,13 +58,13 @@
     "casing": "paper",
     "count": 101,
     "stack_size": 127,
-	"damage": { "damage_type": "cut", "amount": 35, "armor_penetration": 25 },
-	"dispersion": 0,
-	"range": 50,
+    "damage": { "damage_type": "cut", "amount": 35, "armor_penetration": 25 },
+    "dispersion": 0,
+    "range": 50,
     "recoil": 200,
     "effects": [ "NEVER_MISFIRES" ],
     "flags": [ "IRREPLACEABLE_CONSUMABLE", "NON_FOULING" ],
-	"//": "For bleeding something out. This would generate a lot of impurity on the target",
-	"//2": "Damage should be extradimensional: rnd(0.33-0.8) damage to whatever lacking a 'EXTRADIMENSIONAL' flag or something, damages no terrain, things like that"
-	}
+    "//": "For bleeding something out. This would generate a lot of impurity on the target",
+    "//2": "Damage should be extradimensional: rnd(0.33-0.8) damage to whatever lacking a 'EXTRADIMENSIONAL' flag or something, damages no terrain, things like that"
+  }
 ]

@@ -1,38 +1,26 @@
 [
-	{
+  {
     "id": "neuralyser",
     "type": "TOOL",
     "category": "tools",
     "name": { "str": "neuralyser", "str_pl": "neuralyser" },
     "description": "A cigar-shaped, metal thing.  It has two buttons, one of which seems to prepare the instrument for activation, and the second which emits a flash of light.  Maybe you shouldn't look at it.",
     "volume": "150 ml",
-	"weight": "300 g",
+    "weight": "300 g",
     "longest_side": "30 cm",
     "price_postapoc": 2000,
-	"to_hit": {
-		"balance": "neutral", 
-		"grip": "solid", 
-		"length": "hand", 
-		"surface": "any"
-	},
+    "to_hit": { "balance": "neutral", "grip": "solid", "length": "hand", "surface": "any" },
     "material": [ "aluminum" ],
-	"symbol": ",",
+    "symbol": ",",
     "color": "light_gray",
     "bashing": 2,
-	"charges_per_use": 1,
+    "charges_per_use": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "battery": 3 } } ],
     "relic_data": { "charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "40 s" } },
-    "use_action": [
-		{ 
-		"type": "cast_spell", 
-		"spell_id": "neuralyser_flash", 
-		"no_fail": true, 
-		"level": 1 
-		}
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "neuralyser_flash", "no_fail": true, "level": 1 } ],
     "flags": [ "BELT_CLIP", "NO_RELOAD", "NO_UNLOAD", "TRADER_AVOID" ]
-	},
-	{
+  },
+  {
     "id": "neuralyser_flash",
     "type": "SPELL",
     "name": "Neuralyser flashbang",
@@ -49,8 +37,8 @@
     "min_range": 3,
     "max_range": 3,
     "flags": [ "NO_LEGS", "NO_HANDS", "NO_PROJECTILE", "RANDOM_DAMAGE" ]
-	},
-	{
+  },
+  {
     "id": "neuralyser_stun",
     "type": "SPELL",
     "name": "Neuralyser cc",
@@ -67,5 +55,5 @@
     "min_range": 3,
     "max_range": 3,
     "flags": [ "NO_EXPLOSION_SFX", "NO_LEGS", "NO_HANDS", "NO_PROJECTILE", "RANDOM_DURATION" ]
-	}
+  }
 ]

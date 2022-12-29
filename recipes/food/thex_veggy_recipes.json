@@ -1,7 +1,7 @@
 [
-	{
+  {
     "result": "ab_blank",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_MEAT",
@@ -10,19 +10,16 @@
     "time": "1 m",
     "charges": 1,
     "autolearn": false,
-    "qualities": [ 
-		{ "id": "COOK", "level": 1 },
-		{ "id": "CUT", "level": 1 }
-	],
+    "qualities": [ { "id": "COOK", "level": 1 }, { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 1, "LIST" ] ] ],
     "components": [ [ [ "milk", 1 ] ] ],
-	"//": "Assuming 1 unit/charge is",
-	"//2": "flour 25 g, oil 16 ml, salt 5 g, sugar 5 g, water 250 ml",
-	"//3": "arthropod_meat 120 g - 180 cal, bird_meat (LIST) 240 g - 364 cal = 2 bird meat, lamprey_meat 120 g - 328 cal, meat 250 g - 400 cal, shrimplike_meat 120 g - 116 cal"
-	},
-	{
+    "//": "Assuming 1 unit/charge is",
+    "//2": "flour 25 g, oil 16 ml, salt 5 g, sugar 5 g, water 250 ml",
+    "//3": "arthropod_meat 120 g - 180 cal, bird_meat (LIST) 240 g - 364 cal = 2 bird meat, lamprey_meat 120 g - 328 cal, meat 250 g - 400 cal, shrimplike_meat 120 g - 116 cal"
+  },
+  {
     "result": "anko",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_VEGGI",
@@ -34,35 +31,20 @@
     "time": "60 m",
     "charges": 16,
     "book_learn": [ [ "manual_canning", 3 ] ],
-    "proficiencies": [ 
-		{ "proficiency": "prof_food_prep" }, 
-		{ "proficiency": "prof_preservation" }, 
-		{ "proficiency": "prof_food_canning" } 
-	],
+    "proficiencies": [ { "proficiency": "prof_food_prep" }, { "proficiency": "prof_preservation" }, { "proficiency": "prof_food_canning" } ],
     "batch_time_factors": [ 80, 4 ],
     "qualities": [ { "id": "COOK", "level": 3 } ],
-    "tools": [ 
-		[ [ "surface_heat", 200, "LIST" ] ], 
-		[ 
-			[ "pot_canning", -1 ], 
-			[ "pot_canning_clay", -1 ] 
-		] 
-	],
+    "tools": [ [ [ "surface_heat", 200, "LIST" ] ], [ [ "pot_canning", -1 ], [ "pot_canning_clay", -1 ] ] ],
     "components": [
-		[ 
-			[ "can_beans", 2 ], 
-			[ "beans_cooked", 2 ],
-			[ "dry_beans", 2 ], 
-			[ "raw_beans", 2 ]
-		],
-		[ [ "sugar", 40 ] ],
-		[ [ "water_clean", 8 ] ],
-		[ [ "jar_glass_sealed", 1 ] ]
+      [ [ "can_beans", 2 ], [ "beans_cooked", 2 ], [ "dry_beans", 2 ], [ "raw_beans", 2 ] ],
+      [ [ "sugar", 40 ] ],
+      [ [ "water_clean", 8 ] ],
+      [ [ "jar_glass_sealed", 1 ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "anko",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "id_suffix": "jarred_3L",
@@ -74,35 +56,20 @@
     "time": "60 m",
     "charges": 96,
     "book_learn": [ [ "manual_canning", 3 ] ],
-    "proficiencies": [ 
-		{ "proficiency": "prof_food_prep" }, 
-		{ "proficiency": "prof_preservation" }, 
-		{ "proficiency": "prof_food_canning" } 
-	],
+    "proficiencies": [ { "proficiency": "prof_food_prep" }, { "proficiency": "prof_preservation" }, { "proficiency": "prof_food_canning" } ],
     "batch_time_factors": [ 80, 4 ],
     "qualities": [ { "id": "COOK", "level": 3 } ],
-    "tools": [ [ 
-		[ "surface_heat", 200, "LIST" ] ], 
-		[ 
-			[ "pot_canning", -1 ], 
-			[ "pot_canning_clay", -1 ] 
-		] 
-	],
+    "tools": [ [ [ "surface_heat", 200, "LIST" ] ], [ [ "pot_canning", -1 ], [ "pot_canning_clay", -1 ] ] ],
     "components": [
-		[ 
-			[ "can_beans", 12 ], 
-			[ "beans_cooked", 12 ],
-			[ "dry_beans", 12 ], 
-			[ "raw_beans", 12 ]
-		],
+      [ [ "can_beans", 12 ], [ "beans_cooked", 12 ], [ "dry_beans", 12 ], [ "raw_beans", 12 ] ],
       [ [ "sugar", 240 ] ],
-	  [ [ "water_clean", 8 ] ],
+      [ [ "water_clean", 8 ] ],
       [ [ "jar_3l_glass_sealed", 1 ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "caesar_salad",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_VEGGI",
@@ -111,28 +78,18 @@
     "difficulty": 1,
     "time": "20 m",
     "autolearn": true,
-    "qualities": [ 
-		{ "id": "COOK", "level": 1 },
-		{ "id": "CUT", "level": 2 }, 
-		{ "id": "CONTAIN", "level": 1 } 
-	],
+    "qualities": [ { "id": "COOK", "level": 1 }, { "id": "CUT", "level": 2 }, { "id": "CONTAIN", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
     "components": [
-		[
-			[ "lettuce", 2 ],
-			[ "irradiated_lettuce", 2 ]
-		],
-		[ [ "cheese_standard", 1, "LIST" ] ],
-		[ [ "bread_sandwich", 1, "LIST" ] ],
-		[ 
-			[ "seasoning_mild", 1, "LIST" ],
-			[ "condiment", 1, "LIST" ]
-		]
+      [ [ "lettuce", 2 ], [ "irradiated_lettuce", 2 ] ],
+      [ [ "cheese_standard", 1, "LIST" ] ],
+      [ [ "bread_sandwich", 1, "LIST" ] ],
+      [ [ "seasoning_mild", 1, "LIST" ], [ "condiment", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "caesar_salad",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_VEGGI",
@@ -141,28 +98,18 @@
     "difficulty": 1,
     "time": "20 m",
     "autolearn": true,
-    "qualities": [ 
-		{ "id": "COOK", "level": 1 },
-		{ "id": "CUT", "level": 2 }, 
-		{ "id": "CONTAIN", "level": 1 } 
-	],
+    "qualities": [ { "id": "COOK", "level": 1 }, { "id": "CUT", "level": 2 }, { "id": "CONTAIN", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
     "components": [
-		[
-			[ "lettuce", 2 ],
-			[ "irradiated_lettuce", 2 ]
-		],
-		[ [ "cheese_standard", 1, "LIST" ] ],
-		[ [ "bread_sandwich_wheat_free", 1, "LIST" ] ],
-		[ 
-			[ "seasoning_mild", 1, "LIST" ],
-			[ "condiment", 1, "LIST" ]
-		]
+      [ [ "lettuce", 2 ], [ "irradiated_lettuce", 2 ] ],
+      [ [ "cheese_standard", 1, "LIST" ] ],
+      [ [ "bread_sandwich_wheat_free", 1, "LIST" ] ],
+      [ [ "seasoning_mild", 1, "LIST" ], [ "condiment", 1, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "dango_anko",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_OTHER",
@@ -172,32 +119,15 @@
     "time": "25 m",
     "batch_time_factors": [ 50, 5 ],
     "autolearn": false,
-    "book_learn": [ 
-		[ "baking_book", 2 ], 
-		[ "cookbook", 2 ], 
-		[ "cookbook_daintydishes", 2 ],
-		[ "family_cookbook", 1 ] 
-	],
-    "proficiencies": [ 
-		{ "proficiency": "prof_baking" }, 
-		{ "proficiency": "prof_baking_bread" }, 
-		{ "proficiency": "prof_food_prep" }
-	],
-    "qualities": [ 
-		{ "id": "OVEN", "level": 2 },
-		{ "id": "BOIL", "level": 2 }
-	],
+    "book_learn": [ [ "baking_book", 2 ], [ "cookbook", 2 ], [ "cookbook_daintydishes", 2 ], [ "family_cookbook", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_baking" }, { "proficiency": "prof_baking_bread" }, { "proficiency": "prof_food_prep" } ],
+    "qualities": [ { "id": "OVEN", "level": 2 }, { "id": "BOIL", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 7, "LIST" ] ] ],
-    "components": [
-		[ [ "dango_ingredients", 1, "LIST" ] ],
-		[ [ "anko", 3 ] ],
-		[ [ "water_clean", 2 ] ],
-		[ [ "skewer_wood", 5 ] ]
-	]
-	},
-	{
+    "components": [ [ [ "dango_ingredients", 1, "LIST" ] ], [ [ "anko", 3 ] ], [ [ "water_clean", 2 ] ], [ [ "skewer_wood", 5 ] ] ]
+  },
+  {
     "result": "dango_mitarashi",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_OTHER",
@@ -207,32 +137,20 @@
     "time": "35 m",
     "batch_time_factors": [ 50, 5 ],
     "autolearn": false,
-    "book_learn": [ 
-		[ "baking_book", 2 ], 
-		[ "cookbook", 2 ], 
-		[ "cookbook_daintydishes", 2 ],
-		[ "family_cookbook", 1 ] 
-	],
-    "proficiencies": [ 
-		{ "proficiency": "prof_baking" }, 
-		{ "proficiency": "prof_baking_bread" }, 
-		{ "proficiency": "prof_food_prep" }
-	],
-    "qualities": [ 
-		{ "id": "OVEN", "level": 2 },
-		{ "id": "BOIL", "level": 2 }
-	],
+    "book_learn": [ [ "baking_book", 2 ], [ "cookbook", 2 ], [ "cookbook_daintydishes", 2 ], [ "family_cookbook", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_baking" }, { "proficiency": "prof_baking_bread" }, { "proficiency": "prof_food_prep" } ],
+    "qualities": [ { "id": "OVEN", "level": 2 }, { "id": "BOIL", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ] ],
     "components": [
-		[ [ "dango_ingredients", 1, "LIST" ] ],
-		[ [ "mitarashi_ingredients", 1, "LIST" ] ],
-		[ [ "water_clean", 2 ] ],
-		[ [ "skewer_wood", 5 ] ]
-	]
-	},
-	{
+      [ [ "dango_ingredients", 1, "LIST" ] ],
+      [ [ "mitarashi_ingredients", 1, "LIST" ] ],
+      [ [ "water_clean", 2 ] ],
+      [ [ "skewer_wood", 5 ] ]
+    ]
+  },
+  {
     "result": "dorayaki",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_OTHER",
@@ -244,17 +162,17 @@
     "qualities": [ { "id": "COOK", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ] ],
     "components": [
-		[ [ "flour", 7 ] ],
-		[ [ "eggs_bird", 4, "LIST" ] ],
-		[ [ "sugar_standard", 28, "LIST" ] ],
-		[ [ "anko", 21 ], [ "jam_fruit", 21 ] ],
-		[ [ "any_butter_or_oil", 1, "LIST" ] ],
-		[ [ "water_clean", 1 ] ]
+      [ [ "flour", 7 ] ],
+      [ [ "eggs_bird", 4, "LIST" ] ],
+      [ [ "sugar_standard", 28, "LIST" ] ],
+      [ [ "anko", 21 ], [ "jam_fruit", 21 ] ],
+      [ [ "any_butter_or_oil", 1, "LIST" ] ],
+      [ [ "water_clean", 1 ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "manju",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_BREAD",
@@ -264,27 +182,15 @@
     "time": "75 m",
     "batch_time_factors": [ 50, 5 ],
     "autolearn": false,
-    "book_learn": [ 
-		[ "baking_book", 2 ], 
-		[ "cookbook", 2 ], 
-		[ "cookbook_daintydishes", 2 ],
-		[ "family_cookbook", 1 ] 
-	],
-    "proficiencies": [ 
-		{ "proficiency": "prof_baking" }, 
-		{ "proficiency": "prof_baking_bread" }, 
-		{ "proficiency": "prof_food_prep" }
-	],
+    "book_learn": [ [ "baking_book", 2 ], [ "cookbook", 2 ], [ "cookbook_daintydishes", 2 ], [ "family_cookbook", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_baking" }, { "proficiency": "prof_baking_bread" }, { "proficiency": "prof_food_prep" } ],
     "qualities": [ { "id": "OVEN", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ] ],
-    "components": [
-		[ [ "sweet_bun_ingredients", 1, "LIST" ] ],
-		[ [ "anko", 6 ] ]
-    ]
-	},
-	{
+    "components": [ [ [ "sweet_bun_ingredients", 1, "LIST" ] ], [ [ "anko", 6 ] ] ]
+  },
+  {
     "result": "satsumaimo_baked",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_VEGGI",
@@ -294,15 +200,12 @@
     "autolearn": true,
     "qualities": [ { "id": "COOK", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
-    "components": [ [ 
-		[ "satsumaimo", 1 ], 
-		[ "irradiated_satsumaimo", 1 ] 
-	] ],
-	"//": "Add dried leaves at some point"
-	},
-	{
+    "components": [ [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ] ],
+    "//": "Add dried leaves at some point"
+  },
+  {
     "result": "satsumaimo_chips",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result_mult": 3,
     "category": "CC_FOOD",
@@ -314,20 +217,20 @@
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "COOK", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ], [ [ "frying_oil", 1, "LIST" ] ] ],
     "proficiencies": [
-		{ "proficiency": "prof_food_prep" },
-		{ "proficiency": "prof_frying" },
-		{ "proficiency": "prof_knife_skills", "time_multiplier": 2 }
+      { "proficiency": "prof_food_prep" },
+      { "proficiency": "prof_frying" },
+      { "proficiency": "prof_knife_skills", "time_multiplier": 2 }
     ],
     "components": [
-		[ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
-		[ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
-		[ [ "fry_oil", 4, "LIST" ] ]
+      [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
+      [ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
+      [ [ "fry_oil", 4, "LIST" ] ]
     ],
-	"//": "Adapted from fresh_fries "
-	},
-	{
+    "//": "Adapted from fresh_fries "
+  },
+  {
     "result": "satsumaimo_chips_thick",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result_mult": 3,
     "category": "CC_FOOD",
@@ -338,19 +241,16 @@
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "COOK", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ], [ [ "frying_oil", 1, "LIST" ] ] ],
-    "proficiencies": [
-		{ "proficiency": "prof_food_prep" },
-		{ "proficiency": "prof_frying" }
-    ],
+    "proficiencies": [ { "proficiency": "prof_food_prep" }, { "proficiency": "prof_frying" } ],
     "components": [
-		[ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
-		[ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
-		[ [ "fry_oil", 4, "LIST" ] ]
+      [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
+      [ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
+      [ [ "fry_oil", 4, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "satsumaimo_french_cheese_fries",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_SNACK",
@@ -359,18 +259,12 @@
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
-    "proficiencies": [ 
-		{ "proficiency": "prof_food_prep" }, 
-		{ "proficiency": "prof_knife_skills" } 
-	],
-    "components": [ 
-		[ [ "cheese", 1 ], [ "cheese_hard", 1 ], [ "can_cheese", 1 ] ],
-		[ [ "satsumaimo_french_fries", 1 ] ] 
-	]
-	},
-	{
+    "proficiencies": [ { "proficiency": "prof_food_prep" }, { "proficiency": "prof_knife_skills" } ],
+    "components": [ [ [ "cheese", 1 ], [ "cheese_hard", 1 ], [ "can_cheese", 1 ] ], [ [ "satsumaimo_french_fries", 1 ] ] ]
+  },
+  {
     "result": "satsumaimo_french_fries",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result_mult": 3,
     "category": "CC_FOOD",
@@ -382,19 +276,19 @@
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "COOK", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ], [ [ "frying_oil", 1, "LIST" ] ] ],
     "proficiencies": [
-		{ "proficiency": "prof_food_prep" },
-		{ "proficiency": "prof_frying" },
-		{ "proficiency": "prof_knife_skills", "time_multiplier": 2 }
+      { "proficiency": "prof_food_prep" },
+      { "proficiency": "prof_frying" },
+      { "proficiency": "prof_knife_skills", "time_multiplier": 2 }
     ],
     "components": [
-		[ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
-		[ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
-		[ [ "fry_oil", 4, "LIST" ] ]
+      [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
+      [ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
+      [ [ "fry_oil", 4, "LIST" ] ]
     ]
-	},
-	{
+  },
+  {
     "result": "sweet_bun",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_BREAD",
@@ -404,26 +298,15 @@
     "time": "60 m",
     "batch_time_factors": [ 50, 5 ],
     "autolearn": false,
-    "book_learn": [ 
-		[ "baking_book", 2 ], 
-		[ "cookbook", 2 ], 
-		[ "cookbook_daintydishes", 2 ],
-		[ "family_cookbook", 1 ] 
-	],
-    "proficiencies": [ 
-		{ "proficiency": "prof_baking" }, 
-		{ "proficiency": "prof_baking_bread" }, 
-		{ "proficiency": "prof_food_prep" }
-	],
+    "book_learn": [ [ "baking_book", 2 ], [ "cookbook", 2 ], [ "cookbook_daintydishes", 2 ], [ "family_cookbook", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_baking" }, { "proficiency": "prof_baking_bread" }, { "proficiency": "prof_food_prep" } ],
     "qualities": [ { "id": "OVEN", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ] ],
-    "components": [
-		[ [ "sweet_bun_ingredients", 1, "LIST" ] ]
-    ]
-	},
-	{
+    "components": [ [ [ "sweet_bun_ingredients", 1, "LIST" ] ] ]
+  },
+  {
     "result": "sweet_bun_jam",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_BREAD",
@@ -433,27 +316,15 @@
     "time": "75 m",
     "batch_time_factors": [ 50, 5 ],
     "autolearn": false,
-    "book_learn": [ 
-		[ "baking_book", 2 ], 
-		[ "cookbook", 2 ], 
-		[ "cookbook_daintydishes", 2 ],
-		[ "family_cookbook", 1 ] 
-	],
-    "proficiencies": [ 
-		{ "proficiency": "prof_baking" }, 
-		{ "proficiency": "prof_baking_bread" }, 
-		{ "proficiency": "prof_food_prep" }
-	],
+    "book_learn": [ [ "baking_book", 2 ], [ "cookbook", 2 ], [ "cookbook_daintydishes", 2 ], [ "family_cookbook", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_baking" }, { "proficiency": "prof_baking_bread" }, { "proficiency": "prof_food_prep" } ],
     "qualities": [ { "id": "OVEN", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ] ],
-    "components": [
-		[ [ "sweet_bun_ingredients", 1, "LIST" ] ],
-		[ [ "jam_fruit", 6 ] ]
-    ]
-	},
-	{
+    "components": [ [ [ "sweet_bun_ingredients", 1, "LIST" ] ], [ [ "jam_fruit", 6 ] ] ]
+  },
+  {
     "result": "taiyaki",
-	"type": "recipe",
+    "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_OTHER",
@@ -463,27 +334,18 @@
     "time": "75 m",
     "batch_time_factors": [ 50, 5 ],
     "autolearn": false,
-    "book_learn": [ 
-		[ "baking_book", 2 ], 
-		[ "cookbook", 2 ], 
-		[ "cookbook_daintydishes", 2 ],
-		[ "family_cookbook", 1 ] 
-	],
-    "proficiencies": [ 
-		{ "proficiency": "prof_baking" }, 
-		{ "proficiency": "prof_baking_bread" }, 
-		{ "proficiency": "prof_food_prep" }
-	],
+    "book_learn": [ [ "baking_book", 2 ], [ "cookbook", 2 ], [ "cookbook_daintydishes", 2 ], [ "family_cookbook", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_baking" }, { "proficiency": "prof_baking_bread" }, { "proficiency": "prof_food_prep" } ],
     "qualities": [ { "id": "OVEN", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ] ],
     "components": [
-		[ [ "batter", 3, "LIST" ] ],
-		[ [ "anko", 4 ], [ "jam_fruit", 4 ] ],
-		[ [ "chem_baking_soda", 1 ] ],
-		[ [ "eggs_bird", 1, "LIST" ] ],
-		[ [ "sugar_standard", 3, "LIST" ] ],
-		[ [ "water_clean", 1 ] ]
+      [ [ "batter", 3, "LIST" ] ],
+      [ [ "anko", 4 ], [ "jam_fruit", 4 ] ],
+      [ [ "chem_baking_soda", 1 ] ],
+      [ [ "eggs_bird", 1, "LIST" ] ],
+      [ [ "sugar_standard", 3, "LIST" ] ],
+      [ [ "water_clean", 1 ] ]
     ],
-	"//": "RL recipe uses 200 ml of milk too, which is omitted due the difficulty in obtaining it"
-	}
+    "//": "RL recipe uses 200 ml of milk too, which is omitted due the difficulty in obtaining it"
+  }
 ]

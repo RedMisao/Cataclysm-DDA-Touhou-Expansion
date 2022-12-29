@@ -1,21 +1,16 @@
 [
-	{
+  {
     "id": "f_gap",
-	"type": "furniture",
+    "type": "furniture",
     "name": "gap",
     "description": "A gash in the fabric of space.",
     "symbol": "u",
-	"looks_like": "fd_fatigue",
+    "looks_like": "fd_fatigue",
     "color": "black",
-    "bash": { 
-		"str_min": 200, 
-		"str_max": 400, 
-		"sound": "whoosh.", 
-		"sound_fail": "whoosh." 
-	},
-	"examine_action": "translocator",
-	"move_cost_mod": 0,
+    "bash": { "str_min": 200, "str_max": 400, "sound": "whoosh.", "sound_fail": "whoosh." },
+    "examine_action": "translocator",
+    "move_cost_mod": 0,
     "required_str": -1,
     "flags": [ "ALLOW_FIELD_EFFECT", "TRANSLOCATOR", "TRANSPARENT" ]
-	}
+  }
 ]

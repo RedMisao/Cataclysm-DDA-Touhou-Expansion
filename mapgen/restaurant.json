@@ -103,7 +103,13 @@
         { "monster": "GROUP_PLAGUE_ROACH", "x": [ 7, 19 ], "y": 19, "chance": 20 },
         { "monster": "GROUP_ROACH", "x": [ 7, 19 ], "y": 19, "chance": 20 },
         { "monster": "GROUP_BAR", "x": [ 1, 22 ], "y": [ 5, 16 ], "chance": 2 },
-        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 1, 22 ], "y": [ 5, 16 ], "chance": 2, "repeat": [ 1, 2 ] },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES",
+          "x": [ 1, 22 ],
+          "y": [ 5, 16 ],
+          "chance": 2,
+          "repeat": [ 1, 2 ]
+        },
         { "monster": "GROUP_BAR", "x": [ 8, 20 ], "y": [ 18, 20 ], "chance": 2 }
       ]
     }
@@ -212,7 +218,13 @@
         { "monster": "GROUP_PLAGUE_ROACH", "x": [ 7, 19 ], "y": 19, "chance": 20 },
         { "monster": "GROUP_ROACH", "x": [ 7, 19 ], "y": 19, "chance": 20 },
         { "monster": "GROUP_BAR", "x": [ 1, 22 ], "y": [ 5, 16 ], "chance": 2 },
-        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 1, 22 ], "y": [ 5, 16 ], "chance": 2, "repeat": [ 1, 2 ] },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES",
+          "x": [ 1, 22 ],
+          "y": [ 5, 16 ],
+          "chance": 2,
+          "repeat": [ 1, 2 ]
+        },
         { "monster": "GROUP_BAR", "x": [ 8, 20 ], "y": [ 18, 20 ], "chance": 2 }
       ]
     }
@@ -727,7 +739,13 @@
         { "monster": "GROUP_PLAGUE_ROACH", "x": [ 7, 19 ], "y": 19, "chance": 20 },
         { "monster": "GROUP_ROACH", "x": [ 7, 19 ], "y": 19, "chance": 20 },
         { "monster": "GROUP_BAR", "x": [ 1, 22 ], "y": [ 5, 16 ], "chance": 2 },
-        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES", "x": [ 1, 22 ], "y": [ 5, 16 ], "chance": 2, "repeat": [ 1, 3 ] },
+        {
+          "monster": "GROUP_YOUKAI_TSUKUMOGAMI_TABLES",
+          "x": [ 1, 22 ],
+          "y": [ 5, 16 ],
+          "chance": 2,
+          "repeat": [ 1, 3 ]
+        },
         { "monster": "GROUP_BAR", "x": [ 8, 20 ], "y": [ 18, 20 ], "chance": 2 }
       ]
     }

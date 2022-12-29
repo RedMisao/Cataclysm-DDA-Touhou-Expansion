@@ -34,9 +34,9 @@
       ],
       "palettes": [ "stadium_palette", "stadium_parking_palette" ],
       "monster": [
-		{ " ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 } },
-		{ "s": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 } }
-	]
+        { " ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 } },
+        { "s": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 } }
+      ]
     }
   },
   {
@@ -185,21 +185,21 @@
         { "monster": "GROUP_HOUSE", "x": [ 72, 95 ], "y": [ 72, 95 ], "density": 0.066 },
         { "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 2, 7 ], "y": [ 88, 95 ], "chance": 2, "density": 0.1 }
       ],
-      "monsters": { 
-		" ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		",": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		".": { "monster": "GROUP_BASEBALL_1", "chance": 256 }
-	}
+      "monsters": {
+        " ": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
+        ",": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
+        ".": { "monster": "GROUP_BASEBALL_1", "chance": 256 }
+      }
     }
   },
-	{
+  {
     "name": "GROUP_BASEBALL_1",
     "type": "monstergroup",
-    "monsters": [ 
-		{ "group": "GROUP_YOUKAI_CITY", "weight": 100, "starts": "2 days" },
-		{ "group": "GROUP_YOUKAI_TOWN", "weight": 100, "starts": "2 days" }
-	]
-	},
+    "monsters": [
+      { "group": "GROUP_YOUKAI_CITY", "weight": 100, "starts": "2 days" },
+      { "group": "GROUP_YOUKAI_TOWN", "weight": 100, "starts": "2 days" }
+    ]
+  },
   {
     "type": "mapgen",
     "method": "json",
@@ -345,10 +345,7 @@
         { "monster": "GROUP_HOUSE", "x": [ 72, 95 ], "y": [ 72, 95 ], "density": 0.066 },
         { "monster": "GROUP_YOUKAI_CITY_DUMPSTER", "x": [ 1, 5 ], "y": [ 90, 94 ], "chance": 2, "density": 0.1 }
       ],
-      "monsters": { 
-		"*": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 },
-		".": { "monster": "GROUP_BASEBALL_1", "chance": 256 }
-	}
+      "monsters": { "*": { "monster": "GROUP_YOUKAI_OPENFIELD", "chance": 256 }, ".": { "monster": "GROUP_BASEBALL_1", "chance": 256 } }
     }
   },
   {

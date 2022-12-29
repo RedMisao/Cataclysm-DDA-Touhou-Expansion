@@ -39,9 +39,7 @@
         "d": { "item": "SUS_office_desk", "chance": 60 },
         "o": { "item": "religious_books", "chance": 40, "repeat": [ 1, 4 ] }
       },
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3, "repeat": [ 1, 2 ] }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3, "repeat": [ 1, 2 ] } ]
     }
   },
   {
@@ -246,9 +244,7 @@
         "y": "t_floor"
       },
       "items": { "c": { "item": "church", "chance": 40 } },
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3, "repeat": [ 1, 2 ] }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 3, "repeat": [ 1, 2 ] } ]
     }
   },
   {
@@ -314,10 +310,10 @@
         }
       },
       "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 8 ], "y": [ 4, 6 ], "chance": 3, "repeat": [ 1, 2 ] },
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 16, 20 ], "y": [ 4, 6 ], "chance": 3, "repeat": [ 1, 2 ] },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 8 ], "y": [ 4, 6 ], "chance": 2 },
-		{ "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 16, 20 ], "y": [ 4, 6 ], "chance": 2 }
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 8 ], "y": [ 4, 6 ], "chance": 3, "repeat": [ 1, 2 ] },
+        { "monster": "GROUP_GHOSTS_CITY", "x": [ 16, 20 ], "y": [ 4, 6 ], "chance": 3, "repeat": [ 1, 2 ] },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 3, 8 ], "y": [ 4, 6 ], "chance": 2 },
+        { "monster": "GROUP_YOUKAI_TSUKUMOGAMI_SEAT_CHAIRS", "x": [ 16, 20 ], "y": [ 4, 6 ], "chance": 2 }
       ]
     }
   },
@@ -393,9 +389,7 @@
         "7": [ { "item": "SUS_utensils", "chance": 50 }, { "item": "SUS_knife_drawer", "chance": 50 } ],
         "S": { "item": "SUS_kitchen_sink", "chance": 100 }
       },
-      "place_monsters": [
-		{ "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 20 ], "y": [ 2, 5 ], "chance": 3 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GHOSTS_CITY", "x": [ 3, 20 ], "y": [ 2, 5 ], "chance": 3 } ]
     }
   },
   {
