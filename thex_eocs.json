@@ -16,26 +16,27 @@
             "condition": { "u_has_trait": "VAMPIRE_SPECIES" },
             "effect": [
               {
-                "arithmetic": [ { "u_val": "vitamin", "name": "hblood_vitamin" }, "=", { "arithmetic": [ { "const": 648 }, "+", { "rand": 144 } ] } ]
+                "math": [ "u_val('vitamin', 'name:hblood_vitamin')", "=", "648 + rand(144)" ]
               }
             ]
           }
         ]
       }
-    ]
+    ],
+	"//": "It's the same as touhou_everything_eoc from the main mod, except it adds more stuff (eocs can't be copy-from )"
   },
   {
     "id": "daily_randomization_eoc",
     "type": "effect_on_condition",
     "recurrence": "24 hours",
     "effect": [
-      { "arithmetic": [ { "u_val": "var", "var_name": "night_parade_proc" }, "=", { "rand": 99 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_proc" }, "=", { "rand": 99 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_hour" }, "=", { "rand": 23 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_minute" }, "=", { "rand": 59 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_second" }, "=", { "rand": 59 } ] }
+      { "math": [ "night_parade_proc", "=", "rand(99)" ] },
+      { "math": [ "silence_hour_proc", "=", "rand(99)" ] },
+      { "math": [ "silence_hour_hour", "=", "rand(23)" ] },
+      { "math": [ "silence_hour_minute", "=", "rand(59)" ] },
+      { "math": [ "silence_hour_second", "=", "rand(59)" ] }
     ],
-    "//": "Should: reroll these daily, for use in special events and whatnot"
+    "//": "These re-roll daily, for use in special events "
   },
   {
     "id": "impurity_eoc",
@@ -46,38 +47,38 @@
         "run_eocs": [
           {
             "id": "impurity_none",
-            "condition": { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<", { "const": 0 } ] },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 0 } ] } ]
+            "condition": { "math": [ "u_val('vitamin', 'name:impurity')", "<", "0" ] },
+            "effect": [ { "math": [ "var_impurity", "=", "0" ] } ]
           },
           {
             "id": "impurity_verylow",
             "condition": {
               "and": [
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 1 } ] },
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 72 } ] }
+                { "math": [ "u_val('vitamin', 'name:impurity')", ">=", "1" ] },
+                { "math": [ "u_val('vitamin', 'name:impurity')", "<=", "72" ] }
               ]
             },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 1 } ] } ]
+            "effect": [ { "math": [ "var_impurity", "=", "1" ] } ]
           },
           {
             "id": "impurity_low",
             "condition": {
               "and": [
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 73 } ] },
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 504 } ] }
+                { "math": [ "u_val('vitamin', 'name:impurity')", ">=", "73" ] },
+                { "math": [ "u_val('vitamin', 'name:impurity')", "<=", "504" ] }
               ]
             },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 2 } ] } ]
+            "effect": [ { "math": [ "var_impurity", "=", "2" ] } ]
           },
           {
             "id": "impurity_high",
-            "condition": { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 505 } ] },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 3 } ] } ]
+            "condition": { "math": [ "u_val('vitamin', 'name:impurity')", ">=", "505" ] },
+            "effect": [ { "math": [ "var_impurity", "=", "3" ] } ]
           }
         ]
       }
     ],
-    "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff",
+    "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not considering consuming Earthly stuff during that period of time",
     "//2": "Boundaries for each impure tier: 0 - 24 h (verylow), 1 - 7 days (low), >7 days (high)",
     "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
   }

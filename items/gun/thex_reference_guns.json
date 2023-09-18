@@ -42,7 +42,7 @@
     "price": "4500 USD",
     "price_postapoc": 6000,
     "to_hit": { "balance": "neutral", "grip": "solid", "length": "long", "surface": "point" },
-    "bashing": 9,
+    "melee_damage": { "bash": 9 },
     "material": [ "steel", "wood" ],
     "looks_like": "mosin91_30",
     "color": "brown",

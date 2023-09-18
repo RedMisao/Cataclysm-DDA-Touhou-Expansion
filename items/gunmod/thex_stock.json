@@ -12,7 +12,7 @@
     "price_postapoc": 500,
     "install_time": "3 m",
     "to_hit": 1,
-    "bashing": 2,
+    "melee_damage": { "bash": 2 },
     "material": [ "plastic", "steel" ],
     "symbol": ":",
     "color": "dark_gray",

@@ -59,7 +59,7 @@
     "volume": "30 ml",
     "price_postapoc": 50,
     "to_hit": { "balance": "neutral", "grip": "bad", "length": "hand", "surface": "any" },
-    "bashing": 1,
+    "melee_damage": { "bash": 1 },
     "material": [ "steel" ],
     "symbol": ")",
     "looks_like": "usb_drive",

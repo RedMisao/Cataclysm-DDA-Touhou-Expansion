@@ -14,7 +14,7 @@
     "color": "light_gray",
     "ammo": [ "alternate_knife" ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
-    "bashing": 2,
+    "melee_damage": { "bash": 2 },
     "clip_size": 12,
     "dispersion": 0,
     "durability": 8,

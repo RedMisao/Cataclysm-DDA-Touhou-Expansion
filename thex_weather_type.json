@@ -13,12 +13,12 @@
     "dangerous": true,
     "precip": "none",
     "rains": false,
-    "acidic": false,
     "duration_min": "8 h",
     "duration_max": "10 h",
     "required_weathers": [ "sunny" ],
+    "priority": 50,
     "condition": {
-      "and": [ "is_night", { "compare_int": [ { "u_val": "var", "var_name": "night_parade_proc" }, "<", { "const": 4 } ] } ]
+      "and": [ "is_night", { "math": [ "night_parade_proc", "<", "4" ] } ]
     },
     "//": "Should happen ONLY at night !!!",
     "//2": "Super WIP: this should spawn lots of hostile youkai enemies, probably a mid-endgame weather or triggered event"
@@ -33,21 +33,20 @@
     "ranged_penalty": 3,
     "sight_penalty": 1.2,
     "light_modifier": -20,
-    "sun_multiplier": 0.4,
+    "sun_multiplier": 0.35,
     "sound_attn": 0,
     "dangerous": false,
     "precip": "none",
     "rains": false,
-    "acidic": false,
     "sound_category": "cloudy",
     "required_weathers": [ "scarlet_mist" ],
-    "sun_intensity": "none",
+    "priority": 50,
     "condition": {
       "or": [
-        { "compare_int": [ { "weather": "humidity" }, ">=", { "const": 97 } ] },
-        { "compare_int": [ { "weather": "pressure" }, ">", { "const": 1005 } ] },
-        { "compare_int": [ { "weather": "windpower" }, "<", { "const": 5 } ] },
-        { "compare_int": [ { "weather": "windpower" }, ">", { "const": 1 } ] }
+        { "math": [ "weather('humidity')", ">=", "97" ] },
+        { "math": [ "weather('pressure')", ">", "1005" ] },
+        { "math": [ "weather('windpower')", "<", "5" ] },
+        { "math": [ "weather('windpower')", ">", "1" ] }
       ]
     }
   },
@@ -61,21 +60,20 @@
     "ranged_penalty": 1,
     "sight_penalty": 1.1,
     "light_modifier": -15,
-    "sun_multiplier": 0.2,
+    "sun_multiplier": 0.25,
     "sound_attn": 0,
     "dangerous": false,
     "precip": "none",
     "rains": false,
-    "acidic": false,
     "sound_category": "cloudy",
     "required_weathers": [ "cloudy" ],
-    "sun_intensity": "light",
+    "priority": 50,
     "condition": {
       "and": [
-        { "compare_int": [ { "weather": "humidity" }, ">=", { "const": 98 } ] },
-        { "compare_int": [ { "weather": "pressure" }, ">", { "const": 1010 } ] },
-        { "compare_int": [ { "weather": "windpower" }, "<", { "const": 5 } ] },
-        { "compare_int": [ { "weather": "windpower" }, ">", { "const": 1 } ] }
+        { "math": [ "weather('humidity')", ">=", "98" ] },
+        { "math": [ "weather('pressure')", ">", "1010" ] },
+        { "math": [ "weather('windpower')", "<", "5" ] },
+        { "math": [ "weather('windpower')", ">", "1" ] }
       ]
     }
   },
@@ -93,14 +91,14 @@
     "dangerous": true,
     "precip": "none",
     "rains": false,
-    "acidic": false,
     "duration_min": "1 h",
     "duration_max": "1 h",
+    "priority": 50,
     "condition": {
       "and": [
-        { "compare_int": [ { "u_val": "var", "var_name": "silence_hour_proc" }, "<", { "const": 4 } ] },
+        { "math": [ "silence_hour_proc", "<", "4" ] },
         {
-          "compare_int": [ { "global_val": "var", "var_name": "hour" }, "=", { "u_val": "var", "var_name": "silence_hour_hour" } ]
+          "math": [ "hour", "==", "silence_hour_hour" ]
         }
       ]
     },

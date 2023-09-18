@@ -24,7 +24,7 @@
       "sloc_shelter_vandalized_b",
       "sloc_shelter_vandalized_c"
     ],
-    "custom_initial_date": { "day": 61 },
+    "start_of_game": { "day": 61 },
     "eoc": [ "thex_everything_eoc" ],
     "professions": [
       "fujiwara_no_mokou",

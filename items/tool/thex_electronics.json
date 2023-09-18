@@ -15,7 +15,7 @@
     "material": [ "plastic", "aluminum" ],
     "symbol": ",",
     "color": "light_gray",
-    "bashing": 8,
+    "melee_damage": { "bash": 8 },
     "use_action": [
       {
         "target": "ibm5100_lit",

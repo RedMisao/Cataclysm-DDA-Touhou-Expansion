@@ -12,15 +12,15 @@
     "material": [ "steel" ],
     "symbol": ":",
     "color": "dark_gray",
-    "bashing": 14,
+    "melee_damage": { "bash": 14 },
     "dispersion_modifier": -45,
     "location": "grip",
     "min_skills": [ [ "weapon", 3 ] ],
     "mod_targets": [ "pistol", "smg" ],
     "mode_modifier": [ [ "REACH", "knuckle_steel", 1, [ "MELEE", "REACH_ATTACK" ] ] ],
     "techniques": [ "BRUTAL", "WBLOCK_1", "WIDE" ],
-    "flags": [ "DURABLE_MELEE", "UNARMED_WEAPON" ],
-    "//": "This abomination doesn't exist, or shouldn't exist, but it's too good to let it pass",
+    "flags": [ "DURABLE_MELEE" ],
+    "//": "This abomination doesn't or shouldn't exist, but it's too good to let it pass",
     "//2": "Ideally, this would be exclusive with with barrel, stock and sight attachments",
     "//3": "Rejected values: durability +3"
   }
