@@ -293,7 +293,6 @@
       { "monster": "mon_muskrat", "weight": 10 },
       { "monster": "mon_otter", "weight": 10 },
       { "monster": "mon_duck", "weight": 10 },
-      { "monster": "mon_cockatrice", "weight": 1 },
       { "monster": "mon_dodo", "weight": 5 },
       { "monster": "mon_ectopistes", "weight": 10 },
       { "monster": "mon_icadyptes", "weight": 5 },
