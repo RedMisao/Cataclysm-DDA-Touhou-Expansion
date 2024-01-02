@@ -17,7 +17,7 @@
     "subtype": "collection",
     "traits": [
       { "group": "Hair_Gyokuto", "prob": 100 },
-      { "trait": "Skin_Fair", "prob": 100 },
+      { "group": "Skin_Fair", "prob": 100 },
       { "group": "Ear_Gyokuto", "prob": 100 },
       { "group": "Eye_Gyokuto", "prob": 100 }
     ]
@@ -26,7 +26,7 @@
     "id": "Appearance_Tengu",
     "type": "trait_group",
     "subtype": "collection",
-    "traits": [ { "group": "Hair_Tengu", "prob": 100 }, { "trait": "Skin_Fair", "prob": 100 }, { "group": "Eye_Tengu", "prob": 100 } ]
+    "traits": [ { "group": "Hair_Tengu", "prob": 100 }, { "group": "Skin_Fair", "prob": 100 }, { "group": "Eye_Tengu", "prob": 100 } ]
   },
   {
     "id": "Ear_Gyokuto",
