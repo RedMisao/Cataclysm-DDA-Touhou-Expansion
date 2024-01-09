@@ -19,7 +19,7 @@ It adds a lot of stuff based on the Touhou series lore (but also the fluff).  Th
 The mod includes so far:
 - [New mechanics](#new-mechanics)
 - [New weapons](#new-weapons), including new ammo types, magazines, gunmods, etc.
-- New monsters
+- [New monsters](#new-monsters)
   - [Extinct fauna](#extinct-fauna), to hunt or be hunted by
   - [Extinct flora](#extinct-flora), to appreciate
   - [Youkai](#youkai), to be haunted by
