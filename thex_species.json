@@ -9,7 +9,15 @@
   {
     "id": "GHOST_TOUHOU",
     "type": "SPECIES",
-    "description": "a ghost"
+    "description": "a ghost",
+    "flags": [ "SOULDMG_EXTRA" ]
+  },
+  {
+    "id": "FAIRY_TOUHOU",
+    "type": "SPECIES",
+    "description": "a fairy",
+    "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+    "fear_triggers": [ "FRIEND_DIED" ]
   },
   {
     "id": "GYOKUTO_TOUHOU",
@@ -38,7 +46,8 @@
     "id": "TSUKUMOGAMI_TOUHOU",
     "type": "SPECIES",
     "description": "an animated object",
-    "anger_triggers": [ "HURT", "PLAYER_WEAK" ]
+    "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
+    "flags": [ "SOULDMG_EXTRA" ]
   },
   {
     "id": "VAMPIRE_TOUHOU",
@@ -46,6 +55,7 @@
     "description": "a vampire",
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED" ],
     "fear_triggers": [ "FIRE" ],
+    "flags": [ "SOULDMG_EXTRA" ],
     "//": "add WATER, RAIN, SUNLIGHT in fear. Remove FIRE from fear_triggers, add SUNLIGHT in anger, but as a 'pouring gas on the fire' sort of way"
   },
   {
@@ -53,33 +63,37 @@
     "type": "SPECIES",
     "description": "a female apparition",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ],
+    "flags": [ "SOULDMG_EXTRA" ],
     "//": "Just YOUKAI_HOSTILE_TOUHOU with a different description"
   },
   {
     "id": "YOUKAI_HOSTILE_TOUHOU",
     "type": "SPECIES",
     "description": "a youkai",
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ]
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ],
+    "flags": [ "SOULDMG_EXTRA" ]
   },
   {
     "id": "YOUKAI_NEUTRAL_TOUHOU",
     "type": "SPECIES",
     "description": "a youkai",
-    "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ]
+    "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ],
+    "flags": [ "SOULDMG_EXTRA" ]
   },
   {
     "id": "YOUKAI_SKINWALKER_TOUHOU",
     "type": "SPECIES",
     "description": "a skinwalker",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ],
+    "flags": [ "SOULDMG_EXTRA" ],
     "//": "Just YOUKAI_HOSTILE_TOUHOU with a different description"
   },
   {
     "id": "YOUKAI_PSEUDO",
     "type": "SPECIES",
     "description": "Unknown",
-    "anger_triggers": [ "HURT" ],
-    "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
-    "//": "For human-looking things belonging to urban legends. Deliberately kept vague btw"
+    "anger_triggers": [ "FRIEND_ATTACKED", "HURT" ],
+    "fear_triggers": [ "FRIEND_DIED" ],
+    "//": "For human-looking things (not merely humanoids) belonging to urban legends. Deliberately kept vague btw"
   }
 ]

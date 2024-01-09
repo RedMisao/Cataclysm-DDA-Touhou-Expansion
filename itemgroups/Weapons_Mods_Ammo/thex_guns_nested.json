@@ -95,6 +95,27 @@
     ]
   },
   {
+    "id": "nested_m1941_johnson",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "m1941_johnson", "charges-min": 0, "charges-max": 10 },
+      { "group": "nested_m1941_johnson_clip", "prob": 66 },
+      { "group": "on_hand_3006" }
+    ]
+  },
+  {
+    "id": "nested_m1941_johnson_clip",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+	  { "item": "3006_clip", "charges-min": 0, "charges-max": 5 },
+	  { "item": "garandclip", "charges-min": 0, "charges-max": 8 }
+    ]
+  },
+  {
     "id": "nested_retool_m76",
     "type": "item_group",
     "subtype": "distribution",
@@ -338,7 +359,7 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [ { "item": "tkb002_p", "prob": 100 }, { "item": "tkb002_pm", "prob": 100 } ],
-    "//": "Both TKBs together so they spawn as variants, even though they were not"
+    "//": "Both TKBs together so they spawn as variants, even though they were not variants but different weapons"
   },
   {
     "id": "nested_tkb002_nested",

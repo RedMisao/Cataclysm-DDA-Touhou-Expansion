@@ -7,12 +7,13 @@
     "description": "Peaches.  Except they're not native to Earth.  And they don't rot.  And they make you inconveniently difficult to deal with, like turning your skin unpierceable or by granting immortality.  At least they used to.",
     "price": 280,
     "price_postapoc": 200,
+    "material": [ "veggy_heaven" ],
     "calories": 126,
     "fun": 8,
     "healthy": 2,
     "spoils_in": 0,
     "quench": 8,
-    "vitamins": [ [ "vitA", 6 ], [ "vitB", 12 ], [ "vitC", 24 ], [ "calcium", 2 ], [ "iron", 4 ] ]
+    "vitamins": [ [ "vitA", 6 ], [ "vitB", 12 ], [ "vitC", 24 ], [ "calcium", 2 ], [ "iron", 4 ], [ "satiety", 1 ] ]
   },
   {
     "id": "satsumaimo",
@@ -20,8 +21,8 @@
     "name": { "str": "raw satsumaimo", "str_pl": "raw satsumaimo" },
     "//": "These are just sweet potatoes, but I find the word funny",
     "description": "Reddish to purple tubers on the outside, go from yellow to greenish in the inside.  Not actually related to potatoes.",
-    "weight": "200 g",
     "volume": "375 ml",
+	"weight": "200 g",
     "price": 90,
     "price_postapoc": 50,
     "material": [ "veggy" ],

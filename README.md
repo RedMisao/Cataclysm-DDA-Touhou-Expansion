@@ -1,7 +1,7 @@
 # Cataclysm-DDA-Touhou-Expansion
 A CDDA expansion mod for [Touhou Professions](https://github.com/RedMisao/Cataclysm-DDA-Touhou-Mod) that various things from Touhou Project lore and fluff.
 
-**The mod's folder goes in /data/mods/**.  Last updated for game version: 2022-09-17-0952 experimental.
+**The mod's folder goes in /data/mods/**.  Last updated for game version: 2024-01-04-2303 experimental.
 
 
 ## About the mod
@@ -12,7 +12,7 @@ This mod was inspired by the following questions:
 
 and more, but those are the most important now.
 
-It adds a lot of stuff based on the Touhou series lore (but also the fluff).  The mod is not finished, but all things that appear ingame are functional.  Balance is not guaranteed.
+It adds a lot of stuff based on the Touhou series lore (but also the fluff).  The mod is not finished, but all things that appear ingame are functional.  Balance is not guaranteed.  To play the Expansion, select the **Touhou Mod-Expansion** scenario when creating a new character.
 
 
 ## Contents
@@ -21,6 +21,7 @@ The mod includes so far:
 - [New weapons](#new-weapons), including new ammo types, magazines, gunmods, etc.
 - New monsters
   - [Extinct fauna](#extinct-fauna), to hunt or be hunted by
+  - [Extinct flora](#extinct-flora), to appreciate
   - [Youkai](#youkai), to be haunted by
 - [Custom clothing](#new-clothing)
 - [New food and recipes](#new-food-and-recipes)
@@ -62,12 +63,16 @@ Sadly, there's also the
 * Theriodontia: Inostrancevia, Moschorhinus, Nochnitsa, Pristerognathus, Viatkogorgon.
 
 
+### Extinct flora
+* Archaeopteris, Cordaites, Glossopteris, Prototaxites, Psaronius
+
 ### Youkai
-* Cryptids and urban legends: Chupacabra, Enfield horror, Jackalope, nightcrawler, Mongolian death worm, Sasquatch, skinwalkers, squonk, Yeti, MIBs.
+* Cryptids and urban legends: Chupacabra, Enfield horror, jackalopes, nightcrawler, Mongolian death worm, Sasquatch, skinwalkers, squonk, Yeti, MIBs.
+* Fairies: self explanatory.
 * Ghosts: three different female ghosts.
 * Oni: lesser oni, generic oni, humanoid oni.
-* Tsukumogami: animated dolls, chairs.
-* Youkai: Chupacabra, Beast of Gévaudan, jinmenken, kunekune.
+* Tsukumogami: animated dolls, chairs, scarecrows.
+* Youkai: Chupacabra, Beast of Gévaudan, jinmenken, kunekune, mapinguari.
 
 
 ### New clothing
@@ -77,7 +82,7 @@ Sadly, there's also the
 
 ## New food and recipes
 * New kinds of meat were added: arthropod meat, bird meat, lamprey meat, and shrimplike meat.  These are harvested from the extinct fauna, including chickends dropping bird meat.
-* Vegetables: Satsumaimo (sweet potatoes).
+* Vegetables: Satsumaimo (sweet potatoes), heavenly peaches.
 * Each of the new items have their own basic crafting, like roasted bird meat, or boiled arthropod.
 * New dishes were also developed, like chicken pie, chicken soup, or paella, among several others.
 
@@ -88,7 +93,7 @@ Sadly, there's also the
 
 ## Minor milestones
 Relatively easy things to add, not in order:
-* Monsters: a lot more.  Fairies, rocs, banshees, more tsukumogami, etc.
+* Monsters: a lot more.  Rocs, more tsukumogami, more urban legends, etc.
 * Events: Night parade and Silence hour as weather/events that happen randomly.
 * Items: 16 new items that grant various special abilities or passive bonuses were already designed but not fully implemented (see Known Bugs).
 * Locations: Power spots, basically small zones of interest for the player to explore/search, where forgotten items reappear and certain monsters gather, depending on the spot type or surroundings.  A small Shinto-style shrine has been added, but it's unfinished.

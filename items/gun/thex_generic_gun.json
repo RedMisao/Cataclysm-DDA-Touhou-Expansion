@@ -146,11 +146,11 @@
     "looks_like": "tec9",
     "color": "dark_gray",
     "ammo": [ "9mm" ],
+    "skill": "smg",
     "dispersion": 360,
     "durability": 7,
     "min_cycle_recoil": 600,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
-    "skill": "smg",
     "reload_noise_volume": 8,
     "valid_mod_locations": [
       [ "accessories", 2 ],
@@ -234,6 +234,52 @@
     "flags": [ "RELOAD_ONE" ]
   },
   {
+    "id": "m1941_johnson",
+    "type": "GUN",
+    "name": { "str": "M1941 Johnson rifle" },
+    "copy-from": "garand",
+    "description": "A semi-automatic .30-06 battle rifle, developed to compete after the M1 Garand entered production.  While it presented some advantages over its competitor, such as increased ammo capacity and the use of recoil to cycle, it's several minor disadvantages were enough to make the switch.",
+    "volume": "3200 ml",
+    "weight": "4310 g",
+    "longest_side": "1165 mm",
+    "price": 90000,
+    "price_postapoc": 3500,
+    "to_hit": { "balance": "neutral", "grip": "solid", "length": "long", "surface": "point" },
+    "melee_damage": { "bash": 12 },
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "looks_like": "garand",
+    "ascii_picture": "m1_garand",
+    "color": "brown",
+    "ammo": [ "3006" ],
+    "barrel_length": "560 mm",
+    "skill": "rifle",
+    "dispersion": 200,
+    "durability": 7,
+    "min_cycle_recoil": 3200,
+    "reload": 165,
+    "reload_noise_volume": 10,
+    "valid_mod_locations": [
+      [ "barrel", 1 ],
+      [ "bayonet lug", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip mount", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail mount", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock mount", 1 ],
+      [ "stock accessory", 2 ],
+      [ "underbarrel mount", 1 ]
+    ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "3006": 10 }, "allowed_speedloaders": [ "3006_clip", "garandclip" ] }
+    ],
+	"//": "Virtually the same as a M1, very slightly worse specs (except for min_cycle_recoil), improved ammo capacity"
+  },
+  {
     "id": "m76",
     "type": "GUN",
     "name": { "str": "M76 Zastava", "str_pl": "M76 Zastavas" },
@@ -259,7 +305,7 @@
     "min_cycle_recoil": 1350,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
     "reload": 500,
-    "reload_noise_volume": 8,
+    "reload_noise_volume": 10,
     "variant_type": "gun",
     "variants": [
       {
@@ -400,7 +446,7 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
     "ranged_damage": { "damage_type": "bullet", "amount": -5 },
     "reload": 450,
-    "reload_noise_volume": 8,
+    "reload_noise_volume": 10,
     "valid_mod_locations": [
       [ "barrel", 1 ],
       [ "muzzle", 1 ],
@@ -438,7 +484,6 @@
     "range": 2,
     "ranged_damage": { "damage_type": "bullet", "amount": 0 },
     "reload_noise_volume": 10,
-    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "barrel", 1 ],
@@ -455,6 +500,7 @@
       [ "stock mount", 1 ],
       [ "underbarrel", 1 ]
     ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "765x53": 9 } } ],
     "flags": [ "NEVER_JAMS", "RELOAD_EJECT", "RELOAD_ONE" ]
   },
@@ -605,7 +651,7 @@
     "ranged_damage": { "damage_type": "bullet", "amount": 2 },
     "//": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
     "reload": 330,
-    "reload_noise_volume": 4,
+    "reload_noise_volume": 7,
     "variant_type": "gun",
     "variants": [
       {
@@ -680,7 +726,7 @@
     "min_cycle_recoil": 1200,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
     "reload": 450,
-    "reload_noise_volume": 8,
+    "reload_noise_volume": 9,
     "variant_type": "gun",
     "variants": [
       {
@@ -834,7 +880,7 @@
     "//3": "9x39 damage is too low, so I'm increasing it a bit here and with the ammo",
     "//4": "Ideally, the VSS should instead have increased crit chance and higher crit dmg modifier, to emulate the late-game scaling with proficiency",
     "reload": 330,
-    "reload_noise_volume": 4,
+    "reload_noise_volume": 7,
     "valid_mod_locations": [ [ "rail mount", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock accessory", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "rigid": true, "item_restriction": [ "9x39mag10", "9x39mag20", "9x39mag30" ] } ],
     "weapon_category": [ "AUTOMATIC_RIFLES" ]

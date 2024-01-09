@@ -7,7 +7,23 @@
     "min": -18,
     "max": 1008,
     "rate": "-20 m",
+	"weight_per_unit": "100 g",
     "flags": [ "NO_DISPLAY" ],
     "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff"
+  },
+  {
+    "id": "satiety",
+    "type": "vitamin",
+    "vit_type": "counter",
+    "name": { "str": "Sated" },
+    "min": 0,
+    "max": 1000,
+	"excess": "disease_satiety",
+    "disease_excess": [ [ 1, 5 ], [ 6, 12 ], [ 12, 1000 ] ],
+    "rate": "-6 h",
+	"weight_per_unit": "200 g",
+    "flags": [ "NO_DISPLAY" ],
+    "//": "1 peach equals 150 g, so eating more than one adds 1 satiety, which will keep increasing as long as the PC keeps eating, reducing slowly over time",
+	"//2": "This is independent of normal satiety"
   }
 ]

@@ -24,7 +24,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "dodge": 3,
     "armor": { "bash": 6, "cut": 6, "stab": 4, "bullet": 4, "electric": 6 },
-    "bleed_rate": 33,
+    "bleed_rate": 66,
     "vision_day": 35,
     "vision_night": 25,
     "path_settings": { "max_dist": 25 },

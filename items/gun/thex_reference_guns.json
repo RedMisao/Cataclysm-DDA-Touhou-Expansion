@@ -34,7 +34,7 @@
     "type": "GUN",
     "name": { "str_sp": "TERA type 2" },
     "copy-from": "rifle_manual",
-    "description": "WIP",
+    "description": "An old Japanese firearm.  It was designed to be used as takedown rifle, which explains the hinge at the middle of the wooden frame.  There is an inscription at one side, reading \"Ni-shiki Teishin Rakkasan Shōjū\".",
     "volume": "2700 ml",
     "weight": "3200 g",
     "longest_side": "1130 mm",

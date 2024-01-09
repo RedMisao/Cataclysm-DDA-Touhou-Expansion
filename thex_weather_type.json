@@ -21,7 +21,7 @@
       "and": [ "is_night", { "math": [ "night_parade_proc", "<", "4" ] } ]
     },
     "//": "Should happen ONLY at night !!!",
-    "//2": "Super WIP: this should spawn lots of hostile youkai enemies, probably a mid-endgame weather or triggered event"
+    "//2": "Super WIP: this should spawn lots of hostile youkai enemies, probably a midgame weather or triggered event"
   },
   {
     "id": "scarlet_fog",

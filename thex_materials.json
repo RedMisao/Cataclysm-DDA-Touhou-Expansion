@@ -106,6 +106,13 @@
     "vitamins": [ [ "impurity", 0.1 ] ]
   },
   {
+    "id": "veggy_heaven",
+    "type": "material",
+    "name": "Vegetable Matter",
+    "copy-from": "veggy",
+    "vitamins": [ [ "impurity", 0 ] ]
+  },
+  {
     "id": "bean",
     "type": "material",
     "name": "Bean",

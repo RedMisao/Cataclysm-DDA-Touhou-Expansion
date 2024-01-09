@@ -44,6 +44,18 @@
     "flags": [ "NO_EXPLOSION_SFX", "NO_HANDS", "NO_PROJECTILE", "SILENT" ]
   },
   {
+    "id": "death_fairy",
+    "type": "SPELL",
+    "name": "fairy death",
+    "description": "Default fairy death",
+    "spell_class": "NONE",
+    "valid_targets": [ "ground", "self" ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_aoe": 1,
+    "max_aoe": 1
+  },
+  {
     "id": "death_mib",
     "type": "SPELL",
     "name": { "str": "MIB death (chain component)" },
@@ -124,6 +136,25 @@
     "min_aoe": 1,
     "max_aoe": 1,
     "flags": [ "NO_EXPLOSION_SFX", "HOSTILE_SUMMON", "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
+  },
+  {
+    "id": "firefighter_fairy_fire",
+    "type": "SPELL",
+    "name": "Firefighter fire",
+    "description": "Firefighter fire",
+    "spell_class": "NONE",
+    "valid_targets": [ "ground", "hostile" ],
+    "effect": "attack",
+    "shape": "line",
+    "damage_type": "heat",
+    "min_damage": 3,
+    "max_damage": 9,
+    "min_range": 4,
+    "max_range": 6,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "IGNORE_WALLS", "NO_EXPLOSION_SFX", "NO_PROJECTILE", "RANDOM_DAMAGE", "RANDOM_DURATION", "SILENT" ]
   },
   {
     "id": "olgoi_shock",
@@ -282,6 +313,22 @@
     "base_energy_cost": 0,
     "energy_source": "MANA",
     "flags": [ "IGNORE_WALLS", "NO_EXPLOSION_SFX", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "RANDOM_AOE" ]
+  },
+  {
+    "id": "scarecrow_wakeup",
+    "type": "SPELL",
+    "name": { "str": "Scarecrow wake up" },
+    "description": "Wakes the scarecrow up and allow them to chase the player.",
+    "effect": "targeted_polymorph",
+    "effect_str": "mon_scarecrow",
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "message": "The scarecrow wakes up!",
+    "min_damage": 9999,
+    "max_damage": 9999,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ]
   },
   {
     "id": "shrieking_20d2",
@@ -597,29 +644,5 @@
     "min_aoe": 1,
     "max_aoe": 1,
     "flags": [ "SILENT" ]
-  },
-  {
-    "id": "yoshika_nails",
-    "type": "SPELL",
-    "name": "Nail slash",
-    "description": "Yoshika's nail slash attack",
-    "spell_class": "NONE",
-    "valid_targets": [ "ground", "hostile" ],
-    "effect": "attack",
-    "shape": "cone",
-    "damage_type": "cut",
-    "min_damage": 34,
-    "max_damage": 135,
-    "damage_increment": 10.1,
-    "min_range": 3,
-    "max_range": 3,
-    "min_aoe": 65,
-    "max_aoe": 65,
-    "difficulty": -10,
-    "max_level": 10,
-    "base_casting_time": 85,
-    "base_energy_cost": 0,
-    "energy_source": "MANA",
-    "flags": [ "SOMATIC", "NO_LEGS" ]
   }
 ]

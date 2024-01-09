@@ -246,7 +246,7 @@
     "id": "mon_glossotherium",
     "type": "MONSTER",
     "name": { "str": "glossotherium" },
-    "description": "A huge, fat looking, bear-like sloth.  You can tell it's a sloth because the sloth-like claws and sloth-like tail, not to mention the snout that doesn't look like a bear's.",
+    "description": "A huge, fat looking, bear-like sloth.  You can tell it's a sloth because the sloth-like claws and sloth-like tail, not to mention the snout that doesn't look like a bear's (it also doesn't look like a sloth).",
     "volume": "900 L",
     "weight": "1000 kg",
     "default_faction": "bear",

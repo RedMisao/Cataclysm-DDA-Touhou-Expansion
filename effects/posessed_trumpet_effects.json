@@ -1,6 +1,6 @@
 [
   {
-    "id": "posessed_trumpet_stat_dex_buff_effect",
+    "id": "possessed_trumpet_stat_dex_buff_effect",
     "type": "effect_type",
     "name": [ "Mania (DEX)" ],
     "desc": [ "Dexterity is improved." ],
@@ -11,7 +11,7 @@
     "max_duration": "1 hour"
   },
   {
-    "id": "posessed_trumpet_stat_dex_debuff_effect",
+    "id": "possessed_trumpet_stat_dex_debuff_effect",
     "type": "effect_type",
     "name": [ "Mania (DEX)" ],
     "desc": [ "Dexterity is worsened." ],
@@ -22,7 +22,7 @@
     "max_duration": "1 hour"
   },
   {
-    "id": "posessed_trumpet_stat_int_buff_effect",
+    "id": "possessed_trumpet_stat_int_buff_effect",
     "type": "effect_type",
     "name": [ "Mania (INT)" ],
     "desc": [ "Intelligence is improved." ],
@@ -33,7 +33,7 @@
     "max_duration": "1 hour"
   },
   {
-    "id": "posessed_trumpet_stat_int_debuff_effect",
+    "id": "possessed_trumpet_stat_int_debuff_effect",
     "type": "effect_type",
     "name": [ "Mania (INT)" ],
     "desc": [ "Intelligence is worsened." ],
@@ -44,7 +44,7 @@
     "max_duration": "1 hour"
   },
   {
-    "id": "posessed_trumpet_stat_per_buff_effect",
+    "id": "possessed_trumpet_stat_per_buff_effect",
     "type": "effect_type",
     "name": [ "Mania (PER)" ],
     "desc": [ "Perception is improved." ],
@@ -55,7 +55,7 @@
     "max_duration": "1 hour"
   },
   {
-    "id": "posessed_trumpet_stat_per_debuff_effect",
+    "id": "possessed_trumpet_stat_per_debuff_effect",
     "type": "effect_type",
     "name": [ "Mania (PER)" ],
     "desc": [ "Perception is worsened." ],
@@ -66,7 +66,7 @@
     "max_duration": "1 hour"
   },
   {
-    "id": "posessed_trumpet_stat_str_buff_effect",
+    "id": "possessed_trumpet_stat_str_buff_effect",
     "type": "effect_type",
     "name": [ "Mania (STR)" ],
     "desc": [ "Strength is improved." ],
@@ -77,7 +77,7 @@
     "max_duration": "1 hour"
   },
   {
-    "id": "posessed_trumpet_stat_str_debuff_effect",
+    "id": "possessed_trumpet_stat_str_debuff_effect",
     "type": "effect_type",
     "name": [ "Mania (STR)" ],
     "desc": [ "Strength is worsened." ],

@@ -12,7 +12,8 @@
       { "group": "newspaper", "prob": 100 },
       { "group": "rare_martial_arts_books", "prob": 100 },
       { "item": "umbrella", "prob": 100 },
-      { "group": "writing_utensils", "prob": 100 }
+      { "group": "writing_utensils", "prob": 100 },
+      { "group": "socks_unisex", "prob": 100 }
     ],
     "//": "All items considered for reverse-spiriting away on generic mystery spots"
   },
@@ -32,7 +33,7 @@
       { "item": "lucky_charm", "prob": 100 },
       { "item": "mini_hakkero_replica", "prob": 100 },
       { "item": "oni_gourd", "prob": 100 },
-      { "item": "posessed_trumpet", "prob": 100 },
+      { "item": "possessed_trumpet", "prob": 100 },
       { "item": "prankster_shovel", "prob": 100 },
       { "item": "sphere_of_darkness", "prob": 100 },
       { "item": "spider_charm", "prob": 100 },
@@ -66,10 +67,23 @@
       { "item": "aresfmg_folded", "prob": 100 },
       { "item": "ceamm1", "prob": 100 },
       { "item": "idw", "prob": 100 },
+      { "item": "m1941_johnson", "prob": 100 },
       { "item": "pieper_m1893", "prob": 100 },
       { "item": "stg44", "prob": 100 },
       { "group": "nested_tkb002_items", "prob": 100 },
       { "item": "wa2000", "prob": 100 }
     ]
+  },
+  {
+    "id": "thex_drops_placeholder",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "forgotten_weapons", "prob": 100 },
+      { "group": "forgotten_ammo", "prob": 100 },
+      { "group": "touhou_magical_item", "prob": 100 },
+      { "group": "touhou_rspirited", "prob": 100 }
+    ],
+	"//": "Placeholder !!! This is so the mod's items can show up in the world, until I think of a better (thematically) way to get these items"
   }
 ]

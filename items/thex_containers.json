@@ -81,7 +81,7 @@
     "type": "GENERIC",
     "category": "container",
     "name": { "str": "occult sphere", "str_pl": "occult sphere" },
-    "description": "WIP",
+    "description": "A purple, hand-sized sphere of a reflective material.  Touching it makes you feel funny, and you have this idea in your mind that these things may carry useful stuff inside.",
     "weight": "3700 g",
     "volume": "5575 ml",
     "longest_side": "11 cm",

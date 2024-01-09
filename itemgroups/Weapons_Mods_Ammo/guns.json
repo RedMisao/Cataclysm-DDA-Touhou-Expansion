@@ -51,6 +51,7 @@
     "extend": {
       "items": [
         { "item": "kar98", "prob": 1, "charges-min": 0, "charges-max": 5 },
+        { "item": "m1941_johnson", "prob": 1, "charges-min": 0, "charges-max": 10 },
         { "item": "sig550", "prob": 1, "charges-min": 0, "charges-max": 20 }
       ]
     }
@@ -143,6 +144,7 @@
       "items": [
         { "item": "ceamm1", "prob": 5, "charges-min": 0, "charges-max": 0 },
         { "item": "kar98", "prob": 10, "charges-min": 0, "charges-max": 0 },
+        { "item": "m1941_johnson", "prob": 10, "charges-min": 0, "charges-max": 10 },
         { "item": "m76", "prob": 10, "charges-min": 0, "charges-max": 0 },
         { "item": "ots48", "prob": 5, "charges-min": 0, "charges-max": 0 },
         { "item": "pieper_m1893", "prob": 1, "charges-min": 0, "charges-max": 0 },

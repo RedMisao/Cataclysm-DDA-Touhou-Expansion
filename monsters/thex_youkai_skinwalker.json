@@ -30,9 +30,9 @@
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
       [ "ABSORB_MEAT", 35 ],
-      [ "PARROT", 23 ],
+      [ "PARROT", 43 ],
       [ "slash_3d3", 7 ],
-      { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 19 }
+      { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 }
     ],
     "flags": [ "CLIMBS", "GOODHEARING", "KEENNOSE", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
   },
@@ -68,9 +68,9 @@
     "special_attacks": [
       [ "ABSORB_MEAT", 35 ],
       [ "longswipe", 19 ],
-      [ "PARROT", 17 ],
+      [ "PARROT", 29 ],
       [ "slash_3d3", 7 ],
-      { "spell_data": { "id": "skinwalker_scream_6d3" }, "type": "spell", "cooldown": 19 }
+      { "spell_data": { "id": "skinwalker_scream_6d3" }, "type": "spell", "cooldown": 31 }
     ],
     "flags": [
       "CAN_OPEN_DOORS",
@@ -115,8 +115,8 @@
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
       [ "ABSORB_MEAT", 35 ],
-      { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 19 },
-      { "spell_data": { "id": "skinwalker_transform" }, "type": "spell", "cooldown": 3 }
+      { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 },
+      { "spell_data": { "id": "skinwalker_transform" }, "type": "spell", "cooldown": 7 }
     ],
     "death_drops": "skinwalker_witch_drops",
     "flags": [
@@ -164,9 +164,9 @@
     "special_attacks": [
       [ "ABSORB_MEAT", 35 ],
       [ "hug_11d3", 11 ],
-      [ "PARROT", 19 ],
+      [ "PARROT", 31 ],
       [ "smash_10d3", 7 ],
-      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 19 }
+      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
     "flags": [ "BASHES", "CLIMBS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ]
   },
@@ -204,8 +204,8 @@
       [ "ABSORB_MEAT", 35 ],
       [ "charge_8d3", 7 ],
       [ "horn_7d3", 7 ],
-      [ "PARROT", 19 ],
-      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 19 }
+      [ "PARROT", 31 ],
+      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
     "flags": [ "BASHES", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
@@ -239,7 +239,7 @@
     "vision_night": 35,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
-    "special_attacks": [ [ "ABSORB_MEAT", 35 ], [ "claw_6d3", 5 ], [ "PARROT", 19 ] ],
+    "special_attacks": [ [ "ABSORB_MEAT", 35 ], [ "claw_6d3", 5 ], [ "PARROT", 31 ] ],
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "GOODHEARING", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -274,8 +274,8 @@
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
       [ "ABSORB_MEAT", 35 ],
-      [ "PARROT", 19 ],
-      { "spell_data": { "id": "skinwalker_curse_7d2" }, "type": "spell", "cooldown": 7 }
+      [ "PARROT", 31 ],
+      { "spell_data": { "id": "skinwalker_curse_7d2" }, "type": "spell", "cooldown": 17 }
     ],
     "flags": [ "CAN_OPEN_DOORS", "CLIMBS", "HEARS", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
@@ -311,9 +311,9 @@
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
       [ "ABSORB_MEAT", 35 ],
-      [ "PARROT", 19 ],
+      [ "PARROT", 31 ],
       [ "skinwalker_bite_9d2", 7 ],
-      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 19 }
+      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
     "flags": [ "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
   }

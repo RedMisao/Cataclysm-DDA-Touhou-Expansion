@@ -9,7 +9,6 @@
   ],
   "dependencies": [
     "dda",
-    "Touhou",
-    "crazy_cataclysm"
+    "Touhou"
   ]
 }

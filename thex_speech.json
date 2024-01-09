@@ -216,418 +216,226 @@
     "volume": 6
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Stop!",
     "volume": 24
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Desist!",
     "volume": 20
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Found it.",
     "volume": 24
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 37's wrench at 47, noise.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 11 on 7 hammer's, jammer.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 5 past 13, set.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Cease!",
     "volume": 24
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Freeze!",
     "volume": 20
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Catching.",
     "volume": 24
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 19's key in 43, string.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 97 to 61, lines.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 89 under 2, push.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Ovv er.",
     "volume": 24
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "S Top!",
     "volume": 20
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "*unintelligible*",
     "volume": 24
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Num mber 29's key it 3.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 67 *indiscernible speech* 17",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 59 unm 71 tl-tl.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
-    "type": "speech",
-    "sound": "Stop!",
-    "volume": 24
-  },
-  {
-    "speaker": "mon_mib",
-    "type": "speech",
-    "sound": "Freeze!",
-    "volume": 20
-  },
-  {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Engaging.",
     "volume": 24
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 73 near 29, cut",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 53 by 23, pull.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib",
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
     "type": "speech",
     "sound": "Number 79 blocking 31, undo.",
     "volume": 12
   },
   {
-    "speaker": "mon_mib2",
-    "type": "speech",
-    "sound": "Cease!",
-    "volume": 24
-  },
-  {
-    "speaker": "mon_mib2",
-    "type": "speech",
-    "sound": "Freeze!",
-    "volume": 20
-  },
-  {
-    "speaker": "mon_mib2",
-    "type": "speech",
-    "sound": "Catching.",
-    "volume": 24
-  },
-  {
-    "speaker": "mon_mib2",
-    "type": "speech",
-    "sound": "Number 19's key in 43, string.",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib2",
-    "type": "speech",
-    "sound": "Number 97 to 61, lines.",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib2",
-    "type": "speech",
-    "sound": "Number 89 under 2, push.",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib3",
-    "type": "speech",
-    "sound": "Ovv er.",
-    "volume": 24
-  },
-  {
-    "speaker": "mon_mib3",
-    "type": "speech",
-    "sound": "S Top!",
-    "volume": 20
-  },
-  {
-    "speaker": "mon_mib3",
-    "type": "speech",
-    "sound": "*unintelligible*",
-    "volume": 24
-  },
-  {
-    "speaker": "mon_mib3",
-    "type": "speech",
-    "sound": "Num mber 29's key it 3.",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib3",
-    "type": "speech",
-    "sound": "Number 67 *indiscernible speech* 17",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib3",
-    "type": "speech",
-    "sound": "Number 59 unm 71 tl-tl.",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib4",
-    "type": "speech",
-    "sound": "Stop!",
-    "volume": 24
-  },
-  {
-    "speaker": "mon_mib4",
-    "type": "speech",
-    "sound": "Freeze!",
-    "volume": 20
-  },
-  {
-    "speaker": "mon_mib4",
-    "type": "speech",
-    "sound": "Engaging.",
-    "volume": 24
-  },
-  {
-    "speaker": "mon_mib4",
-    "type": "speech",
-    "sound": "Number 73 near 29, cut",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib4",
-    "type": "speech",
-    "sound": "Number 53 by 23, pull.",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_mib4",
-    "type": "speech",
-    "sound": "Number 79 blocking 31, undo.",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo" ],
     "type": "speech",
     "sound": "*laugh*",
-    "volume": 15
+    "volume": 16
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo" ],
     "type": "speech",
     "sound": "Ha ha ha ha",
-    "volume": 15
+    "volume": 16
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo", "mon_skinwalker_witch_bear" ],
     "type": "speech",
     "sound": "Hey!",
-    "volume": 15
+    "volume": 20
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo" ],
     "type": "speech",
     "sound": "Yo.",
-    "volume": 15
+    "volume": 12
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo" ],
     "type": "speech",
     "sound": " ",
-    "volume": 15
+    "volume": 20
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo", "mon_skinwalker_witch_wolf" ],
     "type": "speech",
     "sound": "Hello?",
-    "volume": 15
+    "volume": 16
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo", "mon_skinwalker_witch_wolf" ],
     "type": "speech",
     "sound": "Hey.",
-    "volume": 15
+    "volume": 12
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo", "mon_skinwalker_witch_bear" ],
     "type": "speech",
     "sound": "Do you hear me?",
-    "volume": 15
+    "volume": 20
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo" ],
     "type": "speech",
     "sound": "*piercing scream*",
     "volume": 33
   },
   {
-    "speaker": "mon_skinwalker_twig",
+    "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo" ],
     "type": "speech",
     "sound": "*blood curdling scream*",
     "volume": 33
   },
   {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "*laugh*",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "Ha ha ha ha",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "Hey!",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "Yo.",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": " ",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "Hello?",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "Hey.",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "Do you hear me?",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "*piercing scream*",
-    "volume": 33
-  },
-  {
-    "speaker": "mon_skinwalker_wendigo",
-    "type": "speech",
-    "sound": "*blood curdling scream*",
-    "volume": 33
-  },
-  {
-    "speaker": "mon_skinwalker_witch_bear",
+    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow", "mon_skinwalker_witch_deer", "mon_skinwalker_witch_wolf" ],
     "type": "speech",
     "sound": "*distorted laugh*",
-    "volume": 15
+    "volume": 16
   },
   {
-    "speaker": "mon_skinwalker_witch_bear",
+    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow", "mon_skinwalker_witch_goat" ],
     "type": "speech",
     "sound": "Hä hä hä hä",
-    "volume": 15
+    "volume": 12
   },
   {
-    "speaker": "mon_skinwalker_witch_bear",
+    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow" ],
     "type": "speech",
     "sound": "H̸̜̻̃e̵̱̋͋y̷̢̬͑!̵̚",
-    "volume": 15
+    "volume": 16
   },
   {
-    "speaker": "mon_skinwalker_witch_bear",
+    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow", "mon_skinwalker_witch_goat" ],
     "type": "speech",
     "sound": "*distorted snorts*",
-    "volume": 15
+    "volume": 16
   },
   {
-    "speaker": "mon_skinwalker_witch_bear",
+    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow" ],
     "type": "speech",
     "sound": "*wretched laugh*",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_bear",
-    "type": "speech",
-    "sound": "Hey!",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_bear",
-    "type": "speech",
-    "sound": "Do you hear me?",
-    "volume": 15
+    "volume": 16
   },
   {
     "speaker": "mon_skinwalker_witch_bear",
@@ -642,43 +450,19 @@
     "volume": 33
   },
   {
-    "speaker": "mon_skinwalker_witch_cow",
-    "type": "speech",
-    "sound": "*distorted laugh*",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_cow",
-    "type": "speech",
-    "sound": "Hä hä hä hä",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_cow",
-    "type": "speech",
-    "sound": "H̸̜̻̃e̵̱̋͋y̷̢̬͑!̵̚",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_cow",
+    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow", "mon_skinwalker_witch_deer", "mon_skinwalker_witch_goat", "mon_skinwalker_witch_wolf" ],
     "type": "speech",
     "sound": "H̸͈̐e̶͙̰̔̈́ľ̷̡̲͝l̴̩̜͠o̵̙͌?̵̠̩̀",
-    "volume": 15
+    "volume": 12
   },
   {
-    "speaker": "mon_skinwalker_witch_cow",
-    "type": "speech",
-    "sound": "*wretched laugh*",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_cow",
+    "speaker": [ "mon_skinwalker_witch_cow", "mon_skinwalker_witch_goat" ],
     "type": "speech",
     "sound": "Clo ser!",
     "volume": 15
   },
   {
-    "speaker": "mon_skinwalker_witch_cow",
+    "speaker": [ "mon_skinwalker_witch_cow", "mon_skinwalker_witch_deer", "mon_skinwalker_witch_goat" ],
     "type": "speech",
     "sound": "Follow më.",
     "volume": 15
@@ -698,12 +482,6 @@
   {
     "speaker": "mon_skinwalker_witch_deer",
     "type": "speech",
-    "sound": "*distorted laugh*",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_deer",
-    "type": "speech",
     "sound": "HÄ HÄ HÄ HÄ",
     "volume": 17
   },
@@ -714,19 +492,19 @@
     "volume": 15
   },
   {
-    "speaker": "mon_skinwalker_witch_deer",
+    "speaker": [ "mon_skinwalker_witch_deer", "mon_skinwalker_witch_goat" ],
     "type": "speech",
     "sound": "* g̶̲̿̓i̴̜̼̎͝ĝ̵̨̚ͅġ̷͖͈l̷͍̪͌ẽ̵̢͎ *",
     "volume": 15
   },
   {
-    "speaker": "mon_skinwalker_witch_deer",
+    "speaker": [ "mon_skinwalker_witch_deer", "mon_skinwalker_witch_goat" ],
     "type": "speech",
     "sound": "Co me!",
     "volume": 15
   },
   {
-    "speaker": "mon_skinwalker_witch_deer",
+    "speaker": [ "mon_skinwalker_witch_deer", "mon_skinwalker_witch_goat" ],
     "type": "speech",
     "sound": "Neär.",
     "volume": 15
@@ -747,12 +525,6 @@
     "speaker": "mon_skinwalker_witch_goat",
     "type": "speech",
     "sound": "* l̸̙̖̉ả̷̬͈u̵̝͉̇g̴͚͘͠h̶̥͓̓ *",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_goat",
-    "type": "speech",
-    "sound": "Hë hë hë hë",
     "volume": 15
   },
   {
@@ -782,12 +554,6 @@
   {
     "speaker": "mon_skinwalker_witch_goat",
     "type": "speech",
-    "sound": "Come closer…",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_goat",
-    "type": "speech",
     "sound": "*whispers around you*",
     "volume": 33
   },
@@ -795,12 +561,6 @@
     "speaker": "mon_skinwalker_witch_goat",
     "type": "speech",
     "sound": "*piercing bawl*",
-    "volume": 33
-  },
-  {
-    "speaker": "mon_skinwalker_witch_goat",
-    "type": "speech",
-    "sound": "*whispers around you*",
     "volume": 33
   },
   {
@@ -831,18 +591,6 @@
     "speaker": "mon_skinwalker_witch_wolf",
     "type": "speech",
     "sound": " g̸͓̉͂r̶̛̠o̶̙͒̃w̷̮̎ĺ̷̥̤͌ ",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_wolf",
-    "type": "speech",
-    "sound": "Hello?",
-    "volume": 15
-  },
-  {
-    "speaker": "mon_skinwalker_witch_wolf",
-    "type": "speech",
-    "sound": "Hëy.",
     "volume": 15
   },
   {
@@ -904,30 +652,6 @@
     "type": "speech",
     "sound": "*snuffling noise*",
     "volume": 6
-  },
-  {
-    "speaker": "mon_vengeful_spirit_kaenbyou",
-    "type": "speech",
-    "sound": "\"…uuuu…\"",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_vengeful_spirit_kaenbyou",
-    "type": "speech",
-    "sound": "\"aAaaaa…\"",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_vengeful_spirit_kaenbyou",
-    "type": "speech",
-    "sound": "\"kh… ggh…\"",
-    "volume": 12
-  },
-  {
-    "speaker": "mon_vengeful_spirit_kaenbyou",
-    "type": "speech",
-    "sound": "\"nn… N… no…\"",
-    "volume": 12
   },
   {
     "speaker": "mon_white_lady_angry",
