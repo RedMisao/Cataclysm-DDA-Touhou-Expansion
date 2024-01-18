@@ -15,7 +15,7 @@
           "condition": {
             "and": [
               { "u_has_trait": "LUNARDIET" },
-              { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">", { "const": 504 } ] }
+              { "math": [ "u_vitamin('impurity')", ">", "504" ] }
             ]
           }
         }
@@ -39,7 +39,7 @@
           "condition": {
             "and": [
               { "u_has_trait": "IMPURE" },
-              { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 503 } ] }
+              { "math": [ "u_vitamin('impurity')", "<=", "503" ] }
             ]
           }
         }

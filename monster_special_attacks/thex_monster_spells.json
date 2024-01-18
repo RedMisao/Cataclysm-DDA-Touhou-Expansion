@@ -62,8 +62,8 @@
     "description": "Chance to just die, or to spawn something else on death.",
     "effect": "attack",
     "extra_effects": [
-      { "id": "death_mib_none" },
-      { "id": "death_mib_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
       { "id": "death_mib_shadowspawn" },
       { "id": "death_mib_alienspawn" },
       { "id": "death_mib_terminatorspawn" }
@@ -75,19 +75,6 @@
     "min_aoe": 1,
     "max_aoe": 1,
     "flags": [ "NO_EXPLOSION_SFX", "WONDER", "SILENT" ]
-  },
-  {
-    "id": "death_mib_none",
-    "type": "SPELL",
-    "name": "Normal death",
-    "description": "Default MIB death",
-    "spell_class": "NONE",
-    "valid_targets": [ "ground", "self" ],
-    "effect": "attack",
-    "shape": "blast",
-    "min_aoe": 1,
-    "max_aoe": 1,
-    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ]
   },
   {
     "id": "death_mib_shadowspawn",
@@ -103,7 +90,7 @@
     "max_damage": 1,
     "min_aoe": 1,
     "max_aoe": 1,
-    "flags": [ "NO_EXPLOSION_SFX", "HOSTILE_SUMMON", "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
+    "flags": [ "HOSTILE_SUMMON", "NO_EXPLOSION_SFX",  "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
   },
   {
     "id": "death_mib_alienspawn",
@@ -119,7 +106,7 @@
     "max_damage": 1,
     "min_aoe": 1,
     "max_aoe": 1,
-    "flags": [ "NO_EXPLOSION_SFX", "HOSTILE_SUMMON", "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
+    "flags": [ "HOSTILE_SUMMON", "NO_EXPLOSION_SFX", "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
   },
   {
     "id": "death_mib_terminatorspawn",
@@ -135,7 +122,88 @@
     "max_damage": 1,
     "min_aoe": 1,
     "max_aoe": 1,
-    "flags": [ "NO_EXPLOSION_SFX", "HOSTILE_SUMMON", "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
+    "flags": [ "HOSTILE_SUMMON", "NO_EXPLOSION_SFX", "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
+  },
+  {
+    "id": "death_rabbit_touhou",
+    "type": "SPELL",
+    "name": { "str": "mon_rabbit death (chain component 1)" },
+    "description": "10% chance to reroll death",
+    "effect": "attack",
+    "extra_effects": [
+      { "id": "death_rabbit_touhou_reroll" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" }
+    ],
+    "valid_targets": [ "ground", "self" ],
+    "shape": "blast",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [ "NO_EXPLOSION_SFX", "WONDER", "SILENT" ]
+  },
+  {
+    "id": "death_rabbit_touhou_reroll",
+    "type": "SPELL",
+    "name": { "str": "mon_rabbit death (chain component 1)" },
+    "description": "10% chance to transform",
+    "effect": "attack",
+    "extra_effects": [
+      { "id": "death_rabbit_touhou_transform" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" },
+      { "id": "death_monster_touhou_none" }
+    ],
+    "valid_targets": [ "ground", "self" ],
+    "shape": "blast",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [ "NO_EXPLOSION_SFX", "WONDER", "SILENT" ]
+  },
+  {
+    "id": "death_rabbit_touhou_transform",
+    "type": "SPELL",
+    "name": { "str": "Skinwalker transform (chain component 2)" },
+    "description": "Subspell to transform into a rabbit skinwalker.",
+    "effect": "targeted_polymorph",
+    "effect_str": "mon_skinwalker_rabbit",
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "message": "The rabbit explodes into gore and something emerges from the tiny corpse!",
+    "min_damage": 999,
+    "max_damage": 999,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [ ]
+  },
+  {
+    "id": "death_monster_touhou_none",
+    "type": "SPELL",
+    "name": "Normal death",
+    "description": "Default Touhou Mod monster death",
+    "spell_class": "NONE",
+    "valid_targets": [ "ground", "self" ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ]
   },
   {
     "id": "firefighter_fairy_fire",
@@ -490,7 +558,7 @@
     "valid_targets": [ "self" ],
     "effect": "none",
     "shape": "blast",
-    "message": "The person does a series of eerie steps and gestures.",
+    "message": "The person gestures eerily.",
     "min_damage": 0,
     "max_damage": 0,
     "min_aoe": 0,

@@ -16,7 +16,7 @@
             "condition": { "u_has_trait": "VAMPIRE_SPECIES" },
             "effect": [
               {
-                "math": [ "u_val('vitamin', 'name:hblood_vitamin')", "=", "648 + rand(144)" ]
+                "math": [ "u_vitamin('hblood_vitamin')", "=", "648 + rand(144)" ]
               }
             ]
           }
@@ -47,15 +47,15 @@
         "run_eocs": [
           {
             "id": "impurity_none",
-            "condition": { "math": [ "u_val('vitamin', 'name:impurity')", "<", "0" ] },
+            "condition": { "math": [ "u_vitamin('impurity')", "<", "0" ] },
             "effect": [ { "math": [ "var_impurity", "=", "0" ] } ]
           },
           {
             "id": "impurity_verylow",
             "condition": {
               "and": [
-                { "math": [ "u_val('vitamin', 'name:impurity')", ">=", "1" ] },
-                { "math": [ "u_val('vitamin', 'name:impurity')", "<=", "72" ] }
+                { "math": [ "u_vitamin('impurity')", ">=", "1" ] },
+                { "math": [ "u_vitamin('impurity')", "<=", "72" ] }
               ]
             },
             "effect": [ { "math": [ "var_impurity", "=", "1" ] } ]
@@ -64,15 +64,15 @@
             "id": "impurity_low",
             "condition": {
               "and": [
-                { "math": [ "u_val('vitamin', 'name:impurity')", ">=", "73" ] },
-                { "math": [ "u_val('vitamin', 'name:impurity')", "<=", "504" ] }
+                { "math": [ "u_vitamin('impurity')", ">=", "73" ] },
+                { "math": [ "u_vitamin('impurity')", "<=", "504" ] }
               ]
             },
             "effect": [ { "math": [ "var_impurity", "=", "2" ] } ]
           },
           {
             "id": "impurity_high",
-            "condition": { "math": [ "u_val('vitamin', 'name:impurity')", ">=", "505" ] },
+            "condition": { "math": [ "u_vitamin('impurity')", ">=", "505" ] },
             "effect": [ { "math": [ "var_impurity", "=", "3" ] } ]
           }
         ]

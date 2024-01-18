@@ -48,7 +48,7 @@
       [ "PARROT_AT_DANGER", 16 ]
     ],
     "death_drops": "mib_drops",
-    "death_function": { "effect": { "id": "death_mib_none", "hit_self": true }, "message": "The %s dies!" },
+    "death_function": { "effect": { "id": "death_monster_touhou_none", "hit_self": true }, "message": "The %s dies!" },
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_2", "SEES", "WARM" ],
     "//": "Base (human) MIB",
     "//2": "Add 'weird' harvest",
@@ -144,7 +144,7 @@
       [ "PARROT_AT_DANGER", 22 ]
     ],
     "death_function": {
-      "effect": { "id": "death_mib_alienspawn", "hit_self": true },
+      "effect": { "id": "death_mib_terminatorspawn", "hit_self": true },
       "message": "The %s falls dead.  Shortly after, the operative stands up again, with a red glow on their eyes!",
       "corpse_type": "NO_CORPSE"
     },

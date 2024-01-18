@@ -387,6 +387,15 @@
     "//": "Even more aggressive than touhou_youkai_hostile "
   },
   {
+    "name": "touhou_youkai_skinwalker_rabbit",
+    "type": "MONSTER_FACTION",
+    "friendly": [ "small_animal" ],
+    "neutral": [ "touhou_youkai_neutral" ],
+    "by_mood": [ "bot", "touhou_youkai_hostile" ],
+    "hate": [ "animal", "exodii", "fungus", "human", "kraken", "mi-go", "mutant", "triffid", "your_followers", "zombie", "touhou_mib" ],
+    "//": "Exactly the same as touhou_youkai_skinwalker except friendly to small_animal so it doesn't attack rabbits"
+  },
+  {
     "name": "touhou_oni",
     "type": "MONSTER_FACTION",
     "base_faction": "touhou_youkai_hostile",
