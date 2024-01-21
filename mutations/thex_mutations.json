@@ -63,7 +63,12 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": false,
-    "anger_relations": [ [ "GHOST_TOUHOU", -20 ], [ "PHANTOM_TOUHOU", -20 ], [ "JIANGSHI_TOUHOU", -20 ] ],
+    "armor": [ { "parts": "ALL", "soul": 2 } ],
+    "anger_relations": [ 
+      [ "GHOST_TOUHOU", -20 ], 
+      [ "JIANGSHI_TOUHOU", -20 ], 
+      [ "PHANTOM_TOUHOU", -20 ] 
+    ],
     "//": "Should copy and paste everything except the anger_relations field every time there's an update, as the extend field doesn't work with mutations"
   },
   {
@@ -76,6 +81,15 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": false,
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS", 
+        "values": [ 
+          { "value": "ARMOR_BIO", "multiply": -0.33 }
+        ] 
+      } 
+    ],
+    "flags": [ "INFECTION_IMMUNE", "PARAIMMUNE" ],
     "anger_relations": [
       [ "ONI_TOUHOU", -25 ],
       [ "YOUKAI_FEMALE_TOUHOU", -25 ],

@@ -15,9 +15,7 @@
             "id": "vampire_bloodthirst_start_ex",
             "condition": { "u_has_trait": "VAMPIRE_SPECIES" },
             "effect": [
-              {
-                "math": [ "u_vitamin('hblood_vitamin')", "=", "648 + rand(144)" ]
-              }
+              { "math": [ "u_vitamin('hblood_vitamin')", "=", "648 + rand(144)" ] }
             ]
           }
         ]
