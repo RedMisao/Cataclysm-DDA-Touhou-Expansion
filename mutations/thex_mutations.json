@@ -52,52 +52,5 @@
       [ "veggy", [ [ "calcium", 0.95 ], [ "iron", 0.95 ], [ "vitA", 0.95 ], [ "vitB", 0.95 ], [ "vitC", 0.95 ] ] ]
     ],
     "//": "Should copy and paste everything except the triggers AND vitamins_absorb_multi fields every time there's an update, as the extend field doesn't work with mutations"
-  },
-  {
-    "id": "PROF_KAENBYOU",
-    "type": "mutation",
-    "name": "Corpse carrier cheering hellcat",
-    "description": "You're one of the pets of the mistress of Chireiden, a Former Hell mansion.  Your job is to carry corpses to the Hell of Blazing fires (read: the Remains of Blazing Hell), to regulate its heat with your trusty corpse wheelbarrow.",
-    "points": 0,
-    "profession": true,
-    "purifiable": false,
-    "starting_trait": false,
-    "valid": false,
-    "armor": [ { "parts": "ALL", "soul": 2 } ],
-    "anger_relations": [ 
-      [ "GHOST_TOUHOU", -20 ], 
-      [ "JIANGSHI_TOUHOU", -20 ], 
-      [ "PHANTOM_TOUHOU", -20 ] 
-    ],
-    "//": "Should copy and paste everything except the anger_relations field every time there's an update, as the extend field doesn't work with mutations"
-  },
-  {
-    "id": "PROF_YAMAME",
-    "type": "mutation",
-    "name": "Bright web from the dark cave",
-    "description": "You're the good-natured earth spider youkai living at the Underground entrance.",
-    "points": 0,
-    "profession": true,
-    "purifiable": false,
-    "starting_trait": false,
-    "valid": false,
-    "enchantments": [ 
-      { 
-        "condition": "ALWAYS", 
-        "values": [ 
-          { "value": "ARMOR_BIO", "multiply": -0.33 }
-        ] 
-      } 
-    ],
-    "flags": [ "INFECTION_IMMUNE", "PARAIMMUNE" ],
-    "anger_relations": [
-      [ "ONI_TOUHOU", -25 ],
-      [ "YOUKAI_FEMALE_TOUHOU", -25 ],
-      [ "YOUKAI_HOSTILE_TOUHOU", -25 ],
-      [ "YOUKAI_NEUTRAL_TOUHOU", -25 ],
-      [ "YOUKAI_PSEUDO", -25 ],
-      [ "YOUKAI_SKINWALKER_TOUHOU", -25 ]
-    ],
-    "//": "Should copy and paste everything except the anger_relations field every time there's an update, as the extend field doesn't work with mutations"
   }
 ]

@@ -4,9 +4,30 @@
     "type": "ter_furn_transform",
     "furniture": [
       {
-        "result": "f_gap",
-        "message": "A gap opens up!",
-        "valid_flags": [ "EASY_DECONSTRUCT", "FLAMMABLE", "FLAMMABLE_ASH", "FLAMMABLE_HARD", "MINEABLE", "TRANSPARENT" ]
+        "valid_flags": [ "EASY_DECONSTRUCT", "FLAMMABLE", "FLAMMABLE_ASH", "FLAMMABLE_HARD", "MINEABLE", "TRANSPARENT" ], 
+        "result": "f_gap", 
+        "message": "A gap opens up!" 
+      }
+    ]
+  },
+  {
+    "id": "prankster_pit_ter",
+    "type": "ter_furn_transform",
+    "terrain": [ 
+      { 
+        "valid_flags": [ "DIGGABLE", "PLOWABLE" ], 
+        "result": "t_hole" 
+      } 
+    ]
+  },
+  {
+    "id": "sunflower_spam_fur",
+    "type": "ter_furn_transform",
+    "furniture": [
+      {
+        "valid_flags": [ "DIGGABLE" ], 
+        "result": [ [ "f_sunflower", 2 ], [ "f_null", 3 ] ], 
+        "message": "Sunflowers sprout around you!" 
       }
     ]
   }

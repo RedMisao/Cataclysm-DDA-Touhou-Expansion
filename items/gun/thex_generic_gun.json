@@ -196,7 +196,6 @@
     "dispersion": 90,
     "//": "This supposedly has between 2 and 4 moa, but that's way too much compared to the mosin91_30 value",
     "durability": 9,
-    "clip_size": 5,
     "range": 2,
     "variant_type": "gun",
     "variants": [
@@ -223,6 +222,7 @@
       [ "stock accessory", 2 ],
       [ "underbarrel mount", 1 ]
     ],
+    "clip_size": 5,
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE",
@@ -354,7 +354,6 @@
     "built_in_mods": [ "bipod", "stock_mount" ],
     "dispersion": 60,
     "durability": 10,
-    "clip_size": 5,
     "range": 3,
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -371,6 +370,7 @@
       [ "stock accessory", 2 ],
       [ "underbarrel mount", 1 ]
     ],
+    "clip_size": 5,
     "pocket_data": [
       { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "762R": 5 }, "allowed_speedloaders": [ "762R_clip" ] }
     ],
@@ -396,7 +396,6 @@
     "barrel_volume": "200 ml",
     "blackpowder_tolerance": 45,
     "built_in_mods": [ "stock_mount" ],
-    "clip_size": 5,
     "dispersion": 70,
     "durability": 10,
     "range": 2,
@@ -415,6 +414,7 @@
       [ "stock accessory", 2 ],
       [ "underbarrel mount", 1 ]
     ],
+    "clip_size": 5,
     "pocket_data": [
       { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "762R": 5 }, "allowed_speedloaders": [ "762R_clip" ] }
     ],
@@ -480,7 +480,6 @@
     "dispersion": 105,
     "durability": 9,
     "blackpowder_tolerance": 52,
-    "clip_size": 9,
     "range": 2,
     "ranged_damage": { "damage_type": "bullet", "amount": 0 },
     "reload_noise_volume": 10,
@@ -501,6 +500,7 @@
       [ "underbarrel", 1 ]
     ],
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
+    "clip_size": 9,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "765x53": 9 } } ],
     "flags": [ "NEVER_JAMS", "RELOAD_EJECT", "RELOAD_ONE" ]
   },
@@ -604,7 +604,6 @@
     "//": "3.25 in (8.255 cm) grouping at 100 yd (91.44 m) ~ 3.25 moa",
     "//2": "That's too much so I'm setting it at the same value of the mosin91_30 ",
     "durability": 9,
-    "clip_size": 5,
     "range": 3,
     "valid_mod_locations": [
       [ "accessories", 3 ],
@@ -622,6 +621,7 @@
       [ "stock accessory", 2 ],
       [ "underbarrel mount", 1 ]
     ],
+    "clip_size": 5,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "765x53": 5 } } ],
     "flags": [ "RELOAD_ONE" ]
   },
@@ -774,7 +774,6 @@
     "durability": 7,
     "barrel_volume": "75 ml",
     "blackpowder_tolerance": 72,
-    "clip_size": 1,
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "barrel", 1 ],
@@ -784,6 +783,7 @@
       [ "underbarrel mount", 1 ]
     ],
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
+    "clip_size": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "3006": 1 } } ],
     "flags": [ "NEVER_JAMS", "RELOAD_EJECT", "RELOAD_ONE" ]
   },
