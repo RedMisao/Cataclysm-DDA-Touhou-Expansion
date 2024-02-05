@@ -35,7 +35,7 @@
     "min_range": 1,
     "max_range": 1,
     "max_level": 1,
-    "difficulty": -10,
+    "difficulty": -20,
     "base_casting_time": 200,
     "base_energy_cost": 0,
     "energy_source": "MANA",

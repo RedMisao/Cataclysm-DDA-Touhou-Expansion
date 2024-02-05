@@ -9,10 +9,10 @@
         { "id": "black", "name": { "str": "Eye color: black" }, "description": "You have black eyes.", "weight": 1 }
       ]
 	},
-	"//": "This adds black eyes to the standard eye color selection selection, because brown is not black"
+	"//": "This extends black eyes to the standard eye color selection selection, because brown is not black"
   },
   {
-    "id": "eye_dark_purple",
+    "id": "eye_dark_purple_touhou",
     "type": "mutation",
     "name": { "str": "Eye color: dark purple" },
     "description": "You have dark purple eyes.",

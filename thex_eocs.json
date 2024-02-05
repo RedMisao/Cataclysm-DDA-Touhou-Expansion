@@ -12,11 +12,36 @@
       {
         "run_eocs": [
           {
+            "id": "kaenbyou_starting_soulshards_ex",
+            "condition": { 
+              "or": [ 
+                { "u_has_trait": "KASHA_SPECIES" }, 
+                { "u_has_trait": "KASHA_SPECIES_active" }
+              ]
+            },
+            "effect": [ { "math": [ "u_var_soulshard", "+=", "2 + rand(2)" ] } ],
+            "//2": "Adds 2 - 4 soulshards"
+          },
+          {
+            "id": "kokoro_stance_set_ex",
+            "condition": { "u_has_trait": "PROF_KOKORO" },
+            "effect": [
+              { "math": [ "var_kokoro_stance", "=", "1" ] },
+              { "math": [ "var_kokoro_mask", "=", "rand(3)" ] },
+              { "math": [ "var_kokoro_unstable_rnd", "=", "rand(1)" ] },
+              { "run_eocs": [ "kokoro_mask_eocs" ] },
+              { "run_eocs": [ "kokoro_timer_eoc" ] }
+            ],
+            "//2": "The first EOC runs the default condition for Kokoro: 'base' stance plus random mask",
+            "//3": "The second EOC runs the timer for the mask duration and automatic rotation"
+          },
+          {
             "id": "vampire_bloodthirst_start_ex",
             "condition": { "u_has_trait": "VAMPIRE_SPECIES" },
             "effect": [
               { "math": [ "u_vitamin('hblood_vitamin')", "=", "648 + rand(144)" ] }
-            ]
+            ],
+            "//": "Adds hblood_vitamin for VAMPIRE_SPECIES plus a smaller random amount, see vampire_bloodthirst_eoc below"
           }
         ]
       }
@@ -44,7 +69,7 @@
       {
         "run_eocs": [
           {
-            "id": "impurity_none",
+            "id": "impurity_extremelylow",
             "condition": { "math": [ "u_vitamin('impurity')", "<", "0" ] },
             "effect": [ { "math": [ "var_impurity", "=", "0" ] } ]
           },
@@ -53,7 +78,7 @@
             "condition": {
               "and": [
                 { "math": [ "u_vitamin('impurity')", ">=", "1" ] },
-                { "math": [ "u_vitamin('impurity')", "<=", "72" ] }
+                { "math": [ "u_vitamin('impurity')", "<=", "144" ] }
               ]
             },
             "effect": [ { "math": [ "var_impurity", "=", "1" ] } ]
@@ -62,7 +87,7 @@
             "id": "impurity_low",
             "condition": {
               "and": [
-                { "math": [ "u_vitamin('impurity')", ">=", "73" ] },
+                { "math": [ "u_vitamin('impurity')", ">=", "145" ] },
                 { "math": [ "u_vitamin('impurity')", "<=", "504" ] }
               ]
             },
@@ -77,7 +102,7 @@
       }
     ],
     "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not considering consuming Earthly stuff during that period of time",
-    "//2": "Boundaries for each impure tier: 0 - 24 h (verylow), 1 - 7 days (low), >7 days (high)",
+    "//2": "Boundaries for each impure tier: -48 - 0 h (extremely low), 0 - 48 h (verylow), 2 - 7 days (low), >7 days (high)",
     "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
   }
 ]

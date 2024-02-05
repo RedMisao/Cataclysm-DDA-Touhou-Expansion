@@ -13,7 +13,7 @@
     "healthy": 2,
     "spoils_in": 0,
     "quench": 8,
-    "vitamins": [ [ "vitA", 6 ], [ "vitB", 12 ], [ "vitC", 24 ], [ "calcium", 2 ], [ "iron", 4 ], [ "satiety", 1 ] ]
+    "vitamins": [ [ "vitA", 6 ], [ "vitB", 12 ], [ "vitC", 24 ], [ "calcium", 2 ], [ "iron", 4 ], [ "hpeach_satiety", 1 ] ]
   },
   {
     "id": "satsumaimo",

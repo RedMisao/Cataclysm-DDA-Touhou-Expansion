@@ -12,6 +12,12 @@
     "vanity": true,
     "variants": [
       {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, buzz cut" },
+        "description": "Your amethyst hair has been shaved close to the head.",
+        "weight": 1
+      },
+      {
         "id": "asagi",
         "name": { "str": "Hair: asagi, buzz cut" },
         "description": "Your asagi hair has been shaved close to the head.",
@@ -66,84 +72,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, buzz cut" },
-        "description": "Your yellow hair has been shaved close to the head.",
-        "weight": 1
-      }
-    ],
-    "types": [ "hair_style" ]
-  },
-  {
-    "id": "hair_crewcut",
-	"type": "mutation",
-    "name": { "str": "Hair: crew-cut (Touhou mod)" },
-    "description": "Crewcut hair style.",
-    "points": 0,
-    "starting_trait": true,
-    "valid": false,
-    "purifiable": false,
-    "player_display": true,
-    "vanity": true,
-    "variants": [
-      {
-        "id": "asagi",
-        "name": { "str": "Hair: asagi, crew-cut" },
-        "description": "Crewcut asagi hair style",
-        "weight": 1
-      },
-      {
-        "id": "cinnabar",
-        "name": { "str": "Hair: cinnabar, crew-cut" },
-        "description": "Crewcut cinnabar hair style",
-        "weight": 1
-      },
-      {
-        "id": "jacaranda",
-        "name": { "str": "Hair: jacaranda, crew-cut" },
-        "description": "Crewcut jacaranda hair style",
-        "weight": 1
-      },
-      {
-        "id": "lapis",
-        "name": { "str": "Hair: lapis, crew-cut" },
-        "description": "Crewcut lapis hair style",
-        "weight": 1
-      },
-      {
-        "id": "lightblue",
-        "name": { "str": "Hair: light-blue, crew-cut" },
-        "description": "Crewcut light-blue hair style",
-        "weight": 1
-      },
-      {
-        "id": "lightgray",
-        "name": { "str": "Hair: light-gray, crew-cut" },
-        "description": "Crewcut light-gray hair style",
-        "weight": 1
-      },
-      {
-        "id": "lightgreen",
-        "name": { "str": "Hair: light-green, crew-cut" },
-        "description": "Crewcut light-green hair style",
-        "weight": 1
-      },
-      {
-        "id": "magenta",
-        "name": { "str": "Hair: magenta, crew-cut" },
-        "description": "Crewcut magenta hair style",
-        "weight": 1
-      },
-      {
-        "id": "midnight",
-        "name": { "str": "Hair: midnight, crew-cut" },
-        "description": "Crewcut midnight hair style",
-        "weight": 1
-      },
-      {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, crew-cut" },
-        "description": "Crewcut yellow hair style",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, buzz cut" },
+        "description": "Your topaz hair has been shaved close to the head.",
         "weight": 1
       }
     ],
@@ -162,70 +93,76 @@
     "vanity": true,
     "variants": [
       {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, crew-cut" },
+        "description": "Crewcut amethyst hair style.",
+        "weight": 1
+      },
+      {
         "id": "asagi",
         "name": { "str": "Hair: asagi, crew-cut" },
-        "description": "Crewcut asagi hair style",
+        "description": "Crewcut asagi hair style.",
         "weight": 1
       },
       {
         "id": "cinnabar",
         "name": { "str": "Hair: cinnabar, crew-cut" },
-        "description": "Crewcut cinnabar hair style",
+        "description": "Crewcut cinnabar hair style.",
         "weight": 1
       },
       {
         "id": "jacaranda",
         "name": { "str": "Hair: jacaranda, crew-cut" },
-        "description": "Crewcut jacaranda hair style",
+        "description": "Crewcut jacaranda hair style.",
         "weight": 1
       },
       {
         "id": "lapis",
         "name": { "str": "Hair: lapis, crew-cut" },
-        "description": "Crewcut lapis hair style",
+        "description": "Crewcut lapis hair style.",
         "weight": 1
       },
       {
         "id": "lightblue",
         "name": { "str": "Hair: light-blue, crew-cut" },
-        "description": "Crewcut light-blue hair style",
+        "description": "Crewcut light-blue hair style.",
         "weight": 1
       },
       {
         "id": "lightgray",
         "name": { "str": "Hair: light-gray, crew-cut" },
-        "description": "Crewcut light-gray hair style",
+        "description": "Crewcut light-gray hair style.",
         "weight": 1
       },
       {
         "id": "lightgreen",
         "name": { "str": "Hair: light-green, crew-cut" },
-        "description": "Crewcut light-green hair style",
+        "description": "Crewcut light-green hair style.",
         "weight": 1
       },
       {
         "id": "magenta",
         "name": { "str": "Hair: magenta, crew-cut" },
-        "description": "Crewcut magenta hair style",
+        "description": "Crewcut magenta hair style.",
         "weight": 1
       },
       {
         "id": "midnight",
         "name": { "str": "Hair: midnight, crew-cut" },
-        "description": "Crewcut midnight hair style",
+        "description": "Crewcut midnight hair style.",
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, crew-cut" },
-        "description": "Crewcut yellow hair style",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, crew-cut" },
+        "description": "Crewcut topaz hair style.",
         "weight": 1
       }
     ],
     "types": [ "hair_style" ]
   },
   {
-    "id": "hair_fro",
+    "id": "hair_fro_touhou",
 	"type": "mutation",
     "name": { "str": "Hair: 'fro (Touhou mod)" },
     "description": "'Fro hair style.",
@@ -237,63 +174,69 @@
     "vanity": true,
     "variants": [
       {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, 'fro" },
+        "description": "'Fro amethyst hair style.",
+        "weight": 1
+      },
+      {
         "id": "asagi",
         "name": { "str": "Hair: asagi, 'fro" },
-        "description": "'Fro asagi hair style",
+        "description": "'Fro asagi hair style.",
         "weight": 1
       },
       {
         "id": "cinnabar",
         "name": { "str": "Hair: cinnabar, 'fro" },
-        "description": "'Fro cinnabar hair style",
+        "description": "'Fro cinnabar hair style.",
         "weight": 1
       },
       {
         "id": "jacaranda",
         "name": { "str": "Hair: jacaranda, 'fro" },
-        "description": "'Fro jacaranda hair style",
+        "description": "'Fro jacaranda hair style.",
         "weight": 1
       },
       {
         "id": "lapis",
         "name": { "str": "Hair: lapis, 'fro" },
-        "description": "'Fro lapis hair style",
+        "description": "'Fro lapis hair style.",
         "weight": 1
       },
       {
         "id": "lightblue",
         "name": { "str": "Hair: light-blue, 'fro" },
-        "description": "'Fro light-blue hair style",
+        "description": "'Fro light-blue hair style.",
         "weight": 1
       },
       {
         "id": "lightgray",
         "name": { "str": "Hair: light-gray, 'fro" },
-        "description": "'Fro light-gray hair style",
+        "description": "'Fro light-gray hair style.",
         "weight": 1
       },
       {
         "id": "lightgreen",
         "name": { "str": "Hair: light-green, 'fro" },
-        "description": "'Fro light-green hair style",
+        "description": "'Fro light-green hair style.",
         "weight": 1
       },
       {
         "id": "magenta",
         "name": { "str": "Hair: magenta, 'fro" },
-        "description": "'Fro magenta hair style",
+        "description": "'Fro magenta hair style.",
         "weight": 1
       },
       {
         "id": "midnight",
         "name": { "str": "Hair: midnight, 'fro" },
-        "description": "'Fro midnight hair style",
+        "description": "'Fro midnight hair style.",
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, 'fro" },
-        "description": "'Fro yellow hair style",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, 'fro" },
+        "description": "'Fro topaz hair style.",
         "weight": 1
       }
     ],
@@ -312,63 +255,69 @@
     "vanity": true,
     "variants": [
       {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, long" },
+        "description": "Long amethyst hair style.",
+        "weight": 1
+      },
+      {
         "id": "asagi",
         "name": { "str": "Hair: asagi, long" },
-        "description": "Long asagi hair style",
+        "description": "Long asagi hair style.",
         "weight": 1
       },
       {
         "id": "cinnabar",
         "name": { "str": "Hair: cinnabar, long" },
-        "description": "Long cinnabar hair style",
+        "description": "Long cinnabar hair style.",
         "weight": 1
       },
       {
         "id": "jacaranda",
         "name": { "str": "Hair: jacaranda, long" },
-        "description": "Long jacaranda hair style",
+        "description": "Long jacaranda hair style.",
         "weight": 1
       },
       {
         "id": "lapis",
         "name": { "str": "Hair: lapis, long" },
-        "description": "Long lapis hair style",
+        "description": "Long lapis hair style.",
         "weight": 1
       },
       {
         "id": "lightblue",
         "name": { "str": "Hair: light-blue, long" },
-        "description": "Long light-blue hair style",
+        "description": "Long light-blue hair style.",
         "weight": 1
       },
       {
         "id": "lightgray",
         "name": { "str": "Hair: light-gray, long" },
-        "description": "Long light-gray hair style",
+        "description": "Long light-gray hair style.",
         "weight": 1
       },
       {
         "id": "lightgreen",
         "name": { "str": "Hair: light-green, long" },
-        "description": "Long light-green hair style",
+        "description": "Long light-green hair style.",
         "weight": 1
       },
       {
         "id": "magenta",
         "name": { "str": "Hair: magenta, long" },
-        "description": "Long magenta hair style",
+        "description": "Long magenta hair style.",
         "weight": 1
       },
       {
         "id": "midnight",
         "name": { "str": "Hair: midnight, long" },
-        "description": "Long midnight hair style",
+        "description": "Long midnight hair style.",
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, long" },
-        "description": "Long yellow hair style",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, long" },
+        "description": "Long topaz hair style.",
         "weight": 1
       }
     ],
@@ -386,6 +335,12 @@
     "player_display": true,
     "vanity": true,
     "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, long over-eye" },
+        "description": "You have long amethyst hair, swooping over one eye.",
+        "weight": 1
+      },
       {
         "id": "asagi",
         "name": { "str": "Hair: asagi, long over-eye" },
@@ -441,9 +396,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, long" },
-        "description": "You have long yellow hair, swooping over one eye.",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, long" },
+        "description": "You have long topaz hair, swooping over one eye.",
         "weight": 1
       }
     ],
@@ -462,63 +417,69 @@
     "vanity": true,
     "variants": [
       {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, medium" },
+        "description": "Medium-length amethyst hair style.",
+        "weight": 1
+      },
+      {
         "id": "asagi",
         "name": { "str": "Hair: asagi, medium" },
-        "description": "Medium-length asagi hair style",
+        "description": "Medium-length asagi hair style.",
         "weight": 1
       },
       {
         "id": "cinnabar",
         "name": { "str": "Hair: cinnabar, medium" },
-        "description": "Medium-length cinnabar hair style",
+        "description": "Medium-length cinnabar hair style.",
         "weight": 1
       },
       {
         "id": "jacaranda",
         "name": { "str": "Hair: jacaranda, medium" },
-        "description": "Medium-length jacaranda hair style",
+        "description": "Medium-length jacaranda hair style.",
         "weight": 1
       },
       {
         "id": "lapis",
         "name": { "str": "Hair: lapis, medium" },
-        "description": "Medium-length lapis hair style",
+        "description": "Medium-length lapis hair style.",
         "weight": 1
       },
       {
         "id": "lightblue",
         "name": { "str": "Hair: light-blue, medium" },
-        "description": "Medium-length light-blue hair style",
+        "description": "Medium-length light-blue hair style.",
         "weight": 1
       },
       {
         "id": "lightgray",
         "name": { "str": "Hair: light-gray, medium" },
-        "description": "Medium-length light-gray hair style",
+        "description": "Medium-length light-gray hair style.",
         "weight": 1
       },
       {
         "id": "lightgreen",
         "name": { "str": "Hair: light-green, medium" },
-        "description": "Medium-length light-green hair style",
+        "description": "Medium-length light-green hair style.",
         "weight": 1
       },
       {
         "id": "magenta",
         "name": { "str": "Hair: magenta, medium" },
-        "description": "Medium-length magenta hair style",
+        "description": "Medium-length magenta hair style.",
         "weight": 1
       },
       {
         "id": "midnight",
         "name": { "str": "Hair: midnight, medium" },
-        "description": "Medium-length midnight hair style",
+        "description": "Medium-length midnight hair style.",
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, medium" },
-        "description": "Medium-length yellow hair style",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, medium" },
+        "description": "Medium-length topaz hair style.",
         "weight": 1
       }
     ],
@@ -536,6 +497,12 @@
     "player_display": true,
     "vanity": true,
     "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, long messy" },
+        "description": "You have long amethyst hair, worn loose and carefree!",
+        "weight": 1
+      },
       {
         "id": "asagi",
         "name": { "str": "Hair: asagi, long messy" },
@@ -591,9 +558,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, long messy" },
-        "description": "You have long yellow hair, worn loose and carefree!",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, long messy" },
+        "description": "You have long topaz hair, worn loose and carefree!",
         "weight": 1
       }
     ],
@@ -611,6 +578,12 @@
     "player_display": true,
     "vanity": true,
     "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, mohawk" },
+        "description": "Mohawk amethyst hair style.",
+        "weight": 1
+      },
       {
         "id": "asagi",
         "name": { "str": "Hair: asagi, mohawk" },
@@ -666,9 +639,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, mohawk" },
-        "description": "Mohawk yellow hair style.",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, mohawk" },
+        "description": "Mohawk topaz hair style.",
         "weight": 1
       }
     ],
@@ -686,6 +659,12 @@
     "player_display": true,
     "vanity": true,
     "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, mullet" },
+        "description": "You have long amethyst hair, in the style of a mullet.",
+        "weight": 1
+      },
       {
         "id": "asagi",
         "name": { "str": "Hair: asagi, mullet" },
@@ -741,9 +720,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, mullet" },
-        "description": "You have long yellow hair, in the style of a mullet.",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, mullet" },
+        "description": "You have long topaz hair, in the style of a mullet.",
         "weight": 1
       }
     ],
@@ -761,6 +740,12 @@
     "player_display": true,
     "vanity": true,
     "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, ponytail" },
+        "description": "You have long amethyst hair, pulled back into a ponytail.",
+        "weight": 1
+      },
       {
         "id": "asagi",
         "name": { "str": "Hair: asagi, ponytail" },
@@ -816,9 +801,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, ponytail" },
-        "description": "You have long yellow hair, pulled back into a ponytail.",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, ponytail" },
+        "description": "You have long topaz hair, pulled back into a ponytail.",
         "weight": 1
       }
     ],
@@ -837,9 +822,15 @@
     "vanity": true,
     "variants": [
       {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, short" },
+        "description": "Short amethyst hair style.",
+        "weight": 1
+      },
+      {
         "id": "asagi",
-        "name": { "str": "Hair: black, short" },
-        "description": "Short black hair style",
+        "name": { "str": "Hair: asagi, short" },
+        "description": "Short asagi hair style.",
         "weight": 1
       },
       {
@@ -891,9 +882,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, short" },
-        "description": "Short yellow hair style.",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, short" },
+        "description": "Short topaz hair style.",
         "weight": 1
       }
     ],
@@ -911,6 +902,12 @@
     "player_display": true,
     "vanity": true,
     "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, short without a fringe" },
+        "description": "You have short amethyst hair, without a fringe.",
+        "weight": 1
+      },
       {
         "id": "asagi",
         "name": { "str": "Hair: asagi, short without a fringe" },
@@ -966,9 +963,9 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, short without a fringe" },
-        "description": "You have short yellow hair, without a fringe.",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, short without a fringe" },
+        "description": "You have short topaz hair, without a fringe.",
         "weight": 1
       }
     ],
@@ -986,6 +983,12 @@
     "player_display": true,
     "vanity": true,
     "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, short over-eye" },
+        "description": "You have short amethyst hair, with the fringe over one eye.",
+        "weight": 1
+      },
       {
         "id": "asagi",
         "name": { "str": "Hair: asagi, short over-eye" },
@@ -1041,9 +1044,150 @@
         "weight": 1
       },
       {
-        "id": "yellow",
-        "name": { "str": "Hair: yellow, short over-eye" },
-        "description": "You have short yellow hair, with the fringe over one eye.",
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, short over-eye" },
+        "description": "You have short topaz hair, with the fringe over one eye.",
+        "weight": 1
+      }
+    ],
+    "types": [ "hair_style" ]
+  },
+  {
+    "id": "hair_twintails_touhou",
+	"type": "mutation",
+    "name": { "str": "Hair: twintails (Touhou mod)" },
+    "description": "You have short hair, with the fringe over one eye.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": true,
+    "vanity": true,
+    "variants": [
+      {
+        "id": "amethyst",
+        "name": { "str": "Hair: amethyst, twintails" },
+        "description": "You have long amethyst hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "asagi",
+        "name": { "str": "Hair: asagi, twintails" },
+        "description": "You have long asagi hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "black",
+        "name": { "str": "Hair: black, twintails" },
+        "description": "You have long black hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "blonde",
+        "name": { "str": "Hair: blonde, twintails" },
+        "description": "You have long blonde hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "blue",
+        "name": { "str": "Hair: blue, twintails" },
+        "description": "You have long blue hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "brown",
+        "name": { "str": "Hair: brown, twintails" },
+        "description": "You have long brown hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "cinnabar",
+        "name": { "str": "Hair: cinnabar, twintails" },
+        "description": "You have long cinnabar hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "gray",
+        "name": { "str": "Hair: gray, twintails" },
+        "description": "You have long gray hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "green",
+        "name": { "str": "Hair: green, twintails" },
+        "description": "You have long green hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "jacaranda",
+        "name": { "str": "Hair: jacaranda, twintails" },
+        "description": "You have long jacaranda hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "lapis",
+        "name": { "str": "Hair: lapis, twintails" },
+        "description": "You have long lapis hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "lightblue",
+        "name": { "str": "Hair: lightblue, twintails" },
+        "description": "You have long lightblue hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "lightgray",
+        "name": { "str": "Hair: lightgray, twintails" },
+        "description": "You have long lightgray hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "lightgreen",
+        "name": { "str": "Hair: lightgreen, twintails" },
+        "description": "You have long lightgreen hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "magenta",
+        "name": { "str": "Hair: magenta, twintails" },
+        "description": "You have long magenta hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "midnight",
+        "name": { "str": "Hair: midnight, twintails" },
+        "description": "You have long midnight hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "pink",
+        "name": { "str": "Hair: pink, twintails" },
+        "description": "You have long pink hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "purple",
+        "name": { "str": "Hair: purple, twintails" },
+        "description": "You have long purple hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "red",
+        "name": { "str": "Hair: red, twintails" },
+        "description": "You have long red hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "topaz",
+        "name": { "str": "Hair: topaz, twintails" },
+        "description": "You have long topaz hair, styled as twintails.",
+        "weight": 1
+      },
+      {
+        "id": "white",
+        "name": { "str": "Hair: white, twintails" },
+        "description": "You have long white hair, styled as twintails.",
         "weight": 1
       }
     ],

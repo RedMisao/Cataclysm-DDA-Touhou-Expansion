@@ -1,6 +1,6 @@
 [
   {
-    "id": "disease_satiety",
+    "id": "hpeach_disease_satiety",
 	"type": "effect_type",
     "name": [ "Surfeit (low)", "Surfeit (medium)", "Surfeit (high)" ],
     "desc": [ "Something you ate recently was good.  In fact too good for you, you can't tolerate it." ],

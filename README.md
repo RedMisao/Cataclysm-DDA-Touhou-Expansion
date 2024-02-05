@@ -1,7 +1,7 @@
 # Cataclysm-DDA-Touhou-Expansion
 A CDDA expansion mod for [Touhou Professions](https://github.com/RedMisao/Cataclysm-DDA-Touhou-Mod) that various things from Touhou Project lore and fluff.
 
-**The mod's folder goes in /data/mods/**.  Last updated for game version: 2024-01-04-2303 experimental.
+**The mod's folder goes in /data/mods/**.  Last updated for game version: 2024-01-26-0650 experimental.
 
 
 ## About the mod
@@ -37,7 +37,7 @@ Sadly, there's also the
 
 
 ## New mechanics
-(New in the sense they're added to the base mod)
+(New in the sense they're not present in the base mod)
 * Impurity (WIP).  Currently a dummy mechanic, it naturally increases over time and also by consuming "impure" stuff (which is everything edible so far).  Has no effect, except for Reisen who starts with the LUNARDIET trait and loses it after acquiring enough impurity, making her tolerant to Earthly foodstuff.
 
 
