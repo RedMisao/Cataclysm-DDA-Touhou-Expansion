@@ -90,7 +90,7 @@
     "max_damage": 1,
     "min_aoe": 1,
     "max_aoe": 1,
-    "flags": [ "HOSTILE_SUMMON", "NO_EXPLOSION_SFX",  "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
+    "flags": [ "HOSTILE_SUMMON", "NO_EXPLOSION_SFX", "PERMANENT", "SILENT", "SPAWN_WITH_DEATH_DROPS" ]
   },
   {
     "id": "death_mib_alienspawn",
