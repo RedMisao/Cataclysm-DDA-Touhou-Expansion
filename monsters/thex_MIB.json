@@ -210,8 +210,8 @@
     "fear_triggers": [ "FRIEND_DIED" ],
     "armor": { "bash": 0, "cut": 0, "stab": 0, "bullet": 0, "acid": 6, "cold": 6, "electric": 6, "heat": 6 },
     "special_attacks": [
-      [ "FEAR_PARALYZE", 24 ],
-      [ "STARE", 20 ],
+      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 24 },
+      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 20 },
       { "spell_data": { "id": "paralyze_200" }, "type": "spell", "cooldown": 20 }
     ],
     "flags": [ "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
