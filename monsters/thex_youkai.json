@@ -259,8 +259,8 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "bleed_rate": 0,
     "special_attacks": [
-      [ "FEAR_PARALYZE", 32 ],
-      [ "STARE", 28 ],
+      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 32 },
+      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 28 },
       { "spell_data": { "id": "paralyze_100" }, "type": "spell", "cooldown": 34 }
     ],
     "death_function": { "message": "The %s dissipates into air.", "corpse_type": "NO_CORPSE" },
