@@ -18,7 +18,7 @@
     "//": "All items considered for reverse-spiriting away on generic mystery spots"
   },
   {
-    "id": "touhou_magical_item",
+    "id": "touhou_magical_items",
     "type": "item_group",
     "subtype": "distribution",
     "container-item": "occult_sphere",
@@ -81,7 +81,7 @@
     "entries": [
       { "group": "forgotten_weapons", "prob": 100 },
       { "group": "forgotten_ammo", "prob": 100 },
-      { "group": "touhou_magical_item", "prob": 100 },
+      { "group": "touhou_magical_items", "prob": 100 },
       { "group": "touhou_rspirited", "prob": 100 }
     ],
 	"//": "Placeholder !!! This is so the mod's items can show up in the world, until I think of a better (thematically) way to get these items"

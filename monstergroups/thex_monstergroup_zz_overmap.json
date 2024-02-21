@@ -225,10 +225,9 @@
     ]
   },
   {
-    "name": "GROUP_VANILLA_and_YOUKAI_OPENFIELD",
+    "name": "GROUP_megastore_parking",
     "type": "monstergroup",
     "monsters": [
-	  { "group": "GROUP_VANILLA", "pack_size": [ 2, 4 ], "weight": 80 },
 	  { "group": "GROUP_YOUKAI_OPENFIELD", "pack_size": [ 0, 1 ], "weight": 19, "starts": "2 days" },
 	  { "group": "GROUP_YOUKAI_OPENFIELD", "pack_size": [ 1, 2 ], "weight": 1, "starts": "2 days" }
     ]
