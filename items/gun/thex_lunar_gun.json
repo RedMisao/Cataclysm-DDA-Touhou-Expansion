@@ -29,7 +29,8 @@
       "type": "transform",
       "menu_text": "Switch mode: Ammo",
       "msg": "You switch between modes, allowing your weapon to shoot proyectiles.",
-      "target": "lunar_bousan2"
+      "target": "lunar_bousan2", 
+      "ammo_scale": 0
     },
     "valid_mod_locations": [ [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true } ],
@@ -60,7 +61,8 @@
       "type": "transform",
       "menu_text": "Switch mode: Vacuum",
       "msg": "You switch to blast mode.",
-      "target": "lunar_bousan"
+      "target": "lunar_bousan", 
+      "ammo_scale": 0
     },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "shot": 6 } } ],
     "flags": [ "NEEDS_NO_LUBE", "NEVER_JAMS", "NON_FOULING", "PUMP_ACTION", "RELOAD_ONE", "STURDY", "TRADER_AVOID" ]

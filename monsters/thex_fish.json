@@ -24,12 +24,15 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "dodge": 4,
     "armor": { "bash": 2, "cut": 2, "stab": 8 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_placoderm_body" ],
+    "stomach_size": 200,
     "reproduction": { "baby_egg": "egg_fishancient_small", "baby_count": 4, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
     "special_attacks": [ [ "EAT_FOOD", 50 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Coccosteus sp.. No reproductive data."
   },
   {
@@ -50,6 +53,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 5,
     "armor": { "bash": 1, "cut": 1, "stab": 2 },
+    "stomach_size": 12,
     "upgrades": { "age_grow": 20, "into": "mon_coccosteus" },
     "special_attacks": [ [ "EAT_FOOD", 35 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
@@ -78,11 +82,13 @@
     "melee_dice_sides": 2,
     "dodge": 4,
     "armor": { "bash": 2 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "stomach_size": 120,
     "reproduction": { "baby_egg": "egg_fishancient_small", "baby_count": 4, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "fear_triggers": [ "HURT", "PLAYER_CLOSE", "SOUND" ],
     "special_attacks": [ [ "EAT_FOOD", 50 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Dipterus sp.. No reproductive data."
   },
   {
@@ -102,6 +108,7 @@
     "melee_dice_sides": 2,
     "dodge": 6,
     "armor": { "bash": 0 },
+    "stomach_size": 50,
     "upgrades": { "age_grow": 20, "into": "mon_dipterus" },
     "special_attacks": [ [ "EAT_FOOD", 35 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
@@ -111,8 +118,8 @@
     "type": "MONSTER",
     "name": { "str": "dunkleosteus ", "str_pl": "dunkleosteus" },
     "description": "A gigantic, monstrous placoderm, this looks as if someone \"improved\" the design of a Great white shark by making it twice as big, adding armor beneath the head's skin and giving it a car crushing beak, not to mention the terrific pseudo-tiger print.  You absolutely do not want this thing to graze your legs while swimming.",
-    "volume": "3750 L",
-    "weight": "4000 kg",
+    "volume": "1500 L",
+    "weight": "1500 kg",
     "default_faction": "touhou_dunkleosteus",
     "bodytype": "fish",
     "categories": [ "WILDLIFE" ],
@@ -131,13 +138,16 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 22 } ],
     "dodge": 1,
     "armor": { "bash": 4, "cut": 4, "stab": 12, "bullet": 2 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_placoderm_body" ],
+    "stomach_size": 150000,
     "reproduction": { "baby_monster": "mon_dunkleosteus_baby", "baby_count": 1, "baby_timer": 30 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
     "special_attacks": [ [ "EAT_FOOD", 55 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
-    "//": "Dunkleosteus terrelli used as reference, calculated volume is an absurd 10 m3 so I'm staying with density of ~1"
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "//": "Dunkleosteus terrelli used as reference. I wish 10.3390/d15030318 was not real..."
   },
   {
     "id": "mon_dunkleosteus_baby",
@@ -145,8 +155,8 @@
     "name": { "str": "baby ichthyosaurus", "str_pl": "baby ichthyosaurus" },
     "copy-from": "mon_dunkleosteus",
     "description": "A smaller Dunkleosteus, this almost looks cute snapping smaller fish.  Almost.",
-    "volume": "200 L",
-    "weight": "200 kg",
+    "volume": "150 L",
+    "weight": "150 kg",
     "hp": 95,
     "speed": 165,
     "color": "blue",
@@ -158,6 +168,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 17 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 2, "stab": 8, "bullet": 2 },
+    "stomach_size": 15000,
     "upgrades": { "age_grow": 30, "into": "mon_dunkleosteus" },
     "special_attacks": [ [ "EAT_FOOD", 35 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
@@ -187,12 +198,14 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
     "dodge": 6,
     "armor": { "bash": 1, "cut": 2 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "stomach_size": 700,
     "reproduction": { "baby_egg": "egg_fishancient_small", "baby_count": 4, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
     "special_attacks": [ [ "EAT_FOOD", 50 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Holoptychius sp.. No reproductive data."
   },
   {
@@ -212,6 +225,7 @@
     "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "armor": { "bash": 0, "cut": 1 },
+    "stomach_size": 35,
     "upgrades": { "age_grow": 20, "into": "mon_holoptychius" },
     "special_attacks": [ [ "EAT_FOOD", 35 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
@@ -242,6 +256,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 6,
     "armor": { "bash": 1 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
     "reproduction": { "baby_egg": "egg_fish", "baby_count": 16, "baby_timer": 17 },
     "baby_flags": [ "SPRING", "SUMMER" ],
     "anger_triggers": [ "HURT" ],
@@ -275,12 +290,15 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "dodge": 4,
     "armor": { "bash": 3, "cut": 6, "stab": 4, "bullet": 2 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_megastamax_body" ],
+    "stomach_size": 6000,
     "reproduction": { "baby_egg": "egg_fishancient_medium", "baby_count": 4, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
     "special_attacks": [ [ "EAT_FOOD", 50 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Megamastax sp.. No reproductive data."
   },
   {
@@ -301,6 +319,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 6,
     "armor": { "bash": 1, "cut": 2, "stab": 2, "bullet": 0 },
+    "stomach_size": 60,
     "upgrades": { "age_grow": 20, "into": "mon_megamastax" },
     "special_attacks": [ [ "EAT_FOOD", 35 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
@@ -329,12 +348,14 @@
     "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 10,
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "stomach_size": 800,
     "reproduction": { "baby_egg": "egg_fishancient_medium", "baby_count": 6, "baby_timer": 24 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
     "special_attacks": [ [ "EAT_FOOD", 40 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ]
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ]
   },
   {
     "id": "mon_saurichthys_baby",
@@ -353,6 +374,7 @@
     "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
     "dodge": 8,
+    "stomach_size": 20,
     "upgrades": { "age_grow": 28, "into": "mon_saurichthys" },
     "special_attacks": [ [ "EAT_FOOD", 25 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
