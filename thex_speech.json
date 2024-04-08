@@ -216,133 +216,133 @@
     "volume": 6
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Stop!",
     "volume": 24
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Desist!",
     "volume": 20
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Found it.",
     "volume": 24
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 37's wrench at 47, noise.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 11 on 7 hammer's, jammer.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 5 past 13, set.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Cease!",
     "volume": 24
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Freeze!",
     "volume": 20
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Catching.",
     "volume": 24
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 19's key in 43, string.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 97 to 61, lines.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 89 under 2, push.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Ovv er.",
     "volume": 24
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "S Top!",
     "volume": 20
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "*unintelligible*",
     "volume": 24
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Num mber 29's key it 3.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 67 *indiscernible speech* 17",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 59 unm 71 tl-tl.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Engaging.",
     "volume": 24
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 73 near 29, cut",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 53 by 23, pull.",
     "volume": 12
   },
   {
-    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4" ],
+    "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
     "type": "speech",
     "sound": "Number 79 blocking 31, undo.",
     "volume": 12
@@ -612,43 +612,43 @@
     "volume": 33
   },
   {
-    "speaker": "mon_thylacine",
+    "speaker": [ "mon_thylacine", "mon_thylacine_pup" ],
     "type": "speech",
     "sound": "*growl*",
     "volume": 20
   },
   {
-    "speaker": "mon_thylacine",
+    "speaker": [ "mon_thylacine", "mon_thylacine_pup" ],
     "type": "speech",
     "sound": "\"yip-yap yip-yap\"",
     "volume": 20
   },
   {
-    "speaker": "mon_thylacine",
+    "speaker": [ "mon_thylacine", "mon_thylacine_pup" ],
     "type": "speech",
     "sound": "\"cay-yip\"",
     "volume": 20
   },
   {
-    "speaker": "mon_thylacine",
+    "speaker": [ "mon_thylacine", "mon_thylacine_pup" ],
     "type": "speech",
     "sound": "\"hop-hop-hop\"",
     "volume": 20
   },
   {
-    "speaker": "mon_thylacine",
+    "speaker": [ "mon_thylacine", "mon_thylacine_pup" ],
     "type": "speech",
     "sound": "*long cry*",
     "volume": 35
   },
   {
-    "speaker": "mon_thylacine",
+    "speaker": [ "mon_thylacine", "mon_thylacine_pup" ],
     "type": "speech",
     "sound": "*snuffling noise*",
     "volume": 6
   },
   {
-    "speaker": "mon_thylacine_pup",
+    "speaker": [ "mon_thylacine", "mon_thylacine_pup" ],
     "type": "speech",
     "sound": "*snuffling noise*",
     "volume": 6

@@ -3,7 +3,7 @@
     "id": "mon_skinwalker_rabbit",
     "type": "MONSTER",
     "name": { "str": "skinwalker", "str_pl": "skinwalkers" },
-    "description": "WIP. Rabbit claws. Even larger than a bear.",
+    "description": "An unnatural abomination.  A very large, clawed rabbit, it's angry, very angry.",
     "volume": "666 L",
     "weight": "666 kg",
     "default_faction": "touhou_youkai_skinwalker_rabbit",
@@ -24,6 +24,9 @@
     "melee_damage": [ { "damage_type": "bullet", "amount": 6 } ],
     "dodge": 6,
     "armor": { "bash": 6, "cut": 6, "stab": 6, "bullet": 6, "acid": 6, "biological": 6, "cold": 6, "heat": 6, "electric": 6, "pure": 6, "soul": 6 },
+    "regenerates": 1,
+    "families": [ "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body" ],
     "path_settings": { "max_dist": 66 },
     "tracking_distance": 66,
     "vision_night": 66,
@@ -44,7 +47,7 @@
       "STUMBLES",
       "WARM"
     ],
-	"//": "WIP"
+	"//note": " "
   },
   {
     "id": "mon_skinwalker_twig",
@@ -71,17 +74,22 @@
     "melee_damage": [ { "damage_type": "stab", "amount": 2 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 6 },
+    "regenerates": 1,
+    "families": [ "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body", "wps_skinwalker_horns" ],
     "path_settings": { "max_dist": 30 },
+    "stomach_size": 6500,
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-      [ "ABSORB_MEAT", 35 ],
+      [ "EAT_CARRION", 50 ], 
+      [ "EAT_FOOD", 50 ],
       [ "PARROT", 43 ],
       [ "slash_3d3", 7 ],
       { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "CLIMBS", "GOODHEARING", "KEENNOSE", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
+    "flags": [ "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
   },
   {
     "id": "mon_skinwalker_wendigo",
@@ -108,12 +116,17 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 2,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 6 },
+    "regenerates": 1,
+    "families": [ "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body", "wps_skinwalker_horns" ],
+    "stomach_size": 9500,
     "path_settings": { "max_dist": 30 },
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-      [ "ABSORB_MEAT", 35 ],
+      [ "EAT_CARRION", 50 ], 
+      [ "EAT_FOOD", 50 ],
       [ "longswipe", 19 ],
       [ "PARROT", 29 ],
       [ "slash_3d3", 7 ],
@@ -122,6 +135,7 @@
     "flags": [
       "CAN_OPEN_DOORS",
       "CLIMBS",
+      "EATS",
       "GOODHEARING",
       "KEENNOSE",
       "KEEP_DISTANCE",
@@ -156,12 +170,17 @@
     "melee_damage": [ { "damage_type": "bash", "amount": 2 } ],
     "dodge": 4,
     "armor": { "bash": 1, "cut": 1, "stab": 1, "bullet": 6 },
+    "regenerates": 1,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_humanoid_body" ],
+    "stomach_size": 6250,
     "path_settings": { "max_dist": 30 },
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-      [ "ABSORB_MEAT", 35 ],
+      [ "EAT_CARRION", 50 ], 
+      [ "EAT_FOOD", 50 ],
       { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 },
       { "spell_data": { "id": "skinwalker_transform" }, "type": "spell", "cooldown": 7 }
     ],
@@ -169,6 +188,7 @@
     "flags": [
       "CAN_OPEN_DOORS",
       "CLIMBS",
+      "EATS",
       "FILTHY",
       "GOODHEARING",
       "KEENNOSE",
@@ -183,8 +203,8 @@
     "type": "MONSTER",
     "name": { "str": "skinwalker", "str_pl": "skinwalkers" },
     "description": "A transformed skinwalker, taking the shape of a bear.  With a mix of both human and ursine anatomy, it is somewhat lean, walking upright leaving the muscular arms free.  The face displays a carnivorous smile, with weirdly human eyes.  It still carries around the tribal accesories it had while on human form.",
-    "volume": "120000 ml",
-    "weight": "120000 g",
+    "volume": "120 L",
+    "weight": "120 kg",
     "default_faction": "touhou_youkai_skinwalker",
     "bodytype": "bear",
     "categories": [ "NULL" ],
@@ -203,27 +223,32 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 1, "stab": 1, "bullet": 6, "electric": 2 },
+    "regenerates": 1,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body" ],
+    "stomach_size": 12000,
     "path_settings": { "max_dist": 30 },
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
-      [ "ABSORB_MEAT", 35 ],
+      [ "EAT_CARRION", 50 ], 
+      [ "EAT_FOOD", 50 ],
       [ "hug_11d3", 11 ],
       [ "PARROT", 31 ],
       [ "smash_10d3", 7 ],
       { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "BASHES", "CLIMBS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ]
+    "flags": [ "BASHES", "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_cow",
     "type": "MONSTER",
     "name": { "str": "skinwalker", "str_pl": "skinwalkers" },
     "description": "A transformed skinwalker, taking the shape of a cow.  With a mix of both human and bovine anatomy, it looks emaciated, the hooved legs support the body while the mishappen hands are free.  Canine teeth show past the lips, large and vaguely humanoid eyes positioned frontwards like the large, sharp horns.  It still carries around the tribal accesories it had while on human form.",
-    "volume": "225000 ml",
-    "weight": "225000 g",
+    "volume": "225 L",
+    "weight": "225 kg",
     "default_faction": "touhou_youkai_skinwalker",
     "bodytype": "bear",
     "categories": [ "NULL" ],
@@ -242,26 +267,31 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 1, "stab": 1, "bullet": 6, "electric": 2 },
+    "regenerates": 1,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body", "wps_skinwalker_horns" ],
+    "stomach_size": 22500,
     "path_settings": { "max_dist": 30 },
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
-      [ "ABSORB_MEAT", 35 ],
+      [ "EAT_CARRION", 50 ], 
+      [ "EAT_FOOD", 50 ],
       [ "charge_8d3", 7 ],
       [ "horn_7d3", 7 ],
       [ "PARROT", 31 ],
       { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "BASHES", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_deer",
     "type": "MONSTER",
     "name": { "str": "skinwalker", "str_pl": "skinwalkers" },
     "description": "A transformed skinwalker, taking the shape of a deer.  With a mix of both human and cervid anatomy, it moves quite fast, the hooved legs support the body while the hands ends in oversized claws.  A sardonic smile shows large, sharp teeth, while the sadistic gaze searches for prey.  It still carries around the tribal accesories it had while on human form.",
-    "volume": "95000 ml",
+    "volume": "95 L",
     "weight": "85 kg",
     "default_faction": "touhou_youkai_skinwalker",
     "bodytype": "human",
@@ -281,13 +311,17 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 1, "stab": 1, "bullet": 6, "electric": 2 },
+    "regenerates": 1,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body", "wps_skinwalker_horns" ],
+    "stomach_size": 9500,
     "path_settings": { "max_dist": 30 },
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
-    "special_attacks": [ [ "ABSORB_MEAT", 35 ], [ "claw_6d3", 5 ], [ "PARROT", 31 ] ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GOODHEARING", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
+    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "claw_6d3", 5 ], [ "PARROT", 31 ] ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "GOODHEARING", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_goat",
@@ -314,17 +348,22 @@
     "melee_damage": [ { "damage_type": "bash", "amount": 2, "armor_penetration": 2 } ],
     "dodge": 5,
     "armor": { "bash": 1, "cut": 1, "bullet": 6 },
+    "regenerates": 1,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body", "wps_skinwalker_horns" ],
+    "stomach_size": 6250,
     "path_settings": { "max_dist": 30 },
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
-    "special_attacks": [
-      [ "ABSORB_MEAT", 35 ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", 50 ], 
+      [ "EAT_FOOD", 50 ],
       [ "PARROT", 31 ],
       { "spell_data": { "id": "skinwalker_curse_7d2" }, "type": "spell", "cooldown": 17 }
     ],
-    "flags": [ "CAN_OPEN_DOORS", "CLIMBS", "HEARS", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "CAN_OPEN_DOORS", "CLIMBS", "EATS", "HEARS", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_wolf",
@@ -351,17 +390,22 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 6,
     "armor": { "bash": 2, "cut": 1, "bullet": 6 },
+    "regenerates": 1,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_youkai" ],
+    "weakpoint_sets": [ "wps_skinwalker_body" ],
+    "stomach_size": 6250,
     "path_settings": { "max_dist": 30 },
     "tracking_distance": 25,
     "vision_night": 35,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
-    "special_attacks": [
-      [ "ABSORB_MEAT", 35 ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", 50 ], 
+      [ "EAT_FOOD", 50 ],
       [ "PARROT", 31 ],
       [ "skinwalker_bite_9d2", 7 ],
       { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
+    "flags": [ "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
   }
 ]

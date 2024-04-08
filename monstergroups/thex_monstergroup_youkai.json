@@ -20,7 +20,8 @@
       { "monster": "mon_mib", "weight": 100 },
       { "monster": "mon_mib2", "weight": 100 },
       { "monster": "mon_mib3", "weight": 100 },
-      { "monster": "mon_mib4", "weight": 100 }
+      { "monster": "mon_mib4", "weight": 100 },
+      { "monster": "mon_mib5", "weight": 100 }
     ]
   },
   {

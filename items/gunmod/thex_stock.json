@@ -85,7 +85,7 @@
       "type": "transform",
       "msg": "You fold the stock.",
       "menu_text": "Fold",
-      "moves": 135
+      "moves": 200
     },
     "flags": [ "IRREMOVABLE" ]
   },
@@ -100,7 +100,7 @@
       "type": "transform",
       "msg": "You unfold the stock.",
       "menu_text": "Unfold",
-      "moves": 135
+      "moves": 200
     },
     "handling_modifier": -10,
     "flags": [ "FOLDED_STOCK", "IRREMOVABLE" ]
@@ -132,7 +132,7 @@
       "type": "transform",
       "msg": "You unfold the stock.",
       "menu_text": "Unfold",
-      "moves": 120
+      "moves": 150
     }
   },
   {
@@ -146,7 +146,7 @@
       "type": "transform",
       "msg": "You unfold the stock.",
       "menu_text": "Unfold",
-      "moves": 120
+      "moves": 150
     },
     "aim_speed_modifier": -4,
     "dispersion_modifier": 10,
@@ -178,7 +178,7 @@
       "type": "transform",
       "msg": "You fold the stock.",
       "menu_text": "Fold",
-      "moves": 133
+      "moves": 150
     }
   },
   {
@@ -192,7 +192,7 @@
       "type": "transform",
       "msg": "You unfold the stock.",
       "menu_text": "Unfold",
-      "moves": 133
+      "moves": 150
     },
     "handling_modifier": -8,
     "flags": [ "FOLDED_STOCK" ]

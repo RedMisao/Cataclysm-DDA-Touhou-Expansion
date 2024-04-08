@@ -42,7 +42,7 @@
       { "monster": "mon_boar_wild", "weight": 150, "cost_multiplier": 2 },
       { "monster": "mon_boar_wild_piglet", "weight": 50, "pack_size": [ 1, 6 ], "ends": "14 days" },
       { "monster": "mon_boar_wild_piglet", "weight": 25, "pack_size": [ 1, 6 ], "starts": "14 days" },
-      { "monster": "mon_daedon", "weight": 35, "cost_multiplier": 4, "starts": "2 days" }
+      { "monster": "mon_daeodon", "weight": 35, "cost_multiplier": 4, "starts": "2 days" }
     ]
   },
   {
@@ -52,7 +52,7 @@
       { "monster": "mon_pig", "weight": 150, "cost_multiplier": 2 },
       { "monster": "mon_pig_piglet", "weight": 25, "pack_size": [ 1, 2 ], "ends": "7 days" },
       { "monster": "mon_pig_piglet", "weight": 12, "pack_size": [ 1, 2 ], "starts": "7 days" },
-      { "monster": "mon_daedon", "weight": 15, "cost_multiplier": 4, "starts": "2 days" },
+      { "monster": "mon_daeodon", "weight": 15, "cost_multiplier": 4, "starts": "2 days" },
       { "monster": "mon_andrewsarchus", "weight": 15, "cost_multiplier": 4, "starts": "2 days" },
       { "monster": "mon_lystrosaurus", "weight": 150, "pack_size": [ 2, 4 ], "cost_multiplier": 4, "starts": "2 days" }
     ]

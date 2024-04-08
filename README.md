@@ -56,7 +56,7 @@ Sadly, there's also the
 * Arthropods: Aegirocassis, Anomalocaris, Arthropleura, Chasmataspis, Eusarcana, Hurdia, Jaekelopterus, Megalograptus, Meganeura, Opabinia, Pambdelurion, Parastylonurus, Sidneyia.
 * Birds: Dodo, Ectopistes, Icadyptes, Moa.
 * Fish: Coccosteus, Dipterus, Dunkleosteus, Holoptychius, lampreys (not actually extinct), Megamastax, Saurichthys.
-* Mammals: Amphicyon, Andrewsarchus, Castoroides, Daedon, Glossotherium, Glyptodont, Herpetotherium, Megatherium, Pakicetus, Taeniolabis, Thylacine.
+* Mammals: Amphicyon, Andrewsarchus, Castoroides, Daeodon, Glossotherium, Glyptodont, Herpetotherium, Megatherium, Pakicetus, Taeniolabis, Thylacine.
 * Mollusks: Agoniatites, Cleoniceras, Endoceras, Michelinoceras, Paracoroniceras, Parapuzosia.
 * Reptiles: Anatosuchus, Carnufex, Hesperosuchus, Ichthyosaurus, Plesiosaurus, Scutosaurus, Smilosuchus, Weigeltisaurus.
 * Stem-mammals: Cotylorhynchus, Dimetrodon, Lystrosaurus.

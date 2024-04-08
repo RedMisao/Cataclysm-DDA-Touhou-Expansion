@@ -9,7 +9,7 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "metabolism_modifier": -0.333
+    "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": -0.333 } ] } ]
   },
   {
     "id": "damnedrope_str_mut",
@@ -33,9 +33,16 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "attackcost_modifier": 1.05,
-    "sleepiness_modifier": 0.1,
-    "movecost_modifier": 1.05
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "ATTACK_SPEED", "multiply": 0.05 },
+          { "value": "SLEEPINESS", "multiply": 0.1 },
+          { "value": "MOVE_COST", "multiply": 0.05 }
+        ]
+      }
+    ]
   },
   {
     "id": "esper_cloak_mut",
@@ -64,12 +71,15 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "attackcost_modifier": 0.9,
-    "movecost_modifier": 0.95,
     "enchantments": [
       {
         "condition": "ALWAYS",
-        "values": [ { "value": "INTELLIGENCE", "multiply": -0.05 }, { "value": "PERCEPTION", "multiply": -0.05 } ]
+        "values": [
+          { "value": "INTELLIGENCE", "multiply": -0.05 },
+          { "value": "PERCEPTION", "multiply": -0.05 },
+          { "value": "ATTACK_SPEED", "multiply": -0.1 },
+          { "value": "MOVE_COST", "multiply": -0.05 }
+        ]
       }
     ]
   },
@@ -83,8 +93,6 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "attackcost_modifier": 0.8,
-    "movecost_modifier": 0.9,
     "enchantments": [
       {
         "condition": "ALWAYS",
@@ -92,7 +100,9 @@
           { "value": "INTELLIGENCE", "multiply": -0.1 },
           { "value": "PERCEPTION", "multiply": -0.15 },
           { "value": "STRENGTH", "multiply": 0.1 },
-          { "value": "BONUS_DODGE", "add": -1 }
+          { "value": "ATTACK_SPEED", "multiply": -0.2 },
+          { "value": "BONUS_DODGE", "add": -1 },
+          { "value": "MOVE_COST", "multiply": -0.1 }
         ],
         "intermittent_activation": { "effects": [ { "frequency": "10 s", "spell_effects": [ { "id": "lampad_insanity" } ] } ] }
       }
@@ -138,9 +148,19 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "passive_mods": { "str_mod": 2, "dex_mod": 1, "int_mod": -2, "per_mod": 4 },
     "vitamins_absorb_multi": [ [ "veggy", [ [ "vitA", 0.33 ], [ "vitB", 0.33 ], [ "vitC", 0.33 ], [ "calcium", 0.33 ], [ "iron", 0.33 ] ] ] ],
-    "ugliness": 4
+    "ugliness": 4,
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "DEXTERITY", "add": 1 },
+          { "value": "INTELLIGENCE", "add": -2 },
+          { "value": "PERCEPTION", "add": 4 },
+          { "value": "STRENGTH", "add": 2 }
+        ]
+      }
+    ]
   },
   {
     "id": "spider_charm_mut",

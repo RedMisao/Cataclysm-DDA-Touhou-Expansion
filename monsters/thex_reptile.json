@@ -25,13 +25,16 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 3,
     "armor": { "bash": 2, "cut": 2 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_crocodylomorpha_body" ],
+    "stomach_size": 900,
     "vision_night": 10,
     "path_settings": { "max_dist": 10 },
     "reproduction": { "baby_egg": "egg_anatosuchus", "baby_count": 6, "baby_timer": 24 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "STALK" ],
-    "special_attacks": [ [ "EAT_FOOD", 75 ] ],
+    "special_attacks": [ [ "EAT_CARRION", 75 ], [ "EAT_FOOD", 75 ] ],
     "flags": [ "ANIMAL", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
     "//": "Based on Anatosuchus sp.. No reproductive data."
   },
@@ -52,8 +55,8 @@
     "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
     "armor": { "bash": 0, "cut": 1 },
+    "stomach_size": 20,
     "upgrades": { "age_grow": 24, "into": "mon_anatosuchus" },
-    "special_attacks": [ [ "EAT_FOOD", 45 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -82,13 +85,16 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 4,
     "armor": { "bash": 3, "cut": 4, "stab": 2, "bullet": 4 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_crocodylomorpha_body", "wps_crocodylomorpha_runner" ],
+    "stomach_size": 15000,
     "vision_night": 5,
     "path_settings": { "max_dist": 10 },
     "reproduction": { "baby_egg": "egg_carnufex", "baby_count": 4, "baby_timer": 30 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "HURT" ],
-    "special_attacks": [ [ "EAT_FOOD", 80 ], [ "grab", 20 ] ],
-    "flags": [ "ANIMAL", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
+    "special_attacks": [ [ "EAT_CARRION", 80 ],[ "EAT_FOOD", 80 ], [ "grab", 20 ] ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
     "//": "Based on Carnufex sp.. No reproductive data"
   },
   {
@@ -108,8 +114,8 @@
     "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "armor": { "bash": 2, "cut": 2, "stab": 1, "bullet": 2 },
+    "stomach_size": 1000,
     "upgrades": { "age_grow": 28, "into": "mon_carnufex" },
-    "special_attacks": [ [ "EAT_FOOD", 50 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -138,14 +144,17 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 4,
     "armor": { "bash": 2, "cut": 3, "stab": 1, "bullet": 1 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_crocodylomorpha_body", "wps_crocodylomorpha_runner" ],
+    "stomach_size": 1600,
     "vision_night": 5,
     "path_settings": { "max_dist": 10 },
     "reproduction": { "baby_egg": "egg_hesperosuchus", "baby_count": 4, "baby_timer": 28 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "fear_triggers": [ "STALK" ],
-    "special_attacks": [ [ "EAT_FOOD", 85 ] ],
-    "flags": [ "ANIMAL", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
+    "special_attacks": [ [ "EAT_CARRION", 85 ], [ "EAT_FOOD", 85 ] ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
     "//": "Based on Hesperosuchus sp.. No reproductive data"
   },
   {
@@ -165,8 +174,8 @@
     "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "armor": { "bash": 1, "cut": 1, "stab": 0, "bullet": 0 },
+    "stomach_size": 35,
     "upgrades": { "age_grow": 24, "into": "mon_hesperosuchus" },
-    "special_attacks": [ [ "EAT_FOOD", 60 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -194,12 +203,15 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 2,
     "armor": { "bash": 2, "cut": 3, "stab": 4 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_ichthyosaurus_body" ],
+    "stomach_size": 16500, 
     "reproduction": { "baby_monster": "mon_ichthyosaurus_baby", "baby_count": 1, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "FRIEND_DIED" ],
-    "special_attacks": [ [ "EAT_FOOD", 100 ], [ "PARROT", 12 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWIMS", "WARM", "WATER_CAMOUFLAGE" ],
+    "special_attacks": [ [ "EAT_CARRION", 100 ], [ "EAT_FOOD", 100 ], [ "PARROT", 12 ] ],
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWIMS", "WARM", "WATER_CAMOUFLAGE" ],
     "//": "Ichthyosaurus communis used as reference. Don't know if they had vocalizations but that's how I imagine them to be",
     "//2": "Coprolites include fish and squid, and the big characteristic eyes indicate it could hunt in low light conditions, with great depths included"
   },
@@ -222,8 +234,8 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "dodge": 3,
     "armor": { "bash": 1, "cut": 2, "stab": 2 },
+    "stomach_size": 500, 
     "upgrades": { "age_grow": 24, "into": "mon_ichthyosaurus" },
-    "special_attacks": [ [ "EAT_FOOD", 80 ], [ "PARROT", 24 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -251,12 +263,15 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 2,
     "armor": { "bash": 2, "cut": 3, "stab": 2 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_plesiosaurus_body" ],
+    "stomach_size": 15000, 
     "reproduction": { "baby_monster": "mon_plesiosaurus_baby", "baby_count": 1, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "FRIEND_DIED" ],
-    "special_attacks": [ [ "EAT_FOOD", 35 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "special_attacks": [ [ "EAT_CARRION", 35 ], [ "EAT_FOOD", 35 ] ],
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Plesiosaurus dolichodeirus used as reference, Plesiosaurus is a wastebasket taxon"
   },
   {
@@ -278,8 +293,8 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 3,
     "armor": { "bash": 1, "cut": 1, "stab": 1 },
+    "stomach_size": 350, 
     "upgrades": { "age_grow": 20, "into": "mon_plesiosaurus" },
-    "special_attacks": [ [ "EAT_FOOD", 25 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -307,6 +322,9 @@
     "melee_damage": [ { "damage_type": "bash", "amount": 4 } ],
     "dodge": 1,
     "armor": { "bash": 8, "cut": 8, "stab": 8, "bullet": 12 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_scutosaurus_body" ],
+    "stomach_size": 100000, 
     "vision_night": 20,
     "path_settings": { "max_dist": 25 },
     "reproduction": { "baby_egg": "egg_scutosaurus", "baby_count": 4, "baby_timer": 32 },
@@ -314,7 +332,7 @@
     "anger_triggers": [ "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "HURT", "FRIEND_ATTACKED" ],
     "special_attacks": [ [ "EAT_CROP", 90 ], [ "headbutt_5d5", 5 ] ],
-    "flags": [ "ANIMAL", "HEARS", "SEES", "SMELLS" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS" ],
     "//": "Based on Scutosaurus sp. No reproductive data. Probably lived alone"
   },
   {
@@ -335,8 +353,8 @@
     "melee_dice_sides": 3,
     "melee_damage": [ { "damage_type": "bash", "amount": 2 } ],
     "armor": { "bash": 4, "cut": 4, "stab": 4, "bullet": 4 },
+    "stomach_size": 8000, 
     "upgrades": { "age_grow": 56, "into": "mon_scutosaurus" },
-    "special_attacks": [ [ "EAT_CROP", 60 ], [ "headbutt_6d2", 6 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -365,13 +383,16 @@
     "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
     "dodge": 2,
     "armor": { "bash": 4, "cut": 6, "stab": 2, "bullet": 6 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": [ "wps_suchia_body" ],
+    "stomach_size": 180000, 
     "vision_night": 10,
     "path_settings": { "max_dist": 10 },
     "reproduction": { "baby_egg": "egg_smilosuchus", "baby_count": 4, "baby_timer": 32 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
-    "special_attacks": [ [ "EAT_FOOD", 120 ] ],
-    "flags": [ "ANIMAL", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "special_attacks": [ [ "EAT_CARRION", 120 ], [ "EAT_FOOD", 120 ] ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Smilosuchus gregorii. No reproductive data",
     "//2": "Should have a 'charge ouf of water' special attack, while under water"
   },
@@ -393,8 +414,8 @@
     "melee_dice_sides": 3,
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "armor": { "bash": 2, "cut": 4, "stab": 0, "bullet": 2 },
+    "stomach_size": 4500, 
     "upgrades": { "age_grow": 32, "into": "mon_smilosuchus" },
-    "special_attacks": [ [ "EAT_FOOD", 85 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -422,11 +443,13 @@
     "melee_dice_sides": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
     "dodge": 3,
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "stomach_size": 60, 
     "reproduction": { "baby_egg": "egg_weigeltisaurus", "baby_count": 4, "baby_timer": 16 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "fear_triggers": [ "FIRE", "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "SOUND" ],
     "special_attacks": [ [ "EAT_FOOD", 100 ] ],
-    "flags": [ "ANIMAL", "FLIES", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS" ],
+    "flags": [ "ANIMAL", "FLIES", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS" ],
     "//": "Based on Weigeltisaurus sp.. No reproductive data"
   },
   {
@@ -445,8 +468,8 @@
     "melee_dice": 1,
     "melee_dice_sides": 1,
     "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
+    "stomach_size": 3, 
     "upgrades": { "age_grow": 24, "into": "mon_weigeltisaurus" },
-    "special_attacks": [ [ "EAT_FOOD", 85 ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   }
 ]

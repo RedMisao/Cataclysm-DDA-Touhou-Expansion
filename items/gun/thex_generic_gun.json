@@ -33,7 +33,8 @@
       "type": "transform",
       "msg": "You fold the weapon.",
       "menu_text": "Fold weapon",
-      "moves": 100
+      "moves": 200, 
+      "ammo_scale": 0
     }
   },
   {
@@ -69,7 +70,8 @@
       "type": "transform",
       "msg": "You unfold the weapon.",
       "menu_text": "Unfold weapon",
-      "moves": 100
+      "moves": 200, 
+      "ammo_scale": 0
     }
   },
   {

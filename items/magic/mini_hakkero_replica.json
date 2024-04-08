@@ -24,12 +24,14 @@
         "type": "transform",
         "msg": "You use the mini hakkero as a light source.",
         "menu_text": "Turn on",
-        "active": true
+        "active": true,
+        "ammo_scale": 0
       },
       { "type": "cast_spell", "spell_id": "mini_hakkero_replica_mspark", "no_fail": true, "level": 1 },
       { "type": "cast_spell", "spell_id": "mini_hakkero_replica_mmissile", "no_fail": true, "level": 1 }
     ],
-    "flags": [ "BELT_CLIP", "NO_RELOAD", "NO_UNLOAD", "TRADER_AVOID" ]
+    "flags": [ "BELT_CLIP", "NO_RELOAD", "NO_UNLOAD", "TRADER_AVOID" ],
+    "//": "Can only cast the first spell, as of #28975 "
   },
   {
     "id": "mini_hakkero_replica_on",
@@ -48,7 +50,7 @@
         "ammo_scale": 0
       }
     ],
-    "flags": [ "BELT_CLIP", "LIGHT_200", "TRADER_AVOID", "USE_PLAYER_ENERGY" ]
+    "flags": [ "BELT_CLIP", "LIGHT_64", "TRADER_AVOID", "USE_PLAYER_ENERGY" ]
   },
   {
     "id": "mini_hakkero_replica_mspark",
