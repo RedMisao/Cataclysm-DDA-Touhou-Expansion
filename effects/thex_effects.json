@@ -1,18 +1,27 @@
 [
   {
     "id": "hpeach_disease_satiety",
-	"type": "effect_type",
+    "type": "effect_type",
     "name": [ "Surfeit (low)", "Surfeit (medium)", "Surfeit (high)" ],
     "desc": [ "Something you ate recently was good.  In fact too good for you, you can't tolerate it." ],
     "apply_message": "You feel somewhat full of that thing you just ate.",
     "remove_message": "You feel normal again.",
-    "decay_messages": [
-      [ "You feel less full.", "good" ],
-      [ "You feel slightly less full.", "good" ]
-    ],
+    "decay_messages": [ [ "You feel less full.", "good" ], [ "You feel slightly less full.", "good" ] ],
     "max_intensity": 3,
-	"base_mods": { "speed_mod": [ -10 ], "fatigue_amount": [ 1 ], "vomit_chance": [ 1000 ], "vomit_tick": [ 4000 ], "pain_amount": [ 1 ] },
-    "scaling_mods": { "speed_mod": [ -5 ], "fatigue_amount": [ 1 ], "vomit_chance": [ -200 ], "vomit_tick": [ -1000 ], "pain_amount": [ 1 ] },
+    "base_mods": {
+      "speed_mod": [ -10 ],
+      "sleepiness_amount": [ 1 ],
+      "vomit_chance": [ 1000 ],
+      "vomit_tick": [ 4000 ],
+      "pain_amount": [ 1 ]
+    },
+    "scaling_mods": {
+      "speed_mod": [ -5 ],
+      "sleepiness_amount": [ 1 ],
+      "vomit_chance": [ -200 ],
+      "vomit_tick": [ -1000 ],
+      "pain_amount": [ 1 ]
+    },
     "rating": "bad"
   }
 ]

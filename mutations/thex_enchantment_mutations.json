@@ -21,14 +21,7 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "enchantments": [ 
-      { 
-        "condition": "ALWAYS", 
-        "values": [ 
-          { "value": "STRENGTH", "add": 80 } 
-        ] 
-      } 
-    ]
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 80 } ] } ]
   },
   {
     "id": "death_coin_mut",
@@ -41,7 +34,7 @@
     "starting_trait": false,
     "valid": true,
     "attackcost_modifier": 1.05,
-    "fatigue_modifier": 0.1,
+    "sleepiness_modifier": 0.1,
     "movecost_modifier": 1.05
   },
   {
@@ -57,10 +50,7 @@
     "enchantments": [
       {
         "condition": "ALWAYS",
-        "values": [ 
-          { "value": "MAX_MANA", "multiply": 0.33 }, 
-          { "value": "REGEN_MANA", "multiply": 0.33 } 
-        ]
+        "values": [ { "value": "MAX_MANA", "multiply": 0.33 }, { "value": "REGEN_MANA", "multiply": 0.33 } ]
       }
     ]
   },
@@ -79,10 +69,7 @@
     "enchantments": [
       {
         "condition": "ALWAYS",
-        "values": [ 
-          { "value": "INTELLIGENCE", "multiply": -0.05 },
-          { "value": "PERCEPTION", "multiply": -0.05 }
-        ]
+        "values": [ { "value": "INTELLIGENCE", "multiply": -0.05 }, { "value": "PERCEPTION", "multiply": -0.05 } ]
       }
     ]
   },
@@ -101,22 +88,13 @@
     "enchantments": [
       {
         "condition": "ALWAYS",
-        "values": [ 
+        "values": [
           { "value": "INTELLIGENCE", "multiply": -0.1 },
           { "value": "PERCEPTION", "multiply": -0.15 },
           { "value": "STRENGTH", "multiply": 0.1 },
           { "value": "BONUS_DODGE", "add": -1 }
         ],
-        "intermittent_activation": {
-          "effects": [
-            {
-              "frequency": "10 s",
-              "spell_effects": [
-                { "id": "lampad_insanity" }
-              ]
-            }
-          ]
-        }
+        "intermittent_activation": { "effects": [ { "frequency": "10 s", "spell_effects": [ { "id": "lampad_insanity" } ] } ] }
       }
     ]
   },
@@ -148,14 +126,7 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "enchantments": [
-      {
-        "condition": "ALWAYS",
-        "values": [ 
-          { "value": "EVASION", "add": 0.01 }
-        ]
-      }
-    ]
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "EVASION", "add": 0.01 } ] } ]
   },
   {
     "id": "skinwalker_pelt_mut",
@@ -193,15 +164,7 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "enchantments": [
-      {
-        "condition": "ALWAYS",
-        "values": [ 
-          { "value": "INTELLIGENCE", "add": -3 },
-          { "value": "STRENGTH", "add": 9 }
-        ]
-      }
-    ]
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": -3 }, { "value": "STRENGTH", "add": 9 } ] } ]
   },
   {
     "id": "wind_priestess_charm_mut",
@@ -216,7 +179,7 @@
     "enchantments": [
       {
         "condition": "ALWAYS",
-        "values": [ 
+        "values": [
           { "value": "DEXTERITY", "add": { "math": [ "1 + var_wind_blessing_dex * 3" ] } },
           { "value": "INTELLIGENCE", "add": { "math": [ "1 + var_wind_blessing_dex * 3" ] } },
           { "value": "PERCEPTION", "add": { "math": [ "1 + var_wind_blessing_per * 3" ] } },
