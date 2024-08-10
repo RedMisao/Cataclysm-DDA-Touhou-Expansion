@@ -88,26 +88,6 @@
     ]
   },
   {
-    "result": "caesar_salad",
-    "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
-    "category": "CC_FOOD",
-    "subcategory": "CSC_FOOD_VEGGI",
-    "id_suffix": "wheat_free",
-    "skill_used": "cooking",
-    "difficulty": 1,
-    "time": "20 m",
-    "autolearn": true,
-    "qualities": [ { "id": "COOK", "level": 1 }, { "id": "CUT", "level": 2 }, { "id": "CONTAIN", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
-    "components": [
-      [ [ "lettuce", 2 ], [ "irradiated_lettuce", 2 ] ],
-      [ [ "cheese_standard", 1, "LIST" ] ],
-      [ [ "bread_sandwich_wheat_free", 1, "LIST" ] ],
-      [ [ "seasoning_mild", 1, "LIST" ], [ "condiment", 1, "LIST" ] ]
-    ]
-  },
-  {
     "result": "dango_anko",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",

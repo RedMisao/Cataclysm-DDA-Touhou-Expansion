@@ -33,7 +33,7 @@
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED" ],
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 27 ], [ "oni_smash_9d4", 13 ] ],
     "death_drops": [ { "group": "oni_drops", "prob": 100 } ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Template only"
   },
   {
@@ -117,9 +117,10 @@
     "dodge": 2,
     "stomach_size": 7500,
     "anger_triggers": [ "HURT" ],
+    "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 19 ], [ "oni_smash_9d4", 17 ] ],
     "death_drops": [ { "group": "oni_humanoid_drops", "prob": 100 } ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER_2", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Human-oni hybrid"
   }
 ]

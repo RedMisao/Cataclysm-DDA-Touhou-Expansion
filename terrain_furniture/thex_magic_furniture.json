@@ -5,7 +5,7 @@
     "name": "gap",
     "description": "A gash in the fabric of space.",
     "symbol": "u",
-    "looks_like": "fd_fatigue",
+    "looks_like": "fd_reality_tear",
     "color": "black",
     "bash": { "str_min": 200, "str_max": 400, "sound": "whoosh.", "sound_fail": "whoosh." },
     "examine_action": "translocator",

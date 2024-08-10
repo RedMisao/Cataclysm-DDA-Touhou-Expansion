@@ -31,8 +31,8 @@
     "path_settings": { "max_dist": 24 },
     "special_attacks": [
       [ "PARROT", 13 ],
-      { "spell_data": { "id": "shrieking_20d2" }, "type": "spell", "cooldown": 5 },
-      { "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": 7 }
+      { "id": "mon_banshee_shrieking_20d2", "spell_data": { "id": "shrieking_20d2" }, "type": "spell", "cooldown": 5 },
+      { "id": "mon_banshee_wailing_6d4", "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": 7 }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s dissappears." },
     "flags": [ "BASHES", "GRABS", "HEARS", "NO_BREATHE", "SEES", "SWIMS", "WATER_CAMOUFLAGE" ]
@@ -68,8 +68,8 @@
     "path_settings": { "max_dist": 24 },
     "special_attacks": [
       [ "PARROT", 7 ],
-      { "spell_data": { "id": "reposition_12d2" }, "type": "spell", "cooldown": 29 },
-      { "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": 5 }
+      { "id": "mon_lallorona_reposition_12d2", "spell_data": { "id": "reposition_12d2" }, "type": "spell", "cooldown": 29 },
+      { "id": "mon_lallorona_wailing_6d4", "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": 5 }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "%s dissappears." },
     "flags": [ "BASHES", "GRABS", "HEARS", "NO_BREATHE", "SEES", "SWIMS" ]
@@ -103,8 +103,8 @@
     "vision_night": 16,
     "path_settings": { "max_dist": 10 },
     "special_attacks": [
-      { "spell_data": { "id": "white_lady_demoralize" }, "type": "spell", "cooldown": 5, "allow_no_target": true },
-      { "spell_data": { "id": "white_lady_transform" }, "type": "spell", "cooldown": 1 }
+      { "id": "white_lady_demoralize", "spell_data": { "id": "white_lady_demoralize" }, "type": "spell", "cooldown": 5, "allow_no_target": true },
+      { "id": "white_lady_transform", "spell_data": { "id": "white_lady_transform" }, "type": "spell", "cooldown": 1 }
     ],
     "death_function": { "corpse_type": "NO_CORPSE" },
     "flags": [ "HEARS", "NO_BREATHE", "PACIFIST", "SEES", "STUN_IMMUNE" ]

@@ -42,7 +42,7 @@
     "reproduction": { "baby_egg": "egg_dodo", "baby_count": 1, "baby_timer": 12 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "biosignature": { "biosig_item": "feces_bird", "biosig_timer": 8 },
-    "flags": [ "ANIMAL", "EATS", "HEARS", "SMELLS", "PATH_AVOID_DANGER_1", "SEES", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "SEES", "SWARMS", "WARM" ],
     "//": "Most data about the dodo is unknown, I'm trying to get the values as realistic as possible using turkeys as reference"
   },
   {
@@ -100,7 +100,7 @@
     "baby_flags": [ "SPRING" ],
     "biosignature": { "biosig_item": "feces_bird", "biosig_timer": 6 },
     "special_attacks": [ [ "EAT_CROP", 50 ], [ "PARROT", 6 ] ],
-    "flags": [ "ANIMAL", "EATS", "FLIES", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS", "WARM" ]
+    "flags": [ "ANIMAL", "EATS", "FLIES", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ]
   },
   {
     "id": "mon_ectopistes_chick",
@@ -151,7 +151,7 @@
     "reproduction": { "baby_egg": "egg_icadyptes", "baby_count": 1, "baby_timer": 32 },
     "baby_flags": [ "AUTUMN", "WINTER" ],
     "biosignature": { "biosig_item": "feces_bird", "biosig_timer": 10 },
-    "flags": [ "ANIMAL", "EATS", "HEARS", "SMELLS", "PATH_AVOID_DANGER_1", "SEES", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "SEES", "SWARMS", "WARM" ],
     "//2": "Based on Icadyptes salasi. No data about its reproduction habits, that part is based on Aptenodytes forsteri "
   },
   {
@@ -214,7 +214,7 @@
     "reproduction": { "baby_egg": "egg_moa", "baby_count": 1, "baby_timer": 24 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "biosignature": { "biosig_item": "feces_bird", "biosig_timer": 10 },
-    "flags": [ "ANIMAL", "EATS", "HEARS", "SMELLS", "PATH_AVOID_DANGER_1", "SEES", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "SEES", "SWARMS", "WARM" ],
     "//2": "Based on Dinornis novaezealandiae. No data about its reproduction habits",
     "//3": "Base attack is pecking. ADD WEAK-ISH LEG ATTACK !!!"
   },
