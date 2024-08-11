@@ -10,7 +10,6 @@
     "melee_allowed": true,
     "messages": [ "You bash %s with your shield", "<npcname> bashes %s with their shield" ],
     "stun_dur": 1,
-    "unarmed_weapons_allowed": true,
     "mult_bonuses": [
       { "stat": "damage", "type": "bash", "scale": 2 },
       { "stat": "damage", "type": "cut", "scale": 2 },

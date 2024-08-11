@@ -35,7 +35,7 @@
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "STALK" ],
     "special_attacks": [ [ "EAT_CARRION", 75 ], [ "EAT_FOOD", 75 ] ],
-    "flags": [ "ANIMAL", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
+    "flags": [ "ANIMAL", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Anatosuchus sp.. No reproductive data."
   },
   {
@@ -94,7 +94,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "HURT" ],
     "special_attacks": [ [ "EAT_CARRION", 80 ],[ "EAT_FOOD", 80 ], [ "grab", 20 ] ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Carnufex sp.. No reproductive data"
   },
   {
@@ -154,7 +154,7 @@
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "fear_triggers": [ "STALK" ],
     "special_attacks": [ [ "EAT_CARRION", 85 ], [ "EAT_FOOD", 85 ] ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Hesperosuchus sp.. No reproductive data"
   },
   {
@@ -211,7 +211,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "FRIEND_DIED" ],
     "special_attacks": [ [ "EAT_CARRION", 100 ], [ "EAT_FOOD", 100 ], [ "PARROT", 12 ] ],
-    "flags": [ "ANIMAL", "AQUATIC", "EATS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWIMS", "WARM", "WATER_CAMOUFLAGE" ],
+    "flags": [ "ANIMAL", "AQUATIC", "EATS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWIMS", "WARM", "WATER_CAMOUFLAGE" ],
     "//": "Ichthyosaurus communis used as reference. Don't know if they had vocalizations but that's how I imagine them to be",
     "//2": "Coprolites include fish and squid, and the big characteristic eyes indicate it could hunt in low light conditions, with great depths included"
   },
@@ -449,7 +449,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "fear_triggers": [ "FIRE", "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "SOUND" ],
     "special_attacks": [ [ "EAT_FOOD", 100 ] ],
-    "flags": [ "ANIMAL", "FLIES", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS" ],
+    "flags": [ "ANIMAL", "FLIES", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
     "//": "Based on Weigeltisaurus sp.. No reproductive data"
   },
   {

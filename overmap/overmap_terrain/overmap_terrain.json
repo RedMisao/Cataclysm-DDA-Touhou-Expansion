@@ -15,7 +15,7 @@
     "name": "swamp shack",
     "sym": "+",
     "color": "i_cyan",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD" ],
     "spawns": { "group": "GROUP_hunter_shack", "population": [ 1, 1 ], "chance": 16 }
   },
@@ -36,7 +36,6 @@
       "fort_4c"
     ],
     "copy-from": "generic_bastion_fort",
-    "see_cost": 5,
     "flags": [ "REQUIRES_PREDECESSOR" ],
     "spawns": { "group": "GROUP_fort", "population": [ 1, 1 ], "chance": 10 }
   },
@@ -46,6 +45,7 @@
     "name": "lumbermill",
     "sym": "L",
     "color": "i_green",
+    "see_cost": "high",
     "flags": [ "SOURCE_CONSTRUCTION", "SOURCE_FABRICATION" ],
     "spawns": { "group": "GROUP_lumbermill", "population": [ 1, 1 ], "chance": 10 }
   }

@@ -29,7 +29,7 @@
     "path_settings": { "max_dist": 10 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK" ],
     "special_attacks": [ [ "EAT_FOOD", 100 ] ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Generic Ezou wolf. Basically a North American wolf that got stuck in Hokkaido, however these seemed to ignore humans except under arduous circumstances. Probably only the youkai version should spawn as they're a higher risk for the player"
   },
   {
@@ -63,7 +63,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [ [ "EAT_FOOD", 100 ] ],
-    "flags": [ "ANIMAL", "EATS", "GROUP_MORALE", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "GROUP_MORALE", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Generic Japanese non-Ezou wolf. Probably only the youkai version should spawn as they're a higher risk for the player"
   }
 ]

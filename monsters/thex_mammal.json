@@ -36,7 +36,7 @@
     "reproduction": { "baby_monster": "mon_amphicyon_cub", "baby_count": 3, "baby_timer": 240 },
     "baby_flags": [ "SPRING" ],
     "special_attacks": [ [ "EAT_CARRION", 65 ], [ "EAT_FOOD", 65 ] ],
-    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ],
+    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//": "Amphicyon ingens taken as reference when possible, because one exemplar had an estimated of 570 Kg which is a bit too much. No reproductive data. BTW these are oversized wolves, not bears with wolf characteristics"
   },
   {
@@ -98,7 +98,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "fear_triggers": [ "SOUND" ],
     "special_attacks": [ [ "EAT_CARRION", 80 ], [ "EAT_FOOD", 80 ] ],
-    "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
     "//": "Andrewsarchus mongoliensis used as reference. No reproductive data"
   },
   {
@@ -159,7 +159,7 @@
       "BASHES",
       "EATS",
       "HEARS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PUSH_MON",
       "SEES",
       "SMELLS",
@@ -228,7 +228,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "SOUND" ],
     "special_attacks": [ [ "EAT_CARRION", 60 ], [ "EAT_FOOD", 60 ] ],
-    "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
     "//": "Daeodon shoshonensis used as reference. The white marks on their faces is probably made up but sounds cool for a giant murderous boar"
   },
   {
@@ -291,7 +291,7 @@
     "reproduction": { "baby_monster": "mon_glossotherium_cub", "baby_count": 3, "baby_timer": 240 },
     "baby_flags": [ "SPRING" ],
     "special_attacks": [ [ "EAT_CROP", 80 ], [ "EAT_FOOD", 80 ] ],
-    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ],
+    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//2": "Glossotherium sp. used as reference. No reproductive data",
     "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
   },
@@ -354,7 +354,7 @@
     "reproduction": { "baby_monster": "mon_glyptodont_baby", "baby_count": 2, "baby_timer": 180 },
     "baby_flags": [ "SPRING" ],
     "special_attacks": [ [ "EAT_CROP", 50 ] ],
-    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ],
+    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//2": "Glyptodont sp. used as reference. No reproductive data",
     "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
   },
@@ -409,7 +409,7 @@
     "reproduction": { "baby_monster": "mon_herpetotherium_cub", "baby_count": 4, "baby_timer": 135 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ [ "EAT_CROP", 24 ], [ "EAT_FOOD", 24 ] ],
-    "flags": [ "ANIMAL", "CLIMBS", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "ANIMAL", "CLIMBS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Tried to use Herpetotherium sp. as reference, but there's basically no data, so it's mostly copied from mon_opossum and mon_black_rat . No reproductive data"
   },
   {
@@ -471,7 +471,7 @@
     "reproduction": { "baby_monster": "mon_megatherium_cub", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING" ],
     "special_attacks": [ [ "EAT_CROP", 120 ], [ "EAT_FOOD", 120 ] ],
-    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ],
+    "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//2": "Megatherium americanum used as reference. No reproductive data",
     "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
   },
@@ -533,7 +533,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "STALK" ],
     "special_attacks": [ [ "EAT_FOOD", 100 ] ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWIMS", "WARM" ]
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWIMS", "WARM" ]
   },
   {
     "id": "mon_pakicetus_pup",
@@ -592,7 +592,7 @@
       "BASHES",
       "EATS",
       "HEARS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PUSH_MON",
       "SEES",
       "SMELLS",
@@ -658,7 +658,7 @@
     "biosignature": { "biosig_item": "feces_thylacine", "biosig_timer": 8 },
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_NEAR_BABY" ],
     "special_attacks": [ [ "EAT_CROP", 100 ], [ "EAT_CARRION", 100 ], [ "EAT_FOOD", 100 ], [ "PARROT", 4 ] ],
-    "flags": [ "ANIMAL", "EATS", "GROUP_MORALE", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "GROUP_MORALE", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SWARMS", "WARM" ],
     "//": " Previously extinct in the Outside world, they were passively transferred to Gensokyo at some point in the past. ",
     "//2": "These technically should have zombie versions, but I don't like that idea"
   },

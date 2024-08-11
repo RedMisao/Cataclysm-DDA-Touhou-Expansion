@@ -26,7 +26,7 @@
     "weakpoint_sets": [ "wps_humanoid_body", "wps_mib_body" ],
     "vision_day": 35,
     "vision_night": 15,
-    "path_settings": { "max_dist": 35 },
+    "path_settings": { "max_dist": 35, "avoid_traps": true, "avoid_dangerous_fields": true },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 5 },
     "luminance": 1,
@@ -51,7 +51,7 @@
     ],
     "death_drops": "mib_drops",
     "death_function": { "effect": { "id": "death_monster_touhou_none", "hit_self": true }, "message": "The %s dies!" },
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_2", "SEES", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER", "SEES", "WARM" ],
     "//": "Base (human) MIB",
     "//2": "Add 'weird' harvest",
     "//3": "Each death spawning something should print a message, telling the player (defaults are kept below), but I'm not sure how to do that."
@@ -63,6 +63,7 @@
     "copy-from": "mon_mib",
     "vision_night": 50,
     "weakpoint_sets": [ "wps_humanoid_head_big", "wps_mib_body" ],
+    "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
     "special_attacks": [
       {
         "gun_type": "glock_17",
@@ -86,7 +87,7 @@
       "message": "The %s falls dead.  Immediately after, a jet black shadow emerges from the \"corpse\"!",
       "corpse_type": "NORMAL"
     },
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER", "SEES" ],
     "//": " 'Demon' type MIB"
   },
   {
@@ -118,7 +119,7 @@
       "message": "The %s stops on its tracks, the flesh starts to melt and something comes out from the body!",
       "corpse_type": "NO_CORPSE"
     },
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_1", "SEES" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER", "SEES" ],
     "//": "Alien type MIB, add pile-of-flesh corpse"
   },
   {
@@ -153,7 +154,7 @@
       "message": "The %s falls dead.  Shortly after, the operative stands up again, with a red glow on their eyes!",
       "corpse_type": "NO_CORPSE"
     },
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER", "SEES", "WARM" ],
     "//": "Terminator-like MIB"
   },
   {
@@ -185,7 +186,7 @@
       "message": "The %s staggers, their face becomes blurry and countoured as in pain, taken over by a stern figure!",
       "corpse_type": "NO_CORPSE"
     },
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "DROPS_AMMO", "HEARS", "PATH_AVOID_DANGER", "SEES", "WARM" ],
     "//": "Agent-like MIB"
   },
   {
@@ -213,10 +214,10 @@
     "families": [ "prof_wp_youkai" ],
     "vision_day": 25,
     "vision_night": 35,
-    "path_settings": { "max_dist": 25 },
+    "path_settings": { "max_dist": 25, "avoid_traps": true, "avoid_dangerous_fields": true },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "armor": { "bash": 6, "cut": 6, "stab": 6, "bullet": 6, "acid": 6, "cold": 6, "electric": 6, "heat": 6 },
-    "flags": [ "CAN_OPEN_DOORS", "HARDTOSHOOT", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
+    "flags": [ "CAN_OPEN_DOORS", "HARDTOSHOOT", "HEARS", "PATH_AVOID_DANGER", "SEES" ],
     "//": "Demon-ish component to the MIB urban legend"
   },
   {
@@ -245,16 +246,16 @@
     "weakpoint_sets": [ "wps_humanoid_head_big", "wps_mib_body" ],
     "vision_day": 25,
     "vision_night": 35,
-    "path_settings": { "max_dist": 25 },
+    "path_settings": { "max_dist": 25, "avoid_traps": true, "avoid_dangerous_fields": true },
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
     "armor": { "bash": 1, "cut": 2, "stab": 0, "bullet": 0, "acid": 12, "cold": 12, "electric": 12, "heat": 12 },
     "special_attacks": [
-      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 24 },
-      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 20 },
-      { "spell_data": { "id": "paralyze_200" }, "type": "spell", "cooldown": 20 }
+      { "id": "mon_mib_alien_fear_paralyze", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 24 },
+      { "id": "mon_mib_alien_stare", "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 20 },
+      { "id": "mon_mib_alien_paralyze_200", "spell_data": { "id": "paralyze_200" }, "type": "spell", "cooldown": 20 }
     ],
-    "flags": [ "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER_2", "SEES" ],
+    "flags": [ "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER", "SEES" ],
     "//": "Alien component to the MIB urban legend"
   },
   {
@@ -316,7 +317,7 @@
     "weakpoint_sets": [ "wps_humanoid_body", "wps_mib_body" ],
     "vision_day": 35,
     "vision_night": 15,
-    "path_settings": { "max_dist": 40 },
+    "path_settings": { "max_dist": 40, "avoid_traps": true, "avoid_dangerous_fields": true },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "armor": { "bash": 12, "cut": 16, "stab": 16, "bullet": 12, "acid": 0, "cold": 0, "electric": 0, "heat": 0 },
     "luminance": 1,
@@ -339,7 +340,7 @@
       },
       [ "PARROT_AT_DANGER", 22 ]
     ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "SEES", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "SEES", "WARM" ],
     "//": "Agent-style enemy. Similar to the base MIB, deadlier"
   }
 ]

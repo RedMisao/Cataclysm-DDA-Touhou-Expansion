@@ -32,7 +32,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "slash_3d3", 2 ] ],
-    "flags": [ "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "These are what show up when you google 'chupacabra mange'. Former dogs/dog-sized canids, now at the boundary of being diseased animals and newborn youkai",
     "//2": "Physical armor values should be removed IF the not yet implemented YOUKAI flag gives passive resistances."
   },
@@ -82,7 +82,7 @@
     "vision_night": 16,
     "anger_triggers": [ "HURT" ],
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "slash_2d3", 2 ] ],
-    "flags": [ "CLIMBS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "CLIMBS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Implement ALCOHOL as placate_triggers...",
     "//2": "These are the actual chupacabra cryptids, if a very small version"
   },
@@ -121,7 +121,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "bleed_rate": 125,
     "special_attacks": [ [ "ABSORB_MEAT", 65 ], [ "bite_5d3", 8 ], { "spell_data": { "id": "bodyslam" }, "type": "spell", "cooldown": 20 } ],
-    "flags": [ "BASHES", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "BASHES", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_gevaudan",
@@ -156,11 +156,11 @@
     "stomach_size": 68000,
     "vision_day": 25,
     "vision_night": 35,
-    "path_settings": { "max_dist": 25 },
+    "path_settings": { "max_dist": 25, "avoid_traps": true, "avoid_dangerous_fields": true },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "bleed_rate": 166,
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "LUNGE", 16 ], [ "bite_neck_6d4", 5 ] ],
-    "flags": [ "BASHES", "CLIMBS", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_2", "SEES", "WARM" ],
+    "flags": [ "BASHES", "CLIMBS", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ],
     "//3": "Should be weaker-than-normal to stab and bullet damage. Should be weaker-than-normal against soul damage. Also anything with silver should do x2-x4 damage"
   },
   {
@@ -192,7 +192,7 @@
     "stomach_size": 500,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "leg_gore_4d2", 5 ] ],
-    "flags": [ "EATS", "GOODHEARING", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "EATS", "GOODHEARING", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_jinmenken",
@@ -226,7 +226,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_CROP", 50 ], [ "PARROT", 29 ], [ "PARROT_AT_DANGER", 17 ] ],
-    "flags": [ "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_jinmenken_young",
@@ -279,9 +279,9 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "bleed_rate": 0,
     "special_attacks": [
-      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 32 },
-      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 28 },
-      { "spell_data": { "id": "paralyze_100" }, "type": "spell", "cooldown": 34 }
+      { "id": "mon_kunekune_fear_paralyze", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 32 },
+      { "id": "mon_kunekune_stare", "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 28 },
+      { "id": "mon_kunekune_paralyze_100", "spell_data": { "id": "paralyze_100" }, "type": "spell", "cooldown": 34 }
     ],
     "death_function": { "message": "The %s dissipates into air.", "corpse_type": "NO_CORPSE" },
     "flags": [ "HEARS", "IMMOBILE", "KEENNOSE", "SEES" ]
@@ -318,7 +318,7 @@
     "reproduction": { "baby_monster": "mon_nightcrawler_young", "baby_count": 2, "baby_timer": 13 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ [ "ABSORB_MEAT", 100 ] ],
-    "flags": [ "CLIMBS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS" ],
+    "flags": [ "CLIMBS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
     "//": "Fresno Nightcrawler"
   },
   {
@@ -369,8 +369,8 @@
     "special_attacks": [ 
       [ "EAT_CARRION", 50 ], 
       [ "EAT_CROP", 50 ], 
-      { "spell_data": { "id": "olgoi_poison" }, "type": "spell", "cooldown": 7 },
-      { "spell_data": { "id": "olgoi_shock" }, "type": "spell", "cooldown": 11 }
+      { "id": "mon_olgoi_poison", "spell_data": { "id": "olgoi_poison" }, "type": "spell", "cooldown": 7 },
+      { "id": "mon_olgoi_shock", "spell_data": { "id": "olgoi_shock" }, "type": "spell", "cooldown": 11 }
     ],
     "death_function": { "message": "The %s squirms, twitches, and finally dies.", "corpse_type": "NORMAL" },
     "flags": [ "ACIDPROOF", "ATTACK_LOWER", "DIGS", "ELECTRIC", "HEARS", "NOHEAD", "SLUDGEPROOF", "VENOM" ],
@@ -409,7 +409,7 @@
     "path_settings": { "max_dist": 35 },
     "anger_triggers": [ "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT" ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   },
   {
     "id": "mon_mapinguari",
@@ -444,7 +444,7 @@
     "path_settings": { "max_dist": 35 },
     "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED" ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
 	"//": "Hybrid between bigfoot, yeti and the two giant sloths, considered closer to sasquatch for behavior purposes, its true taxonomy should be vague"
   },
   {
@@ -472,7 +472,7 @@
     "vision_night": 35,
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_WEAK", "STALK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GROUP_BASH", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GROUP_BASH", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ],
     "//": "Should only show up during WINTER, also should have a mi-go (true) component?"
   },
   {
@@ -511,7 +511,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_NEAR_BABY", "STALK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
     "special_attacks": [ [ "EAT_CARRION", 50 ] ],
-    "flags": [ "BASHES", "GOODHEARING", "GROUP_BASH", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SWIMS" ]
+    "flags": [ "BASHES", "GOODHEARING", "GROUP_BASH", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SWIMS" ]
   },
   {
     "id": "mon_squonk",
@@ -544,7 +544,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
     "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
     "special_attacks": [ [ "ABSORB_MEAT", 100 ], { "spell_data": { "id": "squonk_dissolve" }, "type": "spell", "cooldown": 3 } ],
-    "flags": [ "HEARS", "PATH_AVOID_DANGER_1", "PACIFIST", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "HEARS", "PATH_AVOID_DANGER", "PACIFIST", "SEES", "SMELLS", "WARM" ],
     "//": "The squonk should go around, run from the player when encountered, until it reaches the anger_triggers threshold, then casts squonk_dissolve and transforms into the harvest-less, drop-less mon_squonk_death to finish the death process. It would be harvestable only if caught by surprise"
   },
   {
@@ -587,7 +587,7 @@
     "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "dodge": 1,
-    "path_settings": { "max_dist": 20, "avoid_traps": true },
+    "path_settings": { "max_dist": 20, "avoid_traps": true, "avoid_dangerous_fields": true },
     "vision_day": 50,
     "vision_night": 35,
     "special_attacks": [ [ "PARROT_AT_DANGER", 33 ], [ "SEARCHLIGHT", 50 ] ],
@@ -605,7 +605,7 @@
       "GROUP_MORALE",
       "HEARS",
       "HUMAN",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "RANGED_ATTACKER",
       "SEES",
       "WARM"

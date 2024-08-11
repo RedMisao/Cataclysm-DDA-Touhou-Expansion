@@ -27,7 +27,7 @@
     "regenerates": 1,
     "families": [ "prof_wp_youkai" ],
     "weakpoint_sets": [ "wps_skinwalker_body" ],
-    "path_settings": { "max_dist": 66 },
+    "path_settings": { "max_dist": 66, "avoid_traps": true, "avoid_dangerous_fields": true },
     "tracking_distance": 66,
     "vision_night": 66,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -42,7 +42,7 @@
       "GOODHEARING",
       "KEENNOSE",
       "KEEP_DISTANCE",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "SEES",
       "STUMBLES",
       "WARM"
@@ -89,7 +89,7 @@
       [ "slash_3d3", 7 ],
       { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
+    "flags": [ "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "KEEP_DISTANCE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   },
   {
     "id": "mon_skinwalker_wendigo",
@@ -139,7 +139,7 @@
       "GOODHEARING",
       "KEENNOSE",
       "KEEP_DISTANCE",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "SEES",
       "STUMBLES",
       "WARM"
@@ -181,8 +181,8 @@
     "special_attacks": [
       [ "EAT_CARRION", 50 ], 
       [ "EAT_FOOD", 50 ],
-      { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 },
-      { "spell_data": { "id": "skinwalker_transform" }, "type": "spell", "cooldown": 7 }
+      { "id": "mon_skinwalker_witch_scream_6d4", "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 },
+      { "id": "mon_skinwalker_witch_skinwalker_transform", "spell_data": { "id": "skinwalker_transform" }, "type": "spell", "cooldown": 7 }
     ],
     "death_drops": "skinwalker_witch_drops",
     "flags": [
@@ -193,7 +193,7 @@
       "GOODHEARING",
       "KEENNOSE",
       "KEEP_DISTANCE",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "SEES",
       "WARM"
     ]
@@ -240,7 +240,7 @@
       [ "smash_10d3", 7 ],
       { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "BASHES", "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ]
+    "flags": [ "BASHES", "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_cow",
@@ -284,7 +284,7 @@
       [ "PARROT", 31 ],
       { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_deer",
@@ -321,7 +321,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "claw_6d3", 5 ], [ "PARROT", 31 ] ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "GOODHEARING", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "GOODHEARING", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_goat",
@@ -363,7 +363,7 @@
       [ "PARROT", 31 ],
       { "spell_data": { "id": "skinwalker_curse_7d2" }, "type": "spell", "cooldown": 17 }
     ],
-    "flags": [ "CAN_OPEN_DOORS", "CLIMBS", "EATS", "HEARS", "KEEP_DISTANCE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "CAN_OPEN_DOORS", "CLIMBS", "EATS", "HEARS", "KEEP_DISTANCE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_skinwalker_witch_wolf",
@@ -406,6 +406,6 @@
       [ "skinwalker_bite_9d2", 7 ],
       { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
     ],
-    "flags": [ "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "WARM" ]
+    "flags": [ "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   }
 ]

@@ -34,7 +34,7 @@
     "special_attacks": [ [ "EAT_CROP", 100 ], [ "slam", 8 ] ],
     "reproduction": { "baby_egg": "egg_cotylorhynchus", "baby_count": 8, "baby_timer": 36 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "EATS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Cotylorhynchus sp. taken as reference. No reproductive data, I'm assuming these laid eggs"
   },
   {
@@ -96,7 +96,7 @@
     "special_attacks": [ [ "EAT_CARRION", 100 ], [ "EAT_FOOD", 100 ], [ "bite_6d3", 6 ] ],
     "reproduction": { "baby_egg": "egg_dimetrodon", "baby_count": 6, "baby_timer": 150 },
     "baby_flags": [ "SPRING", "SUMMER" ],
-    "flags": [ "ANIMAL", "EATS", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
     "//": "Dimetrodon limbatus taken as reference. No reproductive data, I'm assuming these laid eggs. It is unknown if these had smooth skin or not"
   },
   {
@@ -161,7 +161,7 @@
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_CROP", 50 ], { "id": "headbutt_6d2", "attack_upper": false, "cooldown": 4 } ],
     "reproduction": { "baby_egg": "egg_lystrosaurus", "baby_count": 6, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Lystrosaurus sp. taken as reference. No reproductive data. I think these laid eggs, but I'm not sure",
     "//2": "Should do something related to digging and burrowing their nests",
     "//3": "Add headbutt attack"

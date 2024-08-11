@@ -34,7 +34,7 @@
     "special_attacks": [ [ "EAT_CARRION", 85 ],[ "EAT_FOOD", 85 ], [ "bite_6d3", 4 ] ],
     "reproduction": { "baby_egg": "egg_inostrancevia", "baby_count": 3, "baby_timer": 60 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PUSH_MON", "SEES", "WARM" ],
+    "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//": "Based on Inostrancevia sp., larger values than the real animal. No reproductive data, I'm assuming these laid eggs"
   },
   {
@@ -94,7 +94,7 @@
     "special_attacks": [ [ "EAT_CARRION", 65 ], [ "EAT_FOOD", 65 ], [ "bite_5d3", 8 ], { "id": "scratch", "attack_upper": false, "cooldown": 10 } ],
     "reproduction": { "baby_egg": "egg_moschorhinus", "baby_count": 5, "baby_timer": 60 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Based on Moschorhinus sp. and mon_cat . No reproductive data, I'm assuming these laid eggs. Larger than a cat, kind of sprawls instead of having an erect posture, big headed"
   },
   {
@@ -157,7 +157,7 @@
     "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ] ],
     "reproduction": { "baby_egg": "egg_nochnitsa", "baby_count": 4, "baby_timer": 32 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Based on Nochnitsa sp. and mon_cat . No reproductive data, I'm assuming these laid eggs. Between a cat and a large rat in size, kind of sprawls instead of having an erect posture, big headed"
   },
   {
@@ -213,7 +213,7 @@
     "special_attacks": [ [ "EAT_CARRION", 75 ], [ "EAT_FOOD", 75 ], [ "bite_5d3", 6 ] ],
     "reproduction": { "baby_egg": "egg_pristerognathus", "baby_count": 4, "baby_timer": 60 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SWARMS", "WARM" ],
     "//": "Based on Pristerognathus sp. and mon_wolf . No reproductive data, I'm assuming these laid eggs. Dog-sized but kind of sprawls instead of having an erect posture, with different body part ratios too"
   },
   {
@@ -274,7 +274,7 @@
     "special_attacks": [ [ "EAT_CARRION", 65 ], [ "EAT_FOOD", 65 ], [ "bite_5d3", 8 ] ],
     "reproduction": { "baby_egg": "egg_viatkogorgon", "baby_count": 4, "baby_timer": 32 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Based on Viatkogorgon sp. and mon_coyote . No reproductive data, I'm assuming these laid eggs. Less than more the size of a coyote"
   },
   {
