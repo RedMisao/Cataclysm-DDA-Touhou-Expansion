@@ -87,7 +87,7 @@
     "reproduction": { "baby_egg": "egg_mollusk_small", "baby_count": 12, "baby_timer": 12 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT" ],
-    "special_attacks": [ [ "grab", 12 ] ],
+    "special_attacks": [ [ "grab", { "math": [ "10 + rand(4)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "ARTHROPOD_BLOOD", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Cleoniceras sp.. No reproductive data, size and weight are estimated from a ~14 cm long fossil"
   },
@@ -145,7 +145,7 @@
     "reproduction": { "baby_egg": "egg_mollusk_large", "baby_count": 7, "baby_timer": 24 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 7 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", { "math": [ "10 + rand(4)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "ARTHROPOD_BLOOD", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Endoceras sp. No reproductive data"
   },
@@ -205,7 +205,7 @@
     "reproduction": { "baby_egg": "egg_mollusk_small", "baby_count": 8, "baby_timer": 32 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 13 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", { "math": [ "10 + rand(4)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "ARTHROPOD_BLOOD", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Michelinoceras sp. No reproductive data"
   },
@@ -265,7 +265,7 @@
     "reproduction": { "baby_egg": "egg_mollusk_small", "baby_count": 12, "baby_timer": 28 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 9 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", { "math": [ "10 + rand(4)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "ARTHROPOD_BLOOD", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Agoniatites sp.. No reproductive data, size and weight are estimated from a ~10 cm long fossil"
   },
@@ -324,7 +324,7 @@
     "reproduction": { "baby_egg": "egg_mollusk_large", "baby_count": 6, "baby_timer": 24 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 7 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", { "math": [ "10 + rand(4)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "ARTHROPOD_BLOOD", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Parapuzosia seppenradensis. No reproductive data"
   },

@@ -21,7 +21,14 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 80 } ] } ]
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS", 
+        "values": [ 
+          { "value": "STRENGTH", "add": 80 } 
+        ] 
+      } 
+    ]
   },
   {
     "id": "death_coin_mut",
@@ -57,7 +64,10 @@
     "enchantments": [
       {
         "condition": "ALWAYS",
-        "values": [ { "value": "MAX_MANA", "multiply": 0.33 }, { "value": "REGEN_MANA", "multiply": 0.33 } ]
+        "values": [ 
+          { "value": "MAX_MANA", "multiply": 0.33 }, 
+          { "value": "REGEN_MANA", "multiply": 0.33 } 
+        ]
       }
     ]
   },
@@ -104,7 +114,16 @@
           { "value": "BONUS_DODGE", "add": -1 },
           { "value": "MOVE_COST", "multiply": -0.1 }
         ],
-        "intermittent_activation": { "effects": [ { "frequency": "10 s", "spell_effects": [ { "id": "lampad_insanity" } ] } ] }
+        "intermittent_activation": {
+          "effects": [
+            {
+              "frequency": "10 s",
+              "spell_effects": [
+                { "id": "lampad_insanity" }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
@@ -136,7 +155,14 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "EVASION", "add": 0.01 } ] } ]
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "EVASION", "add": 0.01 }
+        ]
+      }
+    ]
   },
   {
     "id": "skinwalker_pelt_mut",
@@ -184,7 +210,15 @@
     "purifiable": false,
     "starting_trait": false,
     "valid": true,
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": -3 }, { "value": "STRENGTH", "add": 9 } ] } ]
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "INTELLIGENCE", "add": -3 },
+          { "value": "STRENGTH", "add": 9 }
+        ]
+      }
+    ]
   },
   {
     "id": "wind_priestess_charm_mut",

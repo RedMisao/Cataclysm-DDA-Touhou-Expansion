@@ -63,7 +63,6 @@
     "copy-from": "mon_mib",
     "vision_night": 50,
     "weakpoint_sets": [ "wps_humanoid_head_big", "wps_mib_body" ],
-    "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
     "special_attacks": [
       {
         "gun_type": "glock_17",
@@ -294,7 +293,7 @@
     "id": "mon_mib_agent",
     "type": "MONSTER",
     "name": { "str": "agent", "str_pl": "agents" },
-    "description": "Something is taking over the operative.  It's stern face gives no emotion, any previous wounds are gone, as if overwritten.  .",
+    "description": "Something is taking over the operative.  It's stern face gives no emotion, any previous wounds are gone, as if overwritten.",
     "volume": "80000 ml",
     "weight": "80000 g",
     "default_faction": "touhou_mib",

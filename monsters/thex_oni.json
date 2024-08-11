@@ -31,7 +31,7 @@
     "vision_night": 25,
     "path_settings": { "max_dist": 25 },
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 27 ], [ "oni_smash_9d4", 13 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", 27 ], [ "oni_smash_9d4", { "math": [ "11 + rand(4)" ] } ] ],
     "death_drops": [ { "group": "oni_drops", "prob": 100 } ],
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Template only"
@@ -54,7 +54,7 @@
     "stomach_size": 5500,
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 27 ], [ "oni_smash_7d4", 13 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", { "math": [ "25 + rand(10)" ] } ], [ "oni_smash_7d4", { "math": [ "11 + rand(4)" ] } ] ],
     "death_drops": [ { "group": "oni_drops", "prob": 100 } ],
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "SEES", "SMELLS", "WARM" ],
     "//": "These should be dumb, weak-ish to physical attacks, hit hard and be cowardly"
@@ -118,7 +118,7 @@
     "stomach_size": 7500,
     "anger_triggers": [ "HURT" ],
     "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "grab", 19 ], [ "oni_smash_9d4", 17 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", { "math": [ "15 + rand(10)" ] } ], [ "oni_smash_9d4", { "math": [ "15 + rand(4)" ] } ] ],
     "death_drops": [ { "group": "oni_humanoid_drops", "prob": 100 } ],
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Human-oni hybrid"

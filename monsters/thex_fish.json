@@ -31,7 +31,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
-    "special_attacks": [ [ "EAT_FOOD", 50 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Coccosteus sp.. No reproductive data."
   },
@@ -55,7 +55,7 @@
     "armor": { "bash": 1, "cut": 1, "stab": 2 },
     "stomach_size": 12,
     "upgrades": { "age_grow": 20, "into": "mon_coccosteus" },
-    "special_attacks": [ [ "EAT_FOOD", 35 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -87,7 +87,7 @@
     "reproduction": { "baby_egg": "egg_fishancient_small", "baby_count": 4, "baby_timer": 20 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "fear_triggers": [ "HURT", "PLAYER_CLOSE", "SOUND" ],
-    "special_attacks": [ [ "EAT_FOOD", 50 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Dipterus sp.. No reproductive data."
   },
@@ -110,7 +110,7 @@
     "armor": { "bash": 0 },
     "stomach_size": 50,
     "upgrades": { "age_grow": 20, "into": "mon_dipterus" },
-    "special_attacks": [ [ "EAT_FOOD", 35 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -145,7 +145,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
-    "special_attacks": [ [ "EAT_FOOD", 55 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Dunkleosteus terrelli used as reference. I wish 10.3390/d15030318 was not real..."
   },
@@ -170,7 +170,7 @@
     "armor": { "bash": 2, "cut": 2, "stab": 8, "bullet": 2 },
     "stomach_size": 15000,
     "upgrades": { "age_grow": 30, "into": "mon_dunkleosteus" },
-    "special_attacks": [ [ "EAT_FOOD", 35 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -204,7 +204,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
-    "special_attacks": [ [ "EAT_FOOD", 50 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Holoptychius sp.. No reproductive data."
   },
@@ -227,7 +227,7 @@
     "armor": { "bash": 0, "cut": 1 },
     "stomach_size": 35,
     "upgrades": { "age_grow": 20, "into": "mon_holoptychius" },
-    "special_attacks": [ [ "EAT_FOOD", 35 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -297,7 +297,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
-    "special_attacks": [ [ "EAT_FOOD", 50 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Megamastax sp.. No reproductive data."
   },
@@ -321,7 +321,7 @@
     "armor": { "bash": 1, "cut": 2, "stab": 2, "bullet": 0 },
     "stomach_size": 60,
     "upgrades": { "age_grow": 20, "into": "mon_megamastax" },
-    "special_attacks": [ [ "EAT_FOOD", 35 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -354,7 +354,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED", "SOUND" ],
-    "special_attacks": [ [ "EAT_FOOD", 40 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "FISHABLE", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ]
   },
   {
@@ -376,7 +376,7 @@
     "dodge": 8,
     "stomach_size": 20,
     "upgrades": { "age_grow": 28, "into": "mon_saurichthys" },
-    "special_attacks": [ [ "EAT_FOOD", 25 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "extend": { "flags": [ "NO_BREED" ] }
   }
 ]

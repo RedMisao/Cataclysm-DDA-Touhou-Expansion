@@ -30,9 +30,9 @@
     "vision_night": 30,
     "path_settings": { "max_dist": 24 },
     "special_attacks": [
-      [ "PARROT", 13 ],
-      { "id": "mon_banshee_shrieking_20d2", "spell_data": { "id": "shrieking_20d2" }, "type": "spell", "cooldown": 5 },
-      { "id": "mon_banshee_wailing_6d4", "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": 7 }
+      [ "PARROT", { "math": [ "10 + rand(7)" ] } ],
+      { "id": "mon_banshee_shrieking_20d2", "spell_data": { "id": "shrieking_20d2" }, "type": "spell", "cooldown": { "math": [ "5 + rand(3)" ] } },
+      { "id": "mon_banshee_wailing_6d4", "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": { "math": [ "5 + rand(6)" ] } }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s dissappears." },
     "flags": [ "BASHES", "GRABS", "HEARS", "NO_BREATHE", "SEES", "SWIMS", "WATER_CAMOUFLAGE" ]
@@ -68,8 +68,8 @@
     "path_settings": { "max_dist": 24 },
     "special_attacks": [
       [ "PARROT", 7 ],
-      { "id": "mon_lallorona_reposition_12d2", "spell_data": { "id": "reposition_12d2" }, "type": "spell", "cooldown": 29 },
-      { "id": "mon_lallorona_wailing_6d4", "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": 5 }
+      { "id": "mon_lallorona_reposition_12d2", "spell_data": { "id": "reposition_12d2" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } },
+      { "id": "mon_lallorona_wailing_6d4", "spell_data": { "id": "wailing_6d4" }, "type": "spell", "cooldown": { "math": [ "5 + rand(3)" ] } }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "%s dissappears." },
     "flags": [ "BASHES", "GRABS", "HEARS", "NO_BREATHE", "SEES", "SWIMS" ]
@@ -103,7 +103,7 @@
     "vision_night": 16,
     "path_settings": { "max_dist": 10 },
     "special_attacks": [
-      { "id": "white_lady_demoralize", "spell_data": { "id": "white_lady_demoralize" }, "type": "spell", "cooldown": 5, "allow_no_target": true },
+      { "id": "white_lady_demoralize", "spell_data": { "id": "white_lady_demoralize" }, "type": "spell", "cooldown": { "math": [ "5 + rand(3)" ] }, "allow_no_target": true },
       { "id": "white_lady_transform", "spell_data": { "id": "white_lady_transform" }, "type": "spell", "cooldown": 1 }
     ],
     "death_function": { "corpse_type": "NO_CORPSE" },
@@ -137,7 +137,7 @@
     "vision_day": 24,
     "vision_night": 32,
     "path_settings": { "max_dist": 20 },
-    "special_attacks": [ [ "PARROT_AT_DANGER", 7 ], { "spell_data": { "id": "reposition_12d2" }, "type": "spell", "cooldown": 19 } ],
+    "special_attacks": [ [ "PARROT_AT_DANGER", 7 ], { "spell_data": { "id": "reposition_12d2" }, "type": "spell", "cooldown": { "math": [ "15 + rand(10)" ] } } ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "%s suddenly dissappears." },
     "flags": [ "FLIES", "HEARS", "NO_BREATHE", "SEES", "STUN_IMMUNE" ]
   }

@@ -282,9 +282,8 @@
         "description": "The %s shoots!",
         "condition": { "and": [ { "not": { "u_has_effect": "maimed_arm" } }, { "not": { "u_has_effect": "disarmed" } } ] },
         "ammo_type": "9mmfairy",
-        "cooldown": 7,
+        "cooldown": { "math": [ "6 + rand(2)" ] },
         "fake_dex": 8,
-        
 		"fake_skills": [ [ "gun", 1 ], [ "pistol", 1 ] ],
         "max_ammo": 99,
         "move_cost": 150,
@@ -316,7 +315,7 @@
     "dodge": 4,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2, "soul": 4 },
     "special_attacks": [
-      { "spell_data": { "id": "firefighter_fairy_fire" }, "type": "spell", "cooldown": 7 }
+      { "spell_data": { "id": "firefighter_fairy_fire" }, "type": "spell", "cooldown": { "math": [ "6 + rand(2)" ] } }
     ],
     "fungalize_into": "mon_fairy_fungus5",
 	"extend": { "flags": [ "ACIDPROOF" ] },

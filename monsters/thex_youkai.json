@@ -31,7 +31,7 @@
     "reproduction": { "baby_monster": "mon_chupacabra_young", "baby_count": 3, "baby_timer": 60 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "slash_3d3", 2 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "slash_3d3", { "math": [ "3 + rand(1)" ] } ] ],
     "flags": [ "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "These are what show up when you google 'chupacabra mange'. Former dogs/dog-sized canids, now at the boundary of being diseased animals and newborn youkai",
     "//2": "Physical armor values should be removed IF the not yet implemented YOUKAI flag gives passive resistances."
@@ -81,7 +81,7 @@
     "path_settings": { "max_dist": 16 },
     "vision_night": 16,
     "anger_triggers": [ "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "slash_2d3", 2 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "slash_2d3", { "math": [ "2 + rand(2)" ] } ] ],
     "flags": [ "CLIMBS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Implement ALCOHOL as placate_triggers...",
     "//2": "These are the actual chupacabra cryptids, if a very small version"
@@ -120,7 +120,7 @@
     "path_settings": { "max_dist": 25 },
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "bleed_rate": 125,
-    "special_attacks": [ [ "ABSORB_MEAT", 65 ], [ "bite_5d3", 8 ], { "spell_data": { "id": "bodyslam" }, "type": "spell", "cooldown": 20 } ],
+    "special_attacks": [ [ "ABSORB_MEAT", { "math": [ "50 + rand(20)" ] } ], [ "bite_5d3", { "math": [ "6 + rand(4)" ] } ], { "spell_data": { "id": "bodyslam" }, "type": "spell", "cooldown": { "math": [ "15 + rand(10)" ] } } ],
     "flags": [ "BASHES", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -159,7 +159,7 @@
     "path_settings": { "max_dist": 25, "avoid_traps": true, "avoid_dangerous_fields": true },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "bleed_rate": 166,
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "LUNGE", 16 ], [ "bite_neck_6d4", 5 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "LUNGE", { "math": [ "10 + rand(10)" ] } ], [ "bite_neck_6d4", { "math": [ "5 + rand(3)" ] } ] ],
     "flags": [ "BASHES", "CLIMBS", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ],
     "//3": "Should be weaker-than-normal to stab and bullet damage. Should be weaker-than-normal against soul damage. Also anything with silver should do x2-x4 damage"
   },
@@ -191,7 +191,7 @@
     "families": [ "prof_wp_youkai" ],
     "stomach_size": 500,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "leg_gore_4d2", 5 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "leg_gore_4d2", { "math": [ "4 + rand(3)" ] } ] ],
     "flags": [ "EATS", "GOODHEARING", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -225,7 +225,7 @@
     "reproduction": { "baby_monster": "mon_jinmenken_young", "baby_count": 2, "baby_timer": 30 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_CROP", 50 ], [ "PARROT", 29 ], [ "PARROT_AT_DANGER", 17 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], [ "PARROT", { "math": [ "25 + rand(10)" ] } ], [ "PARROT_AT_DANGER", { "math": [ "15 + rand(10)" ] } ] ],
     "flags": [ "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -279,9 +279,9 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "bleed_rate": 0,
     "special_attacks": [
-      { "id": "mon_kunekune_fear_paralyze", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 32 },
-      { "id": "mon_kunekune_stare", "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 28 },
-      { "id": "mon_kunekune_paralyze_100", "spell_data": { "id": "paralyze_100" }, "type": "spell", "cooldown": 34 }
+      { "id": "mon_kunekune_fear_paralyze", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": { "math": [ "25 + rand(20)" ] } },
+      { "id": "mon_kunekune_stare", "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": { "math": [ "25 + rand(10)" ] } },
+      { "id": "mon_kunekune_paralyze_100", "type": "spell", "spell_data": { "id": "paralyze_100" }, "monster_message": "", "cooldown": { "math": [ "25 + rand(10)" ] } }
     ],
     "death_function": { "message": "The %s dissipates into air.", "corpse_type": "NO_CORPSE" },
     "flags": [ "HEARS", "IMMOBILE", "KEENNOSE", "SEES" ]
@@ -317,7 +317,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "STALK" ],
     "reproduction": { "baby_monster": "mon_nightcrawler_young", "baby_count": 2, "baby_timer": 13 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "ABSORB_MEAT", 100 ] ],
+    "special_attacks": [ [ "ABSORB_MEAT", { "math": [ "80 + rand(40)" ] } ] ],
     "flags": [ "CLIMBS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
     "//": "Fresno Nightcrawler"
   },
@@ -367,10 +367,10 @@
     "vision_night": 25,
     "path_settings": { "max_dist": 16 },
     "special_attacks": [ 
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_CROP", 50 ], 
-      { "id": "mon_olgoi_poison", "spell_data": { "id": "olgoi_poison" }, "type": "spell", "cooldown": 7 },
-      { "id": "mon_olgoi_shock", "spell_data": { "id": "olgoi_shock" }, "type": "spell", "cooldown": 11 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], 
+      { "id": "mon_olgoi_poison", "spell_data": { "id": "olgoi_poison" }, "type": "spell", "cooldown": { "math": [ "6 + rand(2)" ] } },
+      { "id": "mon_olgoi_shock", "spell_data": { "id": "olgoi_shock" }, "type": "spell", "cooldown": { "math": [ "10 + rand(2)" ] } }
     ],
     "death_function": { "message": "The %s squirms, twitches, and finally dies.", "corpse_type": "NORMAL" },
     "flags": [ "ACIDPROOF", "ATTACK_LOWER", "DIGS", "ELECTRIC", "HEARS", "NOHEAD", "SLUDGEPROOF", "VENOM" ],
@@ -510,7 +510,7 @@
     "path_settings": { "max_dist": 45 },
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_NEAR_BABY", "STALK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ] ],
     "flags": [ "BASHES", "GOODHEARING", "GROUP_BASH", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SWIMS" ]
   },
   {
@@ -543,7 +543,7 @@
     "biosignature": { "biosig_item": "water", "biosig_timer": 4 },
     "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
     "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
-    "special_attacks": [ [ "ABSORB_MEAT", 100 ], { "spell_data": { "id": "squonk_dissolve" }, "type": "spell", "cooldown": 3 } ],
+    "special_attacks": [ [ "ABSORB_MEAT", { "math": [ "80 + rand(40)" ] } ], { "spell_data": { "id": "squonk_dissolve" }, "type": "spell", "cooldown": 3 } ],
     "flags": [ "HEARS", "PATH_AVOID_DANGER", "PACIFIST", "SEES", "SMELLS", "WARM" ],
     "//": "The squonk should go around, run from the player when encountered, until it reaches the anger_triggers threshold, then casts squonk_dissolve and transforms into the harvest-less, drop-less mon_squonk_death to finish the death process. It would be harvestable only if caught by surprise"
   },

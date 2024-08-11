@@ -34,7 +34,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "STALK" ],
-    "special_attacks": [ [ "EAT_CARRION", 75 ], [ "EAT_FOOD", 75 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Anatosuchus sp.. No reproductive data."
   },
@@ -93,7 +93,7 @@
     "reproduction": { "baby_egg": "egg_carnufex", "baby_count": 4, "baby_timer": 30 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 80 ],[ "EAT_FOOD", 80 ], [ "grab", 20 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ],[ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], [ "grab", { "math": [ "15 + rand(10)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Carnufex sp.. No reproductive data"
   },
@@ -153,7 +153,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "fear_triggers": [ "STALK" ],
-    "special_attacks": [ [ "EAT_CARRION", 85 ], [ "EAT_FOOD", 85 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Hesperosuchus sp.. No reproductive data"
   },
@@ -210,7 +210,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "FRIEND_DIED" ],
-    "special_attacks": [ [ "EAT_CARRION", 100 ], [ "EAT_FOOD", 100 ], [ "PARROT", 12 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "80 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ], [ "PARROT", { "math": [ "10 + rand(4)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWIMS", "WARM", "WATER_CAMOUFLAGE" ],
     "//": "Ichthyosaurus communis used as reference. Don't know if they had vocalizations but that's how I imagine them to be",
     "//2": "Coprolites include fish and squid, and the big characteristic eyes indicate it could hunt in low light conditions, with great depths included"
@@ -270,7 +270,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "FRIEND_DIED" ],
-    "special_attacks": [ [ "EAT_CARRION", 35 ], [ "EAT_FOOD", 35 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "25 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Plesiosaurus dolichodeirus used as reference, Plesiosaurus is a wastebasket taxon"
   },
@@ -331,7 +331,7 @@
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "PLAYER_NEAR_BABY" ],
     "fear_triggers": [ "HURT", "FRIEND_ATTACKED" ],
-    "special_attacks": [ [ "EAT_CROP", 90 ], [ "headbutt_5d5", 5 ] ],
+    "special_attacks": [ [ "EAT_CROP", { "math": [ "80 + rand(40)" ] } ], [ "headbutt_5d5", { "math": [ "4 + rand(2)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS" ],
     "//": "Based on Scutosaurus sp. No reproductive data. Probably lived alone"
   },
@@ -391,7 +391,7 @@
     "reproduction": { "baby_egg": "egg_smilosuchus", "baby_count": 4, "baby_timer": 32 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
-    "special_attacks": [ [ "EAT_CARRION", 120 ], [ "EAT_FOOD", 120 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Smilosuchus gregorii. No reproductive data",
     "//2": "Should have a 'charge ouf of water' special attack, while under water"
@@ -448,7 +448,7 @@
     "reproduction": { "baby_egg": "egg_weigeltisaurus", "baby_count": 4, "baby_timer": 16 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "fear_triggers": [ "FIRE", "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "SOUND" ],
-    "special_attacks": [ [ "EAT_FOOD", 100 ] ],
+    "special_attacks": [ [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "FLIES", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
     "//": "Based on Weigeltisaurus sp.. No reproductive data"
   },

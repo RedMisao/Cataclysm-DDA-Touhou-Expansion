@@ -32,9 +32,9 @@
     "vision_night": 66,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-      [ "ABSORB_MEAT", 66 ],
-      [ "PARROT", 37 ],
-      { "spell_data": { "id": "skinwalker_scream_6d3" }, "type": "spell", "cooldown": 31 }
+      [ "ABSORB_MEAT", { "math": [ "50 + rand(20)" ] } ],
+      [ "PARROT", { "math": [ "25 + rand(20)" ] } ],
+      { "spell_data": { "id": "skinwalker_scream_6d3" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } }
     ],
     "flags": [
       "CAN_OPEN_DOORS",
@@ -83,11 +83,11 @@
     "vision_night": 35,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_FOOD", 50 ],
-      [ "PARROT", 43 ],
-      [ "slash_3d3", 7 ],
-      { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      [ "PARROT", { "math": [ "35 + rand(10)" ] } ],
+      [ "slash_3d3", { "math": [ "6 + rand(2)" ] } ],
+      { "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } }
     ],
     "flags": [ "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "KEEP_DISTANCE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   },
@@ -125,12 +125,12 @@
     "vision_night": 35,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_FOOD", 50 ],
-      [ "longswipe", 19 ],
-      [ "PARROT", 29 ],
-      [ "slash_3d3", 7 ],
-      { "spell_data": { "id": "skinwalker_scream_6d3" }, "type": "spell", "cooldown": 31 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      [ "longswipe", { "math": [ "15 + rand(10)" ] } ],
+      [ "PARROT", { "math": [ "20 + rand(20)" ] } ],
+      [ "slash_3d3", { "math": [ "5 + rand(4)" ] } ],
+      { "spell_data": { "id": "skinwalker_scream_6d3" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } }
     ],
     "flags": [
       "CAN_OPEN_DOORS",
@@ -179,10 +179,10 @@
     "vision_night": 35,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_FOOD", 50 ],
-      { "id": "mon_skinwalker_witch_scream_6d4", "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": 31 },
-      { "id": "mon_skinwalker_witch_skinwalker_transform", "spell_data": { "id": "skinwalker_transform" }, "type": "spell", "cooldown": 7 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      { "id": "mon_skinwalker_witch_scream_6d4", "spell_data": { "id": "scream_6d4" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } },
+      { "id": "mon_skinwalker_witch_skinwalker_transform", "spell_data": { "id": "skinwalker_transform" }, "type": "spell", "cooldown": { "math": [ "5 + rand(4)" ] } }
     ],
     "death_drops": "skinwalker_witch_drops",
     "flags": [
@@ -233,12 +233,12 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_FOOD", 50 ],
-      [ "hug_11d3", 11 ],
-      [ "PARROT", 31 ],
-      [ "smash_10d3", 7 ],
-      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      [ "hug_11d3", { "math": [ "9 + rand(4)" ] } ],
+      [ "PARROT", { "math": [ "25 + rand(10)" ] } ],
+      [ "smash_10d3", { "math": [ "7 + rand(3)" ] } ],
+      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } }
     ],
     "flags": [ "BASHES", "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ]
   },
@@ -277,12 +277,12 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_FOOD", 50 ],
-      [ "charge_8d3", 7 ],
-      [ "horn_7d3", 7 ],
-      [ "PARROT", 31 ],
-      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      [ "charge_8d3", { "math": [ "5 + rand(4)" ] } ],
+      [ "horn_7d3", { "math": [ "5 + rand(4)" ] } ],
+      [ "PARROT", { "math": [ "25 + rand(10)" ] } ],
+      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } }
     ],
     "flags": [ "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
@@ -320,7 +320,7 @@
     "vision_night": 35,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", 50 ], [ "EAT_FOOD", 50 ], [ "claw_6d3", 5 ], [ "PARROT", 31 ] ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "claw_6d3", { "math": [ "4 + rand(3)" ] } ], [ "PARROT", { "math": [ "25 + rand(10)" ] } ] ],
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "GOODHEARING", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -358,10 +358,10 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [ 
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_FOOD", 50 ],
-      [ "PARROT", 31 ],
-      { "spell_data": { "id": "skinwalker_curse_7d2" }, "type": "spell", "cooldown": 17 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      [ "PARROT", { "math": [ "25 + rand(10)" ] } ],
+      { "spell_data": { "id": "skinwalker_curse_7d2" }, "type": "spell", "cooldown": { "math": [ "15 + rand(10)" ] } }
     ],
     "flags": [ "CAN_OPEN_DOORS", "CLIMBS", "EATS", "HEARS", "KEEP_DISTANCE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
@@ -400,11 +400,11 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [ 
-      [ "EAT_CARRION", 50 ], 
-      [ "EAT_FOOD", 50 ],
-      [ "PARROT", 31 ],
-      [ "skinwalker_bite_9d2", 7 ],
-      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": 31 }
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      [ "PARROT", { "math": [ "25 + rand(10)" ] } ],
+      [ "skinwalker_bite_9d2", { "math": [ "6 + rand(2)" ] } ],
+      { "spell_data": { "id": "skinwalker_roar_6d4" }, "type": "spell", "cooldown": { "math": [ "25 + rand(10)" ] } }
     ],
     "flags": [ "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   }
