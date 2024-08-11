@@ -1,7 +1,7 @@
 # Cataclysm-DDA-Touhou-Expansion
 A CDDA expansion mod for [Touhou Professions](https://github.com/RedMisao/Cataclysm-DDA-Touhou-Mod) that various things from Touhou Project lore and fluff.
 
-**The mod's folder goes in /data/mods/**.  Last updated for game version: 2024-01-26-0650 experimental.
+**The mod's folder goes in /data/mods/**.  Last updated for game version: 2024-08-10-2317 experimental.
 
 
 ## About the mod
@@ -109,7 +109,6 @@ Relatively hard or complex things to add, not in order:
 
 
 ## Known bugs
-* Youkai and ancient fauna presence may be (slightly) higher than intended, may not.
 * Seems enchantments are broken: anything inside the `passive_effects` field from items is not working properly (e.g. a mutation is applied but the bonus from that mutation aren't).  This seems to be an issue with base CDDA.
 
 
