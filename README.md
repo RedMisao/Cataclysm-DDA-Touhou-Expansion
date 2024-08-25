@@ -52,7 +52,7 @@ Sadly, there's also the
 ## New monsters
 
 ### Extinct fauna
-* Amphibians: Eryops, Pederpes, Pholiderpeton, Platyoposaurus, Prionosuchus.
+* Amphibians: Diplocaulus, Eryops, Pederpes, Pholiderpeton, Platyoposaurus, Prionosuchus.
 * Arthropods: Aegirocassis, Anomalocaris, Arthropleura, Chasmataspis, Eusarcana, Hurdia, Jaekelopterus, Mazothairos, Megalograptus, Meganeura, Opabinia, Pambdelurion, Parastylonurus, Sidneyia.
 * Birds: Dodo, Ectopistes, Garganornis, Icadyptes, Moa.
 * Fish: Coccosteus, Dipterus, Dunkleosteus, Holoptychius, lampreys (not actually extinct), Megamastax, Saurichthys.
