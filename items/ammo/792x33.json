@@ -22,7 +22,7 @@
     "recoil": 1900,
     "effects": [ "COOKOFF", "NEVER_MISFIRES" ],
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
-    "//2": "Assuming this used a lead "
+    "//2": "Assuming this used a lead core"
   },
   {
     "id": "792x33_prvi",
@@ -36,7 +36,7 @@
     "color": "yellow",
     "casing": "792x33_casing_brass",
     "damage": { "damage_type": "bullet", "amount": 43, "armor_penetration": 4 },
-    "dispersion": 25,
+    "dispersion": 20,
     "recoil": 1700
   },
   {
@@ -46,8 +46,11 @@
     "copy-from": "792x33_me",
     "description": "Reloaded 7.92x33mm Kurz case, with 124 gr steel core, copper jacket, steel case bullet.  This slightly increases penetration, at the cost of reduced damage.",
     "material": [ "copper", "powder", "steel" ],
-    "damage": { "damage_type": "bullet", "amount": 39, "armor_penetration": 6 },
-    "proportional": { "price": 0.7, "dispersion": 1.1 },
+    "proportional": {
+      "price": 0.7,
+      "damage": { "damage_type": "bullet", "amount": 0.9, "armor_penetration": 1.5 },
+      "dispersion": 1.1
+    },
     "recoil": 1850,
     "//": "According to Cartridges of the world 8th ed., this wouldn't work as the steel casing and Berdan primer make it non reloadable"
   },
@@ -58,8 +61,11 @@
     "copy-from": "792x33_prvi",
     "description": "Reloaded 7.92x33mm Kurz case, with 124 gr steel core, copper jacket bullet.  This slightly penetration, at the cost of reduced damage.",
     "material": [ "brass", "copper", "lead", "powder" ],
-    "damage": { "damage_type": "bullet", "amount": 39, "armor_penetration": 6 },
-    "proportional": { "price": 0.7, "dispersion": 1.1 },
+    "proportional": {
+      "price": 0.7,
+      "damage": { "damage_type": "bullet", "amount": 0.9, "armor_penetration": 1.5 },
+      "dispersion": 1.1
+    },
     "recoil": 1850,
     "//": "According to Cartridges of the world 8th ed., this wouldn't work as the steel casing and Berdan primer make it non reloadable"
   },

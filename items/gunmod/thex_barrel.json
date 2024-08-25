@@ -16,7 +16,7 @@
     "color": "dark_gray",
     "dispersion_modifier": -45,
     "location": "barrel",
-    "loudness_modifier": -1,
+    "loudness_modifier": -10,
     "mod_targets": [ "pistol", "smg" ]
   },
   {

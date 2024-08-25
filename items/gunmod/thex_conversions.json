@@ -1,5 +1,26 @@
 [
   {
+    "id": "retool_anzio20mm_50",
+    "type": "GUNMOD",
+    "name": { "str": ".50 BMG conversion kit for the Anzio 20mm rifle" },
+    "description": "A complete Anzio 20mm rifle assembly and barrel, designed to fit .50 BMG ammo.",
+    "volume": "500 ml",
+    "weight": "1000 g",
+    "integral_volume": "0 ml",
+    "integral_weight": "0 g",
+    "price": 50000,
+    "price_postapoc": 1000,
+    "install_time": "30 m",
+    "material": [ "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "bore",
+    "min_skills": [ [ "weapon", 5 ] ],
+    "ammo_modifier": [ "50" ],
+    "magazine_adaptor": [ [ "50", [ "m107a1mag" ] ] ],
+    "mod_targets": [ "anzio20mm" ]
+  },
+  {
     "id": "retool_ceamm1_30carbine",
     "type": "GUNMOD",
     "name": { "str": ".30 Carbine conversion kit for the CEAM Mòdele 1" },
@@ -18,8 +39,7 @@
     "min_skills": [ [ "weapon", 3 ] ],
     "ammo_modifier": [ "30carbine" ],
     "magazine_adaptor": [ [ "30carbine", [ "m1carbinebigmag", "m1carbinemag" ] ] ],
-    "mod_targets": [ "ceamm1", "ceamm_49", "ceamm_ii", "ceamm_50" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "ceamm1", "ceamm_49", "ceamm_ii", "ceamm_50" ]
   },
   {
     "id": "retool_kar98_792x33",
@@ -39,11 +59,10 @@
     "location": "bore",
     "min_skills": [ [ "weapon", 2 ] ],
     "ammo_modifier": [ "792x33" ],
-    "mod_targets": [ "kar98" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "kar98" ]
   },
   {
-    "id": "retool_fn_fal_792x33",
+    "id": "retool_fn_fal_semi_792x33",
     "type": "GUNMOD",
     "name": { "str": "7.92x33mm Kurz conversion kit for the FN FAL" },
     "description": "An old, complete FN FAL assembly and barrel, designed to fit 7.92x33mm Kurz ammo.",
@@ -61,8 +80,7 @@
     "min_skills": [ [ "weapon", 3 ] ],
     "ammo_modifier": [ "792x33" ],
     "magazine_adaptor": [ [ "792x33", [ "stg44mag25", "stg44mag30" ] ] ],
-    "mod_targets": [ "fn_fal" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "fn_fal_semi" ]
   },
   {
     "id": "retool_m76_308",
@@ -107,8 +125,7 @@
         ]
       ]
     ],
-    "mod_targets": [ "m76" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "m76" ]
   },
   {
     "id": "retool_m76_3006",
@@ -129,8 +146,7 @@
     "min_skills": [ [ "weapon", 4 ] ],
     "ammo_modifier": [ "3006" ],
     "magazine_adaptor": [ [ "3006", [ "blrmag", "m1918bigmag", "m1918mag" ] ] ],
-    "mod_targets": [ "m76" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "m76" ]
   },
   {
     "id": "retool_m76_762",
@@ -151,8 +167,7 @@
     "min_skills": [ [ "weapon", 4 ] ],
     "ammo_modifier": [ "762" ],
     "magazine_adaptor": [ [ "762", [ "akmag10", "akmag20", "akmag30", "akmag40" ] ] ],
-    "mod_targets": [ "m76" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "m76" ]
   },
   {
     "id": "retool_pieper_m1893_792x57",
@@ -172,8 +187,7 @@
     "location": "bore",
     "min_skills": [ [ "weapon", 2 ] ],
     "ammo_modifier": [ "792x57" ],
-    "mod_targets": [ "pieper_m1893" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "pieper_m1893" ]
   },
   {
     "id": "retool_spanish_m1893_308",
@@ -193,8 +207,7 @@
     "location": "bore",
     "min_skills": [ [ "weapon", 3 ] ],
     "ammo_modifier": [ "308" ],
-    "mod_targets": [ "spanish_m1893" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "spanish_m1893" ]
   },
   {
     "id": "retool_spanish_m1893_792x57",
@@ -214,8 +227,7 @@
     "location": "bore",
     "min_skills": [ [ "weapon", 3 ] ],
     "ammo_modifier": [ "792x57" ],
-    "mod_targets": [ "spanish_m1893" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "spanish_m1893" ]
   },
   {
     "id": "retool_svd_308",
@@ -260,8 +272,7 @@
         ]
       ]
     ],
-    "mod_targets": [ "svd" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "svd" ]
   },
   {
     "id": "retool_svd_3006",
@@ -282,8 +293,7 @@
     "min_skills": [ [ "weapon", 4 ] ],
     "ammo_modifier": [ "3006" ],
     "magazine_adaptor": [ [ "3006", [ "blrmag", "m1918bigmag", "m1918mag" ] ] ],
-    "mod_targets": [ "svd" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "svd" ]
   },
   {
     "id": "retool_thompson_contender_22",
@@ -409,7 +419,7 @@
     "id": "retool_wa2000_308",
     "type": "GUNMOD",
     "name": { "str": ".308 Winchester conversion kit for the Walther WA 2000" },
-    "description": "An complete Walther WA 2000 assembly and barrel, designed to fit .308 Winchester ammo.",
+    "description": "A complete Walther WA 2000 assembly and barrel, designed to fit .308 Winchester ammo.",
     "volume": "500 ml",
     "weight": "1000 g",
     "integral_volume": "0 ml",
@@ -448,7 +458,6 @@
         ]
       ]
     ],
-    "mod_targets": [ "wa2000", "wa2000_2" ],
-    "flags": [ "IRREMOVABLE" ]
+    "mod_targets": [ "wa2000", "wa2000_2" ]
   }
 ]

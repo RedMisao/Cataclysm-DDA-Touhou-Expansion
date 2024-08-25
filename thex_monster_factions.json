@@ -3,19 +3,18 @@
     "name": "touhou_amphibianancient_large",
     "type": "MONSTER_FACTION",
     "base_faction": "animal",
-    "by_mood": [ "exodii", "human", "kraken", "nether", "your_followers" ],
+    "by_mood": [ "exodii", "human", "kraken", "nether", "your_followers", "touhou_amphibianancient_medium" ],
     "hate": [
       "fish",
       "frog",
       "insect",
-      "touhou_amphibianancient_medium",
       "touhou_arthropod_aquatic_medium",
       "touhou_arthropod_aquatic_small",
       "touhou_fishancient_medium",
       "touhou_fishancient_small",
 	  "zombie"
     ],
-    "//": "2 - 3 m long ancient amphibians (including Prionosuchus), should feed on fish primarily, and smaller things in general"
+    "//": "2 - 3 m long ancient amphibians (including Prionosuchus and Pholiderpeton), should feed on fish primarily, and smaller things in general"
   },
   {
     "name": "touhou_amphibianancient_medium",
@@ -76,13 +75,20 @@
     "//": "Faction for dimetrodons. While these were apex predators, they 'only' ate fish and (maybe even big) amphibians, which is basically any smaller animal except for like four exceptions, including them"
   },
   {
+    "name": "touhou_carbonemys",
+    "type": "MONSTER_FACTION",
+    "base_faction": "animal",
+    "by_mood": [ "animal", "exodii", "fungus", "human", "insect", "kraken", "mi-go", "nether", "triffid", "your_followers", "zombie" ],
+    "friendly": [ "touhou_carbonemys" ]
+  },
+  {
     "name": "touhou_crocodilelike_large",
     "type": "MONSTER_FACTION",
     "base_faction": "animal",
     "neutral": [ "touhou_crocodylelike_large" ],
     "by_mood": [ "bot", "exodii", "human", "kraken", "nether", "your_followers" ],
     "hate": [ "animal", "herbivore", "insect", "mi-go", "triffid", "zombie" ],
-    "//": "2 - 3 m long croco-looking things (included Smilosuchus). Assumed to be either the apex predator or member of the top predators. These should attack whatever is weak or below their size, except for humans unless they're weak"
+    "//": "2 - +3 m long croco-looking things. Assumed to be either the apex predator or member of the top predators. These should attack whatever is weak or below their size, except for humans unless they're weak"
   },
   {
     "name": "touhou_crocodilelike_small",
@@ -170,7 +176,7 @@
     "//": "<1 m long ancient fish, should feed on smaller fish"
   },
   {
-    "name": "touhou_inostrancevia",
+    "name": "touhou_predatorancient_large",
     "type": "MONSTER_FACTION",
     "base_faction": "animal",
     "neutral": [ "touhou_reptile_marine_large" ],
@@ -179,10 +185,9 @@
 	  "insect",
       "fox",
       "small_animal",
-      "touhou_moschorhinus",
-      "touhou_nochnitsa",
-      "touhou_pristerognathus",
-      "touhou_viatkogorgon"
+      "touhou_predatorancient_small",
+      "touhou_predatorancient_medium",
+      "touhou_predatorancient_large"
     ],
     "hate": [
       "animal",
@@ -208,87 +213,42 @@
     "//": "Apex predator. These should hunt whatever is bigger than a dog (including dogs because those bark)"
   },
   {
-    "name": "touhou_moschorhinus",
-    "type": "MONSTER_FACTION",
-    "base_faction": "small_animal",
-    "by_mood": [
-      "exodii",
-      "human",
-      "insect",
-      "nether",
-      "fungus",
-      "zombie",
-      "your_followers",
-      "touhou_inostrancevia",
-      "touhou_nochnitsa",
-      "touhou_pristerognathus",
-      "touhou_viatkogorgon"
-    ],
-    "hate": [ "small_animal" ],
-    "//": "Adapted from the cat faction"
-  },
-  {
-    "name": "touhou_nochnitsa",
-    "type": "MONSTER_FACTION",
-    "base_faction": "small_animal",
-    "by_mood": [
-      "exodii",
-      "human",
-      "insect",
-      "nether",
-      "fungus",
-      "zombie",
-      "your_followers",
-      "touhou_inostrancevia",
-      "touhou_moschorhinus",
-      "touhou_pristerognathus",
-      "touhou_viatkogorgon"
-    ],
-    "hate": [ "small_animal" ],
-    "//": "Adapted from the cat faction"
-  },
-  {
-    "name": "touhou_pristerognathus",
-    "type": "MONSTER_FACTION",
-    "base_faction": "animal",
-    "by_mood": [
-      "exodii",
-      "human",
-      "insect",
-	  "nether", 
-      "your_followers",
-      "touhou_inostrancevia",
-      "touhou_nochnitsa",
-      "touhou_moschorhinus",
-      "touhou_viatkogorgon"
-    ],
-    "hate": [ "bear", "big_cat", "dog", "fox", "fungus", "herbivore", "mi-go", "mutant", "small_animal", "triffid", "zombie" ],
-    "//": "Wolf-sized, these can hunt whatever a pack of wolves can"
-  },
-  {
-    "name": "touhou_viatkogorgon",
-    "type": "MONSTER_FACTION",
-    "base_faction": "animal",
-    "by_mood": [
-      "exodii",
-      "human",
-      "insect",
-	  "nether", 
-      "your_followers",
-      "touhou_inostrancevia",
-      "touhou_nochnitsa",
-      "touhou_moschorhinus",
-      "touhou_pristerognathus"
-    ],
-    "hate": [ "dog", "fox", "fungus", "herbivore", "mi-go", "mutant", "small_animal", "triffid", "zombie" ],
-    "//": "Slightly smaller than a coyote, these can hunt whatever a coyote can"
-  },
-  {
     "name": "touhou_piscivore",
     "type": "MONSTER_FACTION",
     "base_faction": "animal",
     "by_mood": [ "exodii", "human", "nether", "small_animal", "your_followers", "zombie" ],
     "hate": [ "fish" ]
+  },
+  {
+    "name": "touhou_predatorancient_medium",
+    "type": "MONSTER_FACTION",
+    "base_faction": "animal",
+    "by_mood": [
+      "animal",
+      "exodii",
+      "human",
+      "insect",
+      "nether",
+      "fungus",
+      "zombie",
+      "your_followers"
+    ],
+    "hate": [ "small_animal", "herbivore" ]
+  },
+  {
+    "name": "touhou_predatorancient_small",
+    "type": "MONSTER_FACTION",
+    "base_faction": "small_animal",
+    "by_mood": [
+      "exodii",
+      "human",
+      "insect",
+      "nether",
+      "fungus",
+      "zombie",
+      "your_followers"
+    ],
+    "hate": [ "small_animal" ]
   },
   {
     "name": "touhou_reptile_marine_large",

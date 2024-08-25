@@ -36,7 +36,7 @@
     "damage": { "damage_type": "bullet", "amount": 31, "armor_penetration": 8 },
     "//": "7.62x39mm 57-N-231 can penetrate 6 mm steel @ 300 m. 9x39mm SP-6 can penetrate 6 mm steel at 200 m.",
     "//2": "9x39 SP-6 damage is too low (754 J), so I'm increasing it a bit here and with the gun",
-    "dispersion": 25,
+    "dispersion": 20,
     "recoil": 1100
   },
   {
@@ -45,7 +45,11 @@
     "name": { "str_sp": "9x39mm SP-5 (reloaded)" },
     "copy-from": "9x39_sp5",
     "description": "Reloaded 9x39mm case, with 248 gr steel core, FMJ bullets.  This process slightly reduces damage.",
-    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.9 }, "dispersion": 1.1 },
+    "proportional": {
+      "price": 0.7,
+      "damage": { "damage_type": "bullet", "amount": 0.9 },
+      "dispersion": 1.1
+    },
     "extend": { "effects": [ "RECYCLED" ] },
     "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
   },
@@ -55,7 +59,11 @@
     "name": { "str_sp": "9x39mm SP-6 (reloaded)" },
     "copy-from": "9x39_sp6",
     "description": "Reloaded 9x39mm case, with 250 gr heat-hardened steel core, FMJ bullets.  This process slightly reduces damage.",
-    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.9 }, "dispersion": 1.1 },
+    "proportional": {
+      "price": 0.7,
+      "damage": { "damage_type": "bullet", "amount": 0.9, "armor_penetration": 1.1 },
+      "dispersion": 1.1
+    },
     "extend": { "effects": [ "RECYCLED" ] },
     "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
   },

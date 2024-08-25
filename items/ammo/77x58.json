@@ -43,8 +43,11 @@
     "copy-from": "77x58a",
     "description": "7.7x58mm Arisaka case, with copper head, 178 gr steel core bullet replacing the ancient lead core version.  This slightly increases the penetration, at the cost of reduced damage.",
     "material": [ "copper", "powder", "steel" ],
-    "damage": { "damage_type": "bullet", "amount": 50, "armor_penetration": 7 },
-    "proportional": { "price": 0.7, "dispersion": 1.1 },
+    "proportional": {
+      "price": 0.7,
+      "damage": { "damage_type": "bullet", "amount": 0.9, "armor_penetration": 1.2 },
+      "dispersion": 1.1
+    },
     "recoil": 2500,
     "//": "This should not exist in reality. It's just a 77x58a but has the brass-steel bullet replaced for copper-steel custom, because I assume that when you reload these like that if given the chance"
   },

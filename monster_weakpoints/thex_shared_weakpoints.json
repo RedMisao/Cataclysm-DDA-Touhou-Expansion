@@ -1,16 +1,16 @@
 [
   {
-    "id": "wps_temnospondyl_body",
+    "id": "wps_bigheaded",
     "type": "weakpoint_set",
-    "//": "Increased head-to-body ratio relative to wps_amphibian_body ",
+    "//": "Further increases head-to-body ratio from wps_temnospondyl_body , shares most numbers otherwise with wps_crocodylomorpha_body ",
     "weakpoints": [
       {
         "id": "head",
         "name": "the head",
-        "coverage": 15,
+        "coverage": 35,
         "armor_mult": { "all": 1.1 },
         "crit_mult": { "all": 1.35 },
-        "difficulty": { "melee": 1, "ranged": 2 },
+        "difficulty": { "melee": 1, "ranged": 1 },
         "effects": [
           {
             "effect": "stunned",
@@ -38,7 +38,7 @@
       {
         "id": "eye",
         "name": "the eye",
-        "coverage": 2,
+        "coverage": 3,
         "armor_mult": { "all": 0 },
         "difficulty": { "melee": 6, "ranged": 9 },
         "effects": [
@@ -115,7 +115,7 @@
       {
         "id": "foreleg",
         "name": "the fore leg",
-        "coverage": 7,
+        "coverage": 8,
         "difficulty": { "melee": 1, "ranged": 4 },
         "effects": [
           { "effect": "staggered", "chance": 15, "message": "The %s is knocked off-balance!", "damage_required": [ 10, 30 ] },
@@ -151,7 +151,7 @@
       {
         "id": "hindleg",
         "name": "the hind leg",
-        "coverage": 7,
+        "coverage": 8,
         "difficulty": { "melee": 1, "ranged": 4 },
         "effects": [
           { "effect": "staggered", "chance": 15, "message": "The %s is knocked off-balance!", "damage_required": [ 10, 30 ] },
@@ -183,13 +183,6 @@
             "damage_required": [ 41, 100 ]
           }
         ]
-      },
-      {
-        "id": "tail",
-        "name": "the tail",
-        "coverage": 35,
-        "armor_mult": { "all": 0.75 },
-        "difficulty": { "melee": 6, "ranged": 4 }
       }
     ]
   }

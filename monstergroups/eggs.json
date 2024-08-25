@@ -5,6 +5,7 @@
     "default": "mon_grouse_chick",
     "monsters": [
       { "monster": "mon_dodo_chick", "weight": 100 },
+      { "monster": "mon_garganornis_chick", "weight": 100 },
       { "monster": "mon_ectopistes_chick", "weight": 100 },
       { "monster": "mon_weigeltisaurus_baby", "weight": 200 }
     ],

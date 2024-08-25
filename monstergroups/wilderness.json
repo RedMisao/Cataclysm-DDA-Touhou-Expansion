@@ -36,6 +36,7 @@
     "monsters": [
       { "monster": "mon_icadyptes", "weight": 25, "starts": "2 days" },
       { "monster": "mon_pederpes", "weight": 35, "pack_size": [ 1, 2 ], "starts": "2 days" },
+      { "monster": "mon_mazothairos", "weight": 25, "pack_size": [ 1, 2 ], "starts": "2 days" },
       { "monster": "mon_meganeura", "weight": 25, "pack_size": [ 1, 2 ], "starts": "2 days" },
       { "monster": "mon_dodo", "weight": 25, "starts": "2 days" },
       { "monster": "mon_ectopistes", "weight": 25, "pack_size": [ 1, 2 ], "starts": "2 days" },
@@ -109,6 +110,7 @@
     "monsters": [
       { "monster": "mon_dodo", "weight": 5, "pack_size": [ 3, 9 ], "starts": "2 days" },
       { "monster": "mon_ectopistes", "weight": 5, "pack_size": [ 4, 11 ], "starts": "2 days" },
+      { "monster": "mon_garganornis", "weight": 5, "pack_size": [ 2, 5 ], "starts": "2 days" },
       { "monster": "mon_moa", "weight": 4, "pack_size": [ 2, 5 ], "starts": "2 days" }
     ],
     "//": "Currently monstergroups extend by default instead of replacing (discussion at #68032), so this adds those monsters instead of replacing the whole list"
@@ -119,6 +121,7 @@
     "default": "mon_null",
     "is_animal": true,
     "monsters": [
+      { "monster": "mon_mazothairos", "weight": 5, "starts": "2 days" },
       { "monster": "mon_meganeura", "weight": 5, "starts": "2 days" }
     ],
     "//": "Currently monstergroups extend by default instead of replacing (discussion at #68032), so this adds those monsters instead of replacing the whole list"
@@ -129,6 +132,7 @@
     "default": "mon_null",
     "is_animal": true,
     "monsters": [
+      { "monster": "mon_mazothairos", "weight": 1, "starts": "2 days" },
       { "monster": "mon_meganeura", "weight": 1, "starts": "2 days" }
     ],
     "//": "Currently monstergroups extend by default instead of replacing (discussion at #68032), so this adds those monsters instead of replacing the whole list"
@@ -139,6 +143,7 @@
     "default": "mon_null",
     "is_animal": true,
     "monsters": [
+      { "monster": "mon_mazothairos", "weight": 20, "starts": "2 days" },
       { "monster": "mon_meganeura", "weight": 20, "starts": "2 days" },
       { "monster": "mon_parastylonurus", "weight": 10, "starts": "2 days" }
     ],

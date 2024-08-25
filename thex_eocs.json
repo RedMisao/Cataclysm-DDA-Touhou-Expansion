@@ -8,45 +8,8 @@
       { "u_add_var": "var_wind_blessing_int", "type": "number", "context": "wind_priestess_charm", "value": "0" },
       { "u_add_var": "var_wind_blessing_per", "type": "number", "context": "wind_priestess_charm", "value": "0" },
       { "u_add_var": "var_wind_blessing_str", "type": "number", "context": "wind_priestess_charm", "value": "0" },
-      { "run_eocs": [ "daily_randomization_eoc" ] },
-      {
-        "run_eocs": [
-          {
-            "id": "kaenbyou_starting_soulshards_ex",
-            "condition": { 
-              "or": [ 
-                { "u_has_trait": "KASHA_SPECIES" }, 
-                { "u_has_trait": "KASHA_SPECIES_active" }
-              ]
-            },
-            "effect": [ { "math": [ "u_var_soulshard", "+=", "2 + rand(2)" ] } ],
-            "//2": "Adds 2 - 4 soulshards"
-          },
-          {
-            "id": "kokoro_stance_set_ex",
-            "condition": { "u_has_trait": "PROF_KOKORO" },
-            "effect": [
-              { "math": [ "var_kokoro_stance", "=", "1" ] },
-              { "math": [ "var_kokoro_mask", "=", "rand(3)" ] },
-              { "math": [ "var_kokoro_unstable_rnd", "=", "rand(1)" ] },
-              { "run_eocs": [ "kokoro_mask_eocs" ] },
-              { "run_eocs": [ "kokoro_timer_eoc" ] }
-            ],
-            "//2": "The first EOC runs the default condition for Kokoro: 'base' stance plus random mask",
-            "//3": "The second EOC runs the timer for the mask duration and automatic rotation"
-          },
-          {
-            "id": "vampire_bloodthirst_start_ex",
-            "condition": { "u_has_trait": "VAMPIRE_SPECIES" },
-            "effect": [
-              { "math": [ "u_vitamin('hblood_vitamin')", "=", "648 + rand(144)" ] }
-            ],
-            "//": "Adds hblood_vitamin for VAMPIRE_SPECIES plus a smaller random amount, see vampire_bloodthirst_eoc below"
-          }
-        ]
-      }
-    ],
-	"//": "It's the same as touhou_everything_eoc from the main mod, except it adds more stuff (eocs can't be copy-from )"
+      { "run_eocs": [ "daily_randomization_eoc" ] }
+    ]
   },
   {
     "id": "daily_randomization_eoc",

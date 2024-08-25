@@ -41,6 +41,7 @@
         "name": "the shell",
         "coverage": 75,
         "coverage_mult": { "broad": 1.35 },
+        "armor_mult": { "all": 3 },
         "difficulty": { "melee": 1, "ranged": 1 }
       },
       {
@@ -146,6 +147,7 @@
         "name": "the shell",
         "coverage": 80,
         "coverage_mult": { "broad": 1.35 },
+        "armor_mult": { "all": 3 },
         "difficulty": { "melee": 1, "ranged": 1 }
       },
       {

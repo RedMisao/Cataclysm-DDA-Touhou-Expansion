@@ -44,8 +44,11 @@
     "copy-from": "792x57_sme",
     "description": "Reloaded 7.92x57mm Mauser ammunition with 171 gr steel core, copper jacket bullet.  This slightly increases penetration at the cost of reduced damage.",
     "material": [ "brass", "copper", "powder", "steel" ],
-    "damage": { "damage_type": "bullet", "amount": 54, "armor_penetration": 10 },
-    "proportional": { "price": 0.7, "dispersion": 1.1 },
+    "proportional": {
+      "price": 0.7,
+      "damage": { "damage_type": "bullet", "amount": 0.9, "armor_penetration": 1.2 },
+      "dispersion": 1.1
+    },
     "recoil": 2550
   },
   {
@@ -55,8 +58,11 @@
     "copy-from": "792x57_sme",
     "description": "Reloaded 7.92x57mm Mauser ammunition with 171 gr steel core, copper jacket, steel case bullet.  This process slightly reduces damage.",
     "material": [ "copper", "powder", "steel" ],
-    "damage": { "damage_type": "bullet", "amount": 54, "armor_penetration": 10 },
-    "proportional": { "price": 0.7, "dispersion": 1.1 },
+    "proportional": {
+      "price": 0.7,
+      "damage": { "damage_type": "bullet", "amount": 0.9 },
+      "dispersion": 1.1
+    },
     "recoil": 2550
   },
   {

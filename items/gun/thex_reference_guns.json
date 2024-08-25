@@ -50,7 +50,6 @@
     "dispersion": 100,
     "//2": "Some guy managed 1 foot dispersion = 12 inches at 600 yards = 548 m, which is aprox. 1.93 moa.  Total 100 + 15 dispersion from 77x58mm ammo equals slightly less for what I estimate are 2 moa",
     "durability": 7,
-    "loudness": 13,
     "min_cycle_recoil": 1600,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
     "reload": 120,

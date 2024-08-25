@@ -1,5 +1,41 @@
 [
   {
+    "id": "nested_anzio20mm",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "anzio20mm", "charges-min": 0, "charges-max": 3 },
+      { "group": "nested_anzio20mmmag", "prob": 50 },
+      { "group": "on_hand_20mm" }
+    ]
+  },
+  {
+    "id": "nested_anzio20mmmag",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "group": "nested_anzio20mmmag3", "prob": 300 }, { "group": "nested_anzio20mmmag5", "prob": 100 } ]
+  },
+  {
+    "id": "nested_anzio20mmmag3",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "anzio20mmmag3", "charges-min": 0, "charges-max": 3 },
+      { "item": "anzio20mmmag3", "charges-min": 0, "charges-max": 3, "prob": 50 }
+    ]
+  },
+  {
+    "id": "nested_anzio20mmmag5",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "anzio20mmmag5", "charges-min": 0, "charges-max": 5 },
+      { "item": "anzio20mmmag5", "charges-min": 0, "charges-max": 5, "prob": 50 }
+    ]
+  },
+  {
     "id": "nested_aresfmg_folded",
     "type": "item_group",
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
@@ -168,6 +204,19 @@
       { "item": "pgmmag7" },
       { "item": "pgmmag7", "prob": 50 },
       { "group": "on_hand_50" }
+    ]
+  },
+  {
+    "id": "nested_pp19v",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ 
+      { "item": "pp19v", "charges-min": 0, "charges-max": 30 },
+      { "item": "pp19vmag" },
+      { "item": "pp19vmag", "prob": 50 },
+      { "group": "on_hand_9mm" } 
     ]
   },
   {
@@ -416,6 +465,14 @@
     ]
   },
   {
+    "id": "nested_vsk94",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "vsk94", "charges-min": 0, "charges-max": 30 }, { "group": "nested_vssmag" }, { "group": "on_hand_9x39" } ]
+  },
+  {
     "id": "nested_vss",
     "type": "item_group",
     "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
@@ -487,6 +544,26 @@
       { "item": "reloaded_765x53_arg", "prob": 33, "charges": [ 1, 20 ] },
       { "item": "reloaded_765x53_arg", "prob": 100, "charges": [ 21, 35 ] },
       { "item": "reloaded_765x53_arg", "prob": 66, "charges": [ 36, 50 ] }
+    ]
+  },
+  {
+    "id": "on_hand_20mm",
+    "type": "item_group",
+    "//": "a collection of ammo that would be found with a loaded gun.",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "20mm50", "prob": 88, "charges": [ 1, 6 ] },
+      { "item": "20mm50", "prob": 44, "charges": [ 3, 9 ] },
+      { "item": "20mm50", "prob": 22, "charges": [ 6, 18 ] },
+      { "item": "20mm_v", "prob": 100, "charges": [ 1, 6 ] },
+      { "item": "20mm_v", "prob": 66, "charges": [ 3, 9 ] },
+      { "item": "20mm_v", "prob": 33, "charges": [ 6, 18 ] },
+      { "item": "reloaded_20mm50", "prob": 100, "charges": [ 1, 6 ] },
+      { "item": "reloaded_20mm50", "prob": 66, "charges": [ 3, 9 ] },
+      { "item": "reloaded_20mm50", "prob": 33, "charges": [ 6, 18 ] },
+      { "item": "reloaded_20mm_v", "prob": 100, "charges": [ 1, 6 ] },
+      { "item": "reloaded_20mm_v", "prob": 66, "charges": [ 3, 9 ] },
+      { "item": "reloaded_20mm_v", "prob": 33, "charges": [ 6, 18 ] }
     ]
   },
   {

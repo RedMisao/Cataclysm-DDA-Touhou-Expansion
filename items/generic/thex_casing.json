@@ -1,5 +1,16 @@
 [
   {
+    "id": "20mm_casing",
+    "type": "GENERIC",
+    "name": { "str": "20x102mm casing" },
+    "copy-from": "casing",
+    "description": "An empty brass casing from a 20x102mm round.",
+    "volume": "16 ml",
+    "weight": "24 g",
+    "looks_like": "50_casing",
+    "//": "RECHECK ALL WEIGHTS AND VOLUMES !!! "
+  },
+  {
     "id": "765x53_casing",
     "type": "GENERIC",
     "name": { "str": "7.65x53mm casing" },
@@ -7,8 +18,7 @@
     "description": "An empty casing from a 7.65x53mm round.",
     "volume": "8 ml",
     "weight": "9 g",
-    "looks_like": "762_casing",
-    "//": "RECHECK ALL WEIGHTS AND VOLUMES !!! "
+    "looks_like": "762_casing"
   },
   {
     "id": "77x58_casing",

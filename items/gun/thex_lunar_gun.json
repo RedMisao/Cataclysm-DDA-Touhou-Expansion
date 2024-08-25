@@ -260,7 +260,6 @@
     "ammo_effects": [ "NO_ITEM_DAMAGE" ],
     "dispersion": 12,
     "durability": 8,
-    "loudness": 6,
     "min_cycle_recoil": 600,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ] ],
     "reload": 50,

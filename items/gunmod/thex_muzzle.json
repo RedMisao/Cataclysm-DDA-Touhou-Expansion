@@ -42,7 +42,7 @@
     "location": "muzzle",
     "install_time": "30 s",
     "handling_modifier": 2,
-    "loudness_modifier": -19,
+    "loudness_modifier": -50,
     "min_skills": [ [ "weapon", 1 ] ],
     "mod_targets": [ "rifle" ]
   },

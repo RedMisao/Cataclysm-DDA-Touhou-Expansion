@@ -30,6 +30,12 @@
     "default": "ammo_lunar_5d_ofuda"
   },
   {
+    "id": "20mm",
+    "type": "ammunition_type",
+    "name": "20x102mm",
+    "default": "20mm_v"
+  },
+  {
     "id": "9x39",
     "type": "ammunition_type",
     "name": "9x39mm",

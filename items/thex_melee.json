@@ -177,7 +177,7 @@
     "symbol": "/",
     "color": "light_gray",
     "techniques": [ "BRUTAL", "SWEEP", "WBLOCK_2" ],
-    "weapon_category": [ "JAPANESE_SWORDS", "GREAT_SWORDS" ],
+    "weapon_category": [ "GREAT_SWORDS" ],
     "flags": [ "DURABLE_MELEE" ]
   }
 ]
