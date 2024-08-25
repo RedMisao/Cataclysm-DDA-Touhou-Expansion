@@ -461,9 +461,8 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_mazothairos" },
-    "flags": [ "ANIMAL", "ARTHROPOD_BLOOD", "AQUATIC", "SEES", "WATER_CAMOUFLAGE" ],
     "delete": { "flags": [ "FLIES" ] },
-    "extend": { "flags": [ "NO_BREED" ] }
+    "extend": { "flags": [ "AQUATIC", "NO_BREED", "WATER_CAMOUFLAGE" ] }
   },
   {
     "id": "mon_megalograptus",
@@ -583,9 +582,8 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_meganeura" },
-    "flags": [ "ANIMAL", "ARTHROPOD_BLOOD", "AQUATIC", "SEES", "WATER_CAMOUFLAGE" ],
     "delete": { "flags": [ "FLIES" ] },
-    "extend": { "flags": [ "NO_BREED" ] }
+    "extend": { "flags": [ "AQUATIC", "NO_BREED", "WATER_CAMOUFLAGE" ] }
   },
   {
     "id": "mon_opabinia",

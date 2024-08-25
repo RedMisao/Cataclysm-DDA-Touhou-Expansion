@@ -186,34 +186,34 @@
     "volume": 20
   },
   {
-    "speaker": "mon_meganeura",
+    "speaker": [ "mon_mazothairos_nymph", "mon_meganeura_nymph" ],
+    "type": "speech",
+    "sound": "*buzzing*",
+    "volume": 6
+  },
+  {
+    "speaker": [ "mon_mazothairos", "mon_meganeura", "mon_mazothairos_nymph", "mon_meganeura_nymph" ],
     "type": "speech",
     "sound": "*buzzing*",
     "volume": 8
   },
   {
-    "speaker": "mon_meganeura",
+    "speaker": [ "mon_mazothairos", "mon_meganeura" ],
     "type": "speech",
     "sound": "*buzzing noises*",
     "volume": 9
   },
   {
-    "speaker": "mon_meganeura",
+    "speaker": [ "mon_mazothairos", "mon_meganeura" ],
     "type": "speech",
     "sound": "*buzzing noises*",
     "volume": 10
   },
   {
-    "speaker": "mon_meganeura",
+    "speaker": [ "mon_mazothairos", "mon_meganeura" ],
     "type": "speech",
     "sound": "*BZZZ*",
     "volume": 16
-  },
-  {
-    "speaker": "mon_meganeura_nymph",
-    "type": "speech",
-    "sound": "*buzzing*",
-    "volume": 6
   },
   {
     "speaker": [ "mon_mib", "mon_mib2", "mon_mib3", "mon_mib4", "mon_mib5" ],
