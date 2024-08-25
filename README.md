@@ -1,7 +1,7 @@
 # Cataclysm-DDA-Touhou-Expansion
 A CDDA expansion mod for [Touhou Professions](https://github.com/RedMisao/Cataclysm-DDA-Touhou-Mod) that various things from Touhou Project lore and fluff.
 
-**The mod's folder goes in /data/mods/**.  Last updated for game version: 2024-08-10-2317 experimental.
+**The mod's folder goes in /data/mods/**.  Last updated for game version: 2024-08-20-2135 experimental.
 
 
 ## About the mod
@@ -43,8 +43,8 @@ Sadly, there's also the
 
 ## New weapons
 * Prototype weapons.  Firearms that were never sold, or even fully developed, and were forgotten over time but are very interesting anyways: ARES FMG, CEAM Mòdele 1, IDW, TKB-022P and TKB-022PM No 2.
-* Old weapons.  Firearms that became obsolete (?): Kar98k, Pieper M1893, SIG 550 and 550-1, Spanish Model 1983, StG 44, SVD-63.
-* Cool weapons.  Because why not, other than not being intended for civilian use?: M76 Zastava, OTs-48 and OTs-48K, PGM Hécate II, SR-3MP, VSS Vintorez, Walther WA 2000.
+* Old weapons.  Firearms that became obsolete for their original use: Kar98k, Pieper M1893, SIG 550 and 550-1, Spanish Model 1983, StG 44.
+* Cool weapons.  Because why not, other than not being intended for civilian use? Anzio 20mm, M76 Zastava, OTs-48 and OTs-48K, PGM Hécate II, PP-19 Vityaz, SR-3MP, SVD-63, VSS Vintorez, VSK-94, Walther WA 2000.
 * MIB weapons.  MIB agents are equipped with the Standard Series Sidearm, Series 7 de-Scatterer and Series 4 re-Diffuser, plus their Neuralysers.
 * Misc.  The humble Thompson Contender.
 
@@ -52,14 +52,14 @@ Sadly, there's also the
 ## New monsters
 
 ### Extinct fauna
-* Amphibians: Eryops, Pederpes, Platyoposaurus, Prionosuchus.
-* Arthropods: Aegirocassis, Anomalocaris, Arthropleura, Chasmataspis, Eusarcana, Hurdia, Jaekelopterus, Megalograptus, Meganeura, Opabinia, Pambdelurion, Parastylonurus, Sidneyia.
-* Birds: Dodo, Ectopistes, Icadyptes, Moa.
+* Amphibians: Eryops, Pederpes, Pholiderpeton, Platyoposaurus, Prionosuchus.
+* Arthropods: Aegirocassis, Anomalocaris, Arthropleura, Chasmataspis, Eusarcana, Hurdia, Jaekelopterus, Mazothairos, Megalograptus, Meganeura, Opabinia, Pambdelurion, Parastylonurus, Sidneyia.
+* Birds: Dodo, Ectopistes, Garganornis, Icadyptes, Moa.
 * Fish: Coccosteus, Dipterus, Dunkleosteus, Holoptychius, lampreys (not actually extinct), Megamastax, Saurichthys.
-* Mammals: Amphicyon, Andrewsarchus, Castoroides, Daeodon, Glossotherium, Glyptodont, Herpetotherium, Megatherium, Pakicetus, Taeniolabis, Thylacine.
+* Mammals: Amphicyon, Andrewsarchus, Castoroides, Daeodon, Dinopithecus, Glossotherium, Glyptodont, Herpetotherium, Megatherium, Pakicetus, Sivatherium, Taeniolabis, Thylacine.
 * Mollusks: Agoniatites, Cleoniceras, Endoceras, Michelinoceras, Paracoroniceras, Parapuzosia.
-* Reptiles: Anatosuchus, Carnufex, Hesperosuchus, Ichthyosaurus, Plesiosaurus, Scutosaurus, Smilosuchus, Weigeltisaurus.
-* Stem-mammals: Cotylorhynchus, Dimetrodon, Lystrosaurus.
+* Reptiles: Anatosuchus, Barinasuchus, Belodon, Boverisuchus, Carbonemys, Carnufex, Erythrosuchus, Fasolasuchus, Hesperosuchus, Ichthyosaurus, Lotosaurus, Plesiosaurus, Phytosaurus, Prestosuchus, Redondasaurus, Scutosaurus, Simosuchus, Smilosuchus, Typothorax, Weigeltisaurus.
+* Stem-mammals: Cotylorhynchus, Dimetrodon, Lystrosaurus, Pampaphoneus.
 * Theriodontia: Inostrancevia, Moschorhinus, Nochnitsa, Pristerognathus, Viatkogorgon.
 
 
@@ -67,11 +67,11 @@ Sadly, there's also the
 * Archaeopteris, Cordaites, Glossopteris, Prototaxites, Psaronius
 
 ### Youkai
-* Cryptids and urban legends: Chupacabra, Enfield horror, jackalopes, nightcrawler, Mongolian death worm, Sasquatch, skinwalkers, squonk, Yeti, MIBs.
+* Cryptids and urban legends: Chupacabra, Enfield horror, jackalopes, nightcrawlers, Mongolian death worm, Sasquatchs, skinwalkers, squonk, Yeti, MIBs.
 * Fairies: self explanatory.
 * Ghosts: three different female ghosts.
 * Oni: lesser oni, generic oni, humanoid oni.
-* Tsukumogami: animated dolls, chairs, scarecrows.
+* Tsukumogami: animated dolls, chairs, computers, scarecrows.
 * Youkai: Chupacabra, Beast of Gévaudan, jinmenken, kunekune, mapinguari.
 
 
