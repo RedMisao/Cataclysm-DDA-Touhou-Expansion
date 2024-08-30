@@ -16,7 +16,7 @@
     "material": [ "flesh" ],
     "symbol": "0",
     "color": "light_gray",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 50,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -30,7 +30,7 @@
     "vision_night": 4,
     "path_settings": { "max_dist": 8 },
     "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
-    "special_attacks": [ [ "EAT_CROP", { "math": [ "80 + rand(40)" ] } ], [ "slam", { "math": [ "7 + rand(3)" ] } ] ],
+    "special_attacks": [ [ "EAT_CROP", { "math": [ "80 + rand(40)" ] } ] ],
     "reproduction": { "baby_egg": "egg_cotylorhynchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "flags": [ "ANIMAL", "EATS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
@@ -75,7 +75,7 @@
     "material": [ "flesh" ],
     "symbol": "D",
     "color": "light_red",
-    "aggression": -5,
+    "aggression": 5,
     "morale": 50,
     "melee_skill": 6,
     "melee_dice": 3,
@@ -92,8 +92,8 @@
     "fear_triggers": [ "FRIEND_DIED" ],
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "80 + rand(40)" ] } ], 
-      [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ], 
-      [ "bite_6d3", { "math": [ "5 + rand(2)" ] } ] 
+      [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ],
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_3" }, "cooldown": { "math": [ "6 + rand(6)" ] } }      
     ],
     "reproduction": { "baby_egg": "egg_dimetrodon", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER" ],
@@ -142,7 +142,7 @@
     "material": [ "flesh" ],
     "symbol": "j",
     "color": "light_red",
-    "aggression": 0,
+    "aggression": -5,
     "morale": 10,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -156,17 +156,12 @@
     "vision_night": 12,
     "path_settings": { "max_dist": 8 },
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
-      [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], 
-      { "id": "headbutt_6d2", "attack_upper": false, "cooldown": { "math": [ "3 + rand(2)" ] } } 
-    ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ] ],
     "reproduction": { "baby_egg": "egg_lystrosaurus", "baby_count": 8, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Lystrosaurus sp. taken as reference. No reproductive data. I think these laid eggs, but I'm not sure",
-    "//2": "Should do something related to digging and burrowing their nests",
-    "//3": "Add headbutt attack"
+    "//2": "Should do something related to digging and burrowing their nests"
   },
   {
     "id": "mon_lystrosaurus_baby",
@@ -224,8 +219,8 @@
     "path_settings": { "max_dist": 12 },
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
-      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      [ "bite_6d3", { "math": [ "3 + rand(2)" ] } ] 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ],
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_3" }, "cooldown": { "math": [ "6 + rand(6)" ] } }       
     ],
     "reproduction": { "baby_egg": "egg_pampaphoneus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],

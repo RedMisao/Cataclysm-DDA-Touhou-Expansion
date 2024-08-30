@@ -17,11 +17,12 @@
     "symbol": "ō",
     "looks_like": "human",
     "color": "red",
-    "aggression": 50,
+    "aggression": 99,
     "morale": 20,
     "melee_skill": 4,
-    "melee_dice": 5,
-    "melee_dice_sides": 6,
+    "melee_dice": 6,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "bash", "amount": 7 } ],
     "dodge": 2,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2, "acid": 4, "biological": 4, "cold": 4, "electric": 4, "heat": 4 },
     "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_youkai" ],
@@ -30,9 +31,13 @@
     "vision_night": 16,
     "path_settings": { "max_dist": 24 },
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", 27 ], [ "oni_smash_9d4", { "math": [ "11 + rand(4)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
+      [ "oni_SMASH_46", { "math": [ "2 + rand(11)" ] } ] 
+    ],
     "death_drops": [ { "group": "oni_drops", "prob": 100 } ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Template only"
   },
   {
@@ -46,21 +51,21 @@
     "harvest": "oni_lesser_harvest",
     "hp": 50,
     "color": "red",
-    "aggression": 5,
+    "aggression": 20,
     "morale": 20,
-    "melee_dice": 5,
-    "melee_dice_sides": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "bash", "amount": 6 } ],
     "stomach_size": 5000,
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED" ],
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
-      [ "grab", { "math": [ "25 + rand(10)" ] } ], 
-      [ "oni_smash_7d4", { "math": [ "11 + rand(4)" ] } ] 
+      [ "oni_SMASH_36", { "math": [ "2 + rand(11)" ] } ] 
     ],
     "death_drops": [ { "group": "oni_drops", "prob": 100 } ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "These should be dumb, cowardly, weak-ish to physical attacks, and hit hard"
   },
   {
@@ -113,19 +118,24 @@
     "weight": "80 kg",
     "hp": 100,
     "speed": 135,
-    "aggression": 5,
+    "aggression": 25,
     "morale": 25,
     "melee_skill": 6,
-    "melee_dice": 5,
-    "melee_dice_sides": 5,
+    "melee_dice": 6,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "bash", "amount": 5 } ],
     "dodge": 4,
     "stomach_size": 5000,
     "anger_triggers": [ "HURT" ],
     "vision_night": 12,
     "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "grab", { "math": [ "15 + rand(10)" ] } ], [ "oni_smash_9d4", { "math": [ "15 + rand(4)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
+      [ "oni_SMASH_46", { "math": [ "3 + rand(9)" ] } ] 
+    ],
     "death_drops": [ { "group": "oni_humanoid_drops", "prob": 100 } ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Human-oni hybrid"
   }
 ]

@@ -1,20 +1,9 @@
 [
   {
-    "id": "broth_ingredients",
+    "id": "broth_meat_ingredients",
     "type": "requirement",
     "components": [
-      [
-        [ "veggy_any", 1, "LIST" ],
-        [ "empty_corn_cob", 1 ],
-        [ "corn", 1 ],
-        [ "powder_eggs", 1 ],
-        [ "eggs_bird", 1, "LIST" ],
-        [ "eggs_reptile", 1, "LIST" ],
-        [ "mushroom_cooked", 1 ],
-        [ "morel_cooked", 1 ],
-        [ "mushroom", 1 ],
-        [ "dry_mushroom", 1 ]
-      ],
+      [ [ "meat_nofish", 1, "LIST" ], [ "powder_eggs", 1 ], [ "eggs_bird", 1, "LIST" ], [ "eggs_bird", 1, "LIST" ] ],
       [
         [ "hot_sauce", 1 ],
         [ "seasoning_italian", 4 ],
@@ -27,7 +16,7 @@
       ]
     ],
     "//": "Only replaces egg_reptile for eggs_reptile ",
-    "//2": "Update this with the extend field instead !!!"
+    "//WIP": "Update this with the extend field"
   },
   {
     "id": "edible_fat",
@@ -45,13 +34,46 @@
     "id": "eggs_any_shape",
     "type": "requirement",
     "//": "When we only need the nutrition of eggs and don't care about their shape. About 0.05L ",
-    "components": [ [ [ "eggs_bird", 1, "LIST" ], [ "eggs_misc", 1, "LIST" ], [ "eggs_reptile", 1, "LIST" ], [ "rehydrated_eggs", 1 ] ] ]
+    "extend": { 
+      "components": [ 
+        [ 
+          [ "eggs_mollusk", 1, "LIST" ], 
+          [ "eggs_reptile", 1, "LIST" ] 
+        ] 
+      ] 
+    }
   },
   {
     "id": "eggs_bird",
     "type": "requirement",
     "//": "All of the different bird eggs",
-    "extend": { "components": [ [ [ "egg_dodo", 1 ], [ "egg_icadyptes", 1 ], [ "egg_moa", 1 ] ] ] }
+    "extend": { 
+      "components": [ 
+        [ 
+          [ "egg_dodo", 1 ], 
+          [ "egg_ectopistes", 3 ], 
+          [ "egg_garganornis", 1 ], 
+          [ "egg_icadyptes", 1 ], 
+          [ "egg_moa", 1 ] 
+        ] 
+      ] 
+    }
+  },
+  {
+    "id": "eggs_frog",
+    "type": "requirement",
+    "//": "All of the different frog eggs",
+    "extend": { 
+      "components": [ 
+        [ 
+          [ "egg_diplocaulus", 1 ], 
+          [ "egg_pederpes", 1 ], 
+          [ "egg_pholiderpeton", 1 ], 
+          [ "egg_platyoposaurus", 1 ], 
+          [ "egg_prionosuchus", 1 ] 
+        ] 
+      ] 
+    }
   },
   {
     "id": "eggs_insect",
@@ -60,13 +82,29 @@
     "extend": {
       "components": [
         [
-          [ "egg_aegirocassis", 1 ],
-          [ "egg_anomalocaris", 1 ],
-          [ "egg_arthropleura", 1 ],
-          [ "egg_arthropod_aquatic_small", 1 ],
-          [ "egg_eurypterid", 1 ],
-          [ "egg_eurypterid_small", 1 ],
-          [ "egg_meganeura", 1 ]
+          [ "egg_aegirocassis", 4 ],
+          [ "egg_anomalocaris", 4 ],
+          [ "egg_arthropleura", 2 ],
+          [ "egg_arthropod_aquatic_small", 4 ],
+          [ "egg_eurypterid", 4 ],
+          [ "egg_eurypterid_small", 4 ],
+          [ "egg_mazothairos", 4 ],
+          [ "egg_meganeura", 4 ],
+          [ "egg_mollusk_small", 4 ],
+          [ "egg_mollusk_large", 4 ] 
+        ]
+      ]
+    }
+  },
+  {
+    "id": "eggs_roe",
+    "type": "requirement",
+    "//": "All of the different fish eggs",
+    "extend": {
+      "components": [
+        [
+          [ "egg_fishancient_medium", 1 ],
+          [ "egg_fishancient_small", 1 ]
         ]
       ]
     }
@@ -75,7 +113,7 @@
     "id": "fish_soup_ingredients",
     "type": "requirement",
     "components": [
-      [ [ "broth", 2 ], [ "broth_bone", 2 ] ],
+      [ [ "broth", 2 ], [ "broth_bone", 2 ], [ "broth_meat", 2 ] ],
       [
         [ "spaghetti_raw", 1 ],
         [ "macaroni_raw", 1 ],
@@ -96,6 +134,8 @@
         [ "hardtack", 1 ],
         [ "wastebread", 1 ],
         [ "sourdough_bread", 1 ],
+        [ "hallula", 1 ],
+        [ "brioche", 1 ],
         [ "flour", 2 ],
         [ "cornmeal", 2 ],
         [ "milk_powder", 1 ],
@@ -106,15 +146,20 @@
         [ "dry_beans", 1 ],
         [ "raw_beans", 1 ],
         [ "dry_lentils", 1 ],
-        [ "raw_lentils", 1 ],
         [ "dry_rice", 1 ],
+        [ "dry_wild_rice", 1 ],
         [ "can_beans", 1 ],
         [ "beans_cooked", 1 ],
         [ "mushroom", 1 ],
         [ "dry_mushroom", 1 ],
         [ "mushroom_cooked", 1 ],
         [ "morel_cooked", 1 ],
-        [ "acorns_cooked", 1 ]
+        [ "acorns_processed_any", 1, "LIST" ],
+        [ "wheat", 1 ],
+        [ "buckwheat", 1 ],
+        [ "barley", 1 ],
+        [ "oats", 1 ],
+        [ "oatmeal", 1 ]
       ],
       [
         [ "fish", 2 ],
@@ -124,12 +169,13 @@
         [ "salted_fish", 2 ],
         [ "fish_canned", 2 ],
         [ "can_salmon", 2 ],
+        [ "fish_scrap", 10 ],
         [ "can_tuna", 2 ],
-        [ "lamprey_meat_cooked", 3, "LIST" ]
+        [ "lamprey_meat_cooked", 3, "LIST" ] 
       ]
     ],
     "//": "Replaces egg_reptile for eggs_reptile , and adds lamprey_meat_cooked",
-    "//2": "Update this with the extend field instead !!!"
+    "//WIP": "Update this with the extend field"
   },
   {
     "id": "lobster_stew_ingredients",
@@ -156,6 +202,8 @@
         [ "hardtack", 1 ],
         [ "wastebread", 1 ],
         [ "sourdough_bread", 1 ],
+        [ "brioche", 1 ],
+        [ "hallula", 1 ],
         [ "flour", 2 ],
         [ "cornmeal", 2 ],
         [ "milk_powder", 1 ],
@@ -166,20 +214,25 @@
         [ "dry_beans", 1 ],
         [ "raw_beans", 1 ],
         [ "dry_lentils", 1 ],
-        [ "raw_lentils", 1 ],
         [ "dry_rice", 1 ],
+        [ "dry_wild_rice", 1 ],
         [ "can_beans", 1 ],
         [ "beans_cooked", 1 ],
         [ "mushroom", 1 ],
         [ "dry_mushroom", 1 ],
         [ "mushroom_cooked", 1 ],
         [ "morel_cooked", 1 ],
-        [ "acorns_cooked", 1 ]
+        [ "acorns_processed_any", 1, "LIST" ],
+        [ "wheat", 1 ],
+        [ "buckwheat", 1 ],
+        [ "barley", 1 ],
+        [ "oats", 1 ],
+        [ "oatmeal", 1 ]
       ],
       [ [ "lobster", 2 ], [ "dry_lobster", 2 ], [ "lobster_smoked", 2 ], [ "lobster_canned", 2 ] ]
     ],
     "//": "Only replaces egg_reptile for eggs_reptile ",
-    "//2": "Update this with the extend field instead !!!"
+    "//WIP": "Update this with the extend field"
   },
   {
     "id": "meat_cooked",
@@ -229,7 +282,24 @@
       [ [ "meat_red", 1, "LIST" ], [ "dry_meat", 1 ] ]
     ],
     "//": "Replaces egg_reptile for eggs_reptile , adds satsumaimo plus the irradiated version, and removes can_chicken ",
-    "//2": "Update this with the extend field instead !!!"
+    "//WIP": "Update this with the extend field"
+  },
+  {
+    "id": "seasoning_mild",
+    "type": "requirement",
+    "//": "Non-salt seasonings you might add to a dish to flavor it. Should be about a teaspoon, or smallest serving",
+    "extend": { "components": [ [ [ "silphium", 1 ] ] ] }
+  },
+  {
+    "id": "sweet_fruit_fresh",
+    "type": "requirement",
+    "//": "Sweet, unprocessed fruit, roughly by mass.",
+    "extend": { "components": [ [ [ "heavenly_peach", 1 ] ] ] }
+  },
+  {
+    "id": "veggy_any",
+    "type": "requirement",
+    "extend": { "components": [ [ [ "silphium", 1 ] ] ] }
   },
   {
     "id": "veggy_any_fresh_uncooked",
@@ -271,13 +341,86 @@
       [ [ "veggy_any", 1, "LIST" ] ]
     ],
     "//": "Only replaces egg_reptile for eggs_reptile ",
-    "//2": "Update this with the extend field instead !!!"
+    "//WIP": "Update this with the extend field"
+  },
+  {
+    "id": "veggy_potatolike",
+    "type": "requirement",
+    "//": "Any edible tuber that can be used like potato",
+    "extend": { "components": [ [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ] ] }
+  },
+  {
+    "id": "woods_soup_ingredients",
+    "type": "requirement",
+    "components": [
+      [ [ "broth", 2 ], [ "broth_bone", 2 ], [ "broth_meat", 2 ], [ "pine_tea", 2 ] ],
+      [
+        [ "meat_nofish", 1, "LIST" ],
+        [ "poultry_cooked_any", 1, "LIST" ],
+        [ "bacon", 4 ],
+        [ "bologna", 5 ],
+        [ "meat_pickled", 1 ],
+        [ "dry_meat", 1 ],
+        [ "jerky", 1 ],
+        [ "meat_smoked", 1 ],
+        [ "earthworm_dried", 10 ],
+        [ "meat_salted", 1 ],
+        [ "meat_fried", 1 ],
+        [ "fish", 1 ],
+        [ "fish_smoked", 1 ],
+        [ "dry_fish", 1 ],
+        [ "rehydrated_fish", 1 ],
+        [ "fish_canned", 1 ],
+        [ "can_salmon", 1 ],
+        [ "can_tuna", 1 ],
+        [ "lobster", 1 ],
+        [ "dry_lobster", 1 ],
+        [ "lobster_smoked", 1 ],
+        [ "lobster_canned", 1 ],
+        [ "sausage", 1 ],
+        [ "sausage_cooked", 1 ],
+        [ "bratwurst_sausage", 1 ]
+      ],
+      [
+        [ "veggy_wild", 2 ],
+        [ "veggy", 2 ],
+        [ "corn_kernels", 2 ],
+        [ "rehydrated_veggy", 2 ],
+        [ "rehydrated_corn_kernels", 2 ],
+        [ "dry_veggy", 2 ],
+        [ "dry_corn", 2 ],
+        [ "dry_beans", 2 ],
+        [ "can_beans", 2 ],
+        [ "raw_beans", 2 ],
+        [ "beans_cooked", 2 ],
+        [ "dry_lentils", 2 ],
+        [ "dry_rice", 2 ],
+        [ "dry_wild_rice", 2 ],
+        [ "dandelion_cooked", 2 ],
+        [ "burdock_cooked", 2 ],
+        [ "bamboo_cooked", 2 ],
+        [ "mushroom", 2 ],
+        [ "dry_mushroom", 2 ],
+        [ "mushroom_cooked", 2 ],
+        [ "morel_cooked", 2 ],
+        [ "acorns_processed_any", 2, "LIST" ],
+        [ "wheat", 1 ],
+        [ "buckwheat", 1 ],
+        [ "barley", 1 ],
+        [ "oats", 1 ],
+        [ "oatmeal", 1 ],
+        [ "irradiated_satsumaimo", 1 ],
+        [ "satsumaimo", 1 ]
+      ]
+    ],
+    "//": "Adds satsumaimo plus the irradiated version",
+    "//WIP": "Update this with the extend field"
   },
   {
     "id": "woods_soup_ingredients_veggy",
     "type": "requirement",
     "components": [
-      [ [ "broth", 1 ], [ "broth_bone", 1 ], [ "pine_tea", 1 ] ],
+      [ [ "broth", 1 ], [ "broth_bone", 1 ], [ "broth_meat", 1 ], [ "pine_tea", 1 ] ],
       [ [ "powder_eggs", 1 ], [ "eggs_bird", 1, "LIST" ], [ "eggs_reptile", 1, "LIST" ] ],
       [
         [ "veggy_wild", 1 ],
@@ -291,8 +434,8 @@
         [ "raw_beans", 1 ],
         [ "beans_cooked", 1 ],
         [ "dry_lentils", 1 ],
-        [ "raw_lentils", 1 ],
         [ "dry_rice", 1 ],
+        [ "dry_wild_rice", 1 ],
         [ "dandelion_cooked", 1 ],
         [ "burdock_cooked", 1 ],
         [ "bamboo_cooked", 1 ],
@@ -300,12 +443,17 @@
         [ "dry_mushroom", 1 ],
         [ "mushroom_cooked", 1 ],
         [ "morel_cooked", 1 ],
-        [ "acorns_cooked", 1 ],
+        [ "acorns_processed_any", 1, "LIST" ],
+        [ "wheat", 1 ],
+        [ "buckwheat", 1 ],
+        [ "barley", 1 ],
+        [ "oats", 1 ],
+        [ "oatmeal", 1 ],
         [ "irradiated_satsumaimo", 1 ],
         [ "satsumaimo", 1 ]
       ]
     ],
     "//": "Replaces egg_reptile for eggs_reptile , and adds satsumaimo plus the irradiated version",
-    "//2": "Update this with the extend field instead !!!"
+    "//WIP": "Update this with the extend field"
   }
 ]

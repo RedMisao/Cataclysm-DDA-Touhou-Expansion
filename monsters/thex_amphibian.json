@@ -48,7 +48,7 @@
     "symbol": "⌒",
     "looks_like": "mon_gator",
     "color": "dark_gray_green",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 5,
     "melee_skill": 2,
     "melee_dice": 2,
@@ -109,7 +109,7 @@
     "symbol": "e",
     "looks_like": "mon_gator",
     "color": "dark_gray_green",
-    "aggression": 5,
+    "aggression": 20,
     "morale": 50,
     "melee_skill": 6,
     "melee_dice": 2,
@@ -224,18 +224,48 @@
     "volume": "200 L",
     "weight": "200 kg",
     "hp": 150,
-    "speed": 50,
+    "speed": 65,
     "color": "dark_gray_green",
     "melee_skill": 5,
     "stomach_size": 20000,
     "vision_night": 6,
     "reproduction": { "baby_egg": "egg_pholiderpeton", "baby_count": 12, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ],
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "6 + rand(6)" ] } 
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
-    "//": "Based on Pholiderpeton sp. Not a temnospondyl, but a stem-tetrapod!",
-    "//2": "Add 'grasping bite' attack",
-    "//3": "Should have speed bonus while in water"
+    "//": "Based on Pholiderpeton sp. Not a temnospondyl, but a stem-tetrapod!"
   },
   {
     "id": "mon_pholiderpeton_baby",
@@ -278,11 +308,42 @@
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "reproduction": { "baby_egg": "egg_platyoposaurus", "baby_count": 12, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ],
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "6 + rand(6)" ] } 
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Platyoposaurus sp. I couldn't find almost anything other than the size at 2.5 m average so most data are estimates",
-    "//2": "Add 'grasping bite' attack",
-    "//3": "Should have no movement speed demerit while in water"
+    "//2": "Add 'grasping bite' attack"
   },
   {
     "id": "mon_platyoposaurus_baby",
@@ -328,11 +389,42 @@
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "reproduction": { "baby_egg": "egg_prionosuchus", "baby_count": 12, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ],
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "6 + rand(6)" ] } 
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Prionosuchus plummeri. No reproductive data",
-    "//2": "Add 'grasping bite' attack",
-    "//3": "Should have no movement speed demerit while in water"
+    "//2": "Add 'grasping bite' attack"
   },
   {
     "id": "mon_prionosuchus_baby",

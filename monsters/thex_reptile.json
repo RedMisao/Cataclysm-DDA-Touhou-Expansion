@@ -17,11 +17,7 @@
     "weakpoint_sets": [ "wps_suchia_body" ],
     "path_settings": { "max_dist": 8 },
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
-      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      [ "grab", { "math": [ "15 + rand(10)" ] } ] 
-    ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ]
   },
   {
@@ -42,7 +38,7 @@
     "symbol": "ċ",
     "looks_like": "mon_gator",
     "color": "green",
-    "aggression": -5,
+    "aggression": 15,
     "morale": 50,
     "melee_skill": 6,
     "melee_dice": 3,
@@ -57,11 +53,7 @@
     "path_settings": { "max_dist": 16 },
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FIRE" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
-      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      [ "grab", { "math": [ "15 + rand(10)" ] } ] 
-    ],
+    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWIMS" ]
   },
   {
@@ -100,7 +92,7 @@
     "reproduction": { "baby_egg": "egg_anatosuchus", "baby_count": 12, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ] ],
-    "flags": [ "ANIMAL", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Anatosuchus sp.. No reproductive data."
   },
   {
@@ -149,7 +141,39 @@
     "stomach_size": 80000,
     "reproduction": { "baby_egg": "egg_barinasuchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_7" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "14 + rand(14)" ] } 
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS" ],
     "//": "Based on Barinasuchus sp. No reproductive data"
   },
@@ -195,7 +219,7 @@
     "speed": 110,
     "symbol": "𝐛",
     "color": "dark_gray_green",
-    "aggression": 5,
+    "aggression": 25,
     "melee_skill": 6,
     "weakpoint_sets": [ "wps_belodon_body" ],
     "stomach_size": 35000, 
@@ -204,7 +228,39 @@
     "reproduction": { "baby_egg": "egg_belodon", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "//3": "anger and fear flags are inverted",
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "60 + rand(25)" ] } ], [ "EAT_FOOD", { "math": [ "60 + rand(25)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "60 + rand(25)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "60 + rand(25)" ] } ], 
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "6 + rand(6)" ] }
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE", "SWARMS" ],
     "//2": "Based on Belodon sp. and Nicrosaurus kapffi. No reproductive data"
   },
@@ -248,10 +304,13 @@
     "anger_triggers": [ "PLAYER_WEAK", "HURT" ],
     "reproduction": { "baby_egg": "egg_boverisuchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
-    "//": "Based on Boverisuchus sp. No reproductive data",
-    "//2": "Should have a self-cast ms buff"
+    "//": "Based on Boverisuchus sp. No reproductive data"
   },
   {
     "id": "mon_boverisuchus_baby",
@@ -294,7 +353,7 @@
     "symbol": "T",
     "looks_like": "mon_tortoise_small",
     "color": "brown",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 65,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -311,7 +370,6 @@
     "reproduction": { "baby_egg": "egg_carbonemys", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ 
-      [ "headbutt_5d5", { "math": [ "6 + rand(3)" ] } ],
       [ "EAT_CROP", { "math": [ "65 + rand(40)" ] } ],
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ]
     ],
@@ -354,7 +412,8 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      [ "grab", { "math": [ "15 + rand(10)" ] } ] 
+      [ "grab", { "math": [ "15 + rand(10)" ] } ], 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Carnufex sp. No reproductive data"
@@ -406,7 +465,11 @@
     "stomach_size": 80000,
     "reproduction": { "baby_egg": "egg_erythrosuchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ], 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_3" }, "cooldown": { "math": [ "6 + rand(6)" ] } } 
+    ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS" ],
     "//": "Based on Erythrosuchus sp. No reproductive data"
   },
@@ -456,10 +519,13 @@
     "stomach_size": 80000,
     "reproduction": { "baby_egg": "egg_fasolasuchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
+    ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS" ],
-    "//": "Based on Fasolasuchus sp. No reproductive data",
-    "//2": "Add movement speed buff"
+    "//": "Based on Fasolasuchus sp. No reproductive data"
   },
   {
     "id": "mon_fasolasuchus_baby",
@@ -510,7 +576,11 @@
     "stomach_size": 2000,
     "reproduction": { "baby_egg": "egg_hesperosuchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_5" }, "cooldown": { "math": [ "10 + rand(10)" ] } } 
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
     "//": "Based on Hesperosuchus sp. No reproductive data"
   },
@@ -571,7 +641,11 @@
     "stomach_size": 15000, 
     "reproduction": { "baby_monster": "mon_ichthyosaurus_baby", "baby_count": 1, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "80 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ], [ "PARROT", { "math": [ "10 + rand(4)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "80 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ], 
+      [ "PARROT", { "math": [ "10 + rand(4)" ] } ] 
+    ],
     "flags": [ "ANIMAL", "AQUATIC", "EATS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWIMS", "WARM", "WATER_CAMOUFLAGE" ],
     "//": "Ichthyosaurus communis used as reference. Don't know if they had vocalizations but that's how I imagine them to be",
     "//2": "Coprolites include fish and squid, and the big characteristic eyes indicate it could hunt in low light conditions, with great depths included"
@@ -616,7 +690,7 @@
     "material": [ "flesh" ],
     "symbol": "ŀ",
     "color": "brown_green",
-    "aggression": -10,
+    "aggression": -5,
     "morale": 35,
     "melee_skill": 3,
     "melee_dice": 2,
@@ -633,7 +707,7 @@
     "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
     "reproduction": { "baby_egg": "egg_lotosaurus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CROP", { "math": [ "65 + rand(40)" ] } ], [ "headbutt_5d5", { "math": [ "4 + rand(2)" ] } ] ],
+    "special_attacks": [ [ "EAT_CROP", { "math": [ "65 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWARMS" ],
     "//": "Based on Lotosaurus sp. No reproductive data"
   },
@@ -672,7 +746,39 @@
     "dodge": 2,
     "reproduction": { "baby_egg": "egg_phytosaurus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "6 + rand(6)" ] }
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE", "SWARMS" ],
     "//": "Based on Phytosaurus cylindricodon, except this one's herbivore. No reproductive data"
   },
@@ -716,7 +822,7 @@
     "material": [ "flesh" ],
     "color": "light_gray",
     "symbol": "J",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 25,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -778,7 +884,11 @@
     "stomach_size": 50000,
     "reproduction": { "baby_egg": "egg_prestosuchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
+    ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Prestosuchus sp. No reproductive data"
   },
@@ -825,10 +935,41 @@
     "stomach_size": 80000, 
     "reproduction": { "baby_egg": "egg_redondasaurus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ], 
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "6 + rand(6)" ] }
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
-    "//": "Based on Redondasaurus sp (alternatively, this is Machaeroprosopus). No reproductive data",
-    "//2": "Should have a 'charge ouf of water' special attack, while under water"
+    "//": "Based on Redondasaurus sp (alternatively, this is Machaeroprosopus). No reproductive data"
   },
   {
     "id": "mon_redondasaurus_baby",
@@ -870,7 +1011,7 @@
     "material": [ "flesh" ],
     "symbol": "ṁ",
     "color": "light_gray_green",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 50,
     "melee_skill": 4,
     "melee_dice": 4,
@@ -885,7 +1026,7 @@
     "fear_triggers": [ "FRIEND_ATTACKED" ],
     "reproduction": { "baby_egg": "egg_scutosaurus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CROP", { "math": [ "80 + rand(40)" ] } ], [ "headbutt_5d5", { "math": [ "4 + rand(2)" ] } ] ],
+    "special_attacks": [ [ "EAT_CROP", { "math": [ "80 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PUSH_MON", "SEES", "SMELLS" ],
     "//": "Based on Scutosaurus sp. No reproductive data. Probably lived alone?"
   },
@@ -928,7 +1069,7 @@
     "speed": 135,
     "symbol": "ś",
     "color": "dark_gray",
-    "aggression": -10,
+    "aggression": -5,
     "morale": 10,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -993,10 +1134,41 @@
     "stomach_size": 80000, 
     "reproduction": { "baby_egg": "egg_smilosuchus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ], 
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3" }, 
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } }
+          ]
+        },
+        "cooldown": { "math": [ "6 + rand(6)" ] }
+      },
+      { 
+        "id": "ambush_speed", 
+        "type": "spell", 
+        "spell_data": { "id": "ambush_speed_spell" }, 
+        "condition": {
+          "and": [
+            "u_is_underwater",
+            { "not": { "u_has_effect": "ambush_effect1" } },
+            { "not": { "u_has_effect": "ambush_effect2" } },
+            { "not": { "u_has_effect": "ambush_effect3" } },
+            { "not": { "u_has_effect": "sprint_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "1 + rand(1)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PUSH_MON", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
-    "//": "Based on Smilosuchus gregorii. No reproductive data",
-    "//2": "Should have a 'charge ouf of water' special attack, while under water"
+    "//": "Based on Smilosuchus gregorii. No reproductive data"
   },
   {
     "id": "mon_smilosuchus_baby",
@@ -1038,7 +1210,7 @@
     "material": [ "flesh" ],
     "symbol": "ṫ",
     "color": "green",
-    "aggression": -10,
+    "aggression": -5,
     "morale": 25,
     "melee_skill": 3,
     "melee_dice": 3,
@@ -1055,7 +1227,7 @@
     "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
     "reproduction": { "baby_egg": "egg_typothorax", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CROP", { "math": [ "65 + rand(40)" ] } ], [ "headbutt_5d5", { "math": [ "4 + rand(2)" ] } ] ],
+    "special_attacks": [ [ "EAT_CROP", { "math": [ "65 + rand(40)" ] } ] ],
     "flags": [ "ANIMAL", "EATS", "GROUP_MORALE", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
     "//": "Based on Typothorax sp. No reproductive data"
   },

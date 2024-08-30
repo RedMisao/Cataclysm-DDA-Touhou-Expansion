@@ -17,7 +17,7 @@
     "symbol": "ä",
     "looks_like": "mon_bear",
     "color": "light_gray",
-    "aggression": -15,
+    "aggression": 0,
     "morale": 50,
     "melee_skill": 7,
     "melee_dice": 3,
@@ -34,7 +34,11 @@
     "fear_triggers": [ "SOUND" ],
     "reproduction": { "baby_monster": "mon_amphicyon_cub", "baby_count": 3, "baby_timer": 240 },
     "baby_flags": [ "SPRING" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ],
+      { "id": "sprint", "spell_data": { "id": "sprint_spell_5" }, "type": "spell", "cooldown": { "math": [ "10 + rand(10)" ] } } 
+    ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//": "Amphicyon ingens taken as reference when possible, because one exemplar had an estimated of 570 Kg which is a bit too much. No reproductive data",
     "//2": "BTW these are oversized wolves, not bears with wolf characteristics"
@@ -80,7 +84,7 @@
     "symbol": "ḍ",
     "looks_like": "mon_boar_wild",
     "color": "dark_gray",
-    "aggression": 35,
+    "aggression": 50,
     "morale": 50,
     "melee_skill": 8,
     "melee_dice": 3,
@@ -97,7 +101,11 @@
     "fear_triggers": [ "SOUND" ],
     "reproduction": { "baby_monster": "mon_andrewsarchus_calf", "baby_count": 2, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ],
+      { "id": "sprint", "spell_data": { "id": "sprint_spell_7" }, "type": "spell", "cooldown": { "math": [ "11 + rand(11)" ] } }  
+    ],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 12 },
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
     "//": "Andrewsarchus mongoliensis used as reference. No reproductive data"
@@ -139,7 +147,7 @@
     "speed": 100,
     "symbol": "ř",
     "looks_like": "mon_beaver",
-    "aggression": -20,
+    "aggression": -5,
     "morale": 20,
     "melee_skill": 4,
     "melee_dice": 3,
@@ -229,7 +237,11 @@
     "fear_triggers": [ "SOUND" ],
     "reproduction": { "baby_monster": "mon_daeodon_piglet", "baby_count": 4, "baby_timer": 76 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "50 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "50 + rand(20)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "50 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "50 + rand(20)" ] } ], 
+      { "id": "sprint", "spell_data": { "id": "sprint_spell_7" }, "type": "spell", "cooldown": { "math": [ "11 + rand(11)" ] } } 
+    ],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 6 },
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
     "//": "Daeodon shoshonensis used as reference. The white marks on their faces is probably made up but sounds cool for a giant murderous boar"
@@ -294,11 +306,10 @@
     "reproduction": { "baby_monster": "mon_dinopithecus_baby", "baby_count": 3, "baby_timer": 240 },
     "baby_flags": [ "SPRING" ],
     "special_attacks": [ 
-      { "id": "grab", "cooldown": { "math": [ "6 + rand(4)" ] } }, 
-      { "id": "claw_5d3", "cooldown": { "math": [ "4 + rand(4)" ] } }, 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_CROP", { "math": [ "65 + rand(40)" ] } ], 
-      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ] 
+      [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ],
+      { "id": "grab", "cooldown": { "math": [ "6 + rand(4)" ] } }       
     ],
     "flags": [ "ANIMAL", "BASHES", "CLIMBS", "EATS", "GROUP_BASH", "SMELLS", "HEARS", "PATH_AVOID_DANGER", "SEES", "WARM" ],
     "//": "Dinopithecus sp. used as reference. No reproductive data"
@@ -344,7 +355,7 @@
     "symbol": "ṁ",
     "looks_like": "mon_bear",
     "color": "brown",
-    "aggression": -20,
+    "aggression": -5,
     "morale": 50,
     "melee_skill": 6,
     "melee_dice": 3,
@@ -422,7 +433,10 @@
     "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ],
     "reproduction": { "baby_monster": "mon_glyptodont_baby", "baby_count": 2, "baby_timer": 240 },
     "baby_flags": [ "SPRING" ],
-    "special_attacks": [ [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], 
+      { "id": "sprint", "spell_data": { "id": "sprint_spell_3" }, "type": "spell", "cooldown": { "math": [ "6 + rand(6)" ] } } 
+    ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//2": "Glyptodont sp. used as reference. No reproductive data",
     "//3": "Would be cool for these to dig and live around mini-dungeon paleoburrows"
@@ -521,7 +535,7 @@
     "symbol": "ṁ",
     "looks_like": "mon_bear",
     "color": "light_gray",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 50,
     "melee_skill": 7,
     "melee_dice": 6,
@@ -581,7 +595,7 @@
     "material": [ "flesh" ],
     "symbol": "p",
     "color": "brown",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 15,
     "melee_skill": 5,
     "melee_dice": 2,
@@ -597,7 +611,10 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "STALK" ],
     "reproduction": { "baby_monster": "mon_pakicetus_pup", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ], 
+      { "id": "sprint", "spell_data": { "id": "sprint_spell_5" }, "type": "spell", "cooldown": { "math": [ "10 + rand(10)" ] } }  
+    ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWIMS", "WARM" ]
   },
   {
@@ -640,7 +657,7 @@
     "material": [ "flesh" ],
     "symbol": "S",
     "color": "light_gray",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 50,
     "melee_skill": 6,
     "melee_dice": 4,
@@ -656,7 +673,10 @@
     "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ],
     "reproduction": { "baby_monster": "mon_sivatherium_baby", "baby_count": 1, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "special_attacks": [ [ "EAT_CROP", { "math": [ "100 + rand(40)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CROP", { "math": [ "100 + rand(40)" ] } ], 
+      { "id": "sprint", "spell_data": { "id": "sprint_spell_7" }, "type": "spell", "cooldown": { "math": [ "11 + rand(11)" ] } }  
+    ],
     "flags": [
       "ANIMAL",
       "BASHES",
@@ -699,18 +719,29 @@
     "id": "mon_taeniolabis",
     "type": "MONSTER",
     "name": { "str": "taeniolabis" },
-    "copy-from": "mon_castoroides",
-    "description": "A very large, rodent-looking animal.  It looks like a mix betweeen a capibara and a otter, several times their size.  The beast calmly walks around, looking for food.",
+    "copy-from": "mon_beaver",
+    "description": "A large, rodent-looking animal.  It looks like a mix betweeen a capibara and a otter.  The beast calmly walks around, looking for food.",
+    "symbol": "ȓ",
+    "melee_skill": 4,
+    "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2 },
+    "proportional": { 
+      "volume": 1.1,
+      "weight": 1.1,
+      "hp": 1.1,
+      "speed": 1.1,
+      "armor": 0.5,
+      "stomach_size": 1.1
+    },
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY" ],
+    "fear_triggers": [ "SOUND" ],
     "reproduction": { "baby_monster": "mon_taeniolabis_cub", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ] ],
     "flags": [
       "ANIMAL",
-      "BASHES",
       "EATS",
       "HEARS",
       "PATH_AVOID_DANGER",
-      "PUSH_MON",
       "SEES",
       "SMELLS",
       "SWIMS",
@@ -739,7 +770,6 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_taeniolabis" },
-    "delete": { "flags": [ "BASHES", "PUSH_MON" ] },
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -759,7 +789,7 @@
     "material": [ "flesh" ],
     "symbol": "t",
     "color": "light_gray",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 20,
     "melee_skill": 6,
     "melee_dice": 3,
@@ -779,7 +809,8 @@
       [ "EAT_CROP", { "math": [ "80 + rand(40)" ] } ], 
       [ "EAT_CARRION", { "math": [ "80 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "80 + rand(40)" ] } ], 
-      [ "PARROT", { "math": [ "3 + rand(3)" ] } ] 
+      [ "PARROT", { "math": [ "3 + rand(3)" ] } ], 
+      { "id": "sprint", "spell_data": { "id": "sprint_spell_5" }, "type": "spell", "cooldown": { "math": [ "10 + rand(10)" ] } }  
     ],
     "biosignature": { "biosig_item": "feces_thylacine", "biosig_timer": 8 },
     "flags": [ "ANIMAL", "EATS", "GROUP_MORALE", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SWARMS", "WARM" ],

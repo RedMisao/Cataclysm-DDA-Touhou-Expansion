@@ -207,10 +207,8 @@
     "id": "egg_ectopistes",
     "type": "COMESTIBLE",
     "name": { "str": "ectopistes egg" },
-    "copy-from": "egg_chicken",
+    "copy-from": "egg_pigeon",
     "description": "An Ectopistes egg.",
-    "price_postapoc": "50 cent",
-    "proportional": { "volume": 0.5, "weight": 0.5 },
     "rot_spawn": "GROUP_EGG_ECTOPISTES",
     "rot_spawn_chance": 90
   },
@@ -591,8 +589,9 @@
     "id": "egg_weigeltisaurus",
     "type": "COMESTIBLE",
     "name": { "str": "weigeltisaurus egg" },
-    "copy-from": "egg_reptile",
+    "copy-from": "egg_chicken",
     "description": "A Weigeltisaurus egg.",
+    "proportional": { "volume": 0.17, "weight": 0.17, "calories": 0.17 },
     "rot_spawn": "GROUP_EGG_WEIGELTISAURUS",
     "rot_spawn_chance": 75,
     "flags": [ "FREEZERBURN", "RAW" ]

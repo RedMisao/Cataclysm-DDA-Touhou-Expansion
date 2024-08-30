@@ -16,7 +16,7 @@
     "material": [ "flesh" ],
     "color": "blue",
     "symbol": "ϒ",
-    "aggression": -15,
+    "aggression": -20,
     "morale": 15,
     "melee_skill": 2,
     "melee_dice": 1,
@@ -75,7 +75,7 @@
     "material": [ "flesh" ],
     "color": "pink",
     "symbol": "ϒ",
-    "aggression": -5,
+    "aggression": 20,
     "morale": 50,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -135,7 +135,7 @@
     "material": [ "iflesh" ],
     "color": "red",
     "symbol": "ș",
-    "aggression": -5,
+    "aggression": 0,
     "morale": 50,
     "melee_skill": 5,
     "melee_dice": 3,
@@ -241,7 +241,7 @@
     "material": [ "flesh" ],
     "color": "light_gray",
     "symbol": "ᛉ",
-    "aggression": -5,
+    "aggression": 20,
     "morale": 50,
     "melee_skill": 5,
     "melee_dice": 1,
@@ -258,10 +258,27 @@
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "reproduction": { "baby_egg": "egg_eurypterid", "baby_count": 12, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "25 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "25 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "25 + rand(20)" ] } ],
+      { 
+        "id": "mon_eusarcana_1", 
+        "type": "spell", 
+        "spell_data": { "id": "eurypterid_poison" }, 
+        "condition": { 
+          "not": { 
+            "or": [ 
+              { "npc_has_effect": "poison" }, 
+              { "npc_has_effect": "badpoison" }, 
+              { "npc_has_effect": "venom_weaken" }
+            ] 
+          } 
+        },
+        "cooldown": { "math": [ "3 + rand(3)" ] } 
+      }
+    ],
     "flags": [ "ANIMAL", "AQUATIC", "ARTHROPOD_BLOOD", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
-    "//": "Based on Eusarcana scorpionis. This one's venomous",
-    "//note": "ADD VENOM ATTACK !!!"
+    "//": "Based on Eusarcana scorpionis. This one's venomous"
   },
   {
     "id": "mon_eusarcana_baby",
@@ -360,7 +377,7 @@
     "material": [ "flesh" ],
     "color": "brown",
     "symbol": "ᛉ",
-    "aggression": 20,
+    "aggression": 25,
     "morale": 50,
     "melee_skill": 7,
     "melee_dice": 3,
@@ -412,7 +429,7 @@
     "volume": "650 ml",
     "weight": "300 g",
     "default_faction": "dragonfly",
-    "bodytype": "insect",
+    "bodytype": "flying insect",
     "categories": [ "WILDLIFE" ],
     "species": [ "ARTHROPOD", "INSECT_FLYING" ],
     "harvest": "arthropod_small_harvest",
@@ -481,7 +498,7 @@
     "material": [ "flesh" ],
     "color": "light_gray",
     "symbol": "ᛉ",
-    "aggression": -5,
+    "aggression": 20,
     "morale": 50,
     "melee_skill": 5,
     "melee_dice": 3,
@@ -533,7 +550,7 @@
     "volume": "1000 ml",
     "weight": "450 g",
     "default_faction": "dragonfly",
-    "bodytype": "insect",
+    "bodytype": "flying insect",
     "categories": [ "WILDLIFE" ],
     "species": [ "ARTHROPOD", "INSECT_FLYING" ],
     "harvest": "arthropod_small_harvest",
@@ -720,7 +737,7 @@
     "material": [ "flesh" ],
     "color": "brown",
     "symbol": "ᛉ",
-    "aggression": -5,
+    "aggression": 5,
     "morale": 50,
     "melee_skill": 2,
     "melee_dice": 1,

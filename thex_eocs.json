@@ -25,6 +25,39 @@
     "//": "These re-roll daily, for use in special events "
   },
   {
+    "id": "guevaudan_attacked_melee_eoc",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_melee_attacks_monster",
+    "condition": { "compare_string": [ "mon_gevaudan", { "context_val": "victim_type" } ] },
+    "effect": [ 
+      { "npc_location_variable": { "global_val": "var_gevaudan_loc" } },
+      { "run_eoc_with": "guevaudan_attacked_check_eoc", "beta_loc": { "global_val": "var_gevaudan_loc" } }
+    ],
+    "//": "These are WIP eocs, given I don't know how to track the dmg mon_gevaudan receives with silver-based materials",
+    "//2": "This alternative instead prevents it from self-healing if damaged by a silver-based weapon",
+    "//3": "Probably keep still after I figure out"
+  },
+  {
+    "id": "guevaudan_attacked_ranged_eoc",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_ranged_attacks_character",
+    "condition": { "compare_string": [ "mon_gevaudan", { "context_val": "victim_type" } ] },
+    "effect": [ 
+      { "npc_location_variable": { "global_val": "var_gevaudan_loc" } },
+      { "run_eoc_with": "guevaudan_attacked_check_eoc", "beta_loc": { "global_val": "var_gevaudan_loc" } }
+    ]
+  },
+  {
+    "id": "guevaudan_attacked_check_eoc",
+    "type": "effect_on_condition",
+    "effect": [
+      { "npc_add_effect": "gevaudan_noregen", "duration": "31 s" }
+    ]
+  },
+  
+  {
     "id": "impurity_eoc",
     "type": "effect_on_condition",
     "recurrence": "20 m",

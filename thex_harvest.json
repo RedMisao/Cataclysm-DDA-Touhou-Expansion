@@ -323,6 +323,12 @@
     ]
   },
   {
+    "id": "silphium_harv",
+    "type": "harvest",
+    "entries": [ { "drop": "silphium", "base_num": [ 2, 4 ] } ],
+    "//": "WIP"
+  },
+  {
     "id": "tsukumogami_computer_harvest",
     "type": "harvest",
     "entries": [

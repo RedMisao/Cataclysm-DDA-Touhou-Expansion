@@ -33,7 +33,7 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      [ "bite_6d3", { "math": [ "3 + rand(2)" ] } ] 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_5" }, "cooldown": { "math": [ "10 + rand(10)" ] } }
     ],
     "reproduction": { "baby_egg": "egg_inostrancevia", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
@@ -81,7 +81,7 @@
     "material": [ "flesh" ],
     "symbol": "ĉ",
     "color": "brown",
-    "aggression": -5,
+    "aggression": 5,
     "morale": 20,
     "melee_skill": 6,
     "melee_dice": 3,
@@ -99,8 +99,7 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ], 
-      [ "bite_5d3", { "math": [ "7 + rand(2)" ] } ], 
-      { "id": "scratch", "attack_upper": false, "cooldown": { "math": [ "9 + rand(2)" ] } } 
+      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "14 + rand(14)" ] } } 
     ],
     "reproduction": { "baby_egg": "egg_moschorhinus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
@@ -226,8 +225,7 @@
     "stomach_size": 3000,
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], 
-      [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ], 
-      [ "bite_5d3", { "math": [ "5 + rand(2)" ] } ] 
+      [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ] 
     ],
     "reproduction": { "baby_egg": "egg_pristerognathus", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
@@ -269,8 +267,7 @@
     "weakpoint_sets": [ "wps_gorgonopsid_body" ],
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(20)" ] } ], 
-      [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ], 
-      [ "bite_5d3", { "math": [ "7 + rand(2)" ] } ] 
+      [ "EAT_FOOD", { "math": [ "65 + rand(20)" ] } ] 
     ],
     "reproduction": { "baby_egg": "egg_viatkogorgon", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],

@@ -17,7 +17,7 @@
     "symbol": "6",
     "looks_like": "f_console",
     "color": "black",
-    "aggression": -5,
+    "aggression": 25,
     "morale": 99,
     "melee_skill": 4,
     "melee_dice": 3,
@@ -33,9 +33,9 @@
     "path_settings": { "max_dist": 32 },
 	"grab_strength": 16,
     "special_attacks": [ 
-		[ "shock_3d5", { "math": [ "11 + rand(4)" ] } ],
-		[ "tangle", { "math": [ "10 + rand(2)" ] } ] 
-	],
+      [ "shock_15", { "math": [ "1 + rand(2)" ] } ], 
+      { "id": "mon_computer_possessed_1", "type": "spell", "spell_data": { "id": "entangle" }, "cooldown": { "math": [ "7 + rand(5)" ] } } 
+    ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK" ],
     "flags": [ "ELECTRIC", "HEARS", "NO_BREATHE", "SEES" ]
   },
@@ -55,14 +55,18 @@
     "looks_like": "laptop",
     "color": "dark_gray",
     "melee_skill": 4,
-    "melee_dice": 3,
-    "melee_dice_sides": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "electric", "amount": 3 } ],
     "proportional": { 
       "volume": 0.33,
       "weight": 0.33,
       "hp": 0.5
     },
+    "special_attacks": [ 
+      [ "shock_11", { "math": [ "1 + rand(2)" ] } ],
+      { "id": "mon_computer_laptop_possessed_1", "type": "spell", "spell_data": { "id": "entangle" }, "cooldown": { "math": [ "7 + rand(5)" ] } } 
+    ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK" ],
     "flags": [ "ELECTRIC", "HARDTOSHOOT", "HEARS", "NO_BREATHE", "SEES" ]
   },
@@ -83,12 +87,12 @@
     "material": [ "canvas", "cotton" ],
     "symbol": "@",
     "color": "yellow",
-    "aggression": -5,
+    "aggression": 25,
     "morale": 99,
     "melee_skill": 6,
     "melee_dice": 3,
-    "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "dodge": 0,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2, "acid": 4, "biological": 4, "cold": 4, "electric": 4, "heat": 4 },
     "families": [ "prof_wp_youkai" ],
@@ -96,9 +100,8 @@
     "vision_day": 6,
     "vision_night": 16,
     "special_attacks": [ 
-		[ "claw_5d3", { "math": [ "5 + rand(4)" ] } ] ,
-		{ "spell_data": { "id": "scarecrow_wakeup" }, "type": "spell", "cooldown": 2 }
-	],
+      { "id": "mon_scarecrow_inactive_1", "type": "spell", "spell_data": { "id": "scarecrow_wakeup" }, "cooldown": 1 } 
+    ],
     "death_drops": "scarecrow_drops",
     "burn_into": "mon_scarecrow_scorched",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
@@ -110,12 +113,12 @@
     "name": { "str": "scarecrow" },
 	"copy-from": "mon_scarecrow_inactive",
     "description": "A humanoid figure, made of cloth and canvas.  Its whole purpose was to scare pesky birds away, serving as static guardians of crops.  Now moving by its own accord, it doesn't look friendly, randomly clawing the air in front, as trying to attack something.",
-    "aggression": 20,
+    "aggression": 35,
     "dodge": 2,
     "vision_day": 24,
     "vision_night": 24,
     "path_settings": { "max_dist": 32 },
-	"special_attacks": [ [ "claw_5d3", { "math": [ "5 + rand(4)" ] } ] ],
+	"special_attacks": [ [ "claw_17", { "math": [ "1 + rand(2)" ] } ] ],
     "flags": [ "BASHES", "HEARS", "NO_BREATHE", "PATH_AVOID_FALL", "PATH_AVOID_FIRE", "SEES" ]
   },
   {
@@ -135,12 +138,12 @@
     "material": [ "canvas", "cotton" ],
     "symbol": "@",
     "color": "yellow",
-    "aggression": 35,
+    "aggression": 50,
     "morale": 99,
     "melee_skill": 6,
     "melee_dice": 3,
-    "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "heat", "amount": 3 } ],
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "heat", "amount": 5 } ],
     "dodge": 4,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2, "acid": 4, "biological": 4, "cold": 4, "electric": 4, "heat": 24 },
     "luminance": 6,
@@ -149,7 +152,7 @@
     "vision_day": 24,
     "vision_night": 24,
     "path_settings": { "max_dist": 32 },
-    "special_attacks": [ [ "claw_5d3_heat", { "math": [ "5 + rand(4)" ] } ] ],
+    "special_attacks": [ [ "claw_17_heat", { "math": [ "1 + rand(2)" ] } ] ],
     "death_drops": "scarecrow_drops_burnt",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "flags": [ "BASHES", "HEARS", "NO_BREATHE", "PATH_AVOID_FALL", "SEES" ]
@@ -366,7 +369,7 @@
     "symbol": "|",
     "looks_like": "creepy_doll",
     "color": "pink",
-    "aggression": -5,
+    "aggression": 20,
     "morale": 99,
     "melee_skill": 6,
     "melee_dice": 2,

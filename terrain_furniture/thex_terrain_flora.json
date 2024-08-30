@@ -10,12 +10,33 @@
     "coverage": 80,
 	"move_cost": 0,
     "bash": {
-      "str_min": 80,
+      "str_min": 64,
       "str_max": 180,
       "sound": "crunch!",
       "sound_fail": "whack!",
       "ter_set": "t_dirt",
       "items": [ { "item": "stick_long", "count": [ 2, 8 ] }, { "item": "splinter", "count": [ 8, 24 ] } ]
+    },
+    "transforms_into": "t_tree_pine_harvested",
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ]
+  },
+  {
+    "id": "t_tree_calamophyton",
+	"type": "terrain",
+    "name": "calamophyton",
+    "description": "A middle-sized tree, similar to a kind of palm.  The soft-looking trunk is protected by short spikes, left overs from where leaves grew before reaching the current height.",
+	"symbol": "7",
+	"looks_like": "t_tree_almond_harvested",
+    "color": "green",
+    "coverage": 20,
+	"move_cost": 0,
+    "bash": {
+      "str_min": 24,
+      "str_max": 40,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "leaves", "count": [ 4, 8 ] }, { "item": "splinter", "count": [ 4, 12 ] } ]
     },
     "transforms_into": "t_tree_pine_harvested",
     "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ]
@@ -32,7 +53,7 @@
     "coverage": 20,
     "move_cost": 1,
     "bash": {
-      "str_min": 12,
+      "str_min": 24,
       "str_max": 80,
       "sound": "crunch!",
       "sound_fail": "whack!",
@@ -125,8 +146,8 @@
     "coverage": 31,
     "move_cost": 0,
     "bash": {
-      "str_min": 12,
-      "str_max": 40,
+      "str_min": 24,
+      "str_max": 64,
       "sound": "crunch.",
       "sound_fail": "whish.",
       "ter_set": "t_dirt",
@@ -145,13 +166,34 @@
     "coverage": 20,
     "move_cost": 0,
     "bash": {
-      "str_min": 4,
-      "str_max": 40,
+      "str_min": 24,
+      "str_max": 64,
       "sound": "crunch!",
       "sound_fail": "whack!",
       "ter_set": "t_dirt",
       "items": [ { "item": "leaves", "count": [ 4, 8 ] } ]
     },
     "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOITEM", "REDUCE_SCENT" ]
+  },
+  {
+    "id": "t_tree_sanfordiacaulis",
+	"type": "terrain",
+    "name": "sanfordiacaulis",
+    "description": "A somewhat short, bush-like tree.  The trunk supports a canopy of very dense, strip-shaped leaves with perpendicular needles growing up from them.",
+	"symbol": "7",
+	"looks_like": "t_tree_almond_harvested",
+    "color": "green",
+    "coverage": 20,
+	"move_cost": 0,
+    "bash": {
+      "str_min": 24,
+      "str_max": 40,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "stick_long", "count": [ 0, 1 ] }, { "item": "leaves", "count": [ 4, 8 ] } ]
+    },
+    "transforms_into": "t_tree_pine_harvested",
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ]
   }
 ]

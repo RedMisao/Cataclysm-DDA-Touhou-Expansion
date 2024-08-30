@@ -32,8 +32,12 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "reproduction": { "baby_monster": "mon_chupacabra_young", "baby_count": 3, "baby_timer": 60 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "slash_3d3", { "math": [ "3 + rand(1)" ] } ] ],
-    "flags": [ "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
+      [ "slash_15", { "math": [ "1 + rand(2)" ] } ] 
+    ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "These are what show up when you google 'chupacabra mange'. Former dogs/dog-sized canids, now at the boundary of being diseased animals and newborn youkai"
   },
   {
@@ -88,8 +92,12 @@
     "vision_night": 16,
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "HURT" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "slash_2d3", { "math": [ "2 + rand(2)" ] } ] ],
-    "flags": [ "CLIMBS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
+      [ "slash_15", { "math": [ "1 + rand(2)" ] } ] 
+    ],
+    "flags": [ "CLIMBS", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
     "//": "Implement ALCOHOL as placate_triggers...",
     "//2": "These are the actual chupacabra cryptids, if a very small version"
   },
@@ -101,16 +109,16 @@
     "volume": "100 L",
     "weight": "100 kg",
     "default_faction": "touhou_youkai_hostile",
-    "bodytype": "dog",
+    "bodytype": "human",
     "categories": [ "NULL" ],
     "species": [ "YOUKAI_HOSTILE_TOUHOU" ],
     "harvest": "mammal_noleather_harvest",
     "hp": 125,
-    "speed": 200,
+    "speed": 175,
     "material": [ "flesh" ],
     "symbol": "ε",
     "color": "white",
-    "aggression": 15,
+    "aggression": 20,
     "morale": 25,
     "regen_morale": true,
     "regenerates": 2,
@@ -127,7 +135,19 @@
     "vision_night": 24,
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "special_attacks": [ [ "ABSORB_MEAT", { "math": [ "50 + rand(20)" ] } ], [ "bite_5d3", { "math": [ "6 + rand(4)" ] } ], { "spell_data": { "id": "bodyslam" }, "type": "spell", "cooldown": { "math": [ "15 + rand(10)" ] } } ],
+    "special_attacks": [ 
+      [ "ABSORB_MEAT", { "math": [ "50 + rand(20)" ] } ], 
+      {
+        "type": "leap",
+        "condition": { "not": { "u_has_effect": "maimed_leg" } },
+        "cooldown": { "math": [ "9 + rand(11)" ] },
+        "move_cost": 100,
+        "min_consider_range": 3,
+        "max_range": 4,
+        "ignore_dest_danger": true,
+        "message": "The beast charges!"
+      }
+    ],
     "flags": [ "BASHES", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -148,10 +168,9 @@
     "symbol": "W",
     "looks_like": "mon_wolf_mutant_huge",
     "color": "black",
-    "aggression": 85,
+    "aggression": 99,
     "morale": 35,
     "regen_morale": true,
-    "regenerates": 1,
     "melee_skill": 10,
     "melee_dice": 4,
     "melee_dice_sides": 10,
@@ -165,9 +184,20 @@
     "vision_night": 32,
     "path_settings": { "max_dist": 32, "avoid_traps": true, "avoid_dangerous_fields": true },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "LUNGE", { "math": [ "10 + rand(10)" ] } ], [ "bite_neck_6d4", { "math": [ "5 + rand(3)" ] } ] ],
-    "flags": [ "BASHES", "CLIMBS", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ],
-    "//": "Silver-based attacks should do x2-x4 damage"
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
+      [ "LUNGE", { "math": [ "7 + rand(17)" ] } ],
+      { 
+        "id": "mon_gevaudan_1", 
+        "type": "spell", 
+        "spell_data": { "id": "gevaudan_heal" }, 
+        "condition": { "not": { "u_has_effect": "gevaudan_noregen" } },
+        "cooldown": { "math": [ "11 + rand(11)" ] }, 
+        "allow_no_target": true 
+      }
+    ],
+    "flags": [ "BASHES", "CLIMBS", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   },
   {
     "id": "mon_jackalope",
@@ -194,7 +224,11 @@
     },
     "families": [ "prof_wp_youkai" ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], [ "leg_gore_4d2", { "math": [ "4 + rand(3)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
+      [ "leg_gore_10", { "math": [ "1 + rand(2)" ] } ] 
+    ],
     "flags": [ "EATS", "GOODHEARING", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -230,7 +264,12 @@
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "reproduction": { "baby_monster": "mon_jinmenken_young", "baby_count": 2, "baby_timer": 30 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], [ "PARROT", { "math": [ "25 + rand(10)" ] } ], [ "PARROT_AT_DANGER", { "math": [ "15 + rand(10)" ] } ] ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
+      [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], 
+      [ "PARROT", { "math": [ "25 + rand(10)" ] } ], 
+      [ "PARROT_AT_DANGER", { "math": [ "15 + rand(10)" ] } ] 
+    ],
     "flags": [ "CORNERED_FIGHTER", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -272,7 +311,7 @@
     "material": [ "flesh" ],
     "symbol": "ʞ",
     "color": "white",
-    "aggression": -5,
+    "aggression": 20,
     "morale": 99,
     "regenerates": 2,
     "melee_skill": 8,
@@ -288,9 +327,9 @@
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "special_attacks": [
-      { "id": "mon_kunekune_fear_paralyze", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": { "math": [ "25 + rand(20)" ] } },
-      { "id": "mon_kunekune_stare", "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": { "math": [ "25 + rand(10)" ] } },
-      { "id": "mon_kunekune_paralyze_100", "type": "spell", "spell_data": { "id": "paralyze_100" }, "monster_message": "", "cooldown": { "math": [ "25 + rand(10)" ] } }
+      { "id": "mon_kunekune_1", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "cooldown": { "math": [ "25 + rand(20)" ] }, "monster_message": "" },
+      { "id": "mon_kunekune_2", "type": "spell", "spell_data": { "id": "stare" }, "cooldown": { "math": [ "25 + rand(10)" ] }, "monster_message": "" },
+      { "id": "mon_kunekune_3", "type": "spell", "spell_data": { "id": "paralyze_3" }, "cooldown": { "math": [ "5 + rand(13)" ] }, "monster_message": "" }
     ],
     "death_function": { "message": "The %s dissipates into air.", "corpse_type": "NO_CORPSE" },
     "flags": [ "HEARS", "IMMOBILE", "KEENNOSE", "SEES" ]
@@ -312,7 +351,7 @@
     "material": [ "flesh" ],
     "symbol": "Λ",
     "color": "white",
-    "aggression": -15,
+    "aggression": 5,
     "morale": 25,
     "melee_skill": 4,
     "melee_dice": 3,
@@ -381,7 +420,7 @@
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 16, "acid": 4, "biological": 4, "cold": 4, "electric": 16, "heat": 16 },
     "families": [ "prof_wp_youkai", "prof_wp_basic_bug" ],
     "stomach_size": 15000,
-    "bleed_rate": 125,
+    "bleed_rate": 133,
     "emit_fields": [ { "emit_id": "emit_shock_burst", "delay": "13 s" } ],
     "vision_day": 24,
     "vision_night": 24,
@@ -389,11 +428,11 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], 
-      { "id": "mon_olgoi_poison", "spell_data": { "id": "olgoi_poison" }, "type": "spell", "cooldown": { "math": [ "6 + rand(2)" ] } },
-      { "id": "mon_olgoi_shock", "spell_data": { "id": "olgoi_shock" }, "type": "spell", "cooldown": { "math": [ "10 + rand(2)" ] } }
+      { "id": "mon_olgoi_1", "type": "spell", "spell_data": { "id": "olgoi_poison" }, "cooldown": { "math": [ "1 + rand(2)" ] } },
+      { "id": "mon_olgoi_2", "type": "spell", "spell_data": { "id": "olgoi_shock" }, "cooldown": { "math": [ "1 + rand(2)" ] } }
     ],
     "death_function": { "message": "The %s squirms, twitches, and finally dies.", "corpse_type": "NORMAL" },
-    "flags": [ "ACIDPROOF", "ATTACK_LOWER", "DIGS", "ELECTRIC", "HEARS", "NOHEAD", "SLUDGEPROOF", "VENOM" ],
+    "flags": [ "ACIDPROOF", "ATTACK_LOWER", "DIGS", "EATS", "ELECTRIC", "HEARS", "NOHEAD", "SLUDGEPROOF", "VENOM" ],
     "//": "Mongolian death worm, bigger than 'official' reports"
   },
   {
@@ -414,7 +453,7 @@
     "symbol": "α",
     "looks_like": "bear",
     "color": "brown",
-    "aggression": -15,
+    "aggression": -5,
     "morale": 50,
     "melee_skill": 5,
     "melee_dice": 3,
@@ -448,7 +487,7 @@
     "symbol": "ṁ",
     "looks_like": "mon_megatherium",
     "color": "brown",
-    "aggression": 65,
+    "aggression": 50,
     "morale": 65,
     "melee_skill": 6,
     "melee_dice": 3,
@@ -473,7 +512,7 @@
     "description": "The abominable snowman.  Looks and walks like a big gorilla, walking on two legs, with gray, not white fur covering its body.  Seems unlikely to look for friends during snowstorms.",
     "default_faction": "touhou_yeti",
     "color": "dark_gray",
-    "aggression": 5,
+    "aggression": 20,
     "melee_skill": 5,
     "melee_dice": 3,
     "melee_dice_sides": 8,
@@ -507,7 +546,7 @@
     "looks_like": "mon_feral_human_pipe",
 	"//": "Not really, but it's the closest thing I guess",
     "color": "light_gray",
-    "aggression": -10,
+    "aggression": -5,
     "morale": 25,
     "melee_skill": 8,
     "melee_dice": 3,
@@ -524,7 +563,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_NEAR_BABY", "STALK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
     "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ] ],
-    "flags": [ "BASHES", "GOODHEARING", "GROUP_BASH", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SWIMS" ]
+    "flags": [ "BASHES", "EATS", "GOODHEARING", "GROUP_BASH", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SWIMS" ]
   },
   {
     "id": "mon_squonk",
@@ -555,7 +594,10 @@
     "path_settings": { "max_dist": 8 },
     "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
     "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
-    "special_attacks": [ [ "ABSORB_MEAT", { "math": [ "80 + rand(40)" ] } ], { "spell_data": { "id": "squonk_dissolve" }, "type": "spell", "cooldown": 3 } ],
+    "special_attacks": [ 
+      [ "ABSORB_MEAT", { "math": [ "80 + rand(40)" ] } ], 
+      { "id": "mon_squonk_1", "type": "spell", "spell_data": { "id": "squonk_dissolve" }, "cooldown": 3 } 
+    ],
     "biosignature": { "biosig_item": "water", "biosig_timer": 4 },
     "flags": [ "HEARS", "PATH_AVOID_DANGER", "PACIFIST", "SEES", "SMELLS", "WARM" ],
     "//": "The squonk should go around, run from the player when encountered, until it reaches the anger_triggers threshold, then casts squonk_dissolve and transforms into the harvest-less, drop-less mon_squonk_death to finish the death process. It would be harvestable only if caught by surprise"
@@ -573,7 +615,9 @@
     "vision_night": 99,
     "path_settings": { "max_dist": 99 },
     "death_function": { "message": "The %s dissolves in its own tears!", "corpse_type": "NO_CORPSE" },
-    "special_attacks": [ { "spell_data": { "id": "squonk_death_dissolve" }, "type": "spell", "cooldown": 3 } ],
+    "special_attacks": [ 
+      { "id": "mon_squonk_death_1", "type": "spell", "spell_data": { "id": "squonk_death_dissolve" }, "cooldown": 3 } 
+    ],
     "biosignature": { "biosig_item": "water", "biosig_timer": 1 },
     "flags": [ "ALWAYS_SEES_YOU", "GOODHEARING", "IMMOBILE", "KEENNOSE", "NO_BREATHE", "PACIFIST", "SEES", "WARM" ]
   },

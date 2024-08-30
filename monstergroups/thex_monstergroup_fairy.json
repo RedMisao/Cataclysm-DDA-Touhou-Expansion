@@ -8,8 +8,7 @@
       { "monster": "mon_fairy3", "weight": 100, "starts": "2 days" },
       { "monster": "mon_fairy4", "weight": 100, "starts": "2 days" },
       { "monster": "mon_fairy5", "weight": 100, "starts": "2 days" },
-      { "monster": "mon_fairy6", "weight": 100, "starts": "2 days" },
-      { "monster": "mon_fairy7", "weight": 100, "starts": "2 days" }
+      { "monster": "mon_fairy6", "weight": 100, "starts": "2 days" }
     ]
   },
   {
@@ -37,7 +36,8 @@
       { "monster": "mon_fairy_fungus2", "weight": 100, "starts": "2 days" },
       { "monster": "mon_fairy_fungus3", "weight": 100, "starts": "2 days" },
       { "monster": "mon_fairy_fungus4", "weight": 100, "starts": "2 days" },
-      { "monster": "mon_fairy_fungus5", "weight": 100, "starts": "2 days" }
+      { "monster": "mon_fairy_fungus5", "weight": 100, "starts": "2 days" },
+      { "monster": "mon_fairy_fungus6", "weight": 100, "starts": "2 days" }
     ]
   },
   {

@@ -1,6 +1,6 @@
 [
   {
-    "id": "mon_fairy_base",
+    "abstract": "mon_fairy_base",
     "type": "MONSTER",
     "name": { "str": "fairy (base)", "str_pl": "fairy (base)" },
     "description": "A small humanoid, similar to a child.  Wearing clothes that make them look like dolls, they seem happy playing together, with little regard to their safety.",
@@ -16,10 +16,10 @@
     "material": [ "flesh" ],
     "symbol": "f",
     "color": "black",
-    "aggression": -5,
+    "aggression": 15,
     "morale": 50,
     "melee_skill": 5,
-    "melee_dice": 2,
+    "melee_dice": 3,
     "melee_dice_sides": 3,
     "melee_damage": [ { "damage_type": "bash", "amount": 3 } ],
     "dodge": 5,
@@ -33,7 +33,6 @@
       "subtype": "collection",
       "groups": [ [ "fairy_drops", 100 ], [ "thex_drops_placeholder", 1 ] ]
     },
-    "fungalize_into": "mon_fairy_fungus1",
     "upgrades": { "half_life": 42, "into_group": "GROUP_FAIRY_UPGRADE" },
     "death_function": { "effect": { "id": "death_fairy", "hit_self": true }, "message": "pichun!" },
     "flags": [ "CLIMBS", "FLIES", "GROUP_MORALE", "HAS_MIND", "HEARS", "HIT_AND_RUN", "NOGIB", "PATH_AVOID_FIRE", "SEES", "SMALL_HIDER", "SWARMS", "WARM" ],
@@ -44,14 +43,17 @@
     "type": "MONSTER",
     "name": { "str": "fairy", "str_pl": "fairies" },
     "copy-from": "mon_fairy_base",
-    "color": "blue"
+    "color": "blue",
+    "zombify_into": "mon_fairy_blob1",
+    "fungalize_into": "mon_fairy_fungus1"
   },
   {
     "id": "mon_fairy2",
     "type": "MONSTER",
     "name": { "str": "fairy", "str_pl": "fairies" },
     "copy-from": "mon_fairy_base",
-    "color": "light_blue",
+    "color": "red",
+    "zombify_into": "mon_fairy_blob2",
     "fungalize_into": "mon_fairy_fungus2"
   },
   {
@@ -60,6 +62,7 @@
     "name": { "str": "fairy", "str_pl": "fairies" },
     "copy-from": "mon_fairy_base",
     "color": "light_green",
+    "zombify_into": "mon_fairy_blob3",
     "fungalize_into": "mon_fairy_fungus3"
   },
   {
@@ -68,6 +71,7 @@
     "name": { "str": "fairy", "str_pl": "fairies" },
     "copy-from": "mon_fairy_base",
     "color": "yellow",
+    "zombify_into": "mon_fairy_blob1",
     "fungalize_into": "mon_fairy_fungus4"
   },
   {
@@ -75,7 +79,8 @@
     "type": "MONSTER",
     "name": { "str": "fairy", "str_pl": "fairies" },
     "copy-from": "mon_fairy_base",
-    "color": "light_red",
+    "color": "pink",
+    "zombify_into": "mon_fairy_blob2",
     "fungalize_into": "mon_fairy_fungus5"
   },
   {
@@ -83,55 +88,32 @@
     "type": "MONSTER",
     "name": { "str": "fairy", "str_pl": "fairies" },
     "copy-from": "mon_fairy_base",
-    "color": "red",
-    "fungalize_into": "mon_fairy_fungus1"
+    "color": "white",
+    "zombify_into": "mon_fairy_blob3",
+    "fungalize_into": "mon_fairy_fungus6"
   },
   {
-    "id": "mon_fairy7",
-    "type": "MONSTER",
-    "name": { "str": "fairy", "str_pl": "fairies" },
-    "copy-from": "mon_fairy_base",
-    "color": "pink",
-    "fungalize_into": "mon_fairy_fungus2"
-  },
-  {
-    "id": "mon_fairy_blob_base",
+    "abstract": "mon_fairy_blob_base",
     "type": "MONSTER",
     "name": { "str": "fairy (zombie) (base)", "str_pl": "fairy (zombie) (base)" },
-	"//": "Zombie as in cdda zombie, not the zombie fairies from th10",
+    "copy-from": "mon_fairy_base",
     "description": "A fairy that seems to be cosplaying one of those weird outsiders *too* well.",
-    "volume": "25000 ml",
-    "weight": "30000 g",
     "default_faction": "touhou_fairy_blob",
-    "bodytype": "angel",
-    "categories": [ "NULL" ],
-    "species": [ "FAIRY_TOUHOU", "ZOMBIE" ],
-    "harvest": "exempt",
     "hp": 30,
     "speed": 100,
-    "material": [ "flesh" ],
-    "symbol": "f",
-    "color": "black",
-    "aggression": 15,
+    "aggression": 25,
     "morale": 99,
     "melee_skill": 4,
-    "melee_dice": 2,
+    "melee_dice": 3,
     "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 3,
-    "armor": { "bash": 1, "cut": 1, "stab": 1, "bullet": 1, "acid": 1, "biological": 1, "cold": 1, "electric": 1, "heat": 1, "soul": 4 },
     "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_zombie", "prof_wp_fairy" ],
-    "weakpoint_sets": [ "wps_humanoid_body", "wps_fairy_body" ],
-    "path_settings": { "allow_climb_stairs": true, "allow_open_doors": true },
     "vision_day": 20,
-    "vision_night": 12,
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "fairy_drops", 100 ], [ "thex_drops_placeholder", 1 ] ]
-    },
-    "death_function": { "effect": { "id": "death_fairy", "hit_self": true }, "message": "pichun!" },
+    "vision_night": 8,
     "flags": [ "CLIMBS", "FLIES", "GROUP_MORALE", "HAS_MIND", "HEARS", "HIT_AND_RUN", "NOGIB", "PATH_AVOID_FIRE", "SEES", "SMALL_HIDER", "STUMBLES", "SWARMS", "WARM" ],
-	"//2": "Same base stats as mon_fairy_base . Should not spawn",
+	"//": "Template only, slightly reduced stats relative to mon_fairy_base ",
+	"//2": "Zombie as in cdda zombie, not the zombie fairies from th10",
 	"//3": "btw, and similar to all fairies below, these are merely cosplaying blob infestation, like the zombie fairies from th10 are cosplaying undeath. Or maybe not"
   },
   {
@@ -139,59 +121,44 @@
     "type": "MONSTER",
     "name": { "str": "fairy (zombie)", "str_pl": "fairies (zombie)" },
     "copy-from": "mon_fairy_blob_base",
-    "color": "light_green"
+    "color": "light_green",
+    "fungalize_into": "mon_fairy_fungus1"
   },
   {
     "id": "mon_fairy_blob2",
     "type": "MONSTER",
     "name": { "str": "fairy (zombie)", "str_pl": "fairies (zombie)" },
     "copy-from": "mon_fairy_blob_base",
-    "color": "green"
+    "color": "green",
+    "fungalize_into": "mon_fairy_fungus2"
   },
   {
     "id": "mon_fairy_blob3",
     "type": "MONSTER",
     "name": { "str": "fairy (zombie)", "str_pl": "fairies (zombie)" },
     "copy-from": "mon_fairy_blob_base",
-    "color": "dark_gray"
+    "color": "dark_gray",
+    "fungalize_into": "mon_fairy_fungus3"
   },
   {
-    "id": "mon_fairy_fungus_base",
+    "abstract": "mon_fairy_fungus_base",
     "type": "MONSTER",
     "name": { "str": "fairy (fungal) (base)", "str_pl": "fairy (fungal) (base)" },
+    "copy-from": "mon_fairy_base",
     "description": "The average fairy, now assuming the identity of those funny smelling outsiders.  They look… sick?",
-    "volume": "25000 ml",
-    "weight": "30000 g",
     "default_faction": "touhou_fairy_fungus",
-    "bodytype": "angel",
-    "categories": [ "NULL" ],
-    "species": [ "FAIRY_TOUHOU", "FUNGUS" ],
-    "harvest": "exempt",
-    "hp": 30,
     "speed": 135,
-    "material": [ "flesh" ],
-    "symbol": "f",
-    "color": "black",
     "aggression": 10,
     "morale": 50,
     "melee_skill": 4,
-    "melee_dice": 2,
+    "melee_dice": 3,
     "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "bash", "amount": 2 } ],
+    "melee_damage": [ { "damage_type": "bash", "amount": 3 } ],
     "dodge": 3,
     "armor": { "bash": 1, "cut": 1, "stab": 1, "bullet": 1, "acid": 1, "biological": 1, "cold": 1, "electric": 4, "heat": 1, "soul": 4 },
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_zombie", "prof_wp_fairy" ],
-    "weakpoint_sets": [ "wps_humanoid_body", "wps_fairy_body" ],
-    "path_settings": { "allow_climb_stairs": true, "allow_open_doors": true },
-    "vision_day": 20,
-    "vision_night": 12,
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "fairy_drops", 100 ], [ "thex_drops_placeholder", 1 ] ]
-    },
-    "death_function": { "effect": { "id": "death_fairy", "hit_self": true }, "message": "pichun!" },
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_fairy" ],
     "flags": [ "CLIMBS", "FLIES", "GROUP_MORALE", "HAS_MIND", "HEARS", "HIT_AND_RUN", "NOGIB", "PATH_AVOID_FIRE", "SEES", "SMALL_HIDER", "SWARMS", "WARM" ],
-	"//": "Same base stats as mon_fairy_base . Should not spawn"
+	"//": "Template only, slightly reduced stats relative to mon_fairy_base "
   },
   {
     "id": "mon_fairy_fungus1",
@@ -219,7 +186,7 @@
     "type": "MONSTER",
     "name": { "str": "fairy (fungal)", "str_pl": "fairies (fungal)" },
     "copy-from": "mon_fairy_fungus_base",
-    "color": "yellow"
+    "color": "white"
   },
   {
     "id": "mon_fairy_fungus5",
@@ -229,43 +196,26 @@
     "color": "light_red"
   },
   {
-    "id": "mon_fairy_urban_base",
+    "id": "mon_fairy_fungus6",
+    "type": "MONSTER",
+    "name": { "str": "fairy (fungal)", "str_pl": "fairies (fungal)" },
+    "copy-from": "mon_fairy_fungus_base",
+    "color": "brown"
+  },
+  {
+    "abstract": "mon_fairy_urban_base",
     "type": "MONSTER",
     "name": { "str": "fairy (urban)", "str_pl": "fairy (urban)" },
+    "copy-from": "mon_fairy_base",
     "description": "A fairy, fully adapted to the modern urban life of the outside world.",
-    "volume": "25000 ml",
-    "weight": "30000 g",
-    "default_faction": "touhou_fairy",
-    "bodytype": "angel",
-    "categories": [ "NULL" ],
-    "species": [ "FAIRY_TOUHOU" ],
-    "harvest": "exempt",
     "hp": 40,
-    "speed": 150,
-    "material": [ "flesh" ],
-    "symbol": "f",
-    "color": "black",
-    "aggression": -5,
-    "morale": 50,
     "melee_skill": 5,
     "melee_dice": 3,
     "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "bash", "amount": 2 } ],
+    "melee_damage": [ { "damage_type": "bash", "amount": 3 } ],
     "dodge": 5,
     "armor": { "bash": 1, "cut": 1, "stab": 1, "bullet": 1, "acid": 1, "biological": 1, "cold": 1, "electric": 1, "heat": 1, "soul": 4 },
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_fairy" ],
-    "weakpoint_sets": [ "wps_humanoid_body", "wps_fairy_body" ],
-    "path_settings": { "allow_climb_stairs": true, "allow_open_doors": true },
-    "vision_day": 24,
-    "vision_night": 12,
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "fairy_drops", 100 ], [ "thex_drops_placeholder", 1 ] ]
-    },
-    "fungalize_into": "mon_fairy_fungus1",
-    "death_function": { "effect": { "id": "death_fairy", "hit_self": true }, "message": "pichun!" },
-    "flags": [ "CLIMBS", "FLIES", "GROUP_MORALE", "HAS_MIND", "HEARS", "HIT_AND_RUN", "NOGIB", "PATH_AVOID_FIRE", "SEES", "SMALL_HIDER", "SWARMS", "WARM" ],
-	"//": "Should not spawn"
+	"//": "Template only"
   },
   {
     "id": "mon_fairy_urban1",
@@ -302,6 +252,7 @@
     "copy-from": "mon_fairy_urban_base",
     "description": "A fairy, fully adapted to the modern urban life of the outside world.",
     "color": "light_red",
+    "zombify_into": "mon_fairy_blob1",
     "fungalize_into": "mon_fairy_fungus4",
 	"//": "Average Joe fairy"
   },
@@ -314,8 +265,9 @@
     "color": "yellow",
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2, "acid": 2, "biological": 2, "cold": 2, "electric": 2, "heat": 16, "soul": 4 },
     "special_attacks": [
-      { "spell_data": { "id": "firefighter_fairy_fire" }, "type": "spell", "cooldown": { "math": [ "6 + rand(2)" ] } }
+      { "id": "mon_fairy_urban3_1", "type": "spell", "spell_data": { "id": "firefighter_fairy_fire" }, "cooldown": { "math": [ "6 + rand(2)" ] } } 
     ],
+    "zombify_into": "mon_fairy_blob2",
     "fungalize_into": "mon_fairy_fungus5",
 	"extend": { "flags": [ "ACIDPROOF" ] },
 	"//": "Firefighter fairy, of the unexpected variety"
@@ -334,6 +286,7 @@
     "melee_damage": [ { "damage_type": "bash", "amount": 2 } ],
     "dodge": 4,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 16, "acid": 2, "biological": 2, "cold": 2, "electric": 2, "heat": 2, "soul": 4 },
+    "zombify_into": "mon_fairy_blob3",
     "fungalize_into": "mon_fairy_fungus1",
 	"extend": { "flags": [ "PUSH_MON" ] },
 	"//": "Cosplaying (?) a tough zombie before it became a zombie"
@@ -350,7 +303,9 @@
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "bash", "amount": 1 } ],
     "dodge": 3,
+    "zombify_into": "mon_fairy_blob1",
     "fungalize_into": "mon_fairy_fungus2",
 	"extend": { "flags": [ "PUSH_MON" ] },
 	"//": "Cosplaying (?) a fat zombie before it became a zombie"
