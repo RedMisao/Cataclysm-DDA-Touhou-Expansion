@@ -32,10 +32,10 @@
     "shape": "cone",
     "min_damage": 16,
     "max_damage": 24,
-    "min_aoe": 90,
-    "max_aoe": 90,
     "min_range": 3,
     "max_range": 3,
+    "min_aoe": 90,
+    "max_aoe": 90,
     "flags": [ "NO_LEGS", "NO_HANDS", "NO_PROJECTILE", "RANDOM_DAMAGE" ]
   },
   {
@@ -45,15 +45,15 @@
     "description": "stun component for neuralyser ",
     "spell_class": "NONE",
     "valid_targets": [ "ally", "ground", "hostile" ],
-    "effect": "attack",
-    "effect_str": "stunned",
+    "effect": "mod_moves",
     "shape": "cone",
-    "min_duration": 1,
-    "max_duration": 3,
-    "min_aoe": 90,
-    "max_aoe": 90,
+    "damage_type": "pure",
+    "min_damage": -100,
+    "max_damage": -300,
     "min_range": 3,
     "max_range": 3,
-    "flags": [ "NO_EXPLOSION_SFX", "NO_LEGS", "NO_HANDS", "NO_PROJECTILE", "RANDOM_DURATION" ]
+    "min_aoe": 90,
+    "max_aoe": 90,
+    "flags": [ "NO_EXPLOSION_SFX", "NO_LEGS", "NO_HANDS", "NO_PROJECTILE", "RANDOM_DAMAGE" ]
   }
 ]
