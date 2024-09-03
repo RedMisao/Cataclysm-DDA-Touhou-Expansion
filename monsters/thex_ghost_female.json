@@ -29,7 +29,7 @@
     "vision_night": 32,
     "path_settings": { "max_dist": 32 },
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s dissappears." },
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GRABS", "HEARS", "NO_BREATHE", "SEES", "STUN_IMMUNE" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GRABS", "HEARS", "NOGIB", "NO_BREATHE", "SEES", "STUN_IMMUNE" ],
     "//": "Template only"
   },
   {
@@ -63,7 +63,7 @@
       }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s dissappears." },
-    "flags": [ "BASHES", "GRABS", "HEARS", "NO_BREATHE", "SEES", "STUN_IMMUNE", "SWIMS", "WATER_CAMOUFLAGE" ]
+    "flags": [ "BASHES", "GRABS", "HEARS", "NOGIB", "NO_BREATHE", "SEES", "STUN_IMMUNE", "SWIMS", "WATER_CAMOUFLAGE" ]
   },
   {
     "id": "mon_lallorona",
@@ -99,7 +99,7 @@
       }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "%s dissappears." },
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GRABS", "HEARS", "NO_BREATHE", "SEES", "STUN_IMMUNE", "SWIMS" ]
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "GRABS", "HEARS", "NOGIB", "NO_BREATHE", "SEES", "STUN_IMMUNE", "SWIMS" ]
   },
   {
     "id": "mon_white_lady",
@@ -132,7 +132,7 @@
        }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "" },
-    "flags": [ "HEARS", "NO_BREATHE", "PACIFIST", "SEES", "SILENT_DISAPPEAR", "STUN_IMMUNE" ]
+    "flags": [ "HEARS", "NOGIB", "NO_BREATHE", "PACIFIST", "SEES", "SILENT_DISAPPEAR", "STUN_IMMUNE" ]
   },
   {
     "id": "mon_white_lady_angry",
@@ -166,6 +166,6 @@
       }
     ],
     "death_function": { "corpse_type": "NO_CORPSE", "message": "" },
-    "flags": [ "ALWAYS_SEES_YOU", "FLIES", "HEARS", "NO_BREATHE", "SEES", "SILENT_DISAPPEAR", "STUN_IMMUNE" ]
+    "flags": [ "ALWAYS_SEES_YOU", "FLIES", "HEARS", "NOGIB", "NO_BREATHE", "SEES", "SILENT_DISAPPEAR", "STUN_IMMUNE" ]
   }
 ]

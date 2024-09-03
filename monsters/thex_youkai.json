@@ -97,7 +97,7 @@
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
       [ "slash_15", { "math": [ "1 + rand(2)" ] } ] 
     ],
-    "flags": [ "CLIMBS", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "CLIMBS", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMALL_HIDER", "SMELLS", "WARM" ],
     "//": "Implement ALCOHOL as placate_triggers...",
     "//2": "These are the actual chupacabra cryptids, if a very small version"
   },
@@ -620,7 +620,7 @@
       }
     ],
     "biosignature": { "biosig_item": "water", "biosig_timer": 4 },
-    "flags": [ "HEARS", "PATH_AVOID_DANGER", "PACIFIST", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "HEARS", "PATH_AVOID_DANGER", "PACIFIST", "SEES", "SMALL_HIDER", "SMELLS", "WARM" ],
     "//": "The squonk should go around, and dissolve itself if it gets any of the anger_triggers or if the player gets too close",
     "//2": "Can't figure out how to make it die + leave a water puddle + not print the 'The squonk dies!' message"
   },

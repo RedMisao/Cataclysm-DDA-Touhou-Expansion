@@ -143,7 +143,7 @@
     "families": [ "prof_wp_youkai" ],
     "vision_night": 32,
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
-    "flags": [ "CAN_OPEN_DOORS", "HARDTOSHOOT", "HEARS", "PATH_AVOID_DANGER", "SEES" ],
+    "flags": [ "CAN_OPEN_DOORS", "HARDTOSHOOT", "HEARS", "NOGIB", "PATH_AVOID_DANGER", "SEES" ],
     "//": "Demon-ish component to the MIB urban legend"
   },
   {
@@ -212,7 +212,7 @@
     "vision_night": 24,
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
-    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "NO_BREATHE", "PRIORITIZE_TARGETS", "SEES" ],
+    "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "NOGIB", "NO_BREATHE", "PRIORITIZE_TARGETS", "SEES" ],
     "//": "Unstoppable 'human' component to the MIB urban legend. This should have trash bionics (100% unusable) and other biomechanical stuff inside"
   },
   {
