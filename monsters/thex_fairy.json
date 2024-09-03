@@ -265,7 +265,13 @@
     "color": "yellow",
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2, "acid": 2, "biological": 2, "cold": 2, "electric": 2, "heat": 16, "soul": 4 },
     "special_attacks": [
-      { "id": "mon_fairy_urban3_1", "type": "spell", "spell_data": { "id": "firefighter_fairy_fire" }, "cooldown": { "math": [ "6 + rand(2)" ] } } 
+      { 
+        "id": "mon_fairy_urban3_1", 
+        "type": "spell", 
+        "spell_data": { "id": "firefighter_fairy_fire" }, 
+        "cooldown": { "math": [ "6 + rand(2)" ] }, 
+        "monster_message": "The fire fighter fairy shoots fire!" 
+      } 
     ],
     "zombify_into": "mon_fairy_blob2",
     "fungalize_into": "mon_fairy_fungus5",

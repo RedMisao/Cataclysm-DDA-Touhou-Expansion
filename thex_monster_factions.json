@@ -316,11 +316,11 @@
     "//": "not really aggressive unless provoked"
   },
   {
-    "name": "touhou_youkai_female",
+    "name": "touhou_shadow_faction",
     "type": "MONSTER_FACTION",
-    "neutral": [ "touhou_youkai_hostile", "touhou_youkai_neutral" ],
-    "by_mood": [ "bot", "animal", "fungus", "kraken", "mi-go", "mutant", "triffid" ],
-    "hate": [ "exodii", "human", "your_followers", "zombie", "touhou_mib" ]
+    "by_mood": [ "bot", "animal", "fungus", "kraken", "mi-go", "mutant", "triffid", "touhou_youkai_hostile", "touhou_youkai_neutral", "touhou_mib" ],
+    "hate": [ "exodii", "human", "your_followers", "zombie" ],
+    "//": "The same as touhou_youkai_hostile but prevents self-attacking"
   },
   {
     "name": "touhou_youkai_hostile",

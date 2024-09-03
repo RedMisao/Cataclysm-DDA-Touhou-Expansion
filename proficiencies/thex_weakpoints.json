@@ -48,6 +48,18 @@
     "//": "I can't think of a way to give ghosts and phantoms proper weakpoints so this is a dummy proficiency"
   },
   {
+    "id": "prof_wp_shadow",
+    "type": "proficiency",
+    "category": "prof_weakpoint",
+    "name": { "str": "Shadow Physiology (?)" },
+    "description": "Basic familiarity with shadows and related entities… bodies?",
+    "can_learn": true,
+    "time_to_learn": "16 h",
+    "default_weakpoint_bonus": 3,
+    "default_weakpoint_penalty": -2,
+    "//": "I can't think of a way to give shadows proper weakpoints so this is a dummy proficiency"
+  },
+  {
     "id": "prof_wp_youkai",
     "type": "proficiency",
     "category": "prof_weakpoint",

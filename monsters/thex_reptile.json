@@ -147,7 +147,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_7" }, 
+        "spell_data": { "id": "sprint_spell_7_f", "hit_self": true }, 
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -155,12 +155,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "14 + rand(14)" ] } 
+        "cooldown": { "math": [ "14 + rand(14)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true }, 
         "condition": {
           "and": [
             "u_is_underwater",
@@ -171,7 +172,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS" ],
@@ -234,7 +236,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_3" }, 
+        "spell_data": { "id": "sprint_spell_3", "hit_self": true }, 
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -242,12 +244,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "6 + rand(6)" ] }
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true }, 
         "condition": {
           "and": [
             "u_is_underwater",
@@ -258,7 +261,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE", "SWARMS" ],
@@ -294,7 +298,6 @@
     "copy-from": "mon_pseudosuchia_runner",
     "description": "A large crocodile-looking animal.  It proudly stands over the ground, supported by strong legs that end in hooves.  Unlike modern crocodiles, this is perfectly capable of running not so short distances.",
     "bodytype": "pig",
-    "speed": 150,
     "material": [ "flesh" ],
     "symbol": "ḃ",
     "looks_like": "mon_gator",
@@ -307,7 +310,13 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_7_f", "hit_self": true }, 
+        "cooldown": { "math": [ "11 + rand(11)" ] }, 
+        "monster_message": "" 
+      }  
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Boverisuchus sp. No reproductive data"
@@ -413,7 +422,13 @@
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
       [ "grab", { "math": [ "15 + rand(10)" ] } ], 
-      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_7_f", "hit_self": true }, 
+        "cooldown": { "math": [ "11 + rand(11)" ] }, 
+        "monster_message": "" 
+      }  
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Carnufex sp. No reproductive data"
@@ -468,7 +483,13 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "100 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "100 + rand(40)" ] } ], 
-      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_3" }, "cooldown": { "math": [ "6 + rand(6)" ] } } 
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3", "hit_self": true }, 
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
+      } 
     ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS" ],
     "//": "Based on Erythrosuchus sp. No reproductive data"
@@ -522,7 +543,13 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_7_f", "hit_self": true }, 
+        "cooldown": { "math": [ "11 + rand(11)" ] }, 
+        "monster_message": "" 
+      }  
     ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS" ],
     "//": "Based on Fasolasuchus sp. No reproductive data"
@@ -579,7 +606,13 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_5" }, "cooldown": { "math": [ "10 + rand(10)" ] } } 
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_5_f", "hit_self": true }, 
+        "cooldown": { "math": [ "10 + rand(10)" ] }, 
+        "monster_message": "" 
+      } 
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
     "//": "Based on Hesperosuchus sp. No reproductive data"
@@ -752,7 +785,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_3" }, 
+        "spell_data": { "id": "sprint_spell_3", "hit_self": true },  
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -760,12 +793,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "6 + rand(6)" ] }
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true }, 
         "condition": {
           "and": [
             "u_is_underwater",
@@ -776,7 +810,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE", "SWARMS" ],
@@ -887,7 +922,13 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "65 + rand(40)" ] } ], 
       [ "EAT_FOOD", { "math": [ "65 + rand(40)" ] } ], 
-      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_7" }, "cooldown": { "math": [ "11 + rand(11)" ] } }  
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_7_f", "hit_self": true }, 
+        "cooldown": { "math": [ "11 + rand(11)" ] }, 
+        "monster_message": "" 
+      }  
     ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS" ],
     "//": "Based on Prestosuchus sp. No reproductive data"
@@ -941,7 +982,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_3" }, 
+        "spell_data": { "id": "sprint_spell_3", "hit_self": true }, 
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -949,12 +990,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "6 + rand(6)" ] }
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true }, 
         "condition": {
           "and": [
             "u_is_underwater",
@@ -965,7 +1007,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
@@ -1140,7 +1183,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_3" }, 
+        "spell_data": { "id": "sprint_spell_3", "hit_self": true },  
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -1148,12 +1191,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "6 + rand(6)" ] }
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true }, 
         "condition": {
           "and": [
             "u_is_underwater",
@@ -1164,7 +1208,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PUSH_MON", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],

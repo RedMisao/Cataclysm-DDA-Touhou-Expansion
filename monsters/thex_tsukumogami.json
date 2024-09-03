@@ -22,7 +22,7 @@
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "electric", "amount": 6 } ],
+    "melee_damage": [ { "damage_type": "electric", "amount": 3 } ],
     "dodge": 2,
     "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2, "acid": 4, "biological": 4, "cold": 4, "electric": 16, "heat": 4 },
     "luminance": 2,
@@ -34,7 +34,19 @@
 	"grab_strength": 16,
     "special_attacks": [ 
       [ "shock_15", { "math": [ "1 + rand(2)" ] } ], 
-      { "id": "mon_computer_possessed_1", "type": "spell", "spell_data": { "id": "entangle" }, "cooldown": { "math": [ "7 + rand(5)" ] } } 
+      { 
+        "id": "mon_computer_possessed_1", 
+        "type": "spell", 
+        "spell_data": { "id": "entangle" }, 
+        "condition": {
+          "and": [
+            { "not": { "npc_has_effect": "zapped" } },
+            { "not": { "npc_has_effect": "entangle_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "7 + rand(5)" ] }, 
+        "monster_message": "" 
+      } 
     ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK" ],
     "flags": [ "ELECTRIC", "HEARS", "NO_BREATHE", "SEES" ]
@@ -65,7 +77,19 @@
     },
     "special_attacks": [ 
       [ "shock_11", { "math": [ "1 + rand(2)" ] } ],
-      { "id": "mon_computer_laptop_possessed_1", "type": "spell", "spell_data": { "id": "entangle" }, "cooldown": { "math": [ "7 + rand(5)" ] } } 
+      { 
+        "id": "mon_computer_laptop_possessed_1", 
+        "type": "spell", 
+        "spell_data": { "id": "entangle" }, 
+        "condition": {
+          "and": [
+            { "not": { "npc_has_effect": "zapped" } },
+            { "not": { "npc_has_effect": "entangle_effect" } }
+          ]
+        },
+        "cooldown": { "math": [ "7 + rand(5)" ] }, 
+        "monster_message": "" 
+      } 
     ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK" ],
     "flags": [ "ELECTRIC", "HARDTOSHOOT", "HEARS", "NO_BREATHE", "SEES" ]
@@ -100,7 +124,13 @@
     "vision_day": 6,
     "vision_night": 16,
     "special_attacks": [ 
-      { "id": "mon_scarecrow_inactive_1", "type": "spell", "spell_data": { "id": "scarecrow_wakeup" }, "cooldown": 1 } 
+      { 
+        "id": "mon_scarecrow_inactive_1", 
+        "type": "spell", 
+        "spell_data": { "id": "scarecrow_wakeup", "hit_self": true }, 
+        "cooldown": 1, 
+        "monster_message": "The scarecrow wakes up!" 
+      } 
     ],
     "death_drops": "scarecrow_drops",
     "burn_into": "mon_scarecrow_scorched",

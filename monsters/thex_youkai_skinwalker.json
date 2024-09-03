@@ -19,9 +19,9 @@
     "aggression": 99,
     "morale": 99,
     "melee_skill": 10,
-    "melee_dice": 6,
-    "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "bullet", "amount": 6 } ],
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "bullet", "amount": 1 } ],
     "dodge": 6,
     "armor": { "bash": 6, "cut": 6, "stab": 6, "bullet": 6, "acid": 6, "biological": 6, "cold": 6, "heat": 6, "electric": 6, "pure": 6, "soul": 6 },
     "regenerates": 1,
@@ -33,14 +33,20 @@
     "special_attacks": [
       [ "ABSORB_MEAT", { "math": [ "50 + rand(20)" ] } ],
       [ "PARROT", { "math": [ "25 + rand(11)" ] } ],
-      { "id": "mon_skinwalker_rabbit_1", "type": "spell", "spell_data": { "id": "skinwalker_scream_18" }, "cooldown": { "math": [ "25 + rand(11)" ] } } 
+      { 
+        "id": "mon_skinwalker_rabbit_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_demoralize" }, 
+        "cooldown": { "math": [ "23 + rand(17)" ] }, 
+        "allow_no_target": true, 
+        "monster_message": "You hear a horrifying scream!"
+      } 
     ],
     "flags": [
       "CAN_OPEN_DOORS",
       "CLIMBS",
       "GOODHEARING",
       "KEENNOSE",
-      "KEEP_DISTANCE",
       "PATH_AVOID_DANGER",
       "SEES",
       "STUMBLES",
@@ -83,9 +89,16 @@
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
       [ "PARROT", { "math": [ "35 + rand(10)" ] } ],
-      { "id": "mon_skinwalker_twig_1", "type": "spell", "spell_data": { "id": "skinwalker_roar_24" }, "cooldown": { "math": [ "25 + rand(11)" ] } } 
+      { 
+        "id": "mon_skinwalker_twig_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_demoralize" }, 
+        "cooldown": { "math": [ "23 + rand(17)" ] }, 
+        "allow_no_target": true, 
+        "monster_message": "You hear a horrifying scream!"
+      } 
     ],
-    "flags": [ "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "KEEP_DISTANCE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
+    "flags": [ "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   },
   {
     "id": "mon_skinwalker_wendigo",
@@ -124,7 +137,14 @@
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
       [ "PARROT", { "math": [ "20 + rand(20)" ] } ],
       [ "skinwalker_swipe_29", { "math": [ "1 + rand(3)" ] } ],
-      { "id": "mon_skinwalker_wendigo_1", "type": "spell", "spell_data": { "id": "skinwalker_scream_18" }, "cooldown": { "math": [ "25 + rand(11)" ] } } 
+      { 
+        "id": "mon_skinwalker_wendigo_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_demoralize" }, 
+        "cooldown": { "math": [ "23 + rand(17)" ] }, 
+        "allow_no_target": true, 
+        "monster_message": "You hear a horrifying scream!"
+      } 
     ],
     "flags": [
       "CAN_OPEN_DOORS",
@@ -132,7 +152,6 @@
       "EATS",
       "GOODHEARING",
       "KEENNOSE",
-      "KEEP_DISTANCE",
       "PATH_AVOID_DANGER",
       "SEES",
       "STUMBLES",
@@ -157,7 +176,7 @@
     "material": [ "flesh" ],
     "symbol": "@",
     "color": "brown",
-    "aggression": 5,
+    "aggression": 25,
     "morale": 35,
     "melee_skill": 6,
     "melee_dice": 3,
@@ -175,8 +194,37 @@
     "special_attacks": [
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
-      { "id": "mon_skinwalker_witch_1", "type": "spell", "spell_data": { "id": "skinwalker_roar_24" }, "cooldown": { "math": [ "25 + rand(11)" ] } },
-      { "id": "mon_skinwalker_witch_2", "type": "spell", "spell_data": { "id": "skinwalker_transform" }, "cooldown": { "math": [ "5 + rand(4)" ] } }
+      { 
+        "id": "mon_skinwalker_witch_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_demoralize" }, 
+        "cooldown": { "math": [ "23 + rand(17)" ] }, 
+        "allow_no_target": true, 
+        "monster_message": "You hear a horrifying scream!"
+      },
+      { 
+        "id": "mon_skinwalker_witch_2", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_transform_repeater", "hit_self": true }, 
+        "cooldown": { "math": [ "3 + rand(5)" ] }, 
+        "monster_message": "" 
+      },
+      { 
+        "id": "mon_skinwalker_witch_3", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_transform_transform", "hit_self": true }, 
+        "condition": { "u_has_effect": "skinwalker_transform_success_effect" }, 
+        "cooldown": 1, 
+        "monster_message": "The person suddenly transforms!" 
+      },
+      { 
+        "id": "mon_skinwalker_witch_4", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_transform_none", "hit_self": true }, 
+        "condition": { "u_has_effect": "skinwalker_message_effect" }, 
+        "cooldown": 1, 
+        "monster_message": "The person gestures eerily." 
+      }
     ],
     "death_drops": "skinwalker_witch_drops",
     "flags": [
@@ -186,11 +234,14 @@
       "FILTHY",
       "GOODHEARING",
       "KEENNOSE",
-      "KEEP_DISTANCE",
       "PATH_AVOID_DANGER",
       "SEES",
       "WARM"
-    ]
+    ],
+    "//": "Messages seem bugged. monster_message requires text or it just prints 'The X casts SPELL at the X'",
+    "//2": "Also, the message field from the spells seems to not be working, which would make the following process much simpler",
+    "//3": "Thus, a repeater is set so it can roll: add dummy effect, or a transformation effect",
+    "//4": "The spells above require either effect to be casted, and print the messages"
   },
   {
     "id": "mon_skinwalker_witch_bear",
@@ -232,7 +283,14 @@
       [ "PARROT", { "math": [ "25 + rand(10)" ] } ],
       [ "hug_33", { "math": [ "9 + rand(7)" ] } ],
       [ "smash_33", { "math": [ "7 + rand(7)" ] } ],
-      { "id": "mon_skinwalker_witch_bear_1", "type": "spell", "spell_data": { "id": "skinwalker_roar_24" }, "cooldown": { "math": [ "25 + rand(11)" ] } }
+      { 
+        "id": "mon_skinwalker_witch_bear_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_demoralize" }, 
+        "cooldown": { "math": [ "23 + rand(17)" ] }, 
+        "allow_no_target": true, 
+        "monster_message": "You hear a horrifying scream!"
+      }
     ],
     "flags": [ "BASHES", "CLIMBS", "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ]
   },
@@ -275,7 +333,14 @@
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
       [ "PARROT", { "math": [ "25 + rand(10)" ] } ],
       [ "charge_29", { "math": [ "5 + rand(5)" ] } ],
-      { "id": "mon_skinwalker_witch_cow_1", "type": "spell", "spell_data": { "id": "skinwalker_roar_24" }, "cooldown": { "math": [ "25 + rand(11)" ] } }
+      { 
+        "id": "mon_skinwalker_witch_cow_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_demoralize" }, 
+        "cooldown": { "math": [ "23 + rand(17)" ] }, 
+        "allow_no_target": true, 
+        "monster_message": "You hear a horrifying scream!"
+      }
     ],
     "flags": [ "BASHES", "EATS", "HEARS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
@@ -292,7 +357,7 @@
     "species": [ "YOUKAI_SKINWALKER_TOUHOU" ],
     "harvest": "mammal_large_fur",
     "hp": 90,
-    "speed": 200,
+    "speed": 175,
     "material": [ "flesh" ],
     "symbol": "D",
     "color": "black",
@@ -317,7 +382,13 @@
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
       [ "PARROT", { "math": [ "25 + rand(10)" ] } ], 
-      { "id": "sprint", "type": "spell", "spell_data": { "id": "sprint_spell_3" }, "cooldown": { "math": [ "6 + rand(6)" ] } } 
+      { 
+        "id": "sprint", 
+        "type": "spell", 
+        "spell_data": { "id": "sprint_spell_3_f", "hit_self": true }, 
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
+      } 
     ],
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "EATS", "GOODHEARING", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ]
   },
@@ -359,7 +430,13 @@
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ],
       [ "PARROT", { "math": [ "25 + rand(10)" ] } ],
-      { "id": "mon_skinwalker_witch_goat_1", "type": "spell", "spell_data": { "id": "skinwalker_curse_15" }, "cooldown": { "math": [ "16 + rand(11)" ] }, "monster_message": "The skinwalker gestures as dark magic engulfs their victim!" }
+      { 
+        "id": "mon_skinwalker_witch_goat_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_curse_15" }, 
+        "cooldown": { "math": [ "16 + rand(11)" ] }, 
+        "monster_message": "The skinwalker gestures as dark magic engulfs their victim!" 
+      }
     ],
     "flags": [ "CAN_OPEN_DOORS", "CLIMBS", "EATS", "HEARS", "KEEP_DISTANCE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ]
   },
@@ -401,7 +478,14 @@
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ], 
       [ "PARROT", { "math": [ "25 + rand(10)" ] } ], 
-      { "id": "mon_skinwalker_witch_wolf_1", "type": "spell", "spell_data": { "id": "skinwalker_roar_24" }, "cooldown": { "math": [ "25 + rand(11)" ] } }
+      { 
+        "id": "mon_skinwalker_witch_wolf_1", 
+        "type": "spell", 
+        "spell_data": { "id": "skinwalker_demoralize" }, 
+        "cooldown": { "math": [ "23 + rand(17)" ] }, 
+        "allow_no_target": true, 
+        "monster_message": "You hear a horrifying scream!"
+      }
     ],
     "flags": [ "EATS", "GOODHEARING", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
   }

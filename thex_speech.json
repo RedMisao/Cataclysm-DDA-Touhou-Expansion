@@ -348,6 +348,19 @@
     "volume": 12
   },
   {
+    "speaker": [ 
+      "mon_shadow_th_person_1", 
+      "mon_shadow_th_person_2", 
+      "mon_shadow_th_person_3", 
+      "mon_shadow_th_child_1", 
+      "mon_shadow_th_child_2", 
+      "mon_shadow_th_child_3" 
+      ],
+    "type": "speech",
+    "sound": " ",
+    "volume": 24
+  },
+  {
     "speaker": [ "mon_skinwalker_twig", "mon_skinwalker_wendigo" ],
     "type": "speech",
     "sound": "*laugh*",
@@ -408,7 +421,12 @@
     "volume": 33
   },
   {
-    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow", "mon_skinwalker_witch_deer", "mon_skinwalker_witch_wolf" ],
+    "speaker": [ 
+      "mon_skinwalker_witch_bear", 
+      "mon_skinwalker_witch_cow", 
+      "mon_skinwalker_witch_deer", 
+      "mon_skinwalker_witch_wolf" 
+    ],
     "type": "speech",
     "sound": "*distorted laugh*",
     "volume": 16
@@ -450,7 +468,13 @@
     "volume": 33
   },
   {
-    "speaker": [ "mon_skinwalker_witch_bear", "mon_skinwalker_witch_cow", "mon_skinwalker_witch_deer", "mon_skinwalker_witch_goat", "mon_skinwalker_witch_wolf" ],
+    "speaker": [ 
+      "mon_skinwalker_witch_bear", 
+      "mon_skinwalker_witch_cow", 
+      "mon_skinwalker_witch_deer", 
+      "mon_skinwalker_witch_goat", 
+      "mon_skinwalker_witch_wolf" 
+    ],
     "type": "speech",
     "sound": "H̸͈̐e̶͙̰̔̈́ľ̷̡̲͝l̴̩̜͠o̵̙͌?̵̠̩̀",
     "volume": 12

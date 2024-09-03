@@ -237,7 +237,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_3" }, 
+        "spell_data": { "id": "sprint_spell_3_s", "hit_self": true }, 
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -245,12 +245,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "6 + rand(6)" ] } 
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true }, 
         "condition": {
           "and": [
             "u_is_underwater",
@@ -261,7 +262,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
@@ -314,7 +316,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_3" }, 
+        "spell_data": { "id": "sprint_spell_3", "hit_self": true }, 
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -322,12 +324,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "6 + rand(6)" ] } 
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true }, 
         "condition": {
           "and": [
             "u_is_underwater",
@@ -338,7 +341,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
@@ -395,7 +399,7 @@
       { 
         "id": "sprint", 
         "type": "spell", 
-        "spell_data": { "id": "sprint_spell_3" }, 
+        "spell_data": { "id": "sprint_spell_3", "hit_self": true },  
         "condition": {
           "and": [
             { "not": { "u_has_effect": "ambush_effect1" } },
@@ -403,12 +407,13 @@
             { "not": { "u_has_effect": "ambush_effect3" } }
           ]
         },
-        "cooldown": { "math": [ "6 + rand(6)" ] } 
+        "cooldown": { "math": [ "6 + rand(6)" ] }, 
+        "monster_message": "" 
       },
       { 
         "id": "ambush_speed", 
         "type": "spell", 
-        "spell_data": { "id": "ambush_speed_spell" }, 
+        "spell_data": { "id": "ambush_speed_spell", "hit_self": true },  
         "condition": {
           "and": [
             "u_is_underwater",
@@ -419,7 +424,8 @@
           ]
         },
         "cooldown": { "math": [ "1 + rand(1)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "ANIMAL", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],

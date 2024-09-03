@@ -7,8 +7,15 @@
     "remove_message": "You move normally again.",
     "max_duration": "3 s",
     "rating": "good",
-    "base_mods": { "speed_mod": [ 45 ] },
-    "max_intensity": 1
+    "max_intensity": 1,
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "SPEED", "multiply": 1.5 }
+        ] 
+      } 
+    ]
   },
   {
     "id": "ambush_effect2",
@@ -18,8 +25,15 @@
     "remove_message": "You move normally again.",
     "max_duration": "2 s",
     "rating": "good",
-    "base_mods": { "speed_mod": [ 45 ] },
-    "max_intensity": 1
+    "max_intensity": 1,
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "SPEED", "multiply": 1.5 }
+        ] 
+      } 
+    ]
   },
   {
     "id": "ambush_effect3",
@@ -29,14 +43,22 @@
     "remove_message": "You move normally again.",
     "max_duration": "1 s",
     "rating": "good",
-    "base_mods": { "speed_mod": [ 45 ] },
-    "max_intensity": 1
+    "max_intensity": 1,
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "SPEED", "multiply": 1.5 }
+        ] 
+      } 
+    ]
   },
   {
     "id": "entangle_effect",
     "type": "effect_type",
     "name": [ "Entangled" ],
     "desc": [ "Movement speed is reduced." ],
+    "show_in_info": true,
     "apply_message": "You're ensared!",
     "remove_message": "You move normally again.",
     "rating": "bad",
@@ -49,11 +71,21 @@
     "type": "effect_type",
     "name": [ "Silver touched" ],
     "desc": [ "" ],
+    "show_in_info": true,
     "max_duration": "60 s",
     "rating": "bad",
     "base_mods": { "speed_mod": [ -15 ] },
     "max_intensity": 1,
     "//": "This is to prevent mon_gevaudan from casting its self-healing spell"
+  },
+  {
+    "id": "monster_vanish_delay_effect",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "max_intensity": 1,
+    "max_effective_intensity": 1,
+    "//": "Dummy effect so it can be used as condition for monster_vanish spells that require a brief delay"
   },
   {
     "id": "paralyze_3_effect",
@@ -69,6 +101,8 @@
     "type": "effect_type",
     "name": [ "Shrieked at" ],
     "desc": [ "It is as if hearing the shriek lacerated your soul." ],
+    "show_in_info": true,
+    "apply_message": "Hearing the shriek slows you down!",
     "remove_message": "You move normally again.",
     "rating": "bad",
     "base_mods": { "speed_mod": [ -9 ] },
@@ -76,15 +110,86 @@
     "max_intensity": 9
   },
   {
+    "id": "skinwalker_message_effect",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "max_intensity": 1,
+    "max_effective_intensity": 1,
+    "//": "Dummy effect so it can be used as condition for the skinwalker witch messages"
+  },
+  {
+    "id": "skinwalker_message_remove_effect",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "max_intensity": 1,
+    "max_effective_intensity": 1,
+    "removes_effects": [ "skinwalker_message_effect" ],
+    "//": "Dummy effect so it can remove the message above"
+  },
+  {
+    "id": "skinwalker_transform_success_effect",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "max_intensity": 1,
+    "max_effective_intensity": 1,
+    "//": "Dummy effect so it can be used as condition for skinwalker witch transformation"
+  },
+  {
     "id": "sprint_effect",
     "type": "effect_type",
     "name": [ "Sprint" ],
     "desc": [ "Increases movement speed for a short duration" ],
     "remove_message": "You move normally again.",
-    "max_duration": "7 s",
     "rating": "good",
-    "base_mods": { "speed_mod": [ 50 ] },
     "max_intensity": 1,
-    "max_effective_intensity": 1
+    "max_effective_intensity": 1,
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "SPEED", "multiply": 2.5 }
+        ] 
+      } 
+    ],
+    "//": "This should only increase ms and add ~50% attack speed, but currently MOVE_COST isn't working for monsters"
+  },
+  {
+    "id": "sprint_effect_f",
+    "type": "effect_type",
+    "name": [ "Sprint" ],
+    "desc": [ "Increases movement speed for a short duration" ],
+    "remove_message": "You move normally again.",
+    "rating": "good",
+    "max_intensity": 1,
+    "max_effective_intensity": 1,
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "SPEED", "multiply": 0.5 }
+        ] 
+      } 
+    ]
+  },
+  {
+    "id": "sprint_effect_s",
+    "type": "effect_type",
+    "name": [ "Sprint" ],
+    "desc": [ "Increases movement speed for a short duration" ],
+    "remove_message": "You move normally again.",
+    "rating": "good",
+    "max_intensity": 1,
+    "max_effective_intensity": 1,
+    "enchantments": [ 
+      { 
+        "condition": "ALWAYS",
+        "values": [ 
+          { "value": "SPEED", "multiply": 3.5 }
+        ] 
+      } 
+    ]
   }
 ]

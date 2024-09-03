@@ -33,6 +33,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "starting_ammo": { "9mmfmj": 20 },
     "special_attacks": [
+      [ "PARROT_AT_DANGER", { "math": [ "13 + rand(11)" ] } ],
       {
         "gun_type": "glock_17",
         "type": "gun",
@@ -47,8 +48,7 @@
         "targeting_cost": 105,
         "require_targeting_player": true,
         "ranges": [ [ 2, 12, "BURST" ], [ 13, 18, "SEMI_AUTO" ] ]
-      },
-      [ "PARROT_AT_DANGER", { "math": [ "13 + rand(11)" ] } ]
+      }
     ],
     "death_drops": "mib_drops",
     "death_function": { "effect": { "id": "death_monster_touhou_none", "hit_self": true }, "message": "The %s dies!" },
@@ -178,8 +178,7 @@
     "fear_triggers": [ "FRIEND_DIED" ],
     "special_attacks": [
       { "id": "mon_mib_alien_1", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "cooldown": { "math": [ "19 + rand(11)" ] }, "monster_message": "" },
-      { "id": "mon_mib_alien_2", "type": "spell", "spell_data": { "id": "stare" }, "cooldown": { "math": [ "13 + rand(13)" ] }, "monster_message": "" },
-      { "id": "mon_mib_alien_3", "type": "spell", "spell_data": { "id": "paralyze_3" }, "cooldown": { "math": [ "13 + rand(13)" ] } }
+      { "id": "mon_mib_alien_2", "type": "spell", "spell_data": { "id": "stare" }, "cooldown": { "math": [ "13 + rand(13)" ] }, "monster_message": "" }
     ],
     "flags": [ "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER", "SEES" ],
     "//": "Alien component to the MIB urban legend"
@@ -249,6 +248,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "starting_ammo": { "9mmfmj": 20 },
     "special_attacks": [
+      [ "PARROT_AT_DANGER", { "math": [ "13 + rand(11)" ] } ],
       {
         "gun_type": "glock_17",
         "type": "gun",
@@ -263,8 +263,7 @@
         "targeting_cost": 100,
         "require_targeting_player": true,
         "ranges": [ [ 2, 11, "BURST" ], [ 12, 22, "SEMI_AUTO" ] ]
-      },
-      [ "PARROT_AT_DANGER", { "math": [ "13 + rand(11)" ] } ]
+      }
     ],
     "flags": [ "BASHES", "CAN_OPEN_DOORS", "HEARS", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "SEES", "WARM" ],
     "//": "Agent-style enemy. Similar to the base MIB, deadlier"

@@ -191,10 +191,11 @@
       { 
         "id": "mon_gevaudan_1", 
         "type": "spell", 
-        "spell_data": { "id": "gevaudan_heal" }, 
+        "spell_data": { "id": "gevaudan_heal", "hit_self": true }, 
         "condition": { "not": { "u_has_effect": "gevaudan_noregen" } },
         "cooldown": { "math": [ "11 + rand(11)" ] }, 
-        "allow_no_target": true 
+        "allow_no_target": true, 
+        "monster_message": "" 
       }
     ],
     "flags": [ "BASHES", "CLIMBS", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "WARM" ]
@@ -328,8 +329,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "special_attacks": [
       { "id": "mon_kunekune_1", "type": "spell", "spell_data": { "id": "fear_paralyze" }, "cooldown": { "math": [ "25 + rand(20)" ] }, "monster_message": "" },
-      { "id": "mon_kunekune_2", "type": "spell", "spell_data": { "id": "stare" }, "cooldown": { "math": [ "25 + rand(10)" ] }, "monster_message": "" },
-      { "id": "mon_kunekune_3", "type": "spell", "spell_data": { "id": "paralyze_3" }, "cooldown": { "math": [ "5 + rand(13)" ] }, "monster_message": "" }
+      { "id": "mon_kunekune_2", "type": "spell", "spell_data": { "id": "stare" }, "cooldown": { "math": [ "25 + rand(10)" ] }, "monster_message": "" }
     ],
     "death_function": { "message": "The %s dissipates into air.", "corpse_type": "NO_CORPSE" },
     "flags": [ "HEARS", "IMMOBILE", "KEENNOSE", "SEES" ]
@@ -428,8 +428,20 @@
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
       [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], 
-      { "id": "mon_olgoi_1", "type": "spell", "spell_data": { "id": "olgoi_poison" }, "cooldown": { "math": [ "1 + rand(2)" ] } },
-      { "id": "mon_olgoi_2", "type": "spell", "spell_data": { "id": "olgoi_shock" }, "cooldown": { "math": [ "1 + rand(2)" ] } }
+      { 
+        "id": "mon_olgoi_1", 
+        "type": "spell", 
+        "spell_data": { "id": "olgoi_poison" }, 
+        "cooldown": { "math": [ "1 + rand(2)" ] }, 
+        "monster_message": "The deathworm spits poison!" 
+      },
+      { 
+        "id": "mon_olgoi_2", 
+        "type": "spell", 
+        "spell_data": { "id": "olgoi_shock" }, 
+        "cooldown": { "math": [ "1 + rand(2)" ] }, 
+        "monster_message": "" 
+      }
     ],
     "death_function": { "message": "The %s squirms, twitches, and finally dies.", "corpse_type": "NORMAL" },
     "flags": [ "ACIDPROOF", "ATTACK_LOWER", "DIGS", "EATS", "ELECTRIC", "HEARS", "NOHEAD", "SLUDGEPROOF", "VENOM" ],
@@ -592,34 +604,25 @@
     "families": [ "prof_physiology", "prof_wp_youkai" ],
     "weakpoint_sets": [ "wps_youkai_doglike_body" ],
     "path_settings": { "max_dist": 8 },
-    "anger_triggers": [ "PLAYER_CLOSE", "STALK" ],
-    "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE" ],
+    "fear_triggers": [ "FRIEND_ATTACKED" ],
+    "death_function": { "message": "The %s dissolves in its own tears!", "corpse_type": "NO_CORPSE" },
+    "death_drops": "squonk_drops",
     "special_attacks": [ 
       [ "ABSORB_MEAT", { "math": [ "80 + rand(40)" ] } ], 
-      { "id": "mon_squonk_1", "type": "spell", "spell_data": { "id": "squonk_dissolve" }, "cooldown": 3 } 
+      { 
+        "id": "mon_squonk_1", 
+        "type": "spell", 
+        "spell_data": { "id": "squonk_dissolve", "hit_self": true }, 
+        "condition": { "math": [ "u_val('anger')", ">=", "4" ] },
+        "cooldown": 1, 
+        "monster_message": "The %s dissolves in its own tears!" 
+      }
     ],
     "biosignature": { "biosig_item": "water", "biosig_timer": 4 },
     "flags": [ "HEARS", "PATH_AVOID_DANGER", "PACIFIST", "SEES", "SMELLS", "WARM" ],
-    "//": "The squonk should go around, run from the player when encountered, until it reaches the anger_triggers threshold, then casts squonk_dissolve and transforms into the harvest-less, drop-less mon_squonk_death to finish the death process. It would be harvestable only if caught by surprise"
-  },
-  {
-    "id": "mon_squonk_death",
-    "type": "MONSTER",
-    "name": { "str": "squonk", "str_pl": "squonk" },
-    "copy-from": "mon_squonk",
-    "harvest": "exempt",
-    "hp": 1,
-    "aggression": -99,
-    "morale": 99,
-    "vision_day": 99,
-    "vision_night": 99,
-    "path_settings": { "max_dist": 99 },
-    "death_function": { "message": "The %s dissolves in its own tears!", "corpse_type": "NO_CORPSE" },
-    "special_attacks": [ 
-      { "id": "mon_squonk_death_1", "type": "spell", "spell_data": { "id": "squonk_death_dissolve" }, "cooldown": 3 } 
-    ],
-    "biosignature": { "biosig_item": "water", "biosig_timer": 1 },
-    "flags": [ "ALWAYS_SEES_YOU", "GOODHEARING", "IMMOBILE", "KEENNOSE", "NO_BREATHE", "PACIFIST", "SEES", "WARM" ]
+    "//": "The squonk should go around, and dissolve itself if it gets any of the anger_triggers or if the player gets too close",
+    "//2": "Can't figure out how to make it die + leave a water puddle + not print the 'The squonk dies!' message"
   },
   {
     "id": "mon_gyokuto_base",
