@@ -1,5 +1,52 @@
 [
   {
+    "type": "effect_type",
+    "id": "zapped",
+    "name": [ "Zapped" ],
+    "desc": [ "You've been zapped with electricity and are barely able to move!" ],
+    "apply_message": "You're zapped!",
+    "rating": "bad",
+    "max_duration": "1 s",
+    "dur_add_perc": -20,
+    "base_mods": { "speed_mod": [ -1000 ], "dex_mod": [ -100 ] },
+    "show_in_info": true,
+    "limb_score_mods": [
+      { "limb_score": "manip", "modifier": 0.8, "scaling": -0.05 },
+      { "limb_score": "lift", "modifier": 0.9, "scaling": -0.1 },
+      { "limb_score": "block", "modifier": 0.7, "scaling": -0.1 },
+      { "limb_score": "breathing", "modifier": 0.8, "scaling": -0.1 },
+      { "limb_score": "reaction", "modifier": 0.9, "scaling": -0.1 },
+      { "limb_score": "balance", "modifier": 0.75, "scaling": -0.05 },
+      { "limb_score": "swim", "modifier": 0.8, "scaling": -0.2 }
+    ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
+    "//": "Nerfed: max duration and negative dur_add_perc "
+  },
+  {
+    "type": "effect_type",
+    "id": "electrocuted",
+    "name": [ "Electrocuted" ],
+    "desc": [ "You're being shocked with electricity to the point of serious harm!" ],
+    "apply_message": "You're being electrocuted!",
+    "rating": "bad",
+    "dur_add_perc": -20,
+    "pain_sizing": true,
+    "hurt_sizing": true,
+    "base_mods": { "speed_mod": [ -1000 ], "dex_mod": [ -100 ], "hurt_amount": [ 15, 0 ], "hurt_min": [ 2, 1 ] },
+    "show_in_info": true,
+    "limb_score_mods": [
+      { "limb_score": "manip", "modifier": 0.8, "scaling": -0.05 },
+      { "limb_score": "lift", "modifier": 0.9, "scaling": -0.1 },
+      { "limb_score": "block", "modifier": 0.7, "scaling": -0.1 },
+      { "limb_score": "breathing", "modifier": 0.8, "scaling": -0.1 },
+      { "limb_score": "reaction", "modifier": 0.9, "scaling": -0.1 },
+      { "limb_score": "balance", "modifier": 0.75, "scaling": -0.05 },
+      { "limb_score": "swim", "modifier": 0.8, "scaling": -0.2 }
+    ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD", "NO_PSIONICS" ],
+    "//": "Nerfed: negative dur_add_perc "
+  },
+  {
     "id": "ambush_effect1",
     "type": "effect_type",
     "name": [ "Ambush effect" ],

@@ -316,11 +316,17 @@
     "//": "not really aggressive unless provoked"
   },
   {
+    "name": "touhou_fortean",
+    "type": "MONSTER_FACTION",
+    "by_mood": [ "bot", "animal", "exodii", "fungus", "human", "mi-go", "mutant", "triffid", "touhou_youkai_hostile", "touhou_youkai_neutral", "your_followers", "zombie", "touhou_mib" ],
+    "//": "Based on touhou_youkai_neutral , to allow attacking that faction"
+  },
+  {
     "name": "touhou_shadow_faction",
     "type": "MONSTER_FACTION",
     "by_mood": [ "bot", "animal", "fungus", "kraken", "mi-go", "mutant", "triffid", "touhou_youkai_hostile", "touhou_youkai_neutral", "touhou_mib" ],
     "hate": [ "exodii", "human", "your_followers", "zombie" ],
-    "//": "The same as touhou_youkai_hostile but prevents self-attacking"
+    "//": "Based on touhou_youkai_hostile , to prevent self-attacking"
   },
   {
     "name": "touhou_youkai_hostile",
@@ -334,7 +340,6 @@
     "name": "touhou_youkai_neutral",
     "type": "MONSTER_FACTION",
     "friendly": [ "touhou_youkai_hostile" ],
-    "neutral": [ "touhou_youkai_neutral" ],
     "by_mood": [ "bot", "animal", "exodii", "fungus", "human", "mi-go", "mutant", "triffid", "your_followers", "zombie", "touhou_mib" ],
     "//": "Default faction for neutral youkai, these should be neutral to humans and company until attacked. Think of passively causing fear or at least a sense of caution in humans"
   },

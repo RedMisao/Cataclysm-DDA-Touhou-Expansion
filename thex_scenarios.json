@@ -43,6 +43,7 @@
       "youmu_konpaku"
     ],
     "start_of_game": { "hour": 12, "day": 62, "season": "spring", "year": 1 },
+    "//": "Start time is 12:00:00. If this changes, daily_randomization_12_eoc has to be adjusted properly",
     "start_name": "Outdoors starting locations."
   }
 ]

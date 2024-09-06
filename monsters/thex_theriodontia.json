@@ -177,7 +177,7 @@
     "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ] ],
     "reproduction": { "baby_egg": "egg_nochnitsa", "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
-    "flags": [ "ANIMAL", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "HEARS", "HIT_AND_RUN", "PATH_AVOID_DANGER", "SEES", "SMALL_HIDER", "SMELLS",  "SWARMS", "WARM" ],
     "//": "Based on Nochnitsa sp. and mon_cat . No reproductive data, I'm assuming these laid eggs. Between a cat and a large rat in size, kind of sprawls instead of having an erect posture, big headed"
   },
   {
@@ -265,7 +265,7 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_pristerognathus" },
-    "extend": { "flags": [ "NO_BREED" ] }
+    "extend": { "flags": [ "NO_BREED", "SMALL_HIDER" ] }
   },
   {
     "id": "mon_viatkogorgon",
@@ -307,6 +307,6 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_viatkogorgon" },
-    "extend": { "flags": [ "NO_BREED" ] }
+    "extend": { "flags": [ "NO_BREED", "SMALL_HIDER" ] }
   }
 ]

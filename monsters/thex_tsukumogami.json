@@ -92,7 +92,7 @@
       } 
     ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK" ],
-    "flags": [ "ELECTRIC", "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "SEES" ]
+    "flags": [ "ELECTRIC", "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "SEES", "SMALL_HIDER" ]
   },
   {
     "id": "mon_scarecrow_inactive",
@@ -379,7 +379,7 @@
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "STALK" ],
 	"upgrades": { "half_life": 42, "into_group": "GROUP_TSUKUMOGAMI_TALKINGDOLL_UPGRADE" },
-    "flags": [ "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "SEES" ]
+    "flags": [ "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "SEES", "SMALL_HIDER" ]
   },
   {
     "id": "mon_tsukumogami_talking_doll_2",
@@ -412,7 +412,7 @@
     "vision_night": 24,
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "STALK" ],
-    "flags": [ "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "PATH_AVOID_FALL", "SEES" ]
+    "flags": [ "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "PATH_AVOID_FALL", "SEES", "SMALL_HIDER" ]
   },
   {
     "id": "mon_tsukumogami_talking_doll_3",
@@ -445,6 +445,6 @@
     "vision_night": 24,
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "STALK" ],
-    "flags": [ "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "PATH_AVOID_FALL", "PATH_AVOID_FIRE", "SEES" ]
+    "flags": [ "HARDTOSHOOT", "HEARS", "NOGIB", "NO_BREATHE", "PATH_AVOID_FALL", "PATH_AVOID_FIRE", "SEES", "SMALL_HIDER" ]
   }
 ]

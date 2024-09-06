@@ -8,21 +8,38 @@
       { "u_add_var": "var_wind_blessing_int", "type": "number", "context": "wind_priestess_charm", "value": "0" },
       { "u_add_var": "var_wind_blessing_per", "type": "number", "context": "wind_priestess_charm", "value": "0" },
       { "u_add_var": "var_wind_blessing_str", "type": "number", "context": "wind_priestess_charm", "value": "0" },
-      { "run_eocs": [ "daily_randomization_eoc" ] }
+      { "run_eocs": [ "daily_randomization_12_eoc" ] }
     ]
   },
   {
-    "id": "daily_randomization_eoc",
+    "id": "daily_randomization_12_eoc",
     "type": "effect_on_condition",
-    "recurrence": "24 hours",
     "effect": [
       { "math": [ "night_parade_proc", "=", "rand(99)" ] },
       { "math": [ "silence_hour_proc", "=", "rand(99)" ] },
-      { "math": [ "silence_hour_hour", "=", "rand(23)" ] },
-      { "math": [ "silence_hour_minute", "=", "rand(59)" ] },
-      { "math": [ "silence_hour_second", "=", "rand(59)" ] }
+      { "math": [ "silence_hour_second", "=", "rand(86399)" ] },
+      { "math": [ "scarlet_weather_proc", "=", "rand(99)" ] },
+      { "math": [ "weather_blood_rain_proc", "=", "rand(99)" ] },
+      { "math": [ "weather_carnian_proc", "=", "rand(99)" ] },
+      { "queue_eocs": [ "daily_randomization_24_eoc" ], "time_in_future": "12 h" }
     ],
-    "//": "These re-roll daily, for use in special events "
+    "//": "Runs a single time after the start of the game (12:00:00)"
+  },
+  {
+    "id": "daily_randomization_24_eoc",
+    "type": "effect_on_condition",
+    "effect": [
+      { "math": [ "night_parade_proc", "=", "rand(99)" ] },
+      { "math": [ "silence_hour_proc", "=", "rand(99)" ] },
+      { "math": [ "silence_hour_second", "=", "rand(86399)" ] },
+      { "math": [ "scarlet_weather_proc", "=", "rand(99)" ] },
+      { "math": [ "weather_blood_rain_proc", "=", "rand(99)" ] },
+      { "math": [ "weather_carnian_proc", "=", "rand(99)" ] },
+      { "math": [ "weather_carnian_active", "=", "0" ] },
+      { "queue_eocs": [ "daily_randomization_24_eoc" ], "time_in_future": "24 h" }
+    ],
+    "//": "Re-rolls daily at 00:00:00, for use in special events",
+    "//WIP": "Carnian weather is disabled, it requires weather_carnian_active >= 1"
   },
   {
     "id": "guevaudan_attacked_melee_eoc",
@@ -100,5 +117,50 @@
     "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not considering consuming Earthly stuff during that period of time",
     "//2": "Boundaries for each impure tier: -48 - 0 h (extremely low), 0 - 48 h (verylow), 2 - 7 days (low), >7 days (high)",
     "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
+  },
+  {
+    "id": "purifying_rain_eoc",
+    "type": "effect_on_condition",
+    "recurrence": [ "87 d", "88 d" ],
+    "condition": { "math": [ "purifying_rain_proc", "<=", "1" ] },
+    "global": true,
+    "effect": [ 
+      { "run_eocs": [ "purifying_rain_CANCEL_PORTAL_STORM_eoc" ] },
+      { "math": [ "purifying_rain_proc", "+=", "1" ] }, 
+      {
+        "queue_eocs": [
+          {
+            "id": "purifying_rain_disable_eoc",
+            "effect": [ 
+              { "math": [ "purifying_rain_proc", "+=", "1" ] }, 
+              { "math": [ "purifying_rain_ended", "=", "1" ] } 
+            ]
+          }
+        ],
+        "time_in_future": "2 d 23 h 1 s"
+      }
+    ],
+    "//": "Do note that if the var is set to 0 while the weather is still running, it seems to immediately deactivate it",
+    "//2": "The weather_type should only run once, and always end at the 90 day mark. This is for lore purposes, linked to the second wave of LDC faction"
+  },
+  {
+    "id": "purifying_rain_CANCEL_PORTAL_STORM_eoc",
+    "type": "effect_on_condition",
+    "global": true,
+    "//": "This sets up all the variables for the end of a portal storm.",
+    "effect": [
+      { "math": [ "cause_portal_storm", "=", "0" ] },
+      { "math": [ "cause_early_portal_storm", "=", "0" ] },
+      { "math": [ "portal_dungeon_slow_strength", "=", "0" ] },
+      { "math": [ "portal_dungeon_carry_strength", "=", "0" ] },
+      { "math": [ "portal_dungeon_reflect_strength", "=", "0" ] },
+      { "u_add_var": "global_portal_storms_u_witnessed_portal_storm", "value": "yes" },
+      { "run_eocs": [ "EOC_PORTAL_STORM_DUNGEON_EXIT" ] },
+      { "remove_active_mission": "MISSION_INVESTIGATE_PORTAL_DUNGEON" },
+      { "remove_active_mission": "MISSION_INVESTIGATE_PORTAL_STORM_CENTER" },
+      { "alter_timed_events": "portal_dungeon_entrance" },
+      { "math": [ "talked_to_storm", "=", "0" ] }
+    ],
+    "//2": "Should be exactly the same as EOC_CANCEL_PORTAL_STORM except no condition, no next_weather , no u_message , EOC_WORSEN_PORTAL_STORM is not run, no u_counter_portal_storm_counter increase, and no trigger_event "
   }
 ]

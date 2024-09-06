@@ -104,7 +104,7 @@
     "baby_flags": [ "SPRING" ],
     "special_attacks": [ [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ], [ "PARROT", { "math": [ "6 + rand(24)" ] } ] ],
     "biosignature": { "biosig_item": "feces_bird", "biosig_timer": 6 },
-    "flags": [ "ANIMAL", "EATS", "FLIES", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
+    "flags": [ "ANIMAL", "EATS", "FLIES", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMALL_HIDER", "SMELLS", "SWARMS", "WARM" ],
     "//": "From mon_pigeon "
   },
   {

@@ -1,17 +1,5 @@
 [
   {
-    "id": "impurity",
-    "type": "vitamin",
-    "vit_type": "counter",
-    "name": { "str": "Impurity" },
-    "min": -144,
-    "max": 1008,
-    "rate": "-20 m",
-	"weight_per_unit": "100 g",
-    "flags": [ "NO_DISPLAY" ],
-    "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff"
-  },
-  {
     "id": "hpeach_satiety",
     "type": "vitamin",
     "vit_type": "counter",

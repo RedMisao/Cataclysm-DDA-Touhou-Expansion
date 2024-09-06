@@ -190,7 +190,7 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_lystrosaurus" },
-    "extend": { "flags": [ "NO_BREED" ] }
+    "extend": { "flags": [ "NO_BREED", "SMALL_HIDER" ] }
   },
   {
     "id": "mon_pampaphoneus",

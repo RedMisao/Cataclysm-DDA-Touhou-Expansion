@@ -188,7 +188,7 @@
     "reproduction": { "baby_egg": "egg_pederpes", "baby_count": 12, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_FOOD", { "math": [ "40 + rand(20)" ] } ] ],
-    "flags": [ "ANIMAL", "EATS", "SEES", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
+    "flags": [ "ANIMAL", "EATS", "SEES", "SMALL_HIDER", "SMELLS", "SWIMS", "WATER_CAMOUFLAGE" ],
     "//": "Based on Pederpes finneyae. I couldn't find almost anything other than the size at 1 m average so most numbers are estimates",
     "//2": "These tetrapods were more or less stem-tetrapods, a sister clade of actual tetrapods (containing amphibians + amniots + a bunch of other salamander slash frog animals), instead of being 'true' amphibians"
   },

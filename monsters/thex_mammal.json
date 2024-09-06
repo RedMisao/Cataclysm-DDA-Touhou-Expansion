@@ -515,7 +515,7 @@
     "reproduction": { "baby_monster": "mon_herpetotherium_cub", "baby_count": 8, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ [ "EAT_CROP", { "math": [ "20 + rand(10)" ] } ], [ "EAT_FOOD", { "math": [ "20 + rand(10)" ] } ] ],
-    "flags": [ "ANIMAL", "CLIMBS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "WARM" ],
+    "flags": [ "ANIMAL", "CLIMBS", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMALL_HIDER", "SMELLS", "WARM" ],
     "//": "Tried to use Herpetotherium sp. as reference, but there's basically no data, so it's mostly copied from mon_opossum and mon_black_rat . No reproductive data"
   },
   {
@@ -806,7 +806,7 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_taeniolabis" },
-    "extend": { "flags": [ "NO_BREED" ] }
+    "extend": { "flags": [ "NO_BREED", "SMALL_HIDER" ] }
   },
   {
     "id": "mon_thylacine",
@@ -880,6 +880,6 @@
       "stomach_size": 0.2
     },
     "upgrades": { "age_grow": 84, "into": "mon_thylacine" },
-    "extend": { "flags": [ "NO_BREED" ] }
+    "extend": { "flags": [ "NO_BREED", "SMALL_HIDER" ] }
   }
 ]
