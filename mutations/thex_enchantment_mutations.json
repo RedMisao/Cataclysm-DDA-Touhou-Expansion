@@ -12,25 +12,6 @@
     "enchantments": [ { "values": [ { "value": "METABOLISM", "multiply": -0.333 } ] } ]
   },
   {
-    "id": "damnedrope_str_mut",
-    "type": "mutation",
-    "name": "Spider's strength",
-    "description": " ",
-    "points": 0,
-    "profession": false,
-    "purifiable": false,
-    "starting_trait": false,
-    "valid": true,
-    "enchantments": [ 
-      { 
-        "condition": "ALWAYS", 
-        "values": [ 
-          { "value": "STRENGTH", "add": 80 } 
-        ] 
-      } 
-    ]
-  },
-  {
     "id": "death_coin_mut",
     "type": "mutation",
     "name": "Shinigami work ethic",

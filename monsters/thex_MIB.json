@@ -1,6 +1,6 @@
 [
   {
-    "id": "mon_mib",
+    "id": "mon_mib_1",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
     "description": "A taller than average person, wearing a black suit, with some individuals wearing hats, others black glasses.  Some seem to lack body hair such as eyelashes, what little skin can be seen is very pale skin tone, almost white.  Their very weird body movements creep you out, some seem to be overly stoic, others look as if they memorized how humans should move.  They seem to be on the look for something.",
@@ -58,10 +58,10 @@
     "//3": "Each death spawning something should print a message, telling the player (defaults are kept below), but I'm not sure how to do that."
   },
   {
-    "id": "mon_mib2",
+    "id": "mon_mib_2",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
-    "copy-from": "mon_mib",
+    "copy-from": "mon_mib_1",
     "vision_night": 32,
     "weakpoint_sets": [ "wps_humanoid_head_big", "wps_mib_body" ],
     "death_function": {
@@ -73,10 +73,10 @@
     "//": " 'Demon' type MIB"
   },
   {
-    "id": "mon_mib3",
+    "id": "mon_mib_3",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
-    "copy-from": "mon_mib",
+    "copy-from": "mon_mib_1",
     "vision_night": 16,
     "death_function": {
       "effect": { "id": "death_mib_alienspawn", "hit_self": true },
@@ -87,10 +87,10 @@
     "//": "Alien type MIB, add pile-of-flesh corpse"
   },
   {
-    "id": "mon_mib4",
+    "id": "mon_mib_4",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
-    "copy-from": "mon_mib",
+    "copy-from": "mon_mib_1",
     "vision_night": 24,
     "path_settings": { "max_dist": 24 },
     "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_cyborg" ],
@@ -104,10 +104,10 @@
     "//": "Terminator-like MIB"
   },
   {
-    "id": "mon_mib5",
+    "id": "mon_mib_5",
     "type": "MONSTER",
     "name": { "str": "Man in Black", "str_pl": "Men in Black" },
-    "copy-from": "mon_mib",
+    "copy-from": "mon_mib_1",
     "death_function": {
       "effect": { "id": "death_mib_agentspawn", "hit_self": true },
       "message": "The %s staggers, their face becomes blurry and countoured as in pain, taken over by a stern figure!",

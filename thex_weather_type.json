@@ -18,7 +18,7 @@
     "priority": 20,
     "condition": { 
       "and": [ 
-        { "math": [ "scarlet_weather_proc", ">=", "20" ] }, 
+        { "math": [ "weather_scarlet_proc", ">=", "20" ] }, 
         { "math": [ "weather('humidity')", ">=", "40" ] }, 
         { "math": [ "weather('pressure')", "<", "1010" ] } 
       ] 
@@ -46,7 +46,7 @@
       "and": [ 
         { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
         { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "scarlet_weather_proc", "<", "20" ] }, 
+        { "math": [ "weather_scarlet_proc", "<", "20" ] }, 
         { "math": [ "weather('humidity')", ">=", "40" ] }, 
         { "math": [ "weather('pressure')", "<", "1010" ] } 
       ] 
@@ -72,7 +72,7 @@
     "required_weathers": [ "clear", "sunny", "mist" ],
     "condition": {
       "and": [
-        { "math": [ "scarlet_weather_proc", ">=", "20" ] }, 
+        { "math": [ "weather_scarlet_proc", ">=", "20" ] }, 
         { "math": [ "weather('windpower')", "<", "12" ] },
         { "math": [ "weather('windpower')", ">", "0" ] },
         { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] }
@@ -102,7 +102,7 @@
       "and": [
         { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
         { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "scarlet_weather_proc", "<", "20" ] }, 
+        { "math": [ "weather_scarlet_proc", "<", "20" ] }, 
         { "math": [ "weather('windpower')", "<", "12" ] },
         { "math": [ "weather('windpower')", ">", "0" ] },
         { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] }
@@ -129,7 +129,7 @@
     "required_weathers": [ "clear", "sunny", "fog" ],
     "condition": {
       "and": [
-        { "math": [ "scarlet_weather_proc", ">=", "25" ] }, 
+        { "math": [ "weather_scarlet_proc", ">=", "25" ] }, 
         { "math": [ "weather('windpower')", "<", "12" ] },
         { "math": [ "weather('windpower')", ">", "0" ] },
         { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] },
@@ -160,7 +160,7 @@
       "and": [
         { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
         { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "scarlet_weather_proc", "<", "25" ] }, 
+        { "math": [ "weather_scarlet_proc", "<", "25" ] }, 
         { "math": [ "weather('windpower')", "<", "12" ] },
         { "math": [ "weather('windpower')", ">", "0" ] },
         { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] },
@@ -568,8 +568,8 @@
   {
     "id": "night_parade",
     "type": "weather_type",
-    "name": " ",
-    "color": "black",
+    "name": "Hyakki Yagyou",
+    "color": "red",
     "map_color": "h_black",
     "sym": "x",
     "ranged_penalty": 0,
@@ -579,17 +579,17 @@
     "dangerous": true,
     "precip": "none",
     "rains": false,
-    "required_weathers": [ "sunny", "cloudy", "cloudy_scarlet", "mist", "mist_scarlet" ],
+    "required_weathers": [ "clear", "sunny", "cloudy", "cloudy_scarlet", "mist", "mist_scarlet", "fog", "fog_scarlet" ],
     "priority": 666,
-    "condition": {
+    "condition": { 
       "and": [ 
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        "is_night", 
-        { "math": [ "night_parade_proc", "<", "5" ] } 
+        { "math": [ "var_night_parade_started", ">=", "1" ] },
+        { "math": [ "time_until('night_time') > time_until('daylight_time')" ] }
       ]
     },
-    "//": "Super WIP: this should spawn lots of hostile youkai enemies, probably a midgame weather or triggered event"
+    "//": "The var_CONDITION is set at night_parade_start_eoc ",
+    "//2": "Also, is_night doesn't seem to work as a condition. Instead, this returns TRUE after night_time starts, at 86399 (which decreases) until daylight_time re-starts at 86399",
+    "//3": "This is set using those vars, as night and daylight time are dynamic in cdda"
   },
   {
     "id": "silence_hour",
@@ -606,14 +606,12 @@
     "dangerous": true,
     "precip": "none",
     "rains": false,
-    "required_weathers": [ "sunny", "cloudy", "cloudy_scarlet", "mist", "mist_scarlet" ],
+    "required_weathers": [ "clear", "sunny", "cloudy", "cloudy_scarlet", "mist", "mist_scarlet" ],
     "duration_min": "1 h",
     "duration_max": "1 h",
-    "priority": 666,
+    "priority": 667,
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
         { "math": [ "silence_hour_proc", "<", "5" ] },
         { "math": [ "silence_hour_second", "==", "time_since('midnight', 'unit': 'seconds')" ] }
       ]
