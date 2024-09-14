@@ -31,7 +31,7 @@
     "path_settings": { "max_dist": 8 },
     "fear_triggers": [ "FRIEND_ATTACKED", "HURT" ],
     "special_attacks": [ [ "EAT_CROP", { "math": [ "80 + rand(40)" ] } ] ],
-    "reproduction": { "baby_egg": "egg_cotylorhynchus", "baby_count": 4, "baby_timer": 240 },
+    "reproduction": { "baby_type": { "baby_egg": "egg_cotylorhynchus" }, "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "flags": [ "ANIMAL", "EATS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Cotylorhynchus sp. taken as reference. No reproductive data, I'm assuming these laid eggs"
@@ -101,7 +101,7 @@
         "monster_message": "" 
       }      
     ],
-    "reproduction": { "baby_egg": "egg_dimetrodon", "baby_count": 4, "baby_timer": 240 },
+    "reproduction": { "baby_type": { "baby_egg": "egg_dimetrodon" }, "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER" ],
     "flags": [ "ANIMAL", "EATS", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "SMELLS", "WARM" ],
     "//": "Dimetrodon limbatus taken as reference when possible. No reproductive data, I'm assuming these laid eggs. It is unknown if these had smooth skin or not"
@@ -163,7 +163,7 @@
     "path_settings": { "max_dist": 8 },
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK" ],
     "special_attacks": [ [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], [ "EAT_CROP", { "math": [ "40 + rand(20)" ] } ] ],
-    "reproduction": { "baby_egg": "egg_lystrosaurus", "baby_count": 8, "baby_timer": 240 },
+    "reproduction": { "baby_type": { "baby_egg": "egg_lystrosaurus" }, "baby_count": 8, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "flags": [ "ANIMAL", "EATS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM" ],
     "//": "Lystrosaurus sp. taken as reference. No reproductive data. I think these laid eggs, but I'm not sure",
@@ -234,7 +234,7 @@
         "monster_message": "" 
       }       
     ],
-    "reproduction": { "baby_egg": "egg_pampaphoneus", "baby_count": 4, "baby_timer": 240 },
+    "reproduction": { "baby_type": { "baby_egg": "egg_pampaphoneus" }, "baby_count": 4, "baby_timer": 240 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "flags": [ "ANIMAL", "BASHES", "EATS", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER", "PUSH_MON", "SEES", "WARM" ],
     "//": "Based on Pampaphoneus sp. and mostly copied from mon_inostrancevia . No reproductive data, I'm assuming these laid eggs"

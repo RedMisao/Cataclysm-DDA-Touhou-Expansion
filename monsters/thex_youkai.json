@@ -30,7 +30,7 @@
     "vision_night": 12,
     "path_settings": { "max_dist": 16 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
-    "reproduction": { "baby_monster": "mon_chupacabra_young", "baby_count": 3, "baby_timer": 60 },
+    "reproduction": { "baby_type": { "baby_monster": "mon_chupacabra_young" }, "baby_count": 3, "baby_timer": 60 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
@@ -263,7 +263,7 @@
     "vision_night": 8,
     "path_settings": { "max_dist": 12 },
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
-    "reproduction": { "baby_monster": "mon_jinmenken_young", "baby_count": 2, "baby_timer": 30 },
+    "reproduction": { "baby_type": { "baby_monster": "mon_jinmenken_young" }, "baby_count": 2, "baby_timer": 30 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ 
       [ "EAT_CARRION", { "math": [ "40 + rand(20)" ] } ], 
@@ -365,7 +365,7 @@
     "vision_night": 32,
     "path_settings": { "max_dist": 32 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "STALK" ],
-    "reproduction": { "baby_monster": "mon_nightcrawler_young", "baby_count": 2, "baby_timer": 13 },
+    "reproduction": { "baby_type": { "baby_monster": "mon_nightcrawler_young" }, "baby_count": 2, "baby_timer": 13 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "special_attacks": [ [ "ABSORB_MEAT", { "math": [ "80 + rand(40)" ] } ] ],
     "flags": [ "CLIMBS", "HEARS", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS" ],
