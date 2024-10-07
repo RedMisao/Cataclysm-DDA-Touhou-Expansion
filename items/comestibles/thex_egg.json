@@ -10,8 +10,7 @@
     "calories": 120,
     "fun": -12,
     "stack_size": 3,
-    "rot_spawn": "GROUP_EGG_AEGIROCASSIS",
-    "rot_spawn_chance": 44,
+    "rot_spawn": { "group": "GROUP_EGG_AEGIROCASSIS", "chance": 44 },
     "vitamins": [ [ "calcium", 4 ], [ "iron", 14 ], [ "vitA", 16 ], [ "vitB", 50 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values, based on egg_anomalocaris, slightly increased"
@@ -29,8 +28,7 @@
     "calories": 35,
     "stack_size": 6,
     "fun": -8,
-    "rot_spawn": "GROUP_EGG_ANATOSUCHUS",
-    "rot_spawn_chance": 50,
+    "rot_spawn": { "group": "GROUP_EGG_ANATOSUCHUS", "chance": 50 },
     "flags": [ "RAW" ]
   },
   {
@@ -52,8 +50,7 @@
     "quench": 4,
     "spoils_in": "7 days",
     "stack_size": 6,
-    "rot_spawn": "GROUP_EGG_ANOMALOCARIS",
-    "rot_spawn_chance": 44,
+    "rot_spawn": { "group": "GROUP_EGG_ANOMALOCARIS", "chance": 44 },
     "vitamins": [ [ "calcium", 3 ], [ "iron", 12 ], [ "vitA", 15 ], [ "vitB", 45 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values, based on egg_insect but reduced"
@@ -68,8 +65,7 @@
     "color": "brown",
     "fun": -12,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_ANOMALOCARIS",
-    "rot_spawn_chance": 44,
+    "rot_spawn": { "group": "GROUP_EGG_ANOMALOCARIS", "chance": 44 },
     "vitamins": [ [ "calcium", 3 ], [ "iron", 12 ], [ "vitA", 15 ], [ "vitB", 45 ] ],
     "flags": [ "FREEZERBURN", "RAW" ]
   },
@@ -92,8 +88,7 @@
     "quench": 4,
     "spoils_in": "7 days",
     "stack_size": 6,
-    "rot_spawn": "GROUP_EGG_ARTHROPODAQUATIC_SMALL",
-    "rot_spawn_chance": 33,
+    "rot_spawn": { "group": "GROUP_EGG_ARTHROPODAQUATIC_SMALL", "chance": 33 },
     "vitamins": [ [ "calcium", 3 ], [ "iron", 12 ], [ "vitA", 15 ], [ "vitB", 45 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values, based on egg_insect but reduced"
@@ -117,8 +112,7 @@
     "material": [ "egg" ],
     "stack_size": 4,
     "fun": -12,
-    "rot_spawn": "GROUP_EGG_CARNUFEX",
-    "rot_spawn_chance": 60,
+    "rot_spawn": { "group": "GROUP_EGG_CARNUFEX", "chance": 60 },
     "flags": [ "RAW" ]
   },
   {
@@ -136,8 +130,7 @@
     "calories": 250,
     "fun": -16,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_COTYLORHYNCHUS",
-    "rot_spawn_chance": 75,
+    "rot_spawn": { "group": "GROUP_EGG_COTYLORHYNCHUS", "chance": 75 },
     "vitamins": [ [ "calcium", 20 ], [ "iron", 20 ], [ "vitA", 12 ], [ "vitB", 25 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -157,8 +150,7 @@
     "calories": 240,
     "fun": -16,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_DIMETRODON",
-    "rot_spawn_chance": 88,
+    "rot_spawn": { "group": "GROUP_EGG_DIMETRODON", "chance": 88 },
     "vitamins": [ [ "calcium", 20 ], [ "iron", 35 ], [ "vitA", 10 ], [ "vitB", 50 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values, based on a 16 x 8 cm egg"
@@ -182,8 +174,7 @@
     "quench": 6,
     "spoils_in": "7 days",
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_DODO",
-    "rot_spawn_chance": 90,
+    "rot_spawn": { "group": "GROUP_EGG_DODO", "chance": 90 },
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "1.5 times the size and volume of the largest turkey egg. There's no confirmed data about dodo eggs."
   },
@@ -193,7 +184,7 @@
     "name": { "str": "ectopistes egg" },
     "copy-from": "egg_chicken",
     "weight": "17 g",
-    "rot_spawn": "GROUP_EGG_ECTOPISTES"
+    "rot_spawn": { "group": "GROUP_EGG_ECTOPISTES" }
   },
   {
     "id": "egg_eryops",
@@ -213,8 +204,7 @@
     "quench": 6,
     "spoils_in": "7 days",
     "stack_size": 24,
-    "rot_spawn": "GROUP_EGG_ERYOPS",
-    "rot_spawn_chance": 66,
+    "rot_spawn": { "group": "GROUP_EGG_ERYOPS", "chance": 66 },
     "vitamins": [ [ "calcium", 2 ], [ "iron", 6 ], [ "vitA", 2 ], [ "vitB", 12 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -239,8 +229,7 @@
     "quench": 4,
     "spoils_in": "7 days",
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_EURYPTERID",
-    "rot_spawn_chance": 33,
+    "rot_spawn": { "group": "GROUP_EGG_EURYPTERID", "chance": 33 },
     "vitamins": [ [ "calcium", 3 ], [ "iron", 12 ], [ "vitA", 15 ], [ "vitB", 45 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values, based on egg_insect but reduced"
@@ -265,8 +254,7 @@
     "quench": 1,
     "spoils_in": "7 days",
     "stack_size": 6,
-    "rot_spawn": "GROUP_EGG_EURYPTERID_SMALL",
-    "rot_spawn_chance": 33,
+    "rot_spawn": { "group": "GROUP_EGG_EURYPTERID_SMALL", "chance": 33 },
     "vitamins": [ [ "calcium", 1 ], [ "iron", 1 ], [ "vitA", 1 ], [ "vitB", 5 ] ],
     "flags": [ "FREEZERBURN", "RAW" ]
   },
@@ -279,8 +267,7 @@
     "weight": "25 g",
     "looks_like": "egg_fish",
     "calories": 35,
-    "rot_spawn": "GROUP_EGG_FISHANCIENT_MEDIUM",
-    "rot_spawn_chance": 75,
+    "rot_spawn": { "group": "GROUP_EGG_FISHANCIENT_MEDIUM", "chance": 75 },
     "flags": [ "RAW" ]
   },
   {
@@ -292,8 +279,7 @@
     "weight": "25 g",
     "looks_like": "egg_fish",
     "calories": 35,
-    "rot_spawn": "GROUP_EGG_FISHANCIENT_SMALL",
-    "rot_spawn_chance": 75,
+    "rot_spawn": { "group": "GROUP_EGG_FISHANCIENT_SMALL", "chance": 75 },
     "flags": [ "RAW" ]
   },
   {
@@ -309,8 +295,7 @@
     "calories": 50,
     "stack_size": 4,
     "fun": -10,
-    "rot_spawn": "GROUP_EGG_HESPEROSUCHUS",
-    "rot_spawn_chance": 45,
+    "rot_spawn": { "group": "GROUP_EGG_HESPEROSUCHUS", "chance": 45 },
     "flags": [ "RAW" ]
   },
   {
@@ -333,8 +318,7 @@
     "spoils_in": "7 days",
     "stack_size": 1,
     "symbol": "o",
-    "rot_spawn": "GROUP_EGG_ICADYPTES",
-    "rot_spawn_chance": 95,
+    "rot_spawn": { "group": "GROUP_EGG_ICADYPTES", "chance": 95 },
     "vitamins": [ [ "calcium", 12 ], [ "iron", 27 ], [ "vitB", 1 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary vitamins values"
@@ -354,8 +338,7 @@
     "calories": 240,
     "fun": -16,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_INOSTRANCEVIA",
-    "rot_spawn_chance": 88,
+    "rot_spawn": { "group": "GROUP_EGG_INOSTRANCEVIA", "chance": 88 },
     "vitamins": [ [ "calcium", 20 ], [ "iron", 35 ], [ "vitA", 10 ], [ "vitB", 50 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -375,8 +358,7 @@
     "calories": 120,
     "fun": -16,
     "stack_size": 6,
-    "rot_spawn": "GROUP_EGG_LYSTROSAURUS",
-    "rot_spawn_chance": 66,
+    "rot_spawn": { "group": "GROUP_EGG_LYSTROSAURUS", "chance": 66 },
     "vitamins": [ [ "calcium", 10 ], [ "iron", 16 ], [ "vitA", 8 ], [ "vitB", 16 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -391,8 +373,7 @@
     "color": "green",
     "fun": -12,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_MEGANEURA",
-    "rot_spawn_chance": 55,
+    "rot_spawn": { "group": "GROUP_EGG_MEGANEURA", "chance": 55 },
     "vitamins": [ [ "calcium", 1 ], [ "iron", 8 ], [ "vitA", 16 ], [ "vitB", 12 ] ],
     "flags": [ "FREEZERBURN", "RAW" ]
   },
@@ -417,8 +398,7 @@
     "spoils_in": "7 days",
     "stack_size": 1,
     "symbol": "o",
-    "rot_spawn": "GROUP_EGG_MOA",
-    "rot_spawn_chance": 95,
+    "rot_spawn": { "group": "GROUP_EGG_MOA", "chance": 95 },
     "vitamins": [ [ "calcium", 24 ], [ "iron", 54 ], [ "vitB", 2 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//2": "Arbitrary vitamins values"
@@ -443,8 +423,7 @@
     "quench": 12,
     "spoils_in": "7 days",
     "stack_size": 12,
-    "rot_spawn": "GROUP_EGG_MOLLUSK_LARGE",
-    "rot_spawn_chance": 80,
+    "rot_spawn": { "group": "GROUP_EGG_MOLLUSK_LARGE", "chance": 80 },
     "vitamins": [ [ "calcium", 4 ], [ "iron", 15 ], [ "vitC", 2 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values, based on egg_insect but reduced"
@@ -469,8 +448,7 @@
     "quench": 12,
     "spoils_in": "7 days",
     "stack_size": 12,
-    "rot_spawn": "GROUP_EGG_MOLLUSK_SMALL",
-    "rot_spawn_chance": 75,
+    "rot_spawn": { "group": "GROUP_EGG_MOLLUSK_SMALL", "chance": 75 },
     "vitamins": [ [ "calcium", 3 ], [ "iron", 12 ], [ "vitC", 1 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values, based on egg_insect but reduced"
@@ -490,8 +468,7 @@
     "calories": 50,
     "fun": -16,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_MOSCHORHINUS",
-    "rot_spawn_chance": 88,
+    "rot_spawn": { "group": "GROUP_EGG_MOSCHORHINUS", "chance": 88 },
     "vitamins": [ [ "calcium", 2 ], [ "iron", 3 ], [ "vitA", 1 ], [ "vitB", 5 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -511,8 +488,7 @@
     "calories": 50,
     "fun": -16,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_NOCHNITSA",
-    "rot_spawn_chance": 80,
+    "rot_spawn": { "group": "GROUP_EGG_NOCHNITSA", "chance": 80 },
     "vitamins": [ [ "calcium", 2 ], [ "iron", 3 ], [ "vitA", 2 ], [ "vitB", 5 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -524,8 +500,7 @@
     "copy-from": "egg_eryops",
     "description": "A clump of Pederpes eggs.",
     "stack_size": 16,
-    "rot_spawn": "GROUP_EGG_PEDERPES",
-    "rot_spawn_chance": 66,
+    "rot_spawn": { "group": "GROUP_EGG_PEDERPES", "chance": 66 },
     "vitamins": [ [ "calcium", 2 ], [ "iron", 5 ], [ "vitA", 4 ], [ "vitB", 10 ] ],
     "flags": [ "FREEZERBURN", "RAW" ]
   },
@@ -536,8 +511,7 @@
     "copy-from": "egg_eryops",
     "description": "A clump of Platyoposaurus eggs.",
     "stack_size": 16,
-    "rot_spawn": "GROUP_EGG_PLATYOPOSAURUS",
-    "rot_spawn_chance": 75,
+    "rot_spawn": { "group": "GROUP_EGG_PLATYOPOSAURUS", "chance": 75 },
     "vitamins": [ [ "calcium", 3 ], [ "iron", 8 ], [ "vitA", 4 ], [ "vitB", 12 ] ],
     "flags": [ "FREEZERBURN", "RAW" ]
   },
@@ -548,8 +522,7 @@
     "copy-from": "egg_eryops",
     "description": "A clump of Prionosuchus eggs.",
     "stack_size": 16,
-    "rot_spawn": "GROUP_EGG_PRIONOSUCHUS",
-    "rot_spawn_chance": 80,
+    "rot_spawn": { "group": "GROUP_EGG_PRIONOSUCHUS", "chance": 80 },
     "vitamins": [ [ "calcium", 4 ], [ "iron", 8 ], [ "vitA", 4 ], [ "vitB", 10 ] ],
     "flags": [ "FREEZERBURN", "RAW" ]
   },
@@ -568,8 +541,7 @@
     "calories": 240,
     "fun": -16,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_PRISTEROGNATHUS",
-    "rot_spawn_chance": 88,
+    "rot_spawn": { "group": "GROUP_EGG_PRISTEROGNATHUS", "chance": 88 },
     "vitamins": [ [ "calcium", 20 ], [ "iron", 35 ], [ "vitA", 10 ], [ "vitB", 50 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -588,8 +560,7 @@
     "calories": 150,
     "stack_size": 4,
     "fun": -15,
-    "rot_spawn": "GROUP_EGG_SCUTOSAURUS",
-    "rot_spawn_chance": 33,
+    "rot_spawn": { "group": "GROUP_EGG_SCUTOSAURUS", "chance": 33 },
     "flags": [ "RAW" ]
   },
   {
@@ -606,8 +577,7 @@
     "calories": 200,
     "stack_size": 4,
     "fun": -12,
-    "rot_spawn": "GROUP_EGG_SMILOSUCHUS",
-    "rot_spawn_chance": 33,
+    "rot_spawn": { "group": "GROUP_EGG_SMILOSUCHUS", "chance": 33 },
     "flags": [ "RAW" ]
   },
   {
@@ -625,8 +595,7 @@
     "calories": 220,
     "fun": -16,
     "stack_size": 1,
-    "rot_spawn": "GROUP_EGG_VIATKOGORGON",
-    "rot_spawn_chance": 88,
+    "rot_spawn": { "group": "GROUP_EGG_VIATKOGORGON", "chance": 88 },
     "vitamins": [ [ "calcium", 18 ], [ "iron", 30 ], [ "vitA", 12 ], [ "vitB", 42 ] ],
     "flags": [ "FREEZERBURN", "RAW" ],
     "//": "Arbitrary values"
@@ -650,8 +619,7 @@
     "material": [ "egg" ],
     "stack_size": 4,
     "fun": -12,
-    "rot_spawn": "GROUP_EGG_WEIGELTISAURUS",
-    "rot_spawn_chance": 80,
+    "rot_spawn": { "group": "GROUP_EGG_WEIGELTISAURUS", "chance": 80 },
     "flags": [ "RAW" ]
   }
 ]
