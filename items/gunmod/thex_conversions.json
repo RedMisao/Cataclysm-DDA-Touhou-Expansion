@@ -16,6 +16,8 @@
     "install_time": "15 m",
     "ammo_modifier": [ "308" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 2700,
+    "//": "Should be 3470 * 0.9 = 3123 but currently 762_51 has a recoil of 3000, so doing that would make it unusable in full auto",
     "magazine_adaptor": [
       [
         "308",
@@ -86,6 +88,8 @@
     "install_time": "15 m",
     "ammo_modifier": [ "308" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 2700,
+    "//": "Should be 3470 * 0.9 = 3123 but currently 762_51 has a recoil of 3000, so doing that would make it unusable in full auto",
     "pocket_mods": [ 
       { 
         "pocket_type": "MAGAZINE", "rigid": true, 
@@ -112,6 +116,8 @@
     "install_time": "15 m",
     "ammo_modifier": [ "308" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 2700,
+    "//": "Should be 3470 * 0.9 = 3123 but currently 762_51 has a recoil of 3000, so doing that would make it unusable in full auto",
     "magazine_adaptor": [
       [
         "308",
@@ -174,6 +180,7 @@
     "install_time": "15 m",
     "ammo_modifier": [ "3006" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 3483,
     "magazine_adaptor": [ [ "3006", [ "blrmag", "m1918bigmag", "m1918mag" ] ] ],
     "pocket_mods": [
       {
@@ -201,6 +208,8 @@
     "install_time": "15 m",
     "ammo_modifier": [ "762R" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 2385,
+    "//": "Should be 3629 * 0.9 = 3266 but currently 762_54R has a recoil of 2650, so doing that would make it unusable in full auto",
     "magazine_adaptor": [ [ "762R", [ "pslmag5", "pslmag10" ] ] ],
     "pocket_mods": [
       {
@@ -228,6 +237,7 @@
     "install_time": "15 m",
     "ammo_modifier": [ "792x33" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 1718,
     "pocket_mods": [ 
       { 
         "pocket_type": "MAGAZINE", "rigid": true, 
@@ -254,6 +264,7 @@
     "install_time": "15 m",
     "ammo_modifier": [ "792x33" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 1718,
     "magazine_adaptor": [ [ "792x33", [ "stg44mag25", "stg44mag30" ] ] ],
     "pocket_mods": [
       {
@@ -281,6 +292,8 @@
     "install_time": "15 m",
     "ammo_modifier": [ "792x57" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 2970,
+    "//": "Set using 792x57_m75 as basis, just because using the original 792x57_sme leaves it too close",
     "pocket_mods": [ 
       { 
         "pocket_type": "MAGAZINE", "rigid": true, 
@@ -308,6 +321,8 @@
     "install_time": "15 m",
     "ammo_modifier": [ "792x57" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 2970,
+    "//": "Set using 792x57_m75 as basis, just because using the original 792x57_sme leaves it too close",
     "pocket_mods": [ 
       { 
         "pocket_type": "MAGAZINE", "rigid": true, 
@@ -334,6 +349,8 @@
     "install_time": "15 m",
     "ammo_modifier": [ "30carbine" ],
     "location": "bore",
+    "overwrite_min_cycle_recoil": 900,
+    "//": "Should be 1311 * 0.9 = 1170 but currently 30carbine has a recoil of 1000, so doing that would make it unusable in full auto",
     "magazine_adaptor": [ [ "30carbine", [ "m1carbinebigmag", "m1carbinemag" ] ] ],
     "pocket_mods": [
       {

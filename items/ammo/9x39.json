@@ -22,8 +22,7 @@
     "critical_multiplier": 2,
     "dispersion": 30,
     "range": 64,
-    "recoil": 960,
-    "//4": "Set retroactively from dmg^2 ",
+    "recoil": 677,
     "effects": [ "COOKOFF", "NEVER_MISFIRES" ],
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ]
   },
@@ -40,7 +39,7 @@
     "//2": "9x39 SP-6 damage is too low (754 J), so I'm increasing it by 20%",
     "critical_multiplier": 2,
     "dispersion": 20,
-    "recoil": 1090,
+    "recoil": 754,
     "//3": "Set retroactively from dmg^2 "
   },
   {
@@ -78,8 +77,8 @@
     "copy-from": "9x39_sp5",
     "proportional": {
       "price": 0.33,
-      "damage": { "damage_type": "bullet", "amount": 0.77, "armor_penetration": 0.66 },
-      "recoil": 0.77,
+      "damage": { "damage_type": "bullet", "amount": 0.76, "armor_penetration": 0.76 },
+      "recoil": 0.76,
       "dispersion": 1.2
     },
     "extend": { "effects": [ "BLACKPOWDER", "MUZZLE_SMOKE", "RECYCLED" ] },
@@ -92,8 +91,8 @@
     "copy-from": "9x39_sp6",
     "proportional": {
       "price": 0.33,
-      "damage": { "damage_type": "bullet", "amount": 0.77, "armor_penetration": 0.66 },
-      "recoil": 0.77,
+      "damage": { "damage_type": "bullet", "amount": 0.76, "armor_penetration": 0.76 },
+      "recoil": 0.76,
       "dispersion": 1.2
     },
     "extend": { "effects": [ "BLACKPOWDER", "MUZZLE_SMOKE", "RECYCLED" ] },

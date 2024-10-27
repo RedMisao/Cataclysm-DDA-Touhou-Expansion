@@ -18,7 +18,7 @@
     "damage": { "damage_type": "bullet", "amount": 38, "armor_penetration": 6 },
     "dispersion": 7,
     "range": 64,
-    "recoil": 2200,
+    "recoil": 1416,
     "effects": [ "NEVER_MISFIRES" ],
     "flags": [ "IRREPLACEABLE_CONSUMABLE", "CASELESS_ROUNDS" ],
     "//2": "Based and scaled from 8mm_caseless . Arbitrary price. Dispersion set so hk_g11 + 473x33_dm11 = ( hk_g3 + 762_51 ) / 2 "

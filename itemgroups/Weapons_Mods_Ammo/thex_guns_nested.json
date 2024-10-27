@@ -151,8 +151,7 @@
       { "item": "m76", "charges-min": 0, "charges-max": 10 },
       { "item": "m76mag10" },
       { "item": "m76mag10", "prob": 50 },
-      { "group": "on_hand_792x57" },
-      { "item": "onm76_scope" }
+      { "group": "on_hand_792x57" }
     ]
   },
   {
@@ -220,8 +219,7 @@
     "entries": [
       { "item": "ots48k", "charges-min": 0, "charges-max": 5 },
       { "item": "762R_clip", "prob": 66 },
-      { "group": "on_hand_762R" },
-      { "item": "rifle_scope" }
+      { "group": "on_hand_762R" }
     ]
   },
   {
@@ -242,8 +240,7 @@
       { "item": "pgm_hecate", "charges-min": 0, "charges-max": 7 },
       { "item": "pgmmag7" },
       { "item": "pgmmag7", "prob": 50 },
-      { "group": "on_hand_50" },
-      { "item": "scrome_scope" }
+      { "group": "on_hand_50" }
     ]
   },
   {
@@ -336,8 +333,7 @@
       { "item": "svd", "charges-min": 0, "charges-max": 30 }, 
       { "group": "nested_svdmag" }, 
       { "group": "nested_svdmag", "prob": 50 }, 
-      { "group": "on_hand_792x57" },
-      { "item": "pso1_scope" } 
+      { "group": "on_hand_792x57" } 
     ]
   },
   {
@@ -432,8 +428,7 @@
       { "item": "svt40_sniper", "charges-min": 0, "charges-max": 10 }, 
       { "item": "svt40mag10" }, 
       { "item": "svt40mag10", "prob": 50 }, 
-      { "group": "on_hand_762R" },
-      { "item": "pu_scope" } 
+      { "group": "on_hand_762R" } 
    ]
   },
   {
@@ -495,8 +490,7 @@
       { "item": "vsk94", "charges-min": 0, "charges-max": 30 }, 
       { "group": "nested_9x39mag" }, 
       { "group": "nested_9x39mag", "prob": 50 }, 
-      { "group": "on_hand_9x39" }, 
-      { "item": "pso1_scope" } 
+      { "group": "on_hand_9x39" } 
     ]
   },
   {
