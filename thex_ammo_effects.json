@@ -117,7 +117,7 @@
         "if": { "map_field_id": "fd_thex_dummy", "loc": { "global_val": "ammo_lunar_bousan_loc" } },
         "then": [ 
           { "u_transform_radius": 21, "ter_furn_transform": "remove_dummy_field" },
-          { "run_eoc_with": "ammo_lunar_bousan_check_1_eoc", "alpha_talker": "avatar" }
+          { "run_eocs": "ammo_lunar_bousan_check_1_eoc", "alpha_talker": "avatar" }
         ]
       }
     ],

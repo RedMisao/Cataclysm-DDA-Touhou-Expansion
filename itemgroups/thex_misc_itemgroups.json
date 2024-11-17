@@ -10,7 +10,7 @@
       { "item": "ibm5100", "prob": 100 },
       { "group": "magazines", "prob": 100 },
       { "group": "newspaper", "prob": 100 },
-      { "group": "rare_martial_arts_books", "prob": 100 },
+      { "group": "book_martial_rare", "prob": 100 },
       { "item": "umbrella", "prob": 100 },
       { "group": "writing_utensils", "prob": 100 },
       { "group": "socks_unisex", "prob": 100 }

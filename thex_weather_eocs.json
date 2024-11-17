@@ -43,7 +43,7 @@
       { "math": [ "var_night_parade_started", "+=", "1" ] },
       { "run_eocs": "block_PORTAL_STORM_eoc" },
       { "run_eocs": "night_parade_start_message_eoc" },
-      { "queue_eocs": [ "night_parade_reset_vars_eoc" ], "time_in_future": { "math": [ "time_until('daylight_time')" ] } }
+      { "run_eocs": [ "night_parade_reset_vars_eoc" ], "time_in_future": { "math": [ "time_until('daylight_time')" ] } }
     ],
     "//": "The var_STARTED returns TRUE if: there's night_parade proc AND it's night_time AND it's not raining AND there's no portal storm AND the event isn't already running AND the player is not underground",
     "//2": "Portal storms have priority as I'm not confident enough to block/revert them without breaking the game",
@@ -244,7 +244,7 @@
       { "math": [ "purifying_rain_proc", "+=", "1" ] }, 
       "next_weather",
       {
-        "queue_eocs": [
+        "run_eocs": [
           {
             "id": "purifying_rain_disable_eoc",
             "effect": [ 
