@@ -424,6 +424,9 @@
     "enchantments": [
       {
         "condition": "ALWAYS",
+        "melee_damage_bonus": [ 
+          { "type": "bash", "add": { "math": [ "( u_var_thorny_box * 3 )" ] } } 
+        ],
         "values": [ 
           { "value": "BONUS_BLOCK", "add": { "math": [ " - ( u_var_thorny_box )" ] } },
           { "value": "BONUS_DODGE", "add": { "math": [ " - ( u_var_thorny_box )" ] } },
@@ -431,7 +434,6 @@
           { "value": "EQUIPMENT_DAMAGE_CHANCE", "multiply": { "math": [ "( u_var_thorny_box * 5 )" ] } },
           { "value": "FOOTSTEP_NOISE", "multiply": { "math": [ "( u_var_thorny_box / 2 )" ] } },
           { "value": "HUNGER", "multiply": { "math": [ "( u_var_thorny_box / 3 )" ] } },
-          { "value": "ITEM_DAMAGE_BASH", "add": { "math": [ "( u_var_thorny_box * 3 )" ] } },
           { "value": "NIGHT_VIS", "add": { "math": [ "( u_var_thorny_box * 2 )" ] } },
           { "value": "OVERKILL_DAMAGE", "multiply": { "math": [ " - ( u_var_thorny_box )" ] } },
           { "value": "SOCIAL_INTIMIDATE", "add": { "math": [ " ( u_var_thorny_box * 5 )" ] } },
