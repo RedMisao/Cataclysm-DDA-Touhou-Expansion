@@ -13,18 +13,86 @@
     "id": "daily_randomization_eoc",
     "type": "effect_on_condition",
     "effect": [
-      { "math": [ "night_parade_proc", "=", "rand(99)" ] },
-      { "math": [ "silence_hour_proc", "=", "rand(99)" ] },
-      { "math": [ "silence_hour_second", "=", "rand(86399)" ] },
-      { "math": [ "weather_blood_rain_proc", "=", "rand(99)" ] },
-      { "math": [ "weather_carnian_proc", "=", "rand(99)" ] },
-      { "math": [ "weather_carnian_active", "=", "0" ] },
-      { "math": [ "weather_scarlet_proc", "=", "rand(99)" ] },
+      {
+        "run_eocs": [
+          {
+            "id": "thex_event_night_parade_eoc",
+            "condition": { "x_in_y_chance": { "x": 1, "y": 11 } },
+            "effect": [ { "run_eocs": [ "thex_event_night_parade_queue_eoc" ] } ]
+          },
+          {
+            "id": "thex_event_silence_hour_eoc",
+            "condition": { "x_in_y_chance": { "x": 1, "y": 11 } },
+            "effect": [ { "run_eocs": [ "thex_event_silence_hour_queue_eoc" ] } ]
+          }
+        ]
+      },
       { "run_eocs": [ "daily_randomization_eoc" ], "time_in_future": { "math": [ "86400 - time_since('midnight', 'unit': 'seconds')" ] } }
     ],
-    "//": "Re-rolls daily at 00:00:00, for use in special events",
-    "//WIP": "Carnian weather is disabled, it requires weather_carnian_active >= 1",
-    "//WIP2": "Confirm the daily_randomization_eoc won't break !!!"
+    "//": "Re-rolls daily at 00:00:00, for use in custom events",
+    "//2": "tl;dr this checks the event's chance every day -> runs EVENT_queue (at event-specific queued time) -> runs EVENT_check (if event conditions are adequate) -> sets var_EVENT_active which is used at each weather_type -> runs EVENT_disable to reset related vars -> runs EVENT_cd to set a cooldown (if necessary, to prevent repeating the event the following day)",
+    "//3": "Some weather/events start past X days, for either lore reasons or due no reason",
+    "//4": "The EVENT_queue EOCs (and everything downstream of that) are at thex_weather_eocs.json ",
+    "//5": "Custom weather is handled automatically by the recurring thex_weather_and_event_check_eoc ",
+    "//WIP": "Confirm the daily_randomization_eoc won't break !!!"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PORTAL_STORM_WARN_OR_CAUSE_RECURRING",
+    "recurrence": [ { "global_val": "ps_min_woc", "default": "5 days" }, { "global_val": "ps_max_woc", "default": "18 days" } ],
+    "global": true,
+    "condition": {
+      "and": [
+        { "not": { "is_weather": "cloudy_scarlet" } },
+        { "not": { "is_weather": "fog_scarlet" } },
+        { "not": { "is_weather": "mist_scarlet" } },
+        { "not": { "is_weather": "rain_blood" } },
+        { "not": { "is_weather": "drizzle_carnian_1" } },
+        { "not": { "is_weather": "drizzle_carnian_2" } },
+        { "not": { "is_weather": "rain_carnian" } },
+        { "not": { "is_weather": "rain_purifying" } },
+        { "not": { "is_weather": "rainstorm_blood" } },
+        { "not": { "is_weather": "rainstorm_carnian" } },
+        { "not": { "is_weather": "thunder_blood" } },
+        { "not": { "is_weather": "thunder_carnian" } },
+        { "not": { "is_weather": "lightning_blood" } },
+        { "not": { "is_weather": "lightning_carnian" } },
+        { "not": { "is_weather": "night_parade" } },
+        { "not": { "is_weather": "silence_hour" } }
+      ]
+    },
+    "effect": { "run_eocs": "EOC_CAUSE_EARLY_PORTAL_STORM" },
+    "false_effect": [ { "run_eocs": [ "EOC_CAUSE_EARLY_PORTAL_STORM_retry" ], "time_in_future": "6 h" } ],
+    "//": "This blocks portal storms if a custom weather is running",
+    "//2": "Otherwise, it runs the false_effect, which tries again 6 h later, and keeps queueing until it succeeds",
+    "//mod_interactions": "Some mainlined mods disable portal storms by default, this is handled by the mod_interactions folder"
+  },
+  {
+    "id": "EOC_CAUSE_EARLY_PORTAL_STORM_retry",
+    "type": "effect_on_condition",
+    "global": true,
+    "condition": {
+      "and": [
+        { "not": { "is_weather": "cloudy_scarlet" } },
+        { "not": { "is_weather": "fog_scarlet" } },
+        { "not": { "is_weather": "mist_scarlet" } },
+        { "not": { "is_weather": "rain_blood" } },
+        { "not": { "is_weather": "drizzle_carnian_1" } },
+        { "not": { "is_weather": "drizzle_carnian_2" } },
+        { "not": { "is_weather": "rain_carnian" } },
+        { "not": { "is_weather": "rain_purifying" } },
+        { "not": { "is_weather": "rainstorm_blood" } },
+        { "not": { "is_weather": "rainstorm_carnian" } },
+        { "not": { "is_weather": "thunder_blood" } },
+        { "not": { "is_weather": "thunder_carnian" } },
+        { "not": { "is_weather": "lightning_blood" } },
+        { "not": { "is_weather": "lightning_carnian" } },
+        { "not": { "is_weather": "night_parade" } },
+        { "not": { "is_weather": "silence_hour" } }
+      ]
+    },
+    "effect": { "run_eocs": "EOC_CAUSE_EARLY_PORTAL_STORM" },
+    "false_effect": [ { "run_eocs": [ "EOC_CAUSE_EARLY_PORTAL_STORM_retry" ], "time_in_future": "6 h" } ]
   },
   {
     "id": "gevaudan_attacked_melee_eoc",
@@ -134,7 +202,8 @@
     ],
     "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not considering consuming Earthly stuff during that period of time",
     "//2": "Boundaries for each impure tier: -48 - 0 h (extremely low), 0 - 48 h (verylow), 2 - 7 days (low), >7 days (high)",
-    "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
+    "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) ",
+    "//WIP": "Move this to be handled automatically by the vitamin system?"
   },
   {
     "id": "impurity_kills_character_eoc",
@@ -198,7 +267,8 @@
         ]
       }
     ],
-    "//": "Seems impurity_eoc is run before this, regardless if this is placed after, which could cause minor problems in the future"
+    "//": "Seems impurity_eoc is run before this, regardless if this is placed after, which could cause minor problems in the future",
+    "//2": "That makes it so the impurity effects are updated ~15 min after the start of the game"
   },
   {
     "id": "kill_drops_eoc",

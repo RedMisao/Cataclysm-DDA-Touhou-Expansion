@@ -62,5 +62,16 @@
       "Darkness become thicker before your very eyes, as you realize there's something off this night.",
       "Just as the sun goes down, you notice something is… out of place."
     ]
+  },
+  {
+    "category": "silence_hour_snippet",
+    "type": "snippet",
+    "text": [
+      " ",
+      "  ",
+      "   ",
+      "    ",
+      "     "
+    ]
   }
 ]

@@ -1,13 +1,183 @@
 [
   {
-    "id": "night_parade_start_eoc",
+    "id": "thex_weather_and_event_check_eoc",
     "type": "effect_on_condition",
-    "recurrence": [ "60 s", "120 s" ],
+    "recurrence": [ "6 h", "24 h" ],
     "global": true,
     "condition": {
       "and": [
-        { "math": [ "night_parade_proc", "<", "5" ] },
-        { "math": [ "time_until('night_time') > time_until('daylight_time')" ] },
+        { "math": [ "cause_early_portal_storm", "==", "0" ] },
+        { "math": [ "cause_portal_storm", "==", "0" ] }
+      ]
+    },
+    "effect": [
+      {
+        "run_eocs": [
+          {
+            "id": "thex_weather_story_check_eoc",
+            "effect": [ 
+              {
+                "run_eocs": [
+                  {
+                    "id": "thex_weather_purifying_check_eoc",
+                    "condition": {
+                      "and": [
+                        { "math": [ "time_since('cataclysm', 'unit':'days')", ">=", "86" ] },
+                        { "math": [ "weather_purifying_queued", "==", "0" ] },
+                        { "math": [ "weather_purifying_active", "==", "0" ] },
+                        { "math": [ "weather_purifying_ended", "==", "0" ] }
+                      ]
+                    },
+                    "effect": [ 
+                      { "math": [ "weather_purifying_queued", "=", "1" ] },
+                      {
+                        "run_eocs": [
+                          {
+                            "id": "thex_weather_purifying_success_eoc",
+                            "effect": [ 
+                              { "math": [ "weather_purifying_queued", "=", "0" ] },
+                              { "math": [ "weather_purifying_active", "=", "1" ] },
+                              {
+                                "run_eocs": [
+                                  {
+                                    "id": "thex_weather_purifying_disable_eoc",
+                                    "effect": [ 
+                                      { "math": [ "weather_purifying_active", "=", "0" ] },
+                                      { "math": [ "weather_purifying_ended", "=", "1" ] }
+                                    ]
+                                  }
+                                ],
+                                "time_in_future": "2 d 23 h 1 s"
+                              }
+                            ]
+                          }
+                        ],
+                        "time_in_future": { "math": [ "rand(86399)" ] }
+                      }
+                    ],
+                    "//": "Purifying rain should only run once per world (unique), starting at ~3 days before the 90 day mark. This is for lore purposes, linked to the second wave of LDC faction",
+                    "//2": "This EOC first checks if it's day 86, and queues the activation of the var_ACTIVE (condition for rain_purifying ) in rand(24 h) seconds",
+                    "//3": "Once that is successfully run, it sets var_ACTIVE as 1 (condition for rain_purifying ), and queues the deactivation in <3 days, also adding the var_ENDED used to prevent this from running again"
+                  }
+                ]
+              }
+            ],
+            "//story": "All extremely important weather/events go here. These have priority over every other weather/event"
+          }
+        ]
+      },
+      {
+        "run_eocs": [
+          {
+            "id": "thex_weather_special_check_eoc",
+            "condition": {
+              "and": [
+                { "math": [ "weather_purifying_active", "==", "0" ] },
+                { "math": [ "weather_night_parade_active", "==", "0" ] },
+                { "math": [ "weather_silence_hour_active", "==", "0" ] }
+              ]
+            },
+            "effect": [ 
+              {
+                "run_eocs": [
+                  {
+                    "id": "thex_weather_carnian_check_eoc",
+                    "condition": {
+                      "and": [
+                        { "x_in_y_chance": { "x": 1, "y": 10 } },
+                        { "math": [ "weather_carnian_active", "==", "0" ] },
+                        { "math": [ "weather_carnian_cd", "==", "0" ] },
+                        { "math": [ "time_since('cataclysm', 'unit':'days')", ">=", "30" ] }
+                      ]
+                    },
+                    "effect": [ 
+                      { "math": [ "weather_carnian_active", "=", "1" ] },
+                      {
+                        "run_eocs": [
+                          {
+                            "id": "thex_weather_carnian_disable_eoc",
+                            "effect": [ 
+                              { "math": [ "weather_carnian_active", "=", "0" ] },
+                              { "math": [ "weather_carnian_cd", "=", "1" ] },
+                              {
+                                "run_eocs": [
+                                  {
+                                    "id": "thex_weather_carnian_restore_eoc",
+                                    "effect": [ { "math": [ "weather_carnian_cd", "=", "0" ] } ]
+                                  }
+                                ],
+                                "time_in_future": "7 d"
+                              }
+                            ]
+                          }
+                        ],
+                        "time_in_future": [ "7 d", "14 d" ]
+                      }
+                    ],
+                    "//": "When Carnian weather is procced, it runs for 7 - 14 days and deactivates, adding a cd. The cd is removed after 7 days of that deactivation",
+                    "//2": "Maybe reconsider removing the cd *triassic laughter* "
+                  }
+                ]
+              }
+            ],
+            "//special": "All 'special' weather go here, due their particular characteristics. These have priority over 'generic' and base weather"
+          }
+        ]
+      },
+      {
+        "run_eocs": [
+          {
+            "id": "thex_weather_generic_check_eoc",
+            "condition": {
+              "and": [
+                { "math": [ "weather_carnian_active", "==", "0" ] },
+                { "math": [ "weather_purifying_active", "==", "0" ] },
+                { "math": [ "weather_night_parade_active", "==", "0" ] },
+                { "math": [ "weather_silence_hour_active", "==", "0" ] }
+              ]
+            },
+            "effect": [ 
+              {
+                "run_eocs": [
+                  {
+                    "id": "thex_weather_scarlet_check_eoc",
+                    "condition": { "x_in_y_chance": { "x": 1, "y": 5 } },
+                    "effect": [ { "math": [ "weather_scarlet_active", "=", "1" ] } ],
+                    "false_effect": [ { "math": [ "weather_scarlet_active", "=", "0" ] } ]
+                  },
+                  {
+                    "id": "thex_weather_blood_check_eoc",
+                    "condition": { "x_in_y_chance": { "x": 1, "y": 5 } },
+                    "effect": [ { "math": [ "weather_blood_active", "=", "1" ] } ],
+                    "false_effect": [ { "math": [ "weather_blood_active", "=", "0" ] } ]
+                  }
+                ]
+              }
+            ],
+            "//generic": "All otherwise generic weather go here. These only have priority over base weather counterparts"
+          }
+        ]
+      }
+    ],
+    "//": "This rolls the chance for each custom weather every 6 - 24 h, to make it somewhat fluid (originally it was every day at 00:00)",
+    "//2": "Some weather/events start past X days, for either lore reasons or because idk lol",
+    "//3": "The condition for this recurring EOC prevents weather and weather-events from happening if there are portal storms going on. I'm almost sure",
+    "//4": "Events are directly handled by daily_randomization_eoc ",
+    "//note": "Ideally, the chance should roll for every weather change, instead of being a recurring EOC"
+  },
+  {
+    "id": "thex_event_night_parade_queue_eoc",
+    "type": "effect_on_condition",
+    "effect": [ 
+      { "run_eocs": [ "thex_event_night_parade_check_eoc" ], "time_in_future": { "math": [ "time_until('night_time')" ] } } 
+    ],
+    "//": "If the daily chance for the event was true, this queues the EOC at the intended time of the day (night), and then checks the actual event's conditions"
+  },
+  {
+    "id": "thex_event_night_parade_check_eoc",
+    "type": "effect_on_condition",
+    "condition": {
+      "and": [
         { 
           "or": [ 
             { "is_weather": "sunny" },
@@ -29,30 +199,44 @@
           ]
         },
         { "not": { "is_weather": "night_parade" } },
-        { "math": [ "var_night_parade_started", "<=", "0" ] },
+        { "math": [ "weather_night_parade_active", "==", "0" ] },
+        { "math": [ "weather_night_parade_cd", "==", "0" ] },
         { "math": [ "u_val('pos_z')", ">=", "0" ] }
       ]
     },
-    "deactivate_condition": { 
-       "or": [ 
-        { "math": [ "night_parade_proc", ">=", "5" ] },
-        { "is_weather": "night_parade" }
-      ]
-    },
     "effect": [
-      { "math": [ "var_night_parade_started", "+=", "1" ] },
-      { "run_eocs": "block_PORTAL_STORM_eoc" },
-      { "run_eocs": "night_parade_start_message_eoc" },
-      { "run_eocs": [ "night_parade_reset_vars_eoc" ], "time_in_future": { "math": [ "time_until('daylight_time')" ] } }
+      { "math": [ "weather_night_parade_active", "=", "1" ] },
+      { "run_eocs": "thex_event_night_parade_start_message_eoc" },
+      {
+        "run_eocs": [
+          {
+            "id": "thex_event_night_parade_disable_eoc",
+            "effect": [ 
+              { "math": [ "weather_night_parade_active", "=", "0" ] },
+              { "math": [ "weather_night_parade_cd", "=", "1" ] },
+              "next_weather",
+              {
+                "run_eocs": [
+                  {
+                    "id": "thex_event_night_parade_restore_eoc",
+                    "effect": [ { "math": [ "weather_night_parade_cd", "=", "0" ] } ]
+                  }
+                ],
+                "time_in_future": "24 h"
+              }
+            ]
+          }
+        ],
+        "time_in_future": { "math": [ "time_until('daylight_time')" ] }
+      }
     ],
-    "//": "The var_STARTED returns TRUE if: there's night_parade proc AND it's night_time AND it's not raining AND there's no portal storm AND the event isn't already running AND the player is not underground",
-    "//2": "Portal storms have priority as I'm not confident enough to block/revert them without breaking the game",
-    "//3": "Because weather is automatically set as 'Underground' if z < 0, and causes this EOC to detect no night_parade and thus keep running, the z >= 0 is required",
-    "//4": "A middleman var_STARTED is required as the var_PROC is reset every day; using the former allows the weather to continue past 00:00",
-    "//WIP": "Set some way to stall 1 day if there was a portal storm in progress"
+    "//": "Night parade runs if: it's night_time AND it's not raining AND there's no portal storm AND the event isn't already running/queued AND the player is not underground",
+    "//2": "(The night condition is implicit by running this EOC at night_time by thex_event_night_parade_queue_eoc )",
+    "//3": "Portal storms have priority as I'm not confident enough to block/revert them without breaking the game",
+    "//4": "Because weather is automatically set as 'Underground' if z < 0, it causes the EOC to detect no event and thus keep running, thus the z >= 0 is required"
   },
   {
-    "id": "night_parade_waves_eoc",
+    "id": "thex_event_night_parade_waves_eoc",
     "type": "effect_on_condition",
     "recurrence": [ "1 m", "5 m" ],
     "global": true,
@@ -67,16 +251,16 @@
     "effect": [
       {
         "weighted_list_eocs": [
-          [ "night_parade_spawn_1", 10 ],
-          [ "night_parade_spawn_2", 10 ],
-          [ "night_parade_spawn_3", 10 ],
-          [ "night_parade_spawn_4", 1 ]
+          [ "night_parade_spawn_1_eoc", 11 ],
+          [ "night_parade_spawn_2_eoc", 11 ],
+          [ "night_parade_spawn_3_eoc", 11 ],
+          [ "night_parade_spawn_4_eoc", 1 ]
         ]
       }
     ]
   },
   {
-    "id": "night_parade_spawn_1",
+    "id": "night_parade_spawn_1_eoc",
     "type": "effect_on_condition",
     "effect": [
       {
@@ -92,7 +276,7 @@
     ]
   },
   {
-    "id": "night_parade_spawn_2",
+    "id": "night_parade_spawn_2_eoc",
     "type": "effect_on_condition",
     "effect": [
       {
@@ -108,7 +292,7 @@
     ]
   },
   {
-    "id": "night_parade_spawn_3",
+    "id": "night_parade_spawn_3_eoc",
     "type": "effect_on_condition",
     "effect": [
       {
@@ -124,7 +308,7 @@
     ]
   },
   {
-    "id": "night_parade_spawn_4",
+    "id": "night_parade_spawn_4_eoc",
     "type": "effect_on_condition",
     "effect": [
       {
@@ -140,7 +324,7 @@
     ]
   },
   {
-    "id": "night_parade_start_message_eoc",
+    "id": "thex_event_night_parade_start_message_eoc",
     "type": "effect_on_condition",
     "effect": [
       {
@@ -224,59 +408,62 @@
     ]
   },
   {
-    "id": "night_parade_reset_vars_eoc",
+    "id": "thex_event_silence_hour_queue_eoc",
     "type": "effect_on_condition",
-    "global": true,
-    "effect": [
-      { "math": [ "night_parade_proc", "+=", "5" ] },
-      { "math": [ "var_night_parade_started", "=", "0" ] },
-      "next_weather"
-    ]
+    "effect": [ 
+      { "run_eocs": [ "thex_event_silence_hour_check_eoc" ], "time_in_future": { "math": [ "rand(86399)" ] } } 
+    ],
+    "//": "If the daily chance for the event was true, this queues the EOC at the intended time of the day (random), and then checks the actual event's conditions"
   },
   {
-    "id": "purifying_rain_eoc",
+    "id": "thex_event_silence_hour_check_eoc",
     "type": "effect_on_condition",
-    "recurrence": [ "87 d", "88 d" ],
-    "global": true,
-    "condition": { "math": [ "purifying_rain_proc", "<=", "1" ] },
+    "condition": {
+      "and": [
+        { 
+          "or": [ 
+            { "is_weather": "sunny" },
+            { "is_weather": "clear" },
+            { "is_weather": "cloudy" },
+            { "is_weather": "cloudy_scarlet" },
+            { "is_weather": "mist" },
+            { "is_weather": "mist_scarlet" },
+            { "is_weather": "fog" },
+            { "is_weather": "fog_scarlet" }
+          ]
+        },
+        { 
+          "or": [ 
+            { "not": { "is_weather": "early_portal_storm" } },
+            { "not": { "is_weather": "distant_portal_storm" } },
+            { "not": { "is_weather": "close_portal_storm" } },
+            { "not": { "is_weather": "portal_storm" } }
+          ]
+        },
+        { "not": { "is_weather": "silence_hour" } },
+        { "math": [ "weather_silence_hour_active", "==", "0" ] },
+        { "math": [ "u_val('pos_z')", ">=", "0" ] }
+      ]
+    },
     "effect": [ 
-      { "run_eocs": [ "block_PORTAL_STORM_eoc" ] },
-      { "math": [ "purifying_rain_proc", "+=", "1" ] }, 
-      "next_weather",
+      { "math": [ "weather_silence_hour_active", "=", "1" ] },
+      { "u_message": "silence_hour_snippet", "snippet": true, "type": "warning" },
       {
         "run_eocs": [
           {
-            "id": "purifying_rain_disable_eoc",
+            "id": "thex_event_silence_hour_disable_eoc",
             "effect": [ 
-              { "math": [ "purifying_rain_proc", "+=", "1" ] }, 
-              { "math": [ "purifying_rain_ended", "=", "1" ] } 
+              { "math": [ "weather_silence_hour_active", "=", "0" ] },
+              "next_weather"
             ]
           }
         ],
-        "time_in_future": "2 d 23 h 1 s"
+        "time_in_future": "1 h"
       }
     ],
-    "//": "Do note that if the var is set to 0 while the weather is still running, it seems to immediately deactivate it",
-    "//2": "The weather_type should only run once, and always end at the 90 day mark. This is for lore purposes, linked to the second wave of LDC faction"
-  },
-  {
-    "id": "block_PORTAL_STORM_eoc",
-    "type": "effect_on_condition",
-    "global": true,
-    "//": "This sets up all the variables for the end of a portal storm.",
-    "effect": [
-      { "math": [ "cause_portal_storm", "=", "0" ] },
-      { "math": [ "cause_early_portal_storm", "=", "0" ] },
-      { "math": [ "portal_dungeon_slow_strength", "=", "0" ] },
-      { "math": [ "portal_dungeon_carry_strength", "=", "0" ] },
-      { "math": [ "portal_dungeon_reflect_strength", "=", "0" ] },
-      "next_weather",
-      { "run_eocs": [ "EOC_PORTAL_STORM_DUNGEON_EXIT" ] },
-      { "remove_active_mission": "MISSION_INVESTIGATE_PORTAL_DUNGEON" },
-      { "remove_active_mission": "MISSION_INVESTIGATE_PORTAL_STORM_CENTER" },
-      { "alter_timed_events": "portal_dungeon_entrance" },
-      { "math": [ "talked_to_storm", "=", "0" ] }
-    ],
-    "//2": "Should be exactly the same as EOC_CANCEL_PORTAL_STORM except no condition, no u_message , no u_add_var , EOC_WORSEN_PORTAL_STORM is not run, no u_counter_portal_storm_counter increase, and no trigger_event "
+    "//": "Silence hour runs if: (random time of the day) AND it's not raining AND there's no portal storm AND the event isn't already running/queued AND the player is not underground",
+    "//2": "(The random time is set by thex_event_silence_hour_queue_eoc )",
+    "//3": "Portal storms have priority as I'm not confident enough to block/revert them without breaking the game",
+    "//4": "Because weather is automatically set as 'Underground' if z < 0, it causes the EOC to detect no event and thus keep running, thus the z >= 0 is required"
   }
 ]

@@ -13,6 +13,8 @@
             { "not": { "is_weather": "drizzle" } },
             { "not": { "is_weather": "rain" } },
             { "not": { "is_weather": "rain_blood" } },
+            { "not": { "is_weather": "drizzle_carnian_1" } },
+            { "not": { "is_weather": "drizzle_carnian_2" } },
             { "not": { "is_weather": "rain_carnian" } },
             { "not": { "is_weather": "rain_purifying" } },
             { "not": { "is_weather": "rainstorm" } },
@@ -67,6 +69,14 @@
       {
         "if": { "is_weather": "rain_blood" },
         "then": { "u_message": "It is raining blood.", "type": "mixed" }
+      },
+      {
+        "if": { "is_weather": "drizzle_carnian_1" },
+        "then": { "u_message": "It is raining.", "type": "good" }
+      },
+      {
+        "if": { "is_weather": "drizzle_carnian_2" },
+        "then": { "u_message": "It is raining.", "type": "good" }
       },
       {
         "if": { "is_weather": "rain_carnian" },

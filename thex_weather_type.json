@@ -1,31 +1,5 @@
 [
   {
-    "id": "cloudy",
-    "type": "weather_type",
-    "name": "Cloudy",
-    "color": "light_gray",
-    "map_color": "dark_gray_white",
-    "sym": "~",
-    "ranged_penalty": 0,
-    "sight_penalty": 1.0,
-    "light_modifier": -20,
-    "sun_multiplier": 0.3,
-    "sound_attn": 0,
-    "dangerous": false,
-    "precip": "none",
-    "rains": false,
-    "sound_category": "cloudy",
-    "priority": 20,
-    "condition": { 
-      "and": [ 
-        { "math": [ "weather_scarlet_proc", ">=", "20" ] }, 
-        { "math": [ "weather('humidity')", ">=", "40" ] }, 
-        { "math": [ "weather('pressure')", "<", "1010" ] } 
-      ] 
-    },
-    "//": "Only adds condition for scarlet weather"
-  },
-  {
     "id": "cloudy_scarlet",
     "type": "weather_type",
     "name": "Scarlet clouds",
@@ -41,44 +15,14 @@
     "precip": "none",
     "rains": false,
     "sound_category": "cloudy",
-    "priority": 20,
+    "priority": 22,
     "condition": { 
       "and": [ 
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_scarlet_proc", "<", "20" ] }, 
+        { "math": [ "weather_scarlet_active", ">=", "1" ] }, 
         { "math": [ "weather('humidity')", ">=", "40" ] }, 
         { "math": [ "weather('pressure')", "<", "1010" ] } 
       ] 
     }
-  },
-  {
-    "id": "fog",
-    "type": "weather_type",
-    "name": "Fog",
-    "color": "light_gray",
-    "map_color": "dark_gray_white",
-    "sym": "~",
-    "ranged_penalty": 7,
-    "sight_penalty": 1.7,
-    "light_modifier": -40,
-    "sun_multiplier": 0.3,
-    "sound_attn": 0,
-    "dangerous": false,
-    "precip": "none",
-    "rains": false,
-    "sound_category": "silent",
-    "priority": 20,
-    "required_weathers": [ "clear", "sunny", "mist" ],
-    "condition": {
-      "and": [
-        { "math": [ "weather_scarlet_proc", ">=", "20" ] }, 
-        { "math": [ "weather('windpower')", "<", "12" ] },
-        { "math": [ "weather('windpower')", ">", "0" ] },
-        { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] }
-      ]
-    },
-    "//": "Only adds condition for scarlet weather"
   },
   {
     "id": "fog_scarlet",
@@ -96,47 +40,16 @@
     "precip": "none",
     "rains": false,
     "sound_category": "silent",
-    "priority": 20,
+    "priority": 22,
     "required_weathers": [ "clear", "sunny", "mist", "mist_scarlet" ],
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_scarlet_proc", "<", "20" ] }, 
+        { "math": [ "weather_scarlet_active", ">=", "1" ] },
         { "math": [ "weather('windpower')", "<", "12" ] },
         { "math": [ "weather('windpower')", ">", "0" ] },
         { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] }
       ]
     }
-  },
-  {
-    "id": "mist",
-    "type": "weather_type",
-    "name": "Mist",
-    "color": "light_gray",
-    "map_color": "dark_gray_white",
-    "sym": "~",
-    "ranged_penalty": 3,
-    "sight_penalty": 1.3,
-    "light_modifier": -20,
-    "sun_multiplier": 0.3,
-    "sound_attn": 0,
-    "dangerous": false,
-    "precip": "none",
-    "rains": false,
-    "sound_category": "silent",
-    "priority": 20,
-    "required_weathers": [ "clear", "sunny", "fog" ],
-    "condition": {
-      "and": [
-        { "math": [ "weather_scarlet_proc", ">=", "25" ] }, 
-        { "math": [ "weather('windpower')", "<", "12" ] },
-        { "math": [ "weather('windpower')", ">", "0" ] },
-        { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] },
-        { "math": [ "weather('humidity')", "<", "90" ] }
-      ]
-    },
-    "//": "Only adds condition for scarlet weather"
   },
   {
     "id": "mist_scarlet",
@@ -154,53 +67,17 @@
     "precip": "none",
     "rains": false,
     "sound_category": "silent",
-    "priority": 20,
+    "priority": 22,
     "required_weathers": [ "clear", "sunny", "fog", "fog_scarlet" ],
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_scarlet_proc", "<", "25" ] }, 
+        { "math": [ "weather_scarlet_active", ">=", "1" ] },
         { "math": [ "weather('windpower')", "<", "12" ] },
         { "math": [ "weather('windpower')", ">", "0" ] },
         { "math": [ "dew_point_factor(celsius(weather('temperature')))", "<=", "2.5" ] },
         { "math": [ "weather('humidity')", "<", "90" ] }
       ]
     }
-  },
-  {
-    "id": "rain",
-    "type": "weather_type",
-    "name": "Rain",
-    "color": "blue",
-    "map_color": "h_blue",
-    "sym": "o",
-    "ranged_penalty": 3,
-    "sight_penalty": 1.1,
-    "light_modifier": -30,
-    "sun_multiplier": 0.03,
-    "sound_attn": 4,
-    "dangerous": false,
-    "precip": "heavy",
-    "rains": true,
-    "tiles_animation": "weather_rain_drop",
-    "weather_animation": { "factor": 0.02, "color": "light_blue", "sym": "," },
-    "sound_category": "rainy",
-    "required_weathers": [ "light_drizzle", "drizzle" ],
-    "priority": 50,
-    "condition": { 
-      "and": [ 
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] },
-        { 
-          "or": [ 
-            { "math": [ "weather('humidity')", ">=", "98" ] }, 
-            { "math": [ "weather('pressure')", "<", "993" ] } 
-          ]
-        }
-      ]
-    },
-    "//": "Only adds condition for blood and carnian weather"
   },
   {
     "id": "rain_blood",
@@ -221,13 +98,10 @@
     "weather_animation": { "factor": 0.02, "color": "light_red", "sym": "," },
     "sound_category": "rainy",
     "required_weathers": [ "light_drizzle", "drizzle" ],
-    "priority": 50,
+    "priority": 52,
     "condition": { 
       "and": [ 
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } }, 
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } }, 
-        { "math": [ "weather_blood_rain_proc", "<", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] },
+        { "math": [ "weather_blood_active", ">=", "1" ] },
         { 
           "or": [ 
             { "math": [ "weather('humidity')", ">=", "98" ] }, 
@@ -236,6 +110,65 @@
         }
       ]
     }
+  },
+  {
+    "id": "drizzle_carnian_1",
+    "type": "weather_type",
+    "name": "Carnian drizzle",
+    "color": "light_blue",
+    "map_color": "h_light_blue",
+    "sym": ".",
+    "ranged_penalty": 2,
+    "sight_penalty": 1.066,
+    "light_modifier": -25,
+    "sun_multiplier": 0.05,
+    "sound_attn": 2,
+    "dangerous": false,
+    "precip": "light",
+    "rains": true,
+    "tiles_animation": "weather_rain_drop",
+    "weather_animation": { "factor": 0.01, "color": "light_blue", "sym": "." },
+    "sound_category": "rainy",
+    "//required_weathers": [ "light_drizzle" ],
+    "priority": 42,
+    "condition": { 
+      "and": [ 
+        { "math": [ "weather_carnian_active", ">=", "1" ] }, 
+        { "math": [ "weather('humidity') <= 95" ] }, 
+        { "math": [ "weather('pressure') >= 1010" ] } 
+      ] 
+    },
+    "//": "Heavier drizzle. These values should enable it to happen during otherwise 'clear' base weather, so it never stops raining during the Carnian"
+  },
+  {
+    "id": "drizzle_carnian_2",
+    "type": "weather_type",
+    "name": "Carnian rain",
+    "//": "Fake name, same stats as drizzle_carnian_1 , this is to allow more 'rain' most of the time than not",
+    "color": "light_blue",
+    "map_color": "h_light_blue",
+    "sym": "o",
+    "ranged_penalty": 2,
+    "sight_penalty": 1.066,
+    "light_modifier": -25,
+    "sun_multiplier": 0.05,
+    "sound_attn": 2,
+    "dangerous": false,
+    "precip": "light",
+    "rains": true,
+    "tiles_animation": "weather_rain_drop",
+    "weather_animation": { "factor": 0.01, "color": "light_blue", "sym": "." },
+    "sound_category": "rainy",
+    "//required_weathers": [ "light_drizzle" ],
+    "priority": 43,
+    "condition": { 
+      "and": [ 
+        { "math": [ "weather_carnian_active", ">=", "1" ] }, 
+        { "math": [ "weather('humidity') <= 97" ] }, 
+        { "math": [ "weather('pressure') >= 996" ] } 
+      ] 
+    },
+    "//2": "Slightly lighter rain. These values enable it to happen during base drizzle + light_drizzle , so it never stops raining during the Carnian"
   },
   {
     "id": "rain_carnian",
@@ -256,12 +189,9 @@
     "weather_animation": { "factor": 0.02, "color": "light_blue", "sym": "," },
     "sound_category": "rainy",
     "required_weathers": [ "light_drizzle", "drizzle", "rain", "rainstorm_carnian" ],
-    "priority": 50,
+    "priority": 53,
     "condition": { 
       "and": [ 
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } }, 
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } }, 
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
         { "math": [ "weather_carnian_active", ">=", "1" ] }, 
         { 
           "or": [ 
@@ -271,7 +201,9 @@
         }
       ]
     },
-    "//": "Carnian weather starts here, and cycles between this, rainstorm_carnian , thunder_carnian and lightning_carnian "
+    "//": "Same values as base rain",
+    "//2": "Carnian weather cycles between drizzle_carnian_X , rain_carnian, rainstorm_carnian , thunder_carnian and lightning_carnian ",
+    "//3": "Carnian weather is handled by the var weather_carnian_active at thex_weather_carnian_check_eoc "
   },
   {
     "id": "rain_purifying",
@@ -294,38 +226,8 @@
     "weather_animation": { "factor": 0.02, "color": "light_blue", "sym": "," },
     "sound_category": "rainy",
     "priority": 999,
-    "condition": { "math": [ "purifying_rain_proc", "==", "1" ] },
+    "condition": { "math": [ "weather_purifying_active", "==", "1" ] },
     "//": "Same stats as rain "
-  },
-  {
-    "id": "rainstorm",
-    "type": "weather_type",
-    "name": "Rain Storm",
-    "color": "blue",
-    "map_color": "i_blue",
-    "sym": "%",
-    "ranged_penalty": 6,
-    "sight_penalty": 1.2,
-    "light_modifier": -35,
-    "sun_multiplier": 0.01,
-    "sound_attn": 8,
-    "dangerous": false,
-    "precip": "heavy",
-    "rains": true,
-    "tiles_animation": "weather_rain_drop",
-    "weather_animation": { "factor": 0.04, "color": "blue", "sym": ";" },
-    "sound_category": "rainstorm",
-    "required_weathers": [ "rain" ],
-    "priority": 60,
-    "condition": {
-      "and": [
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] }, 
-        { "math": [ "weather('temperature')", ">=", "from_fahrenheit( 33 )" ] },
-        { "math": [ "weather('windpower')", ">=", "15" ] }
-      ]
-    },
-    "//": "Only adds condition for blood and carnian weather"
   },
   {
     "id": "rainstorm_blood",
@@ -346,13 +248,10 @@
     "weather_animation": { "factor": 0.04, "color": "red", "sym": ";" },
     "sound_category": "rainstorm",
     "required_weathers": [ "rain_blood" ],
-    "priority": 60,
+    "priority": 62,
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_blood_rain_proc", "<", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] }, 
+        { "math": [ "weather_blood_active", ">=", "1" ] },
         { "math": [ "weather('temperature')", ">=", "from_fahrenheit( 33 )" ] },
         { "math": [ "weather('windpower')", ">=", "15" ] }
       ]
@@ -377,46 +276,14 @@
     "weather_animation": { "factor": 0.04, "color": "blue", "sym": ";" },
     "sound_category": "rainstorm",
     "required_weathers": [ "rain_carnian" ],
-    "priority": 60,
+    "priority": 63,
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
-        { "math": [ "weather_carnian_active", ">=", "1" ] }, 
+        { "math": [ "weather_carnian_active", ">=", "1" ] },
         { "math": [ "weather('temperature')", ">=", "from_fahrenheit( 33 )" ] },
         { "math": [ "weather('windpower')", ">=", "15" ] }
       ]
     }
-  },
-  {
-    "id": "thunder",
-    "type": "weather_type",
-    "name": "Thunder Storm",
-    "color": "dark_gray",
-    "map_color": "i_blue",
-    "sym": "%",
-    "ranged_penalty": 4,
-    "sight_penalty": 1.2,
-    "light_modifier": -40,
-    "sun_multiplier": 0.01,
-    "sound_attn": 8,
-    "dangerous": false,
-    "precip": "heavy",
-    "rains": true,
-    "tiles_animation": "weather_rain_drop",
-    "weather_animation": { "factor": 0.02, "color": "light_blue", "sym": "." },
-    "sound_category": "thunder",
-    "required_weathers": [ "rain" ],
-    "priority": 70,
-    "condition": {
-      "and": [
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] }, 
-        { "math": [ "weather('pressure')", "<", "996" ] }
-      ]
-    },
-    "//": "Only adds condition for blood and carnian weather"
   },
   {
     "id": "thunder_blood",
@@ -437,13 +304,10 @@
     "weather_animation": { "factor": 0.02, "color": "light_red", "sym": "." },
     "sound_category": "thunder",
     "required_weathers": [ "rain_blood", "rainstorm_blood" ],
-    "priority": 70,
+    "priority": 72,
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_blood_rain_proc", "<", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] }, 
+        { "math": [ "weather_blood_active", ">=", "1" ] },
         { "math": [ "weather('pressure')", "<", "996" ] }
       ]
     }
@@ -467,45 +331,13 @@
     "weather_animation": { "factor": 0.02, "color": "light_red", "sym": "." },
     "sound_category": "thunder",
     "required_weathers": [ "rain_carnian", "rainstorm_carnian" ],
-    "priority": 70,
+    "priority": 73,
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
-        { "math": [ "weather_carnian_active", ">=", "1" ] }, 
+        { "math": [ "weather_carnian_active", ">=", "1" ] },
         { "math": [ "weather('pressure')", "<", "996" ] }
       ]
     }
-  },
-  {
-    "id": "lightning",
-    "type": "weather_type",
-    "name": "Lightning Storm",
-    "color": "yellow",
-    "map_color": "h_yellow",
-    "sym": "%",
-    "ranged_penalty": 4,
-    "sight_penalty": 1.25,
-    "light_modifier": -45,
-    "sun_multiplier": 0.01,
-    "sound_attn": 8,
-    "dangerous": false,
-    "precip": "heavy",
-    "rains": true,
-    "tiles_animation": "weather_rain_drop",
-    "weather_animation": { "factor": 0.04, "color": "light_blue", "sym": "," },
-    "sound_category": "thunder",
-    "required_weathers": [ "thunder" ],
-    "priority": 80,
-    "condition": {
-      "and": [
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] }, 
-        { "math": [ "weather('pressure')", "<", "990" ] }
-      ]
-    },
-    "//": "Only adds condition for blood and carnian weather"
   },
   {
     "id": "lightning_blood",
@@ -526,13 +358,10 @@
     "weather_animation": { "factor": 0.04, "color": "light_red", "sym": "," },
     "sound_category": "thunder",
     "required_weathers": [ "thunder_blood" ],
-    "priority": 80,
+    "priority": 82,
     "condition": {
       "and": [
-        { "not": { "math": [ "cause_early_portal_storm", "==", "1" ] } },
-        { "not": { "math": [ "cause_portal_storm", "==", "1" ] } },
-        { "math": [ "weather_blood_rain_proc", "<", "10" ] }, 
-        { "math": [ "weather_carnian_active", "<", "1" ] }, 
+        { "math": [ "weather_blood_active", ">=", "1" ] },
         { "math": [ "weather('pressure')", "<", "990" ] }
       ]
     }
@@ -556,11 +385,10 @@
     "weather_animation": { "factor": 0.04, "color": "light_blue", "sym": "," },
     "sound_category": "thunder",
     "required_weathers": [ "thunder_carnian" ],
-    "priority": 80,
+    "priority": 83,
     "condition": {
       "and": [
-        { "math": [ "weather_blood_rain_proc", ">=", "10" ] }, 
-        { "math": [ "weather_carnian_active", ">=", "1" ] }, 
+        { "math": [ "weather_carnian_active", ">=", "1" ] },
         { "math": [ "weather('pressure')", "<", "990" ] }
       ]
     }
@@ -581,15 +409,10 @@
     "rains": false,
     "required_weathers": [ "clear", "sunny", "cloudy", "cloudy_scarlet", "mist", "mist_scarlet", "fog", "fog_scarlet" ],
     "priority": 666,
-    "condition": { 
-      "and": [ 
-        { "math": [ "var_night_parade_started", ">=", "1" ] },
-        { "math": [ "time_until('night_time') > time_until('daylight_time')" ] }
-      ]
-    },
-    "//": "The var_CONDITION is set at night_parade_start_eoc ",
+    "condition": { "math": [ "weather_night_parade_active", ">=", "1" ] },
+    "//": "The var_ACTIVE is set at night_parade_setup_eoc ",
     "//2": "Also, is_night doesn't seem to work as a condition. Instead, this returns TRUE after night_time starts, at 86399 (which decreases) until daylight_time re-starts at 86399",
-    "//3": "This is set using those vars, as night and daylight time are dynamic in cdda"
+    "//3": "Using those vars instead of a fixed time, as night and daylight time are dynamic in cdda"
   },
   {
     "id": "silence_hour",
@@ -609,13 +432,8 @@
     "required_weathers": [ "clear", "sunny", "cloudy", "cloudy_scarlet", "mist", "mist_scarlet" ],
     "duration_min": "1 h",
     "duration_max": "1 h",
-    "priority": 667,
-    "condition": {
-      "and": [
-        { "math": [ "silence_hour_proc", "<", "5" ] },
-        { "math": [ "silence_hour_second", "==", "time_since('midnight', 'unit': 'seconds')" ] }
-      ]
-    },
-    "//": "Super WIP: this should temporarily block enemy spawn and replace them for hostile special, fast ghost-like enemies, that don't attack but heavily debuff the PC"
+    "priority": 665,
+    "condition": { "math": [ "weather_silence_hour_active", ">=", "1" ] },
+    "//WIP": "Super WIP: this should temporarily block enemy spawn and replace them for hostile special, fast ghost-like enemies, that don't attack but heavily debuff the PC"
   }
 ]
