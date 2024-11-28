@@ -3,6 +3,12 @@ A CDDA expansion mod for [Touhou Professions](https://github.com/RedMisao/Catacl
 
 **The mod's folder goes in /data/mods/**.  Last updated for game version: 2022-12-24 experimental.
 
+```json
+This is an old and busted version of the mod. Here only for archival purposes.
+There's a **lot** of stuff updated over the experimentals, that was never fixed here.
+Your will experience a **bad product** if you play this version over the master_0.H or the current testing.
+Open an issue if for some reason, you cannot run master_0.H or current testing, and want to play this.
+```
 
 ## About the mod
 This mod was inspired by the following questions:
