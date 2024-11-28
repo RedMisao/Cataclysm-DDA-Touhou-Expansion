@@ -1,7 +1,7 @@
 # Cataclysm-DDA-Touhou-Expansion
 A CDDA expansion mod for [Touhou Professions](https://github.com/RedMisao/Cataclysm-DDA-Touhou-Mod) that various things from Touhou Project lore and fluff.
 
-**The mod's folder goes in /data/mods/**.  Last updated for game version: 2022-12-24 experimental.
+**The mod's folder goes in /data/mods/**.  Last updated for game version: 0.G.
 
 ```json
 This is an old and busted version of the mod. Here only for archival purposes.
