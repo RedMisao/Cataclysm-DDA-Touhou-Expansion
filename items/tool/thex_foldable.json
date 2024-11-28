@@ -11,7 +11,7 @@
     "price": 15000,
     "price_postapoc": 1000,
     "to_hit": { "balance": "clumsy", "grip": "none", "length": "long", "surface": "any" },
-    "bashing": 12,
+    "melee_damage": { "bash": 12 },
     "material": [ "paper", "wood" ],
     "symbol": "/",
     "looks_like": "2x4",

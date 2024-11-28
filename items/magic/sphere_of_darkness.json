@@ -9,16 +9,16 @@
     "longest_side": "5 cm",
     "price_postapoc": 25000,
     "to_hit": { "balance": "neutral", "grip": "none", "length": "hand", "surface": "any" },
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "magic_darkness" ],
     "symbol": "o",
     "looks_like": "goo",
     "color": "black",
     "charges_per_use": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "battery": 3 } } ],
-    "relic_data": { "charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "15 m" } },
+    "relic_data": { "charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "10 m" } },
     "use_action": [ { "type": "cast_spell", "spell_id": "darkness_spam", "no_fail": true, "level": 1 } ],
-    "flags": [ "DURABLE_MELEE", "NO_RELOAD", "NO_UNLOAD" ]
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "TRADER_AVOID", "TRADER_AVOID", "UNBREAKABLE" ]
   },
   {
     "id": "darkness_spam",
@@ -33,7 +33,7 @@
     "min_aoe": 5,
     "max_aoe": 5,
     "max_level": 1,
-    "difficulty": -10,
+    "difficulty": -20,
     "base_casting_time": 200,
     "base_energy_cost": 0,
     "energy_source": "MANA",

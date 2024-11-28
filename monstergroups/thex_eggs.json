@@ -31,6 +31,26 @@
     ]
   },
   {
+    "name": "GROUP_EGG_BARINASUCHUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_barinasuchus_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_BELODON",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_belodon_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_BOVERISUCHUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_boverisuchus_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_CARBONEMYS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_carbonemys_baby" } ]
+  },
+  {
     "name": "GROUP_EGG_CARNUFEX",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_carnufex_baby" } ]
@@ -44,6 +64,11 @@
     "name": "GROUP_EGG_DIMETRODON",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_dimetrodon_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_DIPLOCAULUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_diplocaulus_baby" } ]
   },
   {
     "name": "GROUP_EGG_DODO",
@@ -61,6 +86,11 @@
     "monsters": [ { "monster": "mon_eryops_baby" } ]
   },
   {
+    "name": "GROUP_EGG_ERYTHROSUCHUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_erythrosuchus_baby" } ]
+  },
+  {
     "name": "GROUP_EGG_EURYPTERID",
     "type": "monstergroup",
     "monsters": [
@@ -75,14 +105,31 @@
     "monsters": [ { "monster": "mon_parastylonurus_baby" } ]
   },
   {
+    "name": "GROUP_EGG_FASOLASUCHUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_fasolasuchus_baby" } ]
+  },
+  {
     "name": "GROUP_EGG_FISHANCIENT_MEDIUM",
     "type": "monstergroup",
-    "monsters": [ { "monster": "mon_megamastax_baby" }, { "monster": "mon_saurichthys_baby" } ]
+    "monsters": [ 
+      { "monster": "mon_megamastax_baby" }, 
+      { "monster": "mon_saurichthys_baby" } 
+    ]
   },
   {
     "name": "GROUP_EGG_FISHANCIENT_SMALL",
     "type": "monstergroup",
-    "monsters": [ { "monster": "mon_coccosteus_baby" }, { "monster": "mon_dipterus_baby" }, { "monster": "mon_holoptychius_baby" } ]
+    "monsters": [ 
+      { "monster": "mon_coccosteus_baby" }, 
+      { "monster": "mon_dipterus_baby" }, 
+      { "monster": "mon_holoptychius_baby" } 
+    ]
+  },
+  {
+    "name": "GROUP_EGG_GARGANORNIS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_garganornis_chick" } ]
   },
   {
     "name": "GROUP_EGG_HESPEROSUCHUS",
@@ -105,9 +152,19 @@
     "monsters": [ { "monster": "mon_inostrancevia_pup" } ]
   },
   {
+    "name": "GROUP_EGG_LOTOSAURUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_lotosaurus_baby" } ]
+  },
+  {
     "name": "GROUP_EGG_LYSTROSAURUS",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_lystrosaurus_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_MAZOTHAIROS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_mazothairos_nymph" } ]
   },
   {
     "name": "GROUP_EGG_MEGANEURA",
@@ -122,12 +179,19 @@
   {
     "name": "GROUP_EGG_MOLLUSK_LARGE",
     "type": "monstergroup",
-    "monsters": [ { "monster": "mon_cleoniceras" }, { "monster": "mon_endoceras" }, { "monster": "mon_parapuzosia" } ]
+    "monsters": [ 
+      { "monster": "mon_cleoniceras" }, 
+      { "monster": "mon_endoceras" }, 
+      { "monster": "mon_parapuzosia" } 
+    ]
   },
   {
     "name": "GROUP_EGG_MOLLUSK_SMALL",
     "type": "monstergroup",
-    "monsters": [ { "monster": "mon_agoniatites_baby" }, { "monster": "mon_michelinoceras" } ]
+    "monsters": [ 
+      { "monster": "mon_agoniatites_baby" }, 
+      { "monster": "mon_michelinoceras" } 
+    ]
   },
   {
     "name": "GROUP_EGG_MOSCHORHINUS",
@@ -140,14 +204,34 @@
     "monsters": [ { "monster": "mon_nochnitsa_pup" } ]
   },
   {
+    "name": "GROUP_EGG_PAMPAPHONEUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_pampaphoneus_pup" } ]
+  },
+  {
     "name": "GROUP_EGG_PEDERPES",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_pederpes_baby" } ]
   },
   {
+    "name": "GROUP_EGG_PHOLIDERPETON",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_pholiderpeton_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_PHYTOSAURUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_phytosaurus_baby" } ]
+  },
+  {
     "name": "GROUP_EGG_PLATYOPOSAURUS",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_platyoposaurus_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_PRESTOSUCHUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_prestosuchus_baby" } ]
   },
   {
     "name": "GROUP_EGG_PRIONOSUCHUS",
@@ -160,14 +244,29 @@
     "monsters": [ { "monster": "mon_pristerognathus_pup" } ]
   },
   {
+    "name": "GROUP_EGG_REDONDASAURUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_redondasaurus_baby" } ]
+  },
+  {
     "name": "GROUP_EGG_SCUTOSAURUS",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_scutosaurus_baby" } ]
   },
   {
+    "name": "GROUP_EGG_SIMOSUCHUS",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_smilosuchus_baby" } ]
+  },
+  {
     "name": "GROUP_EGG_SMILOSUCHUS",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_smilosuchus_baby" } ]
+  },
+  {
+    "name": "GROUP_EGG_TYPOTHORAX",
+    "type": "monstergroup",
+    "monsters": [ { "monster": "mon_typothorax_baby" } ]
   },
   {
     "name": "GROUP_EGG_VIATKOGORGON",

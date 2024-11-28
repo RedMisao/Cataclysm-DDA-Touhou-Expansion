@@ -5,6 +5,11 @@
     "components": [ [ [ "arthropod_cooked", 1 ], [ "arthropod_dry", 1 ], [ "arthropod_rehydrated", 1 ], [ "arthropod_smoked", 1 ] ] ]
   },
   {
+    "id": "arthropod_meat_raw",
+    "type": "requirement",
+    "components": [ [ [ "arthropod_meat", 1 ], [ "arthropod_organs", 1 ] ] ]
+  },
+  {
     "id": "bird_meat_raw",
     "type": "requirement",
     "components": [ [ [ "bird_leg_small", 2 ], [ "bird_meat", 2 ], [ "bird_rehydrated", 2 ], [ "can_chicken", 1 ] ] ],
@@ -105,29 +110,59 @@
     "//": "The real dango uses rice flour, which is different than normal wheat flour"
   },
   {
+    "id": "eggs_mollusk",
+    "type": "requirement",
+    "components": [
+      [
+        [ "egg_mollusk_small", 1 ],
+        [ "egg_mollusk_large", 1 ] 
+      ]
+    ]
+  },
+  {
     "id": "eggs_reptile",
     "type": "requirement",
-    "extend": {
-      "components": [
-        [
-          [ "egg_anatosuchus", 1 ],
-          [ "egg_carnufex", 1 ],
-          [ "egg_reptile", 1 ],
-          [ "egg_hesperosuchus", 1 ],
-          [ "egg_scutosaurus", 1 ],
-          [ "egg_smilosuchus", 1 ],
-          [ "egg_weigeltisaurus", 1 ]
-        ]
+    "components": [
+      [
+        [ "egg_reptile", 1 ],
+        [ "egg_anatosuchus", 1 ],
+        [ "egg_barinasuchus", 1 ],
+        [ "egg_belodon", 1 ],
+        [ "egg_boverisuchus", 1 ],
+        [ "egg_carbonemys", 1 ],
+        [ "egg_carnufex", 1 ],
+        [ "egg_erythrosuchus", 1 ],
+        [ "egg_fasolasuchus", 1 ],
+        [ "egg_hesperosuchus", 1 ],
+        [ "egg_lotosaurus", 1 ],
+        [ "egg_phytosaurus", 1 ],
+        [ "egg_prestosuchus", 1 ],
+        [ "egg_redondasaurus", 1 ],
+        [ "egg_scutosaurus", 1 ],
+        [ "egg_smilosuchus", 1 ],
+        [ "egg_typothorax", 1 ],
+        [ "egg_weigeltisaurus", 1 ]
       ]
-    }
+    ]
   },
   {
     "id": "eggs_misc",
     "type": "requirement",
-    "extend": {
-      "components": [ [ [ "egg_cotylorhynchus", 1 ], [ "egg_dimetrodon", 1 ], [ "egg_lystrosaurus", 1 ], [ "egg_pederpes", 1 ] ] ]
-    },
-    "//": "Eggs from Eryops, Platyoposaurus and Prionosuchus are roe, so they're not here as eggs_any consists of 'true' eggs"
+    "components": [ 
+      [ 
+        [ "egg_eryops", 1 ], 
+        [ "egg_cotylorhynchus", 1 ], 
+        [ "egg_dimetrodon", 1 ], 
+        [ "egg_lystrosaurus", 1 ], 
+        [ "egg_pampaphoneus", 1 ], 
+        [ "egg_inostrancevia", 1 ], 
+        [ "egg_moschorhinus", 1 ], 
+        [ "egg_nochnitsa", 1 ], 
+        [ "egg_pristerognathus", 1 ], 
+        [ "egg_viatkogorgon", 1 ] 
+      ] 
+    ],
+    "//": "Any non-bird, non-roe egg from vertebrates go here. I imagine these were leathery, like croc eggs maybe"
   },
   {
     "id": "lamprey_meat_cooked",
@@ -158,7 +193,12 @@
     "components": [ [ [ "salt", 1 ], [ "seasoning_salt", 1 ], [ "soysauce", 1 ] ] ]
   },
   {
-    "id": "seafood",
+    "id": "seafood_all",
+    "type": "requirement",
+    "components": [ [ [ "seafood_cooked", 1, "LIST" ], [ "seafood_raw", 1, "LIST" ] ] ]
+  },
+  {
+    "id": "seafood_cooked",
     "type": "requirement",
     "components": [
       [
@@ -167,10 +207,23 @@
         [ "salted_mollusk", 1 ],
         [ "rehydrated_mollusk", 1 ],
         [ "mollusk_smoked", 1 ],
-        [ "shrimplike_meat_cooked", 1, "LIST" ]
+        [ "shrimplike_meat_cooked", 1, "LIST" ],
+        [ "gastropod_purged", 1 ] 
       ]
     ],
     "//": "The cooked versions of mollusk.json should also go here, but they're currently not spawning. I'm not sure if lobbies should be added, they're served as main dish, with paella as the side dish"
+  },
+  {
+    "id": "seafood_raw",
+    "type": "requirement",
+    "components": [
+      [
+        [ "arthropod_meat_raw", 1, "LIST" ],
+        [ "arthropod_organs", 1 ],
+        [ "shrimplike_meat", 1 ],
+        [ "lamprey_meat", 1 ] 
+      ]
+    ]
   },
   {
     "id": "shrimplike_meat_cooked",

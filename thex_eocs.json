@@ -4,20 +4,145 @@
     "type": "effect_on_condition",
     "eoc_type": "SCENARIO_SPECIFIC",
     "effect": [
-      { "u_add_var": "var_wind_blessing_dex", "type": "number", "context": "wind_priestess_charm", "value": "0" },
-      { "u_add_var": "var_wind_blessing_int", "type": "number", "context": "wind_priestess_charm", "value": "0" },
-      { "u_add_var": "var_wind_blessing_per", "type": "number", "context": "wind_priestess_charm", "value": "0" },
-      { "u_add_var": "var_wind_blessing_str", "type": "number", "context": "wind_priestess_charm", "value": "0" },
-      { "run_eocs": [ "daily_randomization_eoc" ] },
+      { "run_eocs": [ "daily_randomization_12_eoc" ] },
+      { "run_eocs": [ "impurity_start_eoc" ] },
+      { "run_eocs": [ "wind_blessing_eoc" ] }
+    ]
+  },
+  {
+    "id": "daily_randomization_12_eoc",
+    "type": "effect_on_condition",
+    "effect": [ { "queue_eocs": [ "daily_randomization_24_eoc" ], "time_in_future": "12 h" } ],
+    "//0.H": "Queues once at 12:00 + 12 h = 00:00:00, then at 24 h, for use in custom events"
+  },
+  {
+    "id": "daily_randomization_24_eoc",
+    "type": "effect_on_condition",
+    "effect": [
       {
         "run_eocs": [
           {
-            "id": "vampire_bloodthirst_start_ex",
-            "condition": { "u_has_trait": "VAMPIRE_SPECIES" },
+            "id": "thex_event_night_parade_24_eoc",
+            "condition": { "x_in_y_chance": { "x": 1, "y": 11 } },
+            "effect": [ { "run_eocs": [ "thex_event_night_parade_queue_eoc" ] } ]
+          },
+          {
+            "id": "thex_event_silence_hour_24_eoc",
+            "condition": { "x_in_y_chance": { "x": 1, "y": 11 } },
+            "effect": [ { "run_eocs": [ "thex_event_silence_hour_queue_eoc" ] } ]
+          }
+        ]
+      },
+      { "queue_eocs": [ "daily_randomization_24_eoc" ], "time_in_future": "24 h" }
+    ],
+    "//": "Re-rolls daily at 00:00:00, for use in custom events",
+    "//2": "tl;dr this checks the event's chance every day -> runs EVENT_queue (at event-specific queued time) -> runs EVENT_check (if event conditions are adequate) -> sets var_EVENT_active which is used at each weather_type -> runs EVENT_disable to reset related vars -> runs EVENT_cd to set a cooldown (if necessary, to prevent repeating the event the following day)",
+    "//3": "Some weather/events start past X days, for either lore reasons or due no reason",
+    "//4": "The EVENT_queue EOCs (and everything downstream of that) are at thex_weather_eocs.json ",
+    "//5": "Custom weather is handled automatically by the recurring thex_weather_and_event_check_eoc ",
+    "//WIP": "Confirm the daily_randomization_eoc won't break !!!"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PORTAL_STORM_WARN_OR_CAUSE_RECURRING",
+    "recurrence": [ { "global_val": "ps_min_woc", "default": "5 days" }, { "global_val": "ps_max_woc", "default": "18 days" } ],
+    "global": true,
+    "condition": {
+      "and": [
+        { "not": { "is_weather": "cloudy_scarlet" } },
+        { "not": { "is_weather": "fog_scarlet" } },
+        { "not": { "is_weather": "mist_scarlet" } },
+        { "not": { "is_weather": "rain_blood" } },
+        { "not": { "is_weather": "drizzle_carnian_1" } },
+        { "not": { "is_weather": "drizzle_carnian_2" } },
+        { "not": { "is_weather": "rain_carnian" } },
+        { "not": { "is_weather": "rain_purifying" } },
+        { "not": { "is_weather": "rainstorm_blood" } },
+        { "not": { "is_weather": "rainstorm_carnian" } },
+        { "not": { "is_weather": "thunder_blood" } },
+        { "not": { "is_weather": "thunder_carnian" } },
+        { "not": { "is_weather": "lightning_blood" } },
+        { "not": { "is_weather": "lightning_carnian" } },
+        { "not": { "is_weather": "night_parade" } },
+        { "not": { "is_weather": "silence_hour" } }
+      ]
+    },
+    "effect": { "run_eocs": "EOC_CAUSE_EARLY_PORTAL_STORM" },
+    "false_effect": [ { "queue_eocs": [ "EOC_CAUSE_EARLY_PORTAL_STORM_retry" ], "time_in_future": "6 h" } ],
+    "//": "This blocks portal storms if a custom weather is running",
+    "//2": "Otherwise, it runs the false_effect, which tries again 6 h later, and keeps queueing until it succeeds",
+    "//mod_interactions": "Some mainlined mods disable portal storms by default. This would've been handled by the mod_interactions folder, however I cannot make it work in 0.H"
+  },
+  {
+    "id": "EOC_CAUSE_EARLY_PORTAL_STORM_retry",
+    "type": "effect_on_condition",
+    "global": true,
+    "condition": {
+      "and": [
+        { "not": { "is_weather": "cloudy_scarlet" } },
+        { "not": { "is_weather": "fog_scarlet" } },
+        { "not": { "is_weather": "mist_scarlet" } },
+        { "not": { "is_weather": "rain_blood" } },
+        { "not": { "is_weather": "drizzle_carnian_1" } },
+        { "not": { "is_weather": "drizzle_carnian_2" } },
+        { "not": { "is_weather": "rain_carnian" } },
+        { "not": { "is_weather": "rain_purifying" } },
+        { "not": { "is_weather": "rainstorm_blood" } },
+        { "not": { "is_weather": "rainstorm_carnian" } },
+        { "not": { "is_weather": "thunder_blood" } },
+        { "not": { "is_weather": "thunder_carnian" } },
+        { "not": { "is_weather": "lightning_blood" } },
+        { "not": { "is_weather": "lightning_carnian" } },
+        { "not": { "is_weather": "night_parade" } },
+        { "not": { "is_weather": "silence_hour" } }
+      ]
+    },
+    "effect": { "run_eocs": "EOC_CAUSE_EARLY_PORTAL_STORM" },
+    "false_effect": [ { "queue_eocs": [ "EOC_CAUSE_EARLY_PORTAL_STORM_retry" ], "time_in_future": "6 h" } ]
+  },
+  {
+    "id": "gevaudan_attacked_melee_eoc",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_melee_attacks_monster",
+    "condition": {
+      "and": [
+        { "compare_string": [ "mon_gevaudan", { "context_val": "victim_type" } ] },
+        { "math": [ "_hits", "!=", "0" ] }
+      ]
+    },
+    "effect": [ 
+      { "npc_location_variable": { "global_val": "var_gevaudan_loc" } },
+      { "run_eoc_with": "gevaudan_attacked_check_eoc", "beta_loc": { "global_val": "var_gevaudan_loc" } }
+    ],
+    "//note": "I don't know how to track the dmg mon_gevaudan receives with silver-based materials",
+    "//2": "This alternative instead prevents it from self-healing if damaged by a silver-based weapon",
+    "//3": "Probably keep still after I figure out",
+    "//WIP": "Do note that while the beta_talker is detected (because the run_eoc_with is true), the CHECK_eoc cannot be used with npc_cast_spell "
+  },
+  {
+    "id": "gevaudan_attacked_ranged_eoc",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_ranged_attacks_character",
+    "condition": { "compare_string": [ "mon_gevaudan", { "context_val": "victim_type" } ] },
+    "effect": [ 
+      { "npc_location_variable": { "global_val": "var_gevaudan_loc" } },
+      { "run_eoc_with": "gevaudan_attacked_check_eoc", "beta_loc": { "global_val": "var_gevaudan_loc" } }
+    ]
+  },
+  {
+    "id": "gevaudan_attacked_check_eoc",
+    "type": "effect_on_condition",
+    "effect": [
+      {
+        "u_run_inv_eocs": "all",
+        "search_data": [ { "material": "silver", "wielded_only": true } ],
+        "true_eocs": [
+          {
+            "id": "gevaudan_attacked_silver",
             "effect": [
-              {
-                "arithmetic": [ { "u_val": "vitamin", "name": "hblood_vitamin" }, "=", { "arithmetic": [ { "const": 648 }, "+", { "rand": 144 } ] } ]
-              }
+              { "u_cast_spell": { "id": "gevaudan_attacked_silver_spell" }, "loc": { "global_val": "var_gevaudan_loc" } }
             ]
           }
         ]
@@ -25,17 +150,21 @@
     ]
   },
   {
-    "id": "daily_randomization_eoc",
-    "type": "effect_on_condition",
-    "recurrence": "24 hours",
-    "effect": [
-      { "arithmetic": [ { "u_val": "var", "var_name": "night_parade_proc" }, "=", { "rand": 99 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_proc" }, "=", { "rand": 99 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_hour" }, "=", { "rand": 23 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_minute" }, "=", { "rand": 59 } ] },
-      { "arithmetic": [ { "u_val": "var", "var_name": "silence_hour_second" }, "=", { "rand": 59 } ] }
-    ],
-    "//": "Should: reroll these daily, for use in special events and whatnot"
+    "id": "gevaudan_attacked_silver_spell",
+    "type": "SPELL",
+    "name": { "str": "" },
+    "description": "",
+    "spell_class": "NONE",
+    "valid_targets": [ "ally", "ground", "hostile" ],
+    "effect": "attack",
+    "effect_str": "gevaudan_noregen",
+    "shape": "blast",
+    "min_duration": 3100,
+    "max_duration": 3100,
+    "max_level": 1,
+    "difficulty": -50,
+    "message": "",
+    "flags": [ "NO_FAIL", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE", "SILENT" ]
   },
   {
     "id": "impurity_eoc",
@@ -45,40 +174,141 @@
       {
         "run_eocs": [
           {
-            "id": "impurity_none",
-            "condition": { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<", { "const": 0 } ] },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 0 } ] } ]
+            "id": "impurity_extremelylow",
+            "condition": { "math": [ "u_vitamin('impurity')", "<", "0" ] },
+            "effect": [ { "math": [ "u_var_impurity", "=", "0" ] } ]
           },
           {
             "id": "impurity_verylow",
             "condition": {
               "and": [
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 1 } ] },
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 72 } ] }
+                { "math": [ "u_vitamin('impurity')", ">=", "1" ] },
+                { "math": [ "u_vitamin('impurity')", "<=", "144" ] }
               ]
             },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 1 } ] } ]
+            "effect": [ { "math": [ "u_var_impurity", "=", "1" ] } ]
           },
           {
             "id": "impurity_low",
             "condition": {
               "and": [
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 73 } ] },
-                { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, "<=", { "const": 504 } ] }
+                { "math": [ "u_vitamin('impurity')", ">=", "145" ] },
+                { "math": [ "u_vitamin('impurity')", "<=", "504" ] }
               ]
             },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 2 } ] } ]
+            "effect": [ { "math": [ "u_var_impurity", "=", "2" ] } ]
           },
           {
             "id": "impurity_high",
-            "condition": { "compare_int": [ { "u_val": "vitamin", "name": "impurity" }, ">=", { "const": 505 } ] },
-            "effect": [ { "arithmetic": [ { "u_val": "var", "var_name": "var_impurity" }, "=", { "const": 3 } ] } ]
+            "condition": { "math": [ "u_vitamin('impurity')", ">=", "505" ] },
+            "effect": [ { "math": [ "u_var_impurity", "=", "3" ] } ]
           }
         ]
       }
     ],
-    "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not even considering consuming Earthly stuff",
-    "//2": "Boundaries for each impure tier: 0 - 24 h (verylow), 1 - 7 days (low), >7 days (high)",
-    "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) "
+    "//": "1 impurity every 20 min equals 72 impurity per day or 504 in 7 days, and that's not considering consuming Earthly stuff during that period of time",
+    "//2": "Boundaries for each impure tier: -48 - 0 h (extremely low), 0 - 48 h (verylow), 2 - 7 days (low), >7 days (high)",
+    "//3": "Impurity tiers are named: Pure, Slight impurity, Impure, Impure (2) ",
+    "//WIP": "Move this to be handled automatically by the vitamin system?"
+  },
+  {
+    "id": "impurity_kills_character_eoc",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_kills_character",
+    "effect": [ { "math": [ "u_vitamin('impurity')", "+=", "10" ] } ]
+  },
+  {
+    "id": "impurity_kills_monster_eoc",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_kills_monster",
+    "effect": [ { "math": [ "u_vitamin('impurity')", "+=", "1" ] } ]
+  },
+  {
+    "id": "impurity_start_eoc",
+    "type": "effect_on_condition",
+    "effect": [
+      {
+        "run_eocs": [
+          {
+            "id": "impurity_earth_eoc",
+            "condition": {
+              "or": [
+                { "u_has_trait": "YOUKAI_SPECIES" },
+                { "u_has_trait": "HOURAI_SPECIES" },
+                { "u_has_trait": "MENREIKI_SPECIES" },
+                { "u_has_trait": "VAMPIRE_SPECIES" },
+                {
+                  "and": [
+                    { "u_has_trait": "HUMAN_SPECIES" },
+                    { "not": { "u_has_trait": "HALF_PHANTOM_SPECIES" } }
+                  ]
+                },
+                { "u_has_trait": "WICKED_HERMIT" }
+              ]
+            },
+            "effect": [ { "math": [ "u_vitamin('impurity')", "=", "999" ] } ]
+          },
+          {
+            "id": "impurity_heaven_eoc",
+            "condition": {
+              "or": [
+                { "u_has_trait": "OARFISH_SPECIES" },
+                { "u_has_trait": "HERMIT_SPECIES" },
+                { "u_has_trait": "CELESTIAL_SPECIES" }
+              ]
+            },
+            "effect": [ { "math": [ "u_vitamin('impurity')", "=", "1" ] } ]
+          },
+          {
+            "id": "impurity_moon_eoc",
+            "condition": {
+              "or": [
+                { "u_has_trait": "GYOKUTO_SPECIES" }
+              ]
+            },
+            "effect": [ { "math": [ "u_vitamin('impurity')", "=", "-144" ] } ]
+          }
+        ]
+      }
+    ],
+    "//": "Seems impurity_eoc is run before this, regardless if this is placed after, which could cause minor problems in the future",
+    "//2": "That makes it so the impurity effects are updated ~15 min after the start of the game"
+  },
+  {
+    "id": "kill_drops_eoc",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_kills_monster",
+    "condition": {
+      "and": [
+        { 
+          "or": [ 
+            { "npc_has_species": "GHOST_TOUHOU" },
+            { "npc_has_species": "JIANGSHI_TOUHOU" },
+            { "npc_has_species": "ONI_TOUHOU" },
+            { "npc_has_species": "PHANTOM_TOUHOU" },
+            { "npc_has_species": "TSUKUMOGAMI_TOUHOU" },
+            { "npc_has_species": "YOUKAI_BEAST_TOUHOU" },
+            { "npc_has_species": "YOUKAI_FEMALE_TOUHOU" },
+            { "npc_has_species": "YOUKAI_HOSTILE_TOUHOU" },
+            { "npc_has_species": "YOUKAI_NEUTRAL_TOUHOU" },
+            { "npc_has_species": "YOUKAI_PSEUDO_TOUHOU" },
+            { "npc_has_species": "YOUKAI_SKINWALKER_TOUHOU" },
+            { "npc_has_species": "FAIRY_TOUHOU" },
+            { "npc_has_species": "SASQUATCH_TOUHOU" },
+            { "npc_has_species": "VAMPIRE_TOUHOU" }
+          ]
+        },
+        { "not": { "npc_has_species": "SUMMONED_TOUHOU" } },
+        { "x_in_y_chance": { "x": 4, "y": 100 } }
+      ]
+    },
+    "effect": [
+      { "npc_location_variable": { "global_val": "var_kill_drops_loc" } },
+      { "map_spawn_item": "thex_drops_placeholder", "loc": { "context_val": "var_kill_drops_loc" }, "use_item_group": true },
+      { "message": "<color_light_cyan>!</color>" }
+    ]
   }
 ]

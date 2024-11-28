@@ -7,24 +7,11 @@
     "bleeds": "fd_blood"
   },
   {
-    "id": "GHOST_TOUHOU",
+    "id": "FAIRY_TOUHOU",
     "type": "SPECIES",
-    "description": "a ghost"
-  },
-  {
-    "id": "GYOKUTO_TOUHOU",
-    "type": "SPECIES",
-    "description": "a Gyokuto",
-    "anger_triggers": [ "FRIEND_ATTACKED" ],
-    "fear_triggers": [ "HURT" ],
-    "bleeds": "fd_blood"
-  },
-  {
-    "id": "ONI_TOUHOU",
-    "type": "SPECIES",
-    "description": "an oni",
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE" ],
-    "bleeds": "fd_blood"
+    "description": "a fairy",
+    "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+    "fear_triggers": [ "FRIEND_DIED" ]
   },
   {
     "id": "SASQUATCH_TOUHOU",
@@ -35,51 +22,18 @@
     "bleeds": "fd_blood"
   },
   {
-    "id": "TSUKUMOGAMI_TOUHOU",
-    "type": "SPECIES",
-    "description": "an animated object",
-    "anger_triggers": [ "HURT", "PLAYER_WEAK" ]
-  },
-  {
     "id": "VAMPIRE_TOUHOU",
     "type": "SPECIES",
     "description": "a vampire",
-    "anger_triggers": [ "HURT", "FRIEND_ATTACKED" ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "HURT" ],
     "fear_triggers": [ "FIRE" ],
+    "flags": [ "SOULDMG_EXTRA" ],
     "//": "add WATER, RAIN, SUNLIGHT in fear. Remove FIRE from fear_triggers, add SUNLIGHT in anger, but as a 'pouring gas on the fire' sort of way"
   },
   {
-    "id": "YOUKAI_FEMALE_TOUHOU",
+    "id": "VOIDF",
     "type": "SPECIES",
-    "description": "a female apparition",
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ],
-    "//": "Just YOUKAI_HOSTILE_TOUHOU with a different description"
-  },
-  {
-    "id": "YOUKAI_HOSTILE_TOUHOU",
-    "type": "SPECIES",
-    "description": "a youkai",
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ]
-  },
-  {
-    "id": "YOUKAI_NEUTRAL_TOUHOU",
-    "type": "SPECIES",
-    "description": "a youkai",
-    "anger_triggers": [ "HURT", "PLAYER_NEAR_BABY" ]
-  },
-  {
-    "id": "YOUKAI_SKINWALKER_TOUHOU",
-    "type": "SPECIES",
-    "description": "a skinwalker",
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_NEAR_BABY", "PLAYER_WEAK" ],
-    "//": "Just YOUKAI_HOSTILE_TOUHOU with a different description"
-  },
-  {
-    "id": "YOUKAI_PSEUDO",
-    "type": "SPECIES",
-    "description": "Unknown",
-    "anger_triggers": [ "HURT" ],
-    "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
-    "//": "For human-looking things belonging to urban legends. Deliberately kept vague btw"
+    "description": " ",
+    "flags": [ "SOUL_XDIMEN" ]
   }
 ]

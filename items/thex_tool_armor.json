@@ -11,9 +11,9 @@
     "price": 24000,
     "price_postapoc": 4800,
     "to_hit": { "balance": "good", "grip": "weapon", "length": "long", "surface": "any" },
-    "bashing": 16,
+    "melee_damage": { "bash": 16 },
     "material": [ "steel" ],
-    "//": "Add lunarian_steel or something",
+    "//note": "Add lunarian_steel or something",
     "material_thickness": 8,
     "symbol": "[",
     "color": "white",
@@ -25,8 +25,8 @@
     ],
     "//3": "I have no idea if this is enough to emulate a shield's coverage",
     "weapon_category": [ "SHIELDS" ],
-    "flags": [ "DURABLE_MELEE", "OUTER", "OVERSIZE" ],
-    "//2": "Don't know if this should be TOOL_ARMOR, ARMOR or WEAPON. Ideally one should shield bash with it while using it, independently of any actual weapons on the 'main hand', because good shields are used to shield bash faces"
+    "flags": [ "BLOCK_WHILE_WORN", "DURABLE_MELEE", "OUTER", "OVERSIZE" ],
+    "//2": "Can be either ARMOR or TOOL_ARMOR. No weapon to allow free hand(s). Ideally one should shield bash with it while using it, independently of any actual weapons on the 'main hand', because good shields are used to shield bash faces"
   },
   {
     "id": "tengu_mask",
@@ -40,7 +40,7 @@
     "price": 22000,
     "price_postapoc": 1000,
     "to_hit": { "balance": "neutral", "grip": "none", "length": "hand", "surface": "any" },
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "material": [ "wood" ],
     "symbol": "[",
     "color": "red",
@@ -66,7 +66,7 @@
     },
     "armor": [ { "covers": [ "head" ], "coverage": 45, "encumbrance": [ 4, 8 ] } ],
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "OUTER" ]
+    "flags": [ "BLOCK_WHILE_WORN", "OUTER" ]
   },
   {
     "id": "tengu_shield",
@@ -80,9 +80,9 @@
     "price": 24000,
     "price_postapoc": 4800,
     "to_hit": { "balance": "good", "grip": "weapon", "length": "short", "surface": "any" },
-    "bashing": 16,
+    "melee_damage": { "bash": 16 },
     "material": [ "iron", "steel" ],
-    "//": "Add tengu_steel or something",
+    "//note": "Add tengu_steel or something",
     "material_thickness": 6,
     "symbol": "[",
     "color": "white",
@@ -94,7 +94,6 @@
     ],
     "//3": "I have no idea if this is enough to emulate a shield's coverage",
     "weapon_category": [ "SHIELDS" ],
-    "flags": [ "DURABLE_MELEE", "OUTER", "OVERSIZE" ],
-    "//2": "Don't know if this should be TOOL_ARMOR, ARMOR or WEAPON. Ideally one should shield bash with it while using it, independently of any actual weapons on the 'main hand', because good shields are used to shield bash faces"
+    "flags": [ "BLOCK_WHILE_WORN", "DURABLE_MELEE", "OUTER", "OVERSIZE" ]
   }
 ]

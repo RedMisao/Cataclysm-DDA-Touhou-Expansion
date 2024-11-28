@@ -1,17 +1,27 @@
 [
   {
+    "id": "morale_posessed_trumpet",
+    "type": "morale_type",
+    "text": "Heard ghostly notes."
+  },
+  {
+    "id": "morale_shadow_demoralize",
+    "type": "morale_type",
+    "text": "Felt a dark presence."
+  },
+  {
     "id": "morale_skinwalker_scream_demoralize",
     "type": "morale_type",
-    "text": "Heard an horrifying scream!"
+    "text": "Heard a horrifying scream."
   },
   {
     "id": "morale_wailing_demoralize",
     "type": "morale_type",
-    "text": "Heard a disturbing wail!"
+    "text": "Heard a disturbing wail."
   },
   {
     "id": "morale_white_lady_demoralize",
     "type": "morale_type",
-    "text": "You felt a cursed presence."
+    "text": "Felt a cursed presence."
   }
 ]

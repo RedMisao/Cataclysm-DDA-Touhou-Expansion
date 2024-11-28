@@ -1,167 +1,5 @@
 [
   {
-    "id": "blood",
-    "type": "material",
-    "name": "Blood",
-    "copy-from": "blood",
-    "extend": { "vitamins": [ [ "impurity", 1 ] ] }
-  },
-  {
-    "id": "bone",
-    "type": "material",
-    "name": "Bone",
-    "copy-from": "bone",
-    "extend": { "vitamins": [ [ "impurity", 1 ] ] }
-  },
-  {
-    "id": "cheese",
-    "type": "material",
-    "name": "Cheese",
-    "copy-from": "cured_meat",
-    "extend": { "vitamins": [ [ "impurity", 0.5 ] ] }
-  },
-  {
-    "id": "cured_meat",
-    "type": "material",
-    "name": "Cured Meat",
-    "copy-from": "cured_meat",
-    "extend": { "vitamins": [ [ "impurity", 1 ] ] }
-  },
-  {
-    "id": "egg",
-    "type": "material",
-    "name": "Egg",
-    "copy-from": "egg",
-    "extend": { "vitamins": [ [ "impurity", 0.66 ] ] }
-  },
-  {
-    "id": "flesh",
-    "type": "material",
-    "name": "Flesh",
-    "copy-from": "flesh",
-    "extend": { "vitamins": [ [ "impurity", 1 ] ] }
-  },
-  {
-    "id": "fruit",
-    "type": "material",
-    "name": "Fruit Matter",
-    "copy-from": "fruit",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "hblood",
-    "type": "material",
-    "name": "Human Blood",
-    "copy-from": "blood",
-    "extend": { "vitamins": [ [ "impurity", 1 ] ] }
-  },
-  {
-    "id": "hflesh",
-    "type": "material",
-    "name": "Human Flesh",
-    "copy-from": "hflesh",
-    "extend": { "vitamins": [ [ "impurity", 1 ] ] }
-  },
-  {
-    "id": "honey",
-    "type": "material",
-    "name": "Honey",
-    "copy-from": "honey",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "ice_cream",
-    "type": "material",
-    "name": "Ice Cream",
-    "copy-from": "ice_cream",
-    "extend": { "vitamins": [ [ "impurity", 0.5 ] ] }
-  },
-  {
-    "id": "iflesh",
-    "type": "material",
-    "name": "Insect Flesh",
-    "copy-from": "iflesh",
-    "extend": { "vitamins": [ [ "impurity", 1 ] ] }
-  },
-  {
-    "id": "milk",
-    "type": "material",
-    "name": "Dairy",
-    "copy-from": "milk",
-    "extend": { "vitamins": [ [ "impurity", 0.5 ] ] }
-  },
-  {
-    "id": "mushroom",
-    "type": "material",
-    "name": "Mushroom",
-    "copy-from": "mushroom",
-    "extend": { "vitamins": [ [ "impurity", 0.2 ] ] },
-    "//": "Did you know fungi are closer to animals than to plants?"
-  },
-  {
-    "id": "veggy",
-    "type": "material",
-    "name": "Vegetable Matter",
-    "copy-from": "veggy",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "bean",
-    "type": "material",
-    "name": "Bean",
-    "copy-from": "bean",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "dried_vegetable",
-    "type": "material",
-    "name": "Dried Vegetable",
-    "copy-from": "dried_vegetable",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "garlic",
-    "type": "material",
-    "name": "Garlic",
-    "copy-from": "garlic",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "nut",
-    "type": "material",
-    "name": "Nut",
-    "copy-from": "nut",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "tomato",
-    "type": "material",
-    "name": "Tomato",
-    "copy-from": "tomato",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "wheat",
-    "type": "material",
-    "name": "Wheat",
-    "copy-from": "wheat",
-    "extend": { "vitamins": [ [ "impurity", 0.1 ] ] }
-  },
-  {
-    "id": "water",
-    "type": "material",
-    "name": "Water",
-    "copy-from": "water",
-    "extend": { "vitamins": [ [ "impurity", 0.01 ] ] }
-  },
-  {
-    "id": "processed_food",
-    "type": "material",
-    "name": "Processed Food",
-    "copy-from": "processed_food",
-    "extend": { "vitamins": [ [ "impurity", 0.5 ] ] }
-  },
-  {
     "id": "magic_darkness",
     "type": "material",
     "name": "darkness (magic)",
@@ -170,24 +8,12 @@
     "specific_heat_solid": 0.45,
     "latent_heat": 334,
     "edible": false,
-    "bash_resist": 9,
-    "cut_resist": 0,
-    "bullet_resist": 0,
-    "acid_resist": 0,
-    "fire_resist": 0,
-    "cold_resist": 0,
+    "resist": { "bash": 0, "cut": 0, "stab": 0, "bullet": 0, "acid": 0, "biological": 0, "cold": 0, "electric": 0, "heat": 0, "soul": 0 },
     "chip_resist": 100,
     "conductive": false,
     "dmg_adj": [ "sullied", "stained", "murky", "polluted" ],
     "bash_dmg_verb": "impacted",
     "cut_dmg_verb": "scrapped"
-  },
-  {
-    "id": "magic_fuel_mat",
-    "type": "material",
-    "name": "magic fuel",
-    "copy-from": "pseudo_fuel",
-    "fuel_data": { "energy": "45600 kJ", "perpetual": true }
   },
   {
     "id": "magic_ice",
@@ -198,12 +24,7 @@
     "specific_heat_solid": 0.45,
     "latent_heat": 334,
     "edible": false,
-    "bash_resist": 9,
-    "cut_resist": 0,
-    "bullet_resist": 0,
-    "acid_resist": 0,
-    "fire_resist": 999,
-    "cold_resist": 999,
+    "resist": { "bash": 9, "cut": 0, "stab": 0, "bullet": 0, "acid": 0, "biological": 0, "cold": 999, "electric": 0, "heat": 999, "soul": 0 },
     "chip_resist": 100,
     "conductive": false,
     "dmg_adj": [ "sullied", "stained", "murky", "polluted" ],

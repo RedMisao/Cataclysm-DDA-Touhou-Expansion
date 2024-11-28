@@ -12,7 +12,7 @@
     "looks_like": "762R_clip",
     "color": "light_gray",
     "ammo_type": [ "ammo_lunar_medium" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_medium": 11 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_medium": 5 } } ],
     "flags": [ "MAG_COMPACT" ]
   },
   {
@@ -28,7 +28,7 @@
     "looks_like": "m1911mag",
     "color": "light_gray",
     "ammo_type": [ "ammo_lunar_small" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_small": 13 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_small": 7 } } ],
     "flags": [ "MAG_COMPACT" ]
   },
   {
@@ -48,6 +48,38 @@
     "flags": [ "MAG_COMPACT" ]
   },
   {
+    "id": "lunar_4d_caltrop_mag11",
+    "type": "MAGAZINE",
+    "name": { "str": "Magazine for 4-dimensional Lunar ammo" },
+    "description": "A compact 11-round magazine for Lunar weapons, made of polymer.  It uses a special spatial fold, allowing it to hold 4-dimensional ammo, so it looks smaller on the outside.",
+    "weight": "35 g",
+    "volume": "200 ml",
+    "price_postapoc": 65,
+    "material": [ "plastic" ],
+    "symbol": "#",
+    "looks_like": "akmag10",
+    "color": "light_gray",
+    "ammo_type": [ "ammo_lunar_4d_3" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_4d_3": 11 } } ],
+    "flags": [ "MAG_COMPACT", "TARDIS" ]
+  },
+  {
+    "id": "lunar_4d_rhyzome_mag19",
+    "type": "MAGAZINE",
+    "name": { "str": "Magazine for 4-dimensional Lunar ammo" },
+    "description": "A compact 19-round magazine for Lunar weapons, made of polymer.  It uses a special spatial fold, allowing it to hold 4-dimensional ammo, so it looks smaller on the outside.",
+    "weight": "35 g",
+    "volume": "200 ml",
+    "price_postapoc": 65,
+    "material": [ "plastic" ],
+    "symbol": "#",
+    "looks_like": "akmag20",
+    "color": "light_gray",
+    "ammo_type": [ "ammo_lunar_4d_2" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_4d_2": 19 } } ],
+    "flags": [ "MAG_COMPACT", "TARDIS" ]
+  },
+  {
     "id": "lunar_4d_thorn_mag37",
     "type": "MAGAZINE",
     "name": { "str": "Magazine for 4-dimensional Lunar ammo" },
@@ -61,22 +93,6 @@
     "color": "light_gray",
     "ammo_type": [ "ammo_lunar_4d_1" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_4d_1": 37 } } ],
-    "flags": [ "MAG_COMPACT", "TARDIS" ]
-  },
-  {
-    "id": "lunar_4d_claw_mag19",
-    "type": "MAGAZINE",
-    "name": { "str": "Magazine for 5-dimensional Lunar ammo" },
-    "description": "A compact 19-round magazine for Lunar weapons, made of polymer.  It uses a special spatial fold, allowing it to hold 4-dimensional ammo, so it looks smaller on the outside.",
-    "weight": "35 g",
-    "volume": "200 ml",
-    "price_postapoc": 65,
-    "material": [ "plastic" ],
-    "symbol": "#",
-    "looks_like": "akmag20",
-    "color": "light_gray",
-    "ammo_type": [ "ammo_lunar_4d_2" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "ammo_lunar_4d_2": 19 } } ],
     "flags": [ "MAG_COMPACT", "TARDIS" ]
   },
   {

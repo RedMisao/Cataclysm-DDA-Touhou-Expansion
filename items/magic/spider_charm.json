@@ -9,12 +9,13 @@
     "longest_side": "3 cm",
     "price_postapoc": 25000,
     "to_hit": { "balance": "neutral", "grip": "none", "length": "hand", "surface": "any" },
-    "bashing": 1,
+    "melee_damage": { "bash": 1 },
     "material": [ "steel" ],
     "symbol": "🕷",
     "looks_like": "mon_spider_cellar_small",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "HELD", "condition": "ALWAYS", "mutations": [ "spider_charm_mut" ] } ] },
-    "flags": [ "DURABLE_MELEE" ]
+    "relic_data": { "passive_effects": [ { "id": "ench_spider_charm" } ] },
+    "flags": [ "TRADER_AVOID", "UNBREAKABLE" ],
+    "//": "The ench grants the effect, so a condition can be used, else it's more complex to do"
   }
 ]

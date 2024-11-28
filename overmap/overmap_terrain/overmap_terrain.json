@@ -1,0 +1,42 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": [ "s_garage", "s_garage_1", "s_garage_2" ],
+    "copy-from": "generic_city_building",
+    "name": "garage",
+    "sym": "O",
+    "color": "white",
+    "extend": { "flags": [ "SOURCE_VEHICLES", "SOURCE_FABRICATION" ] },
+    "spawns": { "group": "GROUP_garage", "population": [ 1, 1 ], "chance": 10 }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "fort_1a",
+      "fort_2a",
+      "fort_3a",
+      "fort_4a",
+      "fort_1b",
+      "fort_2b",
+      "fort_3b",
+      "fort_4b",
+      "fort_1c",
+      "fort_2c",
+      "fort_3c",
+      "fort_4c"
+    ],
+    "copy-from": "generic_bastion_fort",
+    "flags": [ "REQUIRES_PREDECESSOR" ],
+    "spawns": { "group": "GROUP_fort", "population": [ 1, 1 ], "chance": 10 }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "lumbermill_0_0_ocu", "lumbermill_0_1_ocu", "lumbermill_1_0_ocu", "lumbermill_1_1_ocu" ],
+    "see_cost": 5,
+    "name": "lumbermill",
+    "sym": "L",
+    "color": "i_green",
+    "flags": [ "SOURCE_CONSTRUCTION", "SOURCE_FABRICATION" ],
+    "spawns": { "group": "GROUP_lumbermill", "population": [ 1, 1 ], "chance": 10 }
+  }
+]

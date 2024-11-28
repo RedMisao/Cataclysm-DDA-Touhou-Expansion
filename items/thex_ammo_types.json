@@ -6,22 +6,46 @@
     "default": "ammo_lunar_big_1"
   },
   {
+    "id": "ammo_lunar_4d_3",
+    "type": "ammunition_type",
+    "name": "lunar ammo (4-dimensional type 3)",
+    "default": "ammo_lunar_4d_caltrop"
+  },
+  {
+    "id": "ammo_lunar_4d_2",
+    "type": "ammunition_type",
+    "name": "lunar ammo (4-dimensional type 2)",
+    "default": "ammo_lunar_4d_rhyzome"
+  },
+  {
     "id": "ammo_lunar_4d_1",
     "type": "ammunition_type",
     "name": "lunar ammo (4-dimensional type 1)",
     "default": "ammo_lunar_4d_thorn"
   },
   {
-    "id": "ammo_lunar_4d_2",
-    "type": "ammunition_type",
-    "name": "lunar ammo (4-dimensional type 2)",
-    "default": "ammo_lunar_4d_claw"
-  },
-  {
     "id": "ammo_lunar_5d_1",
     "type": "ammunition_type",
     "name": "lunar ammo (5-dimensional type 1)",
     "default": "ammo_lunar_5d_ofuda"
+  },
+  {
+    "id": "ammo_lunar_bousan_type",
+    "type": "ammunition_type",
+    "name": "lunar ammo (shot, medium)",
+    "default": "ammo_lunar_bousan"
+  },
+  {
+    "id": "20mm",
+    "type": "ammunition_type",
+    "name": "20x102mm",
+    "default": "20mm_v"
+  },
+  {
+    "id": "473x33",
+    "type": "ammunition_type",
+    "name": "4.73x33mm",
+    "default": "473x33_dm11"
   },
   {
     "id": "9x39",
@@ -52,5 +76,11 @@
     "type": "ammunition_type",
     "name": "7.92x57mm",
     "default": "792x57_m75"
+  },
+  {
+    "id": "touhou_sake_ammo",
+    "type": "ammunition_type",
+    "name": "sake ammo",
+    "default": "sake_filtered"
   }
 ]
