@@ -91,8 +91,8 @@
         { "item": "wa2000mag10", "prob": 7 }
       ]
     },
-    "//2": "Chance for any of the mod's mags at ( 128 / 18 )"
-    "/0.H": "To mags_collector"
+    "//2": "Chance for any of the mod's mags at ( 128 / 18 )",
+    "//0.H": "To mags_collector"
   },
   {
     "type": "item_group",
