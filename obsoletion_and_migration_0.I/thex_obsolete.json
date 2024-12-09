@@ -30,37 +30,6 @@
     "remove": true
   },
   {
-    "id": "bird_meat",
-    "type": "MIGRATION",
-    "replace": "poultry"
-  },
-  {
-    "id": "bird_cooked",
-    "type": "MIGRATION",
-    "replace": "poultry_cooked"
-  },
-  {
-    "id": "bird_dry",
-    "type": "MIGRATION",
-    "replace": "dry_poultry"
-  },
-  {
-    "id": "bird_smoked",
-    "type": "MIGRATION",
-    "replace": "poultry_smoked"
-  },
-  {
-    "id": "bird_rehydrated",
-    "type": "MIGRATION",
-    "replace": "rehydrated_poultry"
-  },
-  {
-    "id": "irradiated_satsumaimo",
-    "type": "MIGRATION",
-    "replace": "satsumaimo",
-    "flags": [ "IRRADIATED" ]
-  },
-  {
     "id": "m1941_johnson",
     "type": "MIGRATION",
     "replace": "johnson_m1941"

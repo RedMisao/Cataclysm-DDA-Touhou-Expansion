@@ -28,6 +28,7 @@
     "luminance": 12,
     "vision_night": 32,
     "path_settings": { "max_dist": 32 },
+    "tracking_distance": 4,
     "anger_triggers": [ "HURT" ],
     "special_attacks": [ 
       { 

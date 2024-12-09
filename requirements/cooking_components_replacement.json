@@ -238,13 +238,13 @@
     "id": "meat_cooked",
     "type": "requirement",
     "//": "meat you'd put on a sandwich",
-    "extend": { "components": [ [ [ "poultry_cooked_req", 1, "LIST" ], [ "lamprey_meat_cooked", 2, "LIST" ], [ "milanesa", 1 ] ] ] }
+    "extend": { "components": [ [ [ "bird_meat_cooked", 1, "LIST" ], [ "lamprey_meat_cooked", 2, "LIST" ], [ "milanesa", 1 ] ] ] }
   },
   {
     "id": "meat_nofish",
     "type": "requirement",
     "//": "Any type of raw meat except for fish.  About 300-400kcal of meat.",
-    "extend": { "components": [ [ [ "poultry_raw", 2, "LIST" ] ] ] }
+    "extend": { "components": [ [ [ "bird_meat_raw", 2, "LIST" ] ] ] }
   },
   {
     "id": "meat_soup_ingredients",
@@ -252,9 +252,12 @@
     "components": [
       [ [ "broth", 2 ], [ "broth_bone", 2 ] ],
       [
+        [ "irradiated_potato", 1 ],
         [ "potato", 1 ],
         [ "celery", 1 ],
+        [ "irradiated_celery", 1 ],
         [ "cabbage", 1 ],
+        [ "irradiated_cabbage", 1 ],
         [ "sauerkraut", 1 ],
         [ "powder_eggs", 1 ],
         [ "eggs_bird", 1, "LIST" ],
@@ -273,11 +276,12 @@
         [ "acorns_cooked", 1 ],
         [ "dry_lentils", 1 ],
         [ "raw_lentils", 1 ],
+        [ "irradiated_satsumaimo", 1 ],
         [ "satsumaimo", 1 ]
       ],
       [ [ "meat_red", 1, "LIST" ], [ "dry_meat", 1 ] ]
     ],
-    "//": "Replaces egg_reptile for eggs_reptile , adds satsumaimo, and removes can_chicken ",
+    "//": "Replaces egg_reptile for eggs_reptile , adds satsumaimo plus the irradiated version, and removes can_chicken ",
     "//WIP": "Update this with the extend field"
   },
   {
@@ -300,7 +304,7 @@
   {
     "id": "veggy_any_fresh_uncooked",
     "type": "requirement",
-    "extend": { "components": [ [ [ "satsumaimo", 1 ] ] ] }
+    "extend": { "components": [ [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ] ] }
   },
   {
     "id": "veggy_soup_ingredients",
@@ -311,8 +315,10 @@
         [ "spaghetti_raw", 1 ],
         [ "macaroni_raw", 1 ],
         [ "noodles_fast", 1 ],
+        [ "irradiated_potato", 1 ],
         [ "potato", 1 ],
         [ "celery", 1 ],
+        [ "irradiated_celery", 1 ],
         [ "veggy_green", 1, "LIST" ],
         [ "sauerkraut", 1 ],
         [ "powder_eggs", 1 ],
@@ -341,7 +347,7 @@
     "id": "veggy_potatolike",
     "type": "requirement",
     "//": "Any edible tuber that can be used like potato",
-    "extend": { "components": [ [ [ "satsumaimo", 1 ] ] ] }
+    "extend": { "components": [ [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ] ] }
   },
   {
     "id": "woods_soup_ingredients",
@@ -403,10 +409,11 @@
         [ "barley", 1 ],
         [ "oats", 1 ],
         [ "oatmeal", 1 ],
+        [ "irradiated_satsumaimo", 1 ],
         [ "satsumaimo", 1 ]
       ]
     ],
-    "//": "Adds satsumaimo",
+    "//": "Adds satsumaimo plus the irradiated version",
     "//WIP": "Update this with the extend field"
   },
   {
@@ -442,10 +449,11 @@
         [ "barley", 1 ],
         [ "oats", 1 ],
         [ "oatmeal", 1 ],
+        [ "irradiated_satsumaimo", 1 ],
         [ "satsumaimo", 1 ]
       ]
     ],
-    "//": "Replaces egg_reptile for eggs_reptile , and adds satsumaimo",
+    "//": "Replaces egg_reptile for eggs_reptile , and adds satsumaimo plus the irradiated version",
     "//WIP": "Update this with the extend field"
   }
 ]

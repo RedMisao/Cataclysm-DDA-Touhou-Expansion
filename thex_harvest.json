@@ -6,12 +6,12 @@
     "entries": [
       { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
       { "drop": "arthropod_meat", "type": "flesh", "mass_ratio": 0.35 },
-      { "drop": "arthropod_fat", "type": "flesh", "mass_ratio": 0.04 },
+      { "drop": "arthropod_fat", "type": "offal", "mass_ratio": 0.02 },
       { "drop": "arthropod_organs", "type": "offal", "mass_ratio": 0.02 },
       { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
     ],
-    "//": "Based on harvest arachnid as reference",
-    "//2": "Assuming that giant bugs are just bugs but oversized, and that giant bug flesh from 250 - 400 mya is edible"
+    "//": "harvest arachnid as reference",
+    "//2": "Assuming that giant bugs are just bugs but oversized, and that giant bug flesh from 400 mya is edible"
   },
   {
     "id": "arthropod_small_harvest",
@@ -20,7 +20,7 @@
     "entries": [
       { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
       { "drop": "arthropod_meat", "type": "flesh", "mass_ratio": 0.3 },
-      { "drop": "arthropod_fat", "type": "flesh", "mass_ratio": 0.02 },
+      { "drop": "arthropod_fat", "type": "offal", "mass_ratio": 0.02 },
       { "drop": "arthropod_organs", "type": "offal", "mass_ratio": 0.02 },
       { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.15 }
     ]
@@ -32,50 +32,78 @@
     "entries": [
       { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
       { "drop": "shrimplike_meat", "type": "flesh", "mass_ratio": 0.65 },
-      { "drop": "fat", "type": "flesh", "mass_ratio": 0.02 },
+      { "drop": "fat", "type": "offal", "mass_ratio": 0.001 },
       { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.15 }
     ],
     "//": "Basically cleaning the unedible parts from a giant shrimp-like creature (read: one that may taste like a shrimp or won't make someone vomit while cooking)"
   },
   {
-    "id": "bird_tiny",
+    "id": "bird_large_nonmutant_harvest",
     "type": "harvest",
-    "copy-from": "bird_large",
     "entries": [
-      { "drop": "bird_leg_tiny", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 }
-    ]
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "bird_leg_large", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 },
+      { "drop": "bird_meat", "type": "flesh", "mass_ratio": 0.3 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.1 },
+      { "drop": "down_feather", "type": "skin", "mass_ratio": 0.005 },
+      { "drop": "feather", "type": "skin", "mass_ratio": 0.01 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 }
+    ],
+    "//": "Same as bird_small but adds bones and the respective haunches"
+  },
+  {
+    "id": "bird_larger_nonmutant_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "bird_leg_larger", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 },
+      { "drop": "bird_meat", "type": "flesh", "mass_ratio": 0.3 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.1 },
+      { "drop": "down_feather", "type": "skin", "mass_ratio": 0.005 },
+      { "drop": "feather", "type": "skin", "mass_ratio": 0.01 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 }
+    ],
+    "//": "Same as bird_large_nonmutant_harvest with bigger haunches"
+  },
+  {
+    "id": "bird_largest_nonmutant_harvest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "bird_leg_largest", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 },
+      { "drop": "bird_meat", "type": "flesh", "mass_ratio": 0.3 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.1 },
+      { "drop": "down_feather", "type": "skin", "mass_ratio": 0.005 },
+      { "drop": "feather", "type": "skin", "mass_ratio": 0.01 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 }
+    ],
+    "//": "Same as bird_large_nonmutant_harvest with bigger haunches"
   },
   {
     "id": "bird_small",
     "type": "harvest",
-    "copy-from": "bird_small",
     "entries": [
-      { "drop": "bird_leg_small", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 }
-    ]
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "bird_leg_small", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 },
+      { "drop": "bird_meat", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "down_feather", "type": "skin", "mass_ratio": 0.005 },
+      { "drop": "feather", "type": "skin", "mass_ratio": 0.01 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 }
+    ],
+    "//": "This combines dda meat + meat_scrap from birds into bird_meat , also adds haunches",
+    "//2": "Chicken legs ratio to whole chicken goes from ~1/10 to 1/7 "
   },
   {
-    "id": "bird_large",
+    "id": "bird_tiny",
     "type": "harvest",
-    "copy-from": "bird_large",
     "entries": [
-      { "drop": "bird_leg_large", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 }
-    ]
-  },
-  {
-    "id": "bird_larger",
-    "type": "harvest",
-    "copy-from": "bird_large",
-    "entries": [
-      { "drop": "bird_leg_larger", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 }
-    ]
-  },
-  {
-    "id": "bird_largest",
-    "type": "harvest",
-    "copy-from": "bird_large",
-    "entries": [
-      { "drop": "bird_leg_largest", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 }
-    ]
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "bird_leg_tiny", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 },
+      { "drop": "bird_meat", "type": "flesh", "mass_ratio": 0.3 },
+      { "drop": "down_feather", "type": "skin", "mass_ratio": 0.005 },
+      { "drop": "feather", "type": "skin", "mass_ratio": 0.01 }
+    ],
+    "//": "This replaces dda birds dropping meat_scrap to bird_meat , also adds haunches"
   },
   {
     "id": "heavenpeach_harvest",
@@ -298,7 +326,7 @@
     "id": "silphium_harv",
     "type": "harvest",
     "entries": [ { "drop": "silphium", "base_num": [ 2, 4 ] } ],
-    "//WIP": ""
+    "//": "WIP"
   },
   {
     "id": "tsukumogami_computer_harvest",

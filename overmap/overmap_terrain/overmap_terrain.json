@@ -12,7 +12,6 @@
   {
     "type": "overmap_terrain",
     "id": [ "hunter_shack", "hunter_shack_1" ],
-    "vision_levels": "isolated_building",
     "name": "swamp shack",
     "sym": "+",
     "color": "i_cyan",
@@ -43,7 +42,6 @@
   {
     "type": "overmap_terrain",
     "id": [ "lumbermill_0_0_ocu", "lumbermill_0_1_ocu", "lumbermill_1_0_ocu", "lumbermill_1_1_ocu" ],
-    "vision_levels": "isolated_building",
     "name": "lumbermill",
     "sym": "L",
     "color": "i_green",
