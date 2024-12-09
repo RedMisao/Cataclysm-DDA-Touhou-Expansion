@@ -180,7 +180,8 @@
     "message": "",
     "flags": [ "IGNORE_WALLS", "NO_EXPLOSION_SFX", "NO_LEGS", "RANDOM_DAMAGE", "SILENT" ],
     "//": "min bash (120 - 300), max dmg (180 - 480)",
-    "//2": "+1 range as qol"
+    "//2": "+1 range as qol",
+    "//WIP": "This should deal less dmg but x4 - x5 to work as intended. CHECK IT WORKS AFTER DOING THAT"
   },
   {
     "id": "ammo_lunar_bousan_blast_stun",

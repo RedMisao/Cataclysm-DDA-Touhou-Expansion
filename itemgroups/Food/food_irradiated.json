@@ -1,16 +1,22 @@
 [
   {
-    "id": "pre_irradiated_food",
     "type": "item_group",
+    "id": "pre_irradiated_food",
     "//": "Products valid for irradiation process.",
     "copy-from": "pre_irradiated_food",
-    "extend": { "items": [ [ "seed_satsumaimo", 50 ] ] }
+    "extend": { 
+      "items": [ [ "seed_satsumaimo", 50 ] ] 
+    }
   },
   {
-    "id": "irradiated_food",
     "type": "item_group",
+    "id": "irradiated_food",
     "//": "Products of irradiation process.",
     "copy-from": "irradiated_food",
-    "extend": { "items": [ [ "irradiated_satsumaimo", 50 ] ] }
+    "extend": { 
+      "items": [ 
+        { "item": "satsumaimo", "prob": 50, "custom-flags": [ "IRRADIATED" ] }
+      ] 
+    }
   }
 ]

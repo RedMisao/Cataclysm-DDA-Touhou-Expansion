@@ -18,7 +18,6 @@
     "handling_modifier": 12,
     "location": "grip",
     "blacklist_slot": [ "barrel", "magnifier", "sights", "stock", "stock accessory", "stock mount" ],
-    "mode_modifier": [ [ "REACH", "knuckle_steel", 1, [ "MELEE", "REACH_ATTACK" ] ] ],
     "techniques": [ "BRUTAL", "WBLOCK_1", "WIDE" ],
     "min_skills": [ [ "weapon", 3 ] ],
     "mod_targets": [ "pistol", "smg" ],

@@ -10,24 +10,25 @@
     "components": [ [ [ "arthropod_meat", 1 ], [ "arthropod_organs", 1 ] ] ]
   },
   {
-    "id": "bird_meat_raw",
+    "id": "poultry_raw",
     "type": "requirement",
-    "components": [ [ [ "bird_leg_small", 2 ], [ "bird_meat", 2 ], [ "bird_rehydrated", 2 ], [ "can_chicken", 1 ] ] ],
-    "//": "Around 250 g of bird meat, slightly less than the equivalent for meat (296 g and 250 ml). Includes can_chicken and bird_rehydrated , which are not raw"
+    "components": [ [ [ "bird_leg_small", 1 ], [ "poultry", 2 ], [ "rehydrated_poultry", 2 ], [ "can_chicken", 1 ] ] ],
+    "//": "Around 200 - 250 g of bird meat, slightly less than the equivalent for meat (296 g and 250 ml). Includes can_chicken and rehydrated_poultry , which are not raw"
   },
   {
-    "id": "bird_meat_cooked",
+    "id": "poultry_cooked_req",
     "type": "requirement",
     "components": [
       [
-        [ "bird_cooked", 2 ],
-        [ "bird_dry", 2 ],
-        [ "bird_leg_roasted", 2 ],
-        [ "bird_rehydrated", 2 ],
-        [ "bird_smoked", 2 ],
-        [ "can_chicken", 1 ]
+        [ "poultry_cooked", 2 ],
+        [ "dry_poultry", 2 ],
+        [ "rehydrated_poultry", 2 ],
+        [ "poultry_smoked", 2 ],
+        [ "can_chicken", 1 ],
+        [ "bird_leg_roasted", 2 ]
       ]
-    ]
+    ],
+    "//": "Around 200 - 250 g of bird meat, slightly less than the equivalent for meat (296 g and 250 ml)"
   },
   {
     "id": "bird_pie_pot_ingredients",
@@ -40,9 +41,7 @@
         [ "bell_pepper", 1 ],
         [ "celery", 1 ],
         [ "celery", 1 ],
-        [ "irradiated_celery", 1 ],
         [ "carrot", 2 ],
-        [ "irradiated_carrot", 2 ],
         [ "carrot_wild", 2 ],
         [ "veggy_any_corn_uncooked", 1, "LIST" ],
         [ "morel_cooked", 1 ],
@@ -50,11 +49,8 @@
         [ "mushroom", 1 ],
         [ "mushroom_cooked", 1 ],
         [ "potato", 1 ],
-        [ "irradiated_potato", 1 ],
         [ "pumpkin", 1 ],
-        [ "irradiated_pumpkin", 1 ],
         [ "zucchini", 1 ],
-        [ "irradiated_zucchini", 1 ],
         [ "rehydrated_veggy", 1 ],
         [ "milk_cream", 1 ]
       ]
@@ -68,10 +64,8 @@
       [
         [ "can_corn", 1 ],
         [ "carrot", 2 ],
-        [ "irradiated_carrot", 2 ],
         [ "carrot_wild", 1 ],
         [ "celery", 1 ],
-        [ "irradiated_celery", 1 ],
         [ "cornmeal", 2 ],
         [ "corn_kernels", 1 ],
         [ "rehydrated_corn_kernels", 1 ],
@@ -81,15 +75,11 @@
         [ "mushroom", 1 ],
         [ "mushroom_cooked", 1 ],
         [ "onion", 1 ],
-        [ "irradiated_onion", 1 ],
         [ "potato", 1 ],
-        [ "irradiated_potato", 1 ],
         [ "pumpkin", 1 ],
-        [ "irradiated_pumpkin", 1 ],
-        [ "satsumaimo", 1 ],
-        [ "irradiated_satsumaimo", 1 ]
+        [ "satsumaimo", 1 ]
       ],
-      [ [ "bird_meat_raw", 2, "LIST" ] ]
+      [ [ "poultry_raw", 2, "LIST" ] ]
     ]
   },
   {
