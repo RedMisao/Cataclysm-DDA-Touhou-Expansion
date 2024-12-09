@@ -143,7 +143,13 @@
     "teachable": false,
     "valid_targets": [ "ally", "ground", "hostile" ],
     "effect": "attack",
-    "extra_effects": [ { "id": "ammo_lunar_bousan_blast2" }, { "id": "ammo_lunar_bousan_blast_stun" } ],
+    "extra_effects": [ 
+      { "id": "ammo_lunar_bousan_blast2" }, 
+      { "id": "ammo_lunar_bousan_blast2" }, 
+      { "id": "ammo_lunar_bousan_blast2" }, 
+      { "id": "ammo_lunar_bousan_blast2" }, 
+      { "id": "ammo_lunar_bousan_blast_stun" } 
+    ],
     "shape": "cone",
     "damage_type": "bash",
     "min_damage": { "math": [ "( 20 + ( var_bousan_pump * 15 ) )" ] },
@@ -169,8 +175,8 @@
     "effect": "bash",
     "shape": "cone",
     "damage_type": "bash",
-    "min_damage": { "math": [ "( 120 + ( var_bousan_pump * 60 ) )" ] },
-    "max_damage": { "math": [ "( 180 + ( var_bousan_pump * 100 ) )" ] },
+    "min_damage": { "math": [ "( 45 + ( var_bousan_pump * 25 ) )" ] },
+    "max_damage": { "math": [ "( 90 + ( var_bousan_pump * 45 ) )" ] },
     "min_range": 7,
     "max_range": 7,
     "min_aoe": 45,
@@ -179,9 +185,8 @@
     "difficulty": -50,
     "message": "",
     "flags": [ "IGNORE_WALLS", "NO_EXPLOSION_SFX", "NO_LEGS", "RANDOM_DAMAGE", "SILENT" ],
-    "//": "min bash (120 - 300), max dmg (180 - 480)",
-    "//2": "+1 range as qol",
-    "//WIP": "This should deal less dmg but x4 - x5 to work as intended. CHECK IT WORKS AFTER DOING THAT"
+    "//": "min dmg (45 - 145), max dmg (90 - 225)",
+    "//2": "+1 range as qol"
   },
   {
     "id": "ammo_lunar_bousan_blast_stun",
