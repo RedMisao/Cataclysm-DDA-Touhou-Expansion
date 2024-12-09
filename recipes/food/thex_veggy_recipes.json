@@ -15,7 +15,7 @@
     "components": [ [ [ "milk", 1 ] ] ],
     "//": "Assuming 1 unit/charge is",
     "//2": "flour 25 g, oil 16 ml, salt 5 g, sugar 5 g, water 250 ml",
-    "//3": "arthropod_meat 120 g - 180 cal, bird_meat (LIST) 240 g - 364 cal = 2 bird meat, lamprey_meat 120 g - 328 cal, meat 250 g - 400 cal, shrimplike_meat 120 g - 116 cal"
+    "//3": "arthropod_meat 120 g - 180 cal, lamprey_meat 120 g - 328 cal, meat 250 g - 400 cal, shrimplike_meat 120 g - 116 cal"
   },
   {
     "result": "anko",
@@ -81,7 +81,7 @@
     "qualities": [ { "id": "COOK", "level": 1 }, { "id": "CUT", "level": 2 }, { "id": "CONTAIN", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
     "components": [
-      [ [ "lettuce", 2 ], [ "irradiated_lettuce", 2 ] ],
+      [ [ "lettuce", 2 ] ],
       [ [ "cheese_standard", 1, "LIST" ] ],
       [ [ "bread_sandwich", 1, "LIST" ] ],
       [ [ "seasoning_mild", 1, "LIST" ], [ "condiment", 1, "LIST" ] ]
@@ -180,7 +180,7 @@
     "autolearn": true,
     "qualities": [ { "id": "COOK", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
-    "components": [ [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ] ],
+    "components": [ [ [ "satsumaimo", 1 ] ] ],
     "//": "Add dried leaves at some point"
   },
   {
@@ -202,7 +202,7 @@
       { "proficiency": "prof_knife_skills", "time_multiplier": 2 }
     ],
     "components": [
-      [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
+      [ [ "satsumaimo", 1 ] ],
       [ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
       [ [ "fry_oil", 4, "LIST" ] ]
     ],
@@ -223,7 +223,7 @@
     "tools": [ [ [ "surface_heat", 8, "LIST" ] ], [ [ "frying_oil", 1, "LIST" ] ] ],
     "proficiencies": [ { "proficiency": "prof_food_prep" }, { "proficiency": "prof_frying" } ],
     "components": [
-      [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
+      [ [ "satsumaimo", 1 ] ],
       [ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
       [ [ "fry_oil", 4, "LIST" ] ]
     ]
@@ -261,7 +261,7 @@
       { "proficiency": "prof_knife_skills", "time_multiplier": 2 }
     ],
     "components": [
-      [ [ "satsumaimo", 1 ], [ "irradiated_satsumaimo", 1 ] ],
+      [ [ "satsumaimo", 1 ] ],
       [ [ "salt", 2 ], [ "seasoning_salt", 2 ] ],
       [ [ "fry_oil", 4, "LIST" ] ]
     ]

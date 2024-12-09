@@ -35,13 +35,5 @@
       [ [ "water_clean", 2 ] ]
     ],
     "//2": "Modified base paella_valenciana because well... how to explain it... how to even start???"
-  },
-  {
-    "result": "pie_meat",
-    "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
-    "category": "CC_FOOD",
-    "subcategory": "CSC_FOOD_MEAT",
-    "delete": { "components": [ [ "can_chicken", 1 ] ] }
   }
 ]

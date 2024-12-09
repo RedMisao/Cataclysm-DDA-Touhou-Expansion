@@ -55,7 +55,7 @@
     "id": "bird_leg_roasted",
     "type": "COMESTIBLE",
     "name": { "str_sp": "roasted bird leg" },
-    "copy-from": "bird_meat",
+    "copy-from": "poultry_cooked",
     "description": "A piece of bird leg roasted over a fire.",
     "proportional": { "price": 1.5, "price_postapoc": 1.5, "calories": 1.33 },
     "fun": 4,
