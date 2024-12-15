@@ -221,7 +221,6 @@
     "type": "relic_procgen_data",
     "items": [ { "weight": 100, "item": "art_spider_charm" } ],
     "passive_add_procgen_values": [
-      { "weight": 100, "min_value": -8, "max_value": -1, "type": "ARMOR_ACID", "increment": 1, "power_per_increment": 100 },
       { "weight": 100, "min_value": 8, "max_value": 1, "type": "EFFECTIVE_HEALTH_MOD", "increment": 1, "power_per_increment": 100 },
       { "weight": 100, "min_value": -8, "max_value": -1, "type": "FALL_DAMAGE", "increment": 1, "power_per_increment": 100 },
       { "weight": 100, "min_value": -8, "max_value": -1, "type": "FOOTSTEP_NOISE", "increment": 1, "power_per_increment": 100 },
