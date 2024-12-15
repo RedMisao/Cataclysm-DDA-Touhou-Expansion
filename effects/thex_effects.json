@@ -169,11 +169,6 @@
       {
         "condition": "ALWAYS",
         "values": [
-          { "value": "ARMOR_ACID", "multiply": -1 },
-          { "value": "ARMOR_BIO", "multiply": -1 },
-          { "value": "ARMOR_COLD", "multiply": -1 },
-          { "value": "ARMOR_ELEC", "multiply": -1 },
-          { "value": "ARMOR_HEAT", "multiply": -1 },
           { "value": "ARMOR_ALL", "add": -1 }
         ],
         "//": "ARMOR_X add -n ADDS armor for n value"
@@ -195,10 +190,6 @@
       {
         "condition": "ALWAYS",
         "values": [
-          { "value": "ARMOR_BULLET", "multiply": -1 },
-          { "value": "ARMOR_BASH", "multiply": -1 },
-          { "value": "ARMOR_CUT", "multiply": -1 },
-          { "value": "ARMOR_STAB", "multiply": -1 },
           { "value": "ARMOR_ALL", "add": -1 }
         ],
         "//": "ARMOR_X add -n ADDS armor for n value"
