@@ -168,10 +168,14 @@
     "enchantments": [ 
       {
         "condition": "ALWAYS",
-        "values": [
-          { "value": "ARMOR_ALL", "add": -1 }
+        "incoming_damage_mod": [
+          { "type": "acid", "multiply": -1 },
+          { "type": "biological", "multiply": -1 },
+          { "type": "cold", "multiply": -1 },
+          { "type": "electric", "multiply": -1 },
+          { "type": "heat", "multiply": -1 }
         ],
-        "//": "ARMOR_X add -n ADDS armor for n value"
+        "//": "Value incoming_damage_mod multiply -n REDUCES incoming dmg as X - (n*100) (%) value"
       }
     ]
   },
@@ -189,10 +193,13 @@
     "enchantments": [ 
       {
         "condition": "ALWAYS",
-        "values": [
-          { "value": "ARMOR_ALL", "add": -1 }
+        "incoming_damage_mod": [
+          { "type": "bash", "multiply": -1 },
+          { "type": "cut", "multiply": -1 },
+          { "type": "stab", "multiply": -1 },
+          { "type": "bullet", "multiply": -1 }
         ],
-        "//": "ARMOR_X add -n ADDS armor for n value"
+        "//": "Value incoming_damage_mod multiply -n REDUCES incoming dmg as X - (n*100) (%) value"
       }
     ]
   },
